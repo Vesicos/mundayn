@@ -42,7 +42,7 @@ function PackageCard({
 
   return (
     <motion.div
-      className="absolute w-[280px] md:w-[320px] lg:w-[360px] px-5 py-6 md:px-6 md:py-8"
+      className="absolute w-[300px] md:w-[340px] lg:w-[380px] px-5 py-6 md:px-6 md:py-8"
       style={{
         backgroundColor: bgColor,
         borderRadius,
@@ -50,12 +50,12 @@ function PackageCard({
         zIndex,
         top: '50%',
         left: '50%',
-        marginLeft: '-140px',
+        transform: 'translate(-50%, -50%)',
       }}
       initial={false}
       animate={{
         x,
-        y: '-50%',
+        y: 0,
         scale,
         opacity
       }}
@@ -268,7 +268,7 @@ export default function PackageCarousel() {
 
   const getCardStyles = (index: number) => {
     const relativeIndex = (index - activeIndex + packages.length) % packages.length;
-    const cardWidth = isMobile ? 280 : 360;
+    const cardWidth = isMobile ? 300 : 380;
 
     if (isMobile) {
       if (relativeIndex === 0) {
@@ -277,7 +277,7 @@ export default function PackageCarousel() {
       return { x: containerWidth * 2, scale: 0.8, opacity: 0, zIndex: 0, isCenter: false };
     }
 
-    const sideGap = 30;
+    const sideGap = 35;
 
     switch (relativeIndex) {
       case 0:
@@ -295,10 +295,14 @@ export default function PackageCarousel() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden"
+      className="relative w-full"
+      style={{ overflow: 'visible' }}
     >
-      {/* Cards wrapper with proper height for content */}
-      <div className="relative flex items-center justify-center min-h-[580px] md:min-h-[620px] pt-16 pb-8">
+      {/* Cards container - fixed height with visible overflow */}
+      <div 
+        className="relative w-full"
+        style={{ height: '680px', overflow: 'visible' }}
+      >
         {/* Package cards */}
         {packages.map((pkg, index) => {
           const styles = getCardStyles(index);
@@ -315,14 +319,14 @@ export default function PackageCarousel() {
           );
         })}
 
-        {/* Navigation arrows - positioned relative to cards */}
+        {/* Navigation arrows - centered with cards */}
         <NavigationArrow direction="left" onClick={handlePrev} />
         <NavigationArrow direction="right" onClick={handleNext} />
       </div>
 
-      {/* Edge gradient overlays - narrower and symmetric */}
-      <div className="absolute left-0 top-0 w-[80px] md:w-[120px] h-full z-10 pointer-events-none bg-gradient-to-r from-[#471D3C] to-transparent" />
-      <div className="absolute right-0 top-0 w-[80px] md:w-[120px] h-full z-10 pointer-events-none bg-gradient-to-l from-[#471D3C] to-transparent" />
+      {/* Edge gradient overlays */}
+      <div className="absolute left-0 top-0 w-[100px] md:w-[150px] h-full z-10 pointer-events-none bg-gradient-to-r from-[#471D3C] to-transparent" />
+      <div className="absolute right-0 top-0 w-[100px] md:w-[150px] h-full z-10 pointer-events-none bg-gradient-to-l from-[#471D3C] to-transparent" />
     </div>
   );
 }
