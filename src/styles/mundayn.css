@@ -1629,3 +1629,554 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+/* ==========================================
+   DONE FOR YOU PAGE STYLES
+   ========================================== */
+
+/* DFY Hero */
+.dfy-hero {
+  min-height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.dfy-hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #c4a77d 0%, #d4b896 50%, #c9b08a 100%);
+  z-index: 0;
+}
+
+.dfy-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  padding: 40px;
+}
+
+.dfy-hero__title {
+  font-family: var(--font-playfair);
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--mundayn-purple-dark);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.dfy-hero__title-italic {
+  font-style: italic;
+}
+
+.dfy-hero__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.dfy-hero__list li {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: var(--mundayn-purple-dark);
+  line-height: 1.8;
+}
+
+/* DFY 2 Paths Section */
+.dfy-paths {
+  padding: 80px 0;
+  background-color: var(--mundayn-purple-dark);
+}
+
+.dfy-paths__title {
+  font-family: var(--font-inter);
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--mundayn-cream);
+  letter-spacing: -1px;
+  margin-bottom: 48px;
+}
+
+.dfy-paths__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  color: var(--mundayn-gold);
+}
+
+.dfy-paths__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.dfy-paths__card {
+  border-radius: var(--radius-md);
+  padding: 40px;
+}
+
+.dfy-paths__card--light {
+  background-color: #58233f;
+}
+
+.dfy-paths__card--dark {
+  background-color: #2a0c22;
+}
+
+.dfy-paths__card-label {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--mundayn-cream);
+  margin-bottom: 8px;
+}
+
+.dfy-paths__card-name {
+  font-family: var(--font-inter);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--mundayn-cream);
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.dfy-paths__card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.dfy-paths__card-list li {
+  font-family: var(--font-inter);
+  font-size: 15px;
+  color: var(--mundayn-cream-light);
+  line-height: 1.8;
+  padding-left: 16px;
+  position: relative;
+}
+
+.dfy-paths__card-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--mundayn-gold);
+}
+
+.dfy-paths__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--mundayn-gold);
+  color: var(--mundayn-black);
+  padding: 14px 24px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.dfy-paths__btn:hover {
+  background-color: var(--mundayn-gold-hover);
+  transform: translateY(-2px);
+}
+
+/* DFY The Honest Truth Section */
+.dfy-truth {
+  padding: 80px 0;
+  background-color: var(--mundayn-purple-dark);
+}
+
+.dfy-truth__title {
+  font-family: var(--font-inter);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--mundayn-cream);
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.dfy-truth__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  color: var(--mundayn-gold);
+}
+
+.dfy-truth__text {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  color: var(--mundayn-cream);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.dfy-truth__text em {
+  font-family: var(--font-playfair);
+  font-style: italic;
+}
+
+/* DFY Real Cost Section */
+.dfy-cost {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+}
+
+.dfy-cost__image {
+  background: linear-gradient(135deg, #c4a77d 0%, #d4b896 50%, #c9b08a 100%);
+}
+
+.dfy-cost__content {
+  background-color: var(--mundayn-gold);
+  padding: 60px;
+}
+
+.dfy-cost__title {
+  font-family: var(--font-inter);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--mundayn-purple-dark);
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 32px;
+}
+
+.dfy-cost__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+}
+
+.dfy-cost__item {
+  margin-bottom: 24px;
+}
+
+.dfy-cost__item h4 {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--mundayn-purple-dark);
+  margin-bottom: 4px;
+}
+
+.dfy-cost__item p {
+  font-family: var(--font-inter);
+  font-size: 15px;
+  color: var(--mundayn-purple-dark);
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.dfy-cost__truth {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(71, 29, 60, 0.2);
+}
+
+.dfy-cost__truth h4 {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--mundayn-purple-dark);
+  margin-bottom: 4px;
+}
+
+.dfy-cost__truth p {
+  font-family: var(--font-inter);
+  font-size: 15px;
+  color: var(--mundayn-purple-dark);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* DFY Solution Section */
+.dfy-solution {
+  padding: 80px 0;
+  background-color: var(--mundayn-purple-dark);
+}
+
+.dfy-solution__title {
+  font-family: var(--font-inter);
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--mundayn-cream);
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.dfy-solution__subtitle {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  text-align: center;
+  color: var(--mundayn-cream-light);
+  margin-bottom: 48px;
+}
+
+.dfy-solution__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dfy-solution__step {
+  background-color: #58233f;
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+}
+
+.dfy-solution__step--highlight {
+  background-color: var(--mundayn-gold);
+}
+
+.dfy-solution__step--highlight h3,
+.dfy-solution__step--highlight p {
+  color: var(--mundayn-purple-dark);
+}
+
+.dfy-solution__number {
+  font-family: var(--font-playfair);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--mundayn-gold);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.dfy-solution__step--highlight .dfy-solution__number {
+  color: var(--mundayn-purple-dark);
+}
+
+.dfy-solution__step h3 {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--mundayn-cream);
+  margin-bottom: 12px;
+}
+
+.dfy-solution__step p {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--mundayn-cream-light);
+  line-height: 1.6;
+}
+
+.dfy-solution__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--mundayn-purple-dark);
+  color: var(--mundayn-cream);
+  padding: 10px 16px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 16px;
+  transition: all 0.2s;
+}
+
+.dfy-solution__btn:hover {
+  opacity: 0.9;
+}
+
+/* DFY Guarantee Section */
+.dfy-guarantee {
+  padding: 80px 0;
+  background-color: var(--mundayn-purple-dark);
+}
+
+.dfy-guarantee__title {
+  font-family: var(--font-inter);
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--mundayn-cream);
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.dfy-guarantee__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  color: var(--mundayn-gold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.dfy-guarantee__subtitle {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  text-align: center;
+  color: var(--mundayn-cream-light);
+  margin-bottom: 48px;
+}
+
+.dfy-guarantee__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.dfy-guarantee__card {
+  background-color: #58233f;
+  border-radius: var(--radius-md);
+  padding: 32px;
+}
+
+.dfy-guarantee__card h3 {
+  font-family: var(--font-playfair);
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--mundayn-cream);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.dfy-guarantee__card p {
+  font-family: var(--font-inter);
+  font-size: 15px;
+  color: var(--mundayn-cream-light);
+  line-height: 1.6;
+}
+
+/* DFY Packages Section */
+.dfy-packages {
+  padding: 80px 0;
+  background-color: var(--mundayn-purple-dark);
+}
+
+.dfy-packages__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.dfy-packages__card {
+  background-color: #58233f;
+  border-radius: var(--radius-md);
+  padding: 32px;
+}
+
+.dfy-packages__card h3 {
+  font-family: var(--font-playfair);
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--mundayn-gold);
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.dfy-packages__includes {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--mundayn-cream);
+  margin-bottom: 12px;
+}
+
+.dfy-packages__card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dfy-packages__card li {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--mundayn-cream-light);
+  line-height: 1.8;
+  padding-left: 16px;
+  position: relative;
+}
+
+.dfy-packages__card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--mundayn-gold);
+}
+
+/* DFY Future Section */
+.dfy-future {
+  padding: 80px 0;
+  background-color: var(--mundayn-purple-dark);
+  text-align: center;
+}
+
+.dfy-future__title {
+  font-family: var(--font-inter);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--mundayn-cream);
+  letter-spacing: -1px;
+  margin-bottom: 32px;
+}
+
+.dfy-future__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  color: var(--mundayn-gold);
+}
+
+.dfy-future__content {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.dfy-future__content p {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: var(--mundayn-cream-light);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* DFY Responsive */
+@media (max-width: 1024px) {
+  .dfy-paths__grid,
+  .dfy-cost {
+    grid-template-columns: 1fr;
+  }
+  
+  .dfy-solution__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dfy-guarantee__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .dfy-hero__title {
+    font-size: 36px;
+  }
+  
+  .dfy-paths__title,
+  .dfy-truth__title,
+  .dfy-cost__title,
+  .dfy-solution__title,
+  .dfy-guarantee__title,
+  .dfy-future__title {
+    font-size: 32px;
+  }
+  
+  .dfy-solution__grid,
+  .dfy-packages__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dfy-cost__content {
+    padding: 40px 24px;
+  }
+}
