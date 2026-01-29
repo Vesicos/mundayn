@@ -1687,13 +1687,13 @@
   line-height: 1.8;
 }
 
-/* DFY 2 Paths Section */
-.dfy-paths {
+/* Two Paths Section - Unified Container */
+.two-paths {
   padding: 100px 0 120px;
   background-color: var(--mundayn-purple-dark);
 }
 
-.dfy-paths__title {
+.two-paths__title {
   font-family: var(--font-inter);
   font-size: 48px;
   font-weight: 500;
@@ -1703,49 +1703,48 @@
   margin-bottom: 56px;
 }
 
-.dfy-paths__title-italic {
+.two-paths__title-italic {
   font-family: var(--font-playfair);
   font-style: italic;
   color: var(--mundayn-gold);
 }
 
-.dfy-paths__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+.two-paths__wrap {
+  display: flex;
+  border-radius: 28px;
+  overflow: hidden;
 }
 
-.dfy-paths__card {
-  border-radius: 20px;
+.two-paths__panel {
+  flex: 1;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
+  min-height: 320px;
 }
 
-.dfy-paths__card--light {
-  background-color: #58233f;
-}
-
-.dfy-paths__card--dark {
+.two-paths__panel--left {
   background-color: #2a0c22;
 }
 
-.dfy-paths__card-content {
-  display: flex;
-  gap: 32px;
+.two-paths__panel--right {
+  background-color: #58233f;
+}
+
+.two-paths__top {
   flex: 1;
 }
 
-.dfy-paths__card-left {
-  flex-shrink: 0;
-  min-width: 140px;
+.two-paths__divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.18);
 }
 
-.dfy-paths__card-right {
-  flex: 1;
+.two-paths__heading {
+  margin-bottom: 24px;
 }
 
-.dfy-paths__card-label {
+.two-paths__h1 {
   font-family: var(--font-inter);
   font-size: 32px;
   font-weight: 500;
@@ -1753,49 +1752,39 @@
   margin-bottom: 8px;
 }
 
-.dfy-paths__card-name {
+.two-paths__sub {
   font-family: var(--font-inter);
   font-size: 22px;
   font-weight: 500;
   color: var(--mundayn-gold);
   line-height: 1.3;
-  margin: 0;
 }
 
-.dfy-paths__card-quote {
-  font-family: var(--font-inter);
-  font-size: 15px;
-  color: var(--mundayn-cream);
-  margin: 0 0 12px 0;
-  line-height: 1.4;
-}
-
-.dfy-paths__card-list {
+.two-paths__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.dfy-paths__card-list li {
+.two-paths__list li {
   font-family: var(--font-inter);
   font-size: 15px;
   color: var(--mundayn-cream);
-  line-height: 1.7;
+  line-height: 1.8;
   padding-left: 20px;
   position: relative;
 }
 
-.dfy-paths__card-list li::before {
+.two-paths__list li::before {
   content: '•';
   position: absolute;
   left: 0;
   color: var(--mundayn-cream);
 }
 
-.dfy-paths__btn {
+.two-paths__btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 12px;
   background-color: var(--mundayn-gold);
   color: var(--mundayn-black);
@@ -1808,14 +1797,35 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.2s;
-  margin-top: 32px;
-  align-self: center;
-  min-width: 240px;
+  margin-top: 24px;
+  align-self: flex-start;
 }
 
-.dfy-paths__btn:hover {
+.two-paths__btn:hover {
   background-color: var(--mundayn-gold-hover);
   transform: translateY(-2px);
+}
+
+/* Responsive for Two Paths */
+@media (max-width: 768px) {
+  .two-paths__wrap {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+  
+  .two-paths__divider {
+    width: 100%;
+    height: 1px;
+  }
+  
+  .two-paths__panel {
+    min-height: auto;
+    padding: 32px 28px;
+  }
+  
+  .two-paths__title {
+    font-size: 32px;
+  }
 }
 
 /* DFY The Honest Truth Section */

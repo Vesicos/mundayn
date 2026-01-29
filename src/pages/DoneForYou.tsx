@@ -52,54 +52,50 @@ const DoneForYou = () => {
       </header>
 
       {/* 2 Paths Section */}
-      <section className="dfy-paths">
+      <section className="two-paths">
         <div className="mundayn-container">
-          <h2 className="dfy-paths__title">
-            2 Paths To The Same <span className="dfy-paths__title-italic">Destination</span>
+          <h2 className="two-paths__title">
+            2 Paths To The Same <span className="two-paths__title-italic">Destination</span>
           </h2>
           
-          <div className="dfy-paths__grid">
-            <article className="dfy-paths__card dfy-paths__card--dark">
-              <div className="dfy-paths__card-content">
-                <div className="dfy-paths__card-left">
-                  <h3 className="dfy-paths__card-label">Path 1:</h3>
-                  <p className="dfy-paths__card-name">DIY Setup<br />(Included Free)</p>
+          <div className="two-paths__wrap">
+            <div className="two-paths__panel two-paths__panel--left">
+              <div className="two-paths__top">
+                <div className="two-paths__heading">
+                  <div className="two-paths__h1">Path 1:</div>
+                  <div className="two-paths__sub">DIY Setup<br />(Included Free)</div>
                 </div>
-                <div className="dfy-paths__card-right">
-                  <p className="dfy-paths__card-quote">"I have time to set this up myself"</p>
-                  <ul className="dfy-paths__card-list">
-                    <li>Free with trial</li>
-                    <li>2-3 months to full implementation</li>
-                    <li>Tutorials and support included</li>
-                    <li>Best if you enjoy technical setup</li>
-                  </ul>
-                </div>
+                <ul className="two-paths__list">
+                  <li>Free with trial</li>
+                  <li>2–3 months to full implementation</li>
+                  <li>Tutorials and support included</li>
+                  <li>Best if you enjoy technical setup</li>
+                </ul>
               </div>
-              <a href="#trial" className="dfy-paths__btn">
+              <a href="#trial" className="two-paths__btn">
                 Start Free Trial (DIY) <ArrowIcon />
               </a>
-            </article>
+            </div>
             
-            <article className="dfy-paths__card dfy-paths__card--light">
-              <div className="dfy-paths__card-content">
-                <div className="dfy-paths__card-left">
-                  <h3 className="dfy-paths__card-label">Path 2:</h3>
-                  <p className="dfy-paths__card-name">DFY Setup<br />(Recommended)</p>
+            <div className="two-paths__divider" aria-hidden="true"></div>
+            
+            <div className="two-paths__panel two-paths__panel--right">
+              <div className="two-paths__top">
+                <div className="two-paths__heading">
+                  <div className="two-paths__h1">Path 2:</div>
+                  <div className="two-paths__sub">DFY Setup<br />(Recommended)</div>
                 </div>
-                <div className="dfy-paths__card-right">
-                  <p className="dfy-paths__card-quote">"I need this working NOW"</p>
-                  <ul className="dfy-paths__card-list">
-                    <li>One week to complete system</li>
-                    <li>Expert implementation guaranteed</li>
-                    <li>You focus on business, we handle tech</li>
-                    <li>Best if you're hitting energy ceiling</li>
-                  </ul>
-                </div>
+                <ul className="two-paths__list">
+                  <li>One week to complete system</li>
+                  <li>Expert implementation guaranteed</li>
+                  <li>You focus on business, we handle tech</li>
+                  <li>Best if you're hitting energy ceiling</li>
+                </ul>
               </div>
-              <a href="#packages" className="dfy-paths__btn">
+              <a href="#packages" className="two-paths__btn">
                 Learn More About DFY <ArrowIcon />
               </a>
-            </article>
+            </div>
           </div>
         </div>
       </section>
