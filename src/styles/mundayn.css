@@ -1689,18 +1689,18 @@
 
 /* DFY 2 Paths Section */
 .dfy-paths {
-  padding: 80px 0;
+  padding: 100px 0 120px;
   background-color: var(--mundayn-purple-dark);
 }
 
 .dfy-paths__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 500;
   text-align: center;
   color: var(--mundayn-cream);
   letter-spacing: -1px;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 
 .dfy-paths__title-italic {
@@ -1712,12 +1712,14 @@
 .dfy-paths__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 16px;
 }
 
 .dfy-paths__card {
-  border-radius: var(--radius-md);
-  padding: 40px;
+  border-radius: 20px;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .dfy-paths__card--light {
@@ -1728,35 +1730,58 @@
   background-color: #2a0c22;
 }
 
+.dfy-paths__card-content {
+  display: flex;
+  gap: 32px;
+  flex: 1;
+}
+
+.dfy-paths__card-left {
+  flex-shrink: 0;
+  min-width: 140px;
+}
+
+.dfy-paths__card-right {
+  flex: 1;
+}
+
 .dfy-paths__card-label {
   font-family: var(--font-inter);
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--mundayn-cream);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--mundayn-gold);
   margin-bottom: 8px;
 }
 
 .dfy-paths__card-name {
   font-family: var(--font-inter);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 500;
+  color: var(--mundayn-gold);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.dfy-paths__card-quote {
+  font-family: var(--font-inter);
+  font-size: 15px;
   color: var(--mundayn-cream);
-  line-height: 1.2;
-  margin-bottom: 24px;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
 }
 
 .dfy-paths__card-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 32px 0;
+  margin: 0;
 }
 
 .dfy-paths__card-list li {
   font-family: var(--font-inter);
   font-size: 15px;
-  color: var(--mundayn-cream-light);
-  line-height: 1.8;
-  padding-left: 16px;
+  color: var(--mundayn-cream);
+  line-height: 1.7;
+  padding-left: 20px;
   position: relative;
 }
 
@@ -1764,22 +1789,28 @@
   content: '•';
   position: absolute;
   left: 0;
-  color: var(--mundayn-gold);
+  color: var(--mundayn-cream);
 }
 
 .dfy-paths__btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   background-color: var(--mundayn-gold);
   color: var(--mundayn-black);
-  padding: 14px 24px;
-  border-radius: var(--radius-full);
+  padding: 16px 28px;
+  border-radius: var(--radius-sm);
   text-decoration: none;
   font-family: var(--font-inter);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   transition: all 0.2s;
+  margin-top: 32px;
+  align-self: center;
+  min-width: 240px;
 }
 
 .dfy-paths__btn:hover {
