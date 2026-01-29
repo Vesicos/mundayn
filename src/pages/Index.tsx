@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
 import PackageCarousel from '../components/PackageCarousel';
+import AnimatedStats from '../components/AnimatedStats';
 
 // Hand-drawn icon imports
 import sunIcon from '@/assets/icons/sun.png';
@@ -19,6 +20,36 @@ import smileyIcon from '@/assets/icons/smiley.png';
 
 // Video import
 import animationVideo from '@/assets/animation_v1.mp4';
+
+// Stats data for animated section
+const statsData = [
+  {
+    endValue: 3,
+    suffix: '+',
+    value: '3+',
+    label: 'Hours Saved Every Week',
+    description: "That's 60+ hours monthly. 720+ hours yearly."
+  },
+  {
+    prefix: '$',
+    endValue: 300,
+    suffix: '+',
+    value: '$300+',
+    label: 'Monthly Savings',
+    description: 'Replace 15+ scattered apps you pay for today.'
+  },
+  {
+    endValue: 1,
+    value: '1',
+    label: 'Week to Launch',
+    description: 'Done-For-You setup gets you operating fast.'
+  },
+  {
+    value: '∞',
+    label: 'Scalability',
+    description: 'Grow without changing platforms.'
+  }
+];
 
 const CheckIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
@@ -399,31 +430,7 @@ const Index = () => {
             The <span className="mundayn-section__title-italic">Real</span> Numbers
           </h2>
           
-          <div className="mundayn-numbers__grid">
-            <article className="mundayn-number-card">
-              <p className="mundayn-number-card__value">3+</p>
-              <p className="mundayn-number-card__label">Hours Saved Every Week</p>
-              <p className="mundayn-number-card__desc">That's 60+ hours monthly. 720+ hours yearly.</p>
-            </article>
-            
-            <article className="mundayn-number-card">
-              <p className="mundayn-number-card__value">$300+</p>
-              <p className="mundayn-number-card__label">Monthly Savings</p>
-              <p className="mundayn-number-card__desc">Replace 15+ scattered apps you pay for today.</p>
-            </article>
-            
-            <article className="mundayn-number-card">
-              <p className="mundayn-number-card__value">1</p>
-              <p className="mundayn-number-card__label">Week to Launch</p>
-              <p className="mundayn-number-card__desc">Done-For-You setup gets you operating fast.</p>
-            </article>
-            
-            <article className="mundayn-number-card">
-              <p className="mundayn-number-card__value">∞</p>
-              <p className="mundayn-number-card__label">Scalability</p>
-              <p className="mundayn-number-card__desc">Grow without changing platforms.</p>
-            </article>
-          </div>
+          <AnimatedStats stats={statsData} animationDuration={0.8} />
         </div>
       </section>
 
