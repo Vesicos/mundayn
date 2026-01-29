@@ -15,6 +15,7 @@
   --mundayn-white: #ffffff;
   --mundayn-black: #000000;
   --mundayn-red-accent: rgba(178, 68, 73, 0.2);
+  --mundayn-red-solid: #ED5D59;
   --mundayn-red-card: rgba(237, 93, 89, 0.1);
   
   --font-inter: 'Inter', sans-serif;
@@ -811,7 +812,7 @@
 .mundayn-number-card__divider {
   width: 2px;
   min-height: 100%;
-  background-color: var(--mundayn-red-accent);
+  background-color: var(--mundayn-red-solid);
   flex-shrink: 0;
   margin-right: 24px;
   align-self: stretch;
@@ -824,7 +825,7 @@
 .mundayn-number-card__value {
   font-size: 80px;
   font-weight: 400;
-  color: var(--mundayn-red-accent);
+  color: var(--mundayn-red-solid);
   line-height: 1;
   margin-bottom: 16px;
   letter-spacing: -3px;
