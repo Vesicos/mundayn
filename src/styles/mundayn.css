@@ -620,6 +620,20 @@
   font-size: 26px;
   color: var(--mundayn-cream);
   margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.mundayn-savings__video {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.mundayn-savings__video-player {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ==========================================

@@ -10,6 +10,9 @@ import gridIcon from '@/assets/icons/grid.png';
 import starIcon from '@/assets/icons/star.png';
 import heartIcon from '@/assets/icons/heart.png';
 
+// Video import
+import animationVideo from '@/assets/animation_v1.mp4';
+
 const CheckIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
     <polyline points="20 6 9 17 4 12" />
@@ -285,6 +288,18 @@ const Index = () => {
             Stop paying for tools that don't talk to each other.<br />
             One platform. One system.
           </p>
+          
+          <div className="mundayn-savings__video">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="mundayn-savings__video-player"
+            >
+              <source src={animationVideo} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
 
