@@ -22,53 +22,40 @@ import smileyIcon from '@/assets/icons/smiley.png';
 import animationVideo from '@/assets/animation_v1.mp4';
 
 // Stats data for animated section
-const statsData = [
-  {
-    endValue: 15,
-    suffix: '+',
-    value: '15+',
-    label: 'Hours Saved Every Week',
-    description: "That's 60+ hours monthly. 720+ hours yearly.\n\nOne full month of your life, every single year, returned to you."
-  },
-  {
-    endValue: 20,
-    suffix: '+',
-    value: '20+',
-    label: 'Tools Replaced',
-    description: 'Calendar. Email marketing. CRM. Payments. Forms. Scheduling. Landing pages. Course hosting. Community.\n\nAll in one. One login. One system.'
-  },
-  {
-    endValue: 300,
-    suffix: '+',
-    value: '300+',
-    label: 'Dollars Saved Monthly',
-    description: "When you add up subscriptions for separate tools (Calendly $15, MailChimp $30, Kajabi $149, Skool $99, website hosting $20, etc.), Mundayn costs less than the scattered stack you're replacing."
-  },
-  {
-    endValue: 3,
-    suffix: '+',
-    value: '3+',
-    label: 'Hours Returned Daily',
-    description: 'The time you spend manually managing what should run automatically.\n\nThree hours you could spend creating. Teaching. Resting. Living.'
-  }
-];
-
-const CheckIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+const statsData = [{
+  endValue: 15,
+  suffix: '+',
+  value: '15+',
+  label: 'Hours Saved Every Week',
+  description: "That's 60+ hours monthly. 720+ hours yearly.\n\nOne full month of your life, every single year, returned to you."
+}, {
+  endValue: 20,
+  suffix: '+',
+  value: '20+',
+  label: 'Tools Replaced',
+  description: 'Calendar. Email marketing. CRM. Payments. Forms. Scheduling. Landing pages. Course hosting. Community.\n\nAll in one. One login. One system.'
+}, {
+  endValue: 300,
+  suffix: '+',
+  value: '300+',
+  label: 'Dollars Saved Monthly',
+  description: "When you add up subscriptions for separate tools (Calendly $15, MailChimp $30, Kajabi $149, Skool $99, website hosting $20, etc.), Mundayn costs less than the scattered stack you're replacing."
+}, {
+  endValue: 3,
+  suffix: '+',
+  value: '3+',
+  label: 'Hours Returned Daily',
+  description: 'The time you spend manually managing what should run automatically.\n\nThree hours you could spend creating. Teaching. Resting. Living.'
+}];
+const CheckIcon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
     <polyline points="20 6 9 17 4 12" />
-  </svg>
-);
-
-const ArrowIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+  </svg>;
+const ArrowIcon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <line x1="5" y1="12" x2="19" y2="12" />
     <polyline points="12 5 19 12 12 19" />
-  </svg>
-);
-
+  </svg>;
 const Index = () => {
-  return (
-    <div className="mundayn-page">
+  return <div className="mundayn-page">
       {/* Navigation */}
       <nav className="mundayn-nav">
         <a href="#" className="mundayn-nav__logo">
@@ -112,26 +99,11 @@ const Index = () => {
           <p className="mundayn-section__subtitle">Where Are You On Your Business Journey?</p>
           
           <div className="mundayn-stages__grid">
-            <StageCard
-              title="The Foundation"
-              titleItalic="Builder"
-              description="You're building from the ground up. Ready to install professional infrastructure before chaos catches up."
-              bgColor="#58233f"
-            />
+            <StageCard title="The Foundation" titleItalic="Builder" description="You're building from the ground up. Ready to install professional infrastructure before chaos catches up." bgColor="#58233f" />
             
-            <StageCard
-              title="The Impact"
-              titleItalic="Creator"
-              description="You're creating proven impact. Running everything from your phone. Ready to systematize and delegate."
-              bgColor="#2d4a3e"
-            />
+            <StageCard title="The Impact" titleItalic="Creator" description="You're creating proven impact. Running everything from your phone. Ready to systematize and delegate." bgColor="#2d4a3e" />
             
-            <StageCard
-              title="The Flow"
-              titleItalic="Architect"
-              description="You've built courses, audience, offers. Now you're ready to connect them into predictable revenue flow."
-              bgColor="#3d3a5c"
-            />
+            <StageCard title="The Flow" titleItalic="Architect" description="You've built courses, audience, offers. Now you're ready to connect them into predictable revenue flow." bgColor="#3d3a5c" />
           </div>
         </div>
       </section>
@@ -317,13 +289,7 @@ const Index = () => {
           </h2>
           
           <div className="mundayn-savings__video">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="mundayn-savings__video-player"
-            >
+            <video autoPlay loop muted playsInline className="mundayn-savings__video-player">
               <source src={animationVideo} type="video/mp4" />
             </video>
           </div>
@@ -445,10 +411,13 @@ const Index = () => {
                 But this isn't about <span className="mundayn-section__title-italic">software</span>
               </h2>
             </div>
-            <div className="mundayn-matters__right">
-              <h3 className="mundayn-matters__subheading">
-                Here's what <span className="mundayn-matters__italic">actually</span> matters:
-              </h3>
+            <div>
+              <p className="mundayn-section__subtitle" style={{
+              textAlign: 'left',
+              marginBottom: '24px'
+            }}>
+                Here's what <span className="mundayn-section__title-italic">actually</span> matters:
+              </p>
               <ul className="mundayn-matters__list">
                 <li>Sundays with your family instead of catching up on client admin.</li>
                 <li>Evenings that are yours instead of answering booking requests at 9 PM.</li>
@@ -457,12 +426,8 @@ const Index = () => {
                 <li>Growth without burnout because your business runs while you create.</li>
               </ul>
               <div className="mundayn-matters__conclusion">
-                <p className="mundayn-matters__conclusion-main">
-                  That's what systematic<br />infrastructure creates.<br />Not just efficiency. <strong>Freedom.</strong>
-                </p>
-                <p className="mundayn-matters__conclusion-tagline">
-                  Your business, running <span className="mundayn-matters__italic">itself</span>.
-                </p>
+                <p>That's what systematic infrastructure creates. Not just efficiency. <strong>Freedom.</strong></p>
+                <p><strong>Your business, running <span className="mundayn-section__title-italic">itself</span>.</strong></p>
               </div>
             </div>
           </div>
@@ -473,22 +438,28 @@ const Index = () => {
       <section className="mundayn-section mundayn-choice">
         <div className="mundayn-container">
           <div className="mundayn-choice__grid">
-            <article className="mundayn-choice__card mundayn-choice__card--light">
+            <article className="mundayn-choice__card">
               <h2 className="mundayn-choice__card-title">What Package?</h2>
-              <a href="#packages" className="mundayn-choice__btn">
-                Take The Assessment
+              <a href="#packages" className="mundayn-btn">
+                Take The Assessment <ArrowIcon />
               </a>
-              <p className="mundayn-choice__card-text">
+              <p className="mundayn-choice__card-text" style={{
+              marginTop: '24px'
+            }}>
                 Or start with Entrepreneur and upgrade as you grow. That's the beauty of the right foundation—you're never locked in, never stuck.
               </p>
             </article>
             
-            <article className="mundayn-choice__card mundayn-choice__card--dark">
-              <h2 className="mundayn-choice__card-title mundayn-choice__card-title--gold">Done-For-You?</h2>
-              <a href="#offers" className="mundayn-choice__btn">
-                Learn More About Our Offers
+            <article className="mundayn-choice__card">
+              <h2 className="mundayn-choice__card-title" style={{
+              color: 'var(--mundayn-gold)'
+            }}>Done-For-You?</h2>
+              <a href="#offers" className="mundayn-btn">
+                Learn More About Our Offers <ArrowIcon />
               </a>
-              <p className="mundayn-choice__card-text">
+              <p className="mundayn-choice__card-text text-[#ded8ca]" style={{
+              marginTop: '24px'
+            }}>
                 Or start with Entrepreneur and upgrade as you grow. That's the beauty of the right foundation—you're never locked in, never stuck.
               </p>
             </article>
@@ -619,30 +590,40 @@ const Index = () => {
             </article>
             
             <article className="mundayn-final-cta__card mundayn-final-cta__card--highlight">
-              <h3 style={{ fontSize: '24px', marginBottom: '16px' }}>Not ready yet?</h3>
-              <p style={{ fontSize: '16px', marginBottom: '16px' }}>
+              <h3 style={{
+              fontSize: '24px',
+              marginBottom: '16px'
+            }}>Not ready yet?</h3>
+              <p style={{
+              fontSize: '16px',
+              marginBottom: '16px'
+            }}>
                 Get the Systematic Business Blueprint free.<br />
                 A 5-day email course that shows you:
               </p>
-              <ul style={{ fontSize: '14px', textAlign: 'left', paddingLeft: '20px', margin: '0 0 24px 0' }}>
+              <ul style={{
+              fontSize: '14px',
+              textAlign: 'left',
+              paddingLeft: '20px',
+              margin: '0 0 24px 0'
+            }}>
                 <li>How to identify which manual processes cost you the most</li>
                 <li>The 3 automations every Impact Entrepreneur needs first</li>
                 <li>When to DIY vs. when to delegate setup</li>
                 <li>How to know which package fits your position</li>
               </ul>
-              <input 
-                type="email" 
-                placeholder="Email Address" 
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: '40px',
-                  border: 'none',
-                  fontSize: '14px',
-                  marginBottom: '12px'
-                }}
-              />
-              <a href="#" className="mundayn-btn" style={{ width: '100%', justifyContent: 'center' }}>
+              <input type="email" placeholder="Email Address" style={{
+              width: '100%',
+              padding: '12px 16px',
+              borderRadius: '40px',
+              border: 'none',
+              fontSize: '14px',
+              marginBottom: '12px'
+            }} />
+              <a href="#" className="mundayn-btn" style={{
+              width: '100%',
+              justifyContent: 'center'
+            }}>
                 Get The Blueprint <ArrowIcon />
               </a>
             </article>
@@ -655,7 +636,10 @@ const Index = () => {
         <div className="mundayn-footer__content">
           <div className="mundayn-footer__left">
             <div className="mundayn-footer__logo">
-              <div className="mundayn-nav__logo-icon" style={{ background: 'var(--mundayn-purple-dark)', color: 'var(--mundayn-gold)' }}>M</div>
+              <div className="mundayn-nav__logo-icon" style={{
+              background: 'var(--mundayn-purple-dark)',
+              color: 'var(--mundayn-gold)'
+            }}>M</div>
               MUNDAYN
             </div>
             <p className="mundayn-footer__tagline">You Create. We Implement. You Launch.</p>
@@ -674,8 +658,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
