@@ -246,26 +246,40 @@ const DoneForYou = () => {
 
       {/* The Guarantee Section */}
       <section className="dfy-guarantee">
-        <div className="mundayn-container">
-          <h2 className="dfy-guarantee__title">
-            The <span className="dfy-guarantee__title-italic">Guarantee</span>
-          </h2>
-          <p className="dfy-guarantee__subtitle">Zero risk. Complete confidence.</p>
+        <div className="dfy-guarantee__wrap">
+          <div className="dfy-guarantee__header">
+            <h2 className="dfy-guarantee__title">
+              The <span className="dfy-guarantee__title-italic">Guarantee</span>
+            </h2>
+            <p className="dfy-guarantee__subtitle">Zero risk. Complete confidence.</p>
+          </div>
           
           <div className="dfy-guarantee__grid">
             <article className="dfy-guarantee__card">
-              <h3>Money-Back<br />Promise:</h3>
-              <p>If your DFY setup doesn't work as promised, we refund 100%. No questions asked.</p>
+              <h3 className="dfy-guarantee__card-title">
+                Money-Back<br /><span className="dfy-guarantee__card-title-italic">Promise:</span>
+              </h3>
+              <p className="dfy-guarantee__card-body">
+                If your DFY setup doesn't work as promised, we refund 100%. No questions asked.
+              </p>
             </article>
             
             <article className="dfy-guarantee__card">
-              <h3>45-Day<br />Support:</h3>
-              <p>If something needs adjustments in your first 45 days—we fix it. Free.</p>
+              <h3 className="dfy-guarantee__card-title">
+                45-Day<br /><span className="dfy-guarantee__card-title-italic">Support:</span>
+              </h3>
+              <p className="dfy-guarantee__card-body">
+                If something needs adjustment in your first 45 days, we fix it. Free.
+              </p>
             </article>
             
             <article className="dfy-guarantee__card">
-              <h3>Why we can<br />promise this:</h3>
-              <p>We use the Mundayn system daily. We've built hundreds of them. And we don't fund them until it works.</p>
+              <h3 className="dfy-guarantee__card-title">
+                Why we <span className="dfy-guarantee__card-title-italic">can</span><br /><span className="dfy-guarantee__card-title-italic">promise</span> this:
+              </h3>
+              <p className="dfy-guarantee__card-body">
+                We are the Mundayn experts. We know exactly how to build it right. And we don't hand it off until it works.
+              </p>
             </article>
           </div>
         </div>
