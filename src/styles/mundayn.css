@@ -790,7 +790,7 @@
    NUMBERS SECTION
    ========================================== */
 .mundayn-numbers {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .mundayn-numbers__grid {
@@ -804,14 +804,14 @@
   display: flex;
   align-items: flex-start;
   gap: 0;
-  padding: 32px 40px;
+  padding: 24px 32px;
   text-align: left;
 }
 
 .mundayn-number-card__divider {
-  width: 3px;
+  width: 2px;
   min-height: 100%;
-  background-color: var(--mundayn-gold);
+  background-color: var(--mundayn-red-accent);
   flex-shrink: 0;
   margin-right: 24px;
   align-self: stretch;
@@ -822,25 +822,27 @@
 }
 
 .mundayn-number-card__value {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 400;
-  color: var(--mundayn-gold);
+  color: var(--mundayn-red-accent);
   line-height: 1;
-  margin-bottom: 12px;
-  letter-spacing: -4px;
+  margin-bottom: 16px;
+  letter-spacing: -3px;
 }
 
 .mundayn-number-card__label {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
-  margin-bottom: 16px;
-  line-height: 1.2;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  color: var(--mundayn-cream);
 }
 
 .mundayn-number-card__desc {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--mundayn-cream-light);
   line-height: 1.6;
+  white-space: pre-line;
 }
 
 /* ==========================================
