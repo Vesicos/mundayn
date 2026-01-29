@@ -11,6 +11,12 @@ import gridIcon from '@/assets/icons/grid.png';
 import starIcon from '@/assets/icons/star.png';
 import heartIcon from '@/assets/icons/heart.png';
 
+// Mundane section icons
+import squiggleIcon from '@/assets/icons/squiggle.png';
+import curvedArrowIcon from '@/assets/icons/curved-arrow.png';
+import eyeIcon from '@/assets/icons/eye.png';
+import smileyIcon from '@/assets/icons/smiley.png';
+
 // Video import
 import animationVideo from '@/assets/animation_v1.mp4';
 
@@ -317,7 +323,10 @@ const Index = () => {
           </h2>
           
           <div className="mundayn-mundane__grid">
-            <article className="mundayn-mundane__card">
+            <article className="mundayn-mundane__card mundayn-mundane__card--with-icon">
+              <div className="mundayn-mundane__card-icon">
+                <img src={squiggleIcon} alt="" />
+              </div>
               <h3 className="mundayn-mundane__card-title">
                 What you <span className="mundayn-mundane__card-title-italic">didn't</span> build your business to do:
               </h3>
@@ -332,7 +341,10 @@ const Index = () => {
               <p className="mundayn-mundane__card-highlight">These tasks are necessary. But they're mundane.</p>
             </article>
             
-            <article className="mundayn-mundane__card">
+            <article className="mundayn-mundane__card mundayn-mundane__card--with-icon">
+              <div className="mundayn-mundane__card-icon">
+                <img src={curvedArrowIcon} alt="" />
+              </div>
               <h3 className="mundayn-mundane__card-title">
                 What the mundane <span className="mundayn-mundane__card-title-italic">steals</span> from you:
               </h3>
@@ -346,7 +358,10 @@ const Index = () => {
               </ul>
             </article>
             
-            <article className="mundayn-mundane__card">
+            <article className="mundayn-mundane__card mundayn-mundane__card--with-icon">
+              <div className="mundayn-mundane__card-icon">
+                <img src={eyeIcon} alt="" />
+              </div>
               <h3 className="mundayn-mundane__card-title">What mundane means:</h3>
               <p className="mundayn-mundane__card-text">
                 We run the mundane operations so you can focus on meaningful impact.<br /><br />
@@ -359,7 +374,10 @@ const Index = () => {
               <p className="mundayn-mundane__card-highlight">You focus on what only you can do. We handle everything else.</p>
             </article>
             
-            <article className="mundayn-mundane__card">
+            <article className="mundayn-mundane__card mundayn-mundane__card--with-icon">
+              <div className="mundayn-mundane__card-icon">
+                <img src={smileyIcon} alt="" />
+              </div>
               <h3 className="mundayn-mundane__card-title">The Name</h3>
               <p className="mundayn-mundane__card-text">
                 That's why it's called Mundayn.<br />
