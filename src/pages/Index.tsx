@@ -30,6 +30,9 @@ import animationVideo from '@/assets/animation_v1.mp4';
 // Logo
 import logoNav from '@/assets/logonav.svg';
 
+// Hero image
+import heroElephant from '@/assets/hero-elephant.png';
+
 // Stats data for animated section
 const statsData = [{
   endValue: 15,
@@ -116,8 +119,8 @@ const Index = () => {
 
       {/* Hero Section */}
       <header className="mundayn-hero">
-        <div className="mundayn-hero__bg mundayn-placeholder mundayn-placeholder--elephant">
-          <span>Hero Background - Elephant Image</span>
+        <div className="mundayn-hero__bg">
+          <img src={heroElephant} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
         </div>
         <div className="mundayn-hero__content">
           <h1 className="mundayn-hero__title">
