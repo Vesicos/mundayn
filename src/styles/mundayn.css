@@ -172,11 +172,11 @@
 
 .mundayn-hero__title {
   font-family: var(--font-inter);
-  font-size: 52px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-purple-dark);
-  line-height: 1.1;
-  letter-spacing: -2px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 24px;
 }
 
@@ -215,11 +215,12 @@
 
 .mundayn-section__title {
   font-family: var(--font-inter);
-  font-size: 52px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-gold);
   text-align: center;
-  letter-spacing: -2px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 16px;
 }
 
@@ -365,9 +366,10 @@
 }
 
 .mundayn-choose__title {
-  font-size: 48px;
+  font-size: 62px;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 24px;
 }
 
@@ -1022,11 +1024,12 @@
 
 .mundayn-rightforyou__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 500;
   text-align: center;
   color: var(--mundayn-cream);
-  letter-spacing: -1px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 48px;
 }
 
@@ -1236,16 +1239,20 @@
 }
 
 .mundayn-final-cta__title {
-  font-size: 48px;
+  font-size: 62px;
   font-weight: 500;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 16px;
 }
 
 .mundayn-final-cta__subtitle {
-  font-size: 48px;
+  font-size: 62px;
   font-family: var(--font-playfair);
   font-style: italic;
   color: var(--mundayn-cream);
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 60px;
 }
 
@@ -1673,10 +1680,11 @@
 
 .dfy-hero__title {
   font-family: var(--font-playfair);
-  font-size: 48px;
+  font-size: 62px;
   font-weight: 400;
   color: var(--mundayn-purple-dark);
-  line-height: 1.15;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 24px;
 }
 
@@ -1705,11 +1713,12 @@
 
 .two-paths__title {
   font-family: var(--font-inter);
-  font-size: 48px;
+  font-size: 62px;
   font-weight: 500;
   text-align: center;
   color: var(--mundayn-gold);
-  letter-spacing: -1px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 56px;
 }
 
@@ -1880,10 +1889,11 @@
 
 .dfy-truth__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-gold);
-  letter-spacing: -1px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 24px;
 }
 
@@ -1958,11 +1968,11 @@
 
 .split-card__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-gold);
-  letter-spacing: -1px;
-  line-height: 1.1;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 32px;
 }
 
@@ -2076,11 +2086,12 @@
 
 .dfy-solution__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 500;
   text-align: center;
   color: var(--mundayn-gold);
-  letter-spacing: -1px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 12px;
 }
 
@@ -2219,10 +2230,11 @@
 
 .dfy-guarantee__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-gold);
-  letter-spacing: -1px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 8px;
 }
 
@@ -2293,11 +2305,12 @@
 
 .dfy-includes__title {
   font-family: var(--font-inter);
-  font-size: 52px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-cream);
   text-align: center;
-  letter-spacing: -2px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 16px;
 }
 
@@ -2422,10 +2435,11 @@
 
 .dfy-future__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-cream);
-  letter-spacing: -1px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 32px;
 }
 
@@ -2504,11 +2518,11 @@
 
 .eco-hero__title {
   font-family: var(--font-inter);
-  font-size: 48px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-cream);
-  line-height: 1.15;
-  letter-spacing: -2px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 24px;
 }
 
@@ -2602,11 +2616,11 @@
 
 .eco-stage__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-cream);
-  line-height: 1.1;
-  letter-spacing: -1px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 12px;
 }
 
@@ -2708,10 +2722,11 @@
 
 .eco-belief__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-gold);
-  letter-spacing: -1px;
+  line-height: 64.6px;
+  letter-spacing: -2.56px;
   margin-bottom: 24px;
 }
 
