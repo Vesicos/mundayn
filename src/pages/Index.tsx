@@ -22,6 +22,7 @@ import smileyIcon from '@/assets/icons/smiley.png';
 
 // Right for you section icons
 import checkmarkIcon from '@/assets/icons/checkmark.png';
+import checkmarkGoldIcon from '@/assets/icons/checkmark-gold.png';
 import xMarkIcon from '@/assets/icons/x-mark.png';
 
 // Video import
@@ -37,6 +38,9 @@ import heroElephant from '@/assets/hero-elephant.png';
 import elephantBuilder from '@/assets/elephant-builder.png';
 import elephantCreator from '@/assets/elephant-creator.png';
 import elephantArchitect from '@/assets/elephant-architect.png';
+
+// Choose section elephant image
+import elephantFiling from '@/assets/elephant-filing.png';
 
 // Stats data for animated section
 const statsData = [{
@@ -167,8 +171,8 @@ const Index = () => {
           </h2>
           
           <div className="mundayn-choose__content">
-            <div className="mundayn-choose__image mundayn-placeholder mundayn-placeholder--elephant">
-              <span>Elephant with boxes image</span>
+            <div className="mundayn-choose__image">
+              <img src={elephantFiling} alt="Elephant organizing files" />
             </div>
             <div className="mundayn-choose__info">
               <h3 className="mundayn-choose__title">
@@ -182,19 +186,19 @@ const Index = () => {
               <p className="mundayn-choose__list-title">In 30 seconds you get:</p>
               <ul className="mundayn-choose__list">
                 <li>
-                  <span className="mundayn-choose__list-icon"><CheckIcon /></span>
+                  <img src={checkmarkGoldIcon} alt="" className="mundayn-choose__list-icon-img" />
                   Your perfect package match
                 </li>
                 <li>
-                  <span className="mundayn-choose__list-icon"><CheckIcon /></span>
+                  <img src={checkmarkGoldIcon} alt="" className="mundayn-choose__list-icon-img" />
                   Clear pricing (only pay for what you need TODAY)
                 </li>
                 <li>
-                  <span className="mundayn-choose__list-icon"><CheckIcon /></span>
+                  <img src={checkmarkGoldIcon} alt="" className="mundayn-choose__list-icon-img" />
                   Easy upgrade path as you grow
                 </li>
                 <li>
-                  <span className="mundayn-choose__list-icon"><CheckIcon /></span>
+                  <img src={checkmarkGoldIcon} alt="" className="mundayn-choose__list-icon-img" />
                   Everything in one place
                 </li>
               </ul>
