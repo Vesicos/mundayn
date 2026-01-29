@@ -431,6 +431,12 @@
   flex-shrink: 0;
 }
 
+.mundayn-choose__list-icon-img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
 .mundayn-choose__promise-title {
   font-size: var(--text-small-size);
   font-weight: 700;
