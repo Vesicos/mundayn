@@ -438,7 +438,7 @@ const Index = () => {
       <section className="mundayn-section mundayn-choice">
         <div className="mundayn-container">
           <div className="mundayn-choice__grid">
-            <article className="mundayn-choice__card">
+            <article className="mundayn-choice__card bg-[#b14349]/[0.19]">
               <h2 className="mundayn-choice__card-title">What Package?</h2>
               <a href="#packages" className="mundayn-btn">
                 Take The Assessment <ArrowIcon />
@@ -450,7 +450,7 @@ const Index = () => {
               </p>
             </article>
             
-            <article className="mundayn-choice__card">
+            <article className="mundayn-choice__card bg-[#280b21]">
               <h2 className="mundayn-choice__card-title" style={{
               color: 'var(--mundayn-gold)'
             }}>Done-For-You?</h2>
