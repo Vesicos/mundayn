@@ -24,7 +24,7 @@ const DoneForYou = () => {
           <li><Link to="/done-for-you">Done-For-You</Link></li>
           <li><Link to="/ecosystem">Ecosystem</Link></li>
         </ul>
-        <a href="#start" className="mundayn-nav__cta">
+        <a href="/#packages" className="mundayn-nav__cta">
           Start Your 14-Day Free Trial <ArrowIcon />
         </a>
       </nav>
