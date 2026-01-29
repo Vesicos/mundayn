@@ -18,6 +18,10 @@ import curvedArrowIcon from '@/assets/icons/curved-arrow.png';
 import eyeIcon from '@/assets/icons/eye.png';
 import smileyIcon from '@/assets/icons/smiley.png';
 
+// Right for you section icons
+import checkmarkIcon from '@/assets/icons/checkmark.png';
+import xMarkIcon from '@/assets/icons/x-mark.png';
+
 // Video import
 import animationVideo from '@/assets/animation_v1.mp4';
 
@@ -474,48 +478,62 @@ const Index = () => {
             <h2 className="mundayn-rightforyou__title">Is Mundayn Right For You?</h2>
             
             <div className="mundayn-rightforyou__grid">
-              <div className="mundayn-rightforyou__column">
+              <div className="mundayn-rightforyou__column mundayn-rightforyou__column--yes">
                 <div className="mundayn-rightforyou__image mundayn-placeholder mundayn-placeholder--elephant">
                   <span>Elephant Image</span>
                 </div>
-                <h3>This is for you if:</h3>
+                <h3 className="mundayn-rightforyou__column-title">This is for you if:</h3>
                 
-                <h4>You're hitting a ceiling that blocks your next level:</h4>
-                <ul>
-                  <li>Energy Ceiling: Can't delegate. Everything's manual. Business collapses without you.</li>
-                  <li>Income/Impact Ceiling: Offers exist but aren't connected. Inconsistent revenue.</li>
-                  <li>Foundation Ceiling: Growing fast but need structure to support scale.</li>
+                <h4 className="mundayn-rightforyou__section-heading">You're hitting a ceiling that blocks your next level:</h4>
+                <ul className="mundayn-rightforyou__list mundayn-rightforyou__list--check">
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Energy Ceiling: Can't delegate. Everything's manual. Business collapses without you.</li>
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Income/Impact Ceiling: Offers exist but aren't connected. Inconsistent revenue. Can't scale systematically.</li>
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Foundation Ceiling: Growing fast but need structure to support scale.</li>
                 </ul>
                 
-                <h4>You're ready for implementation:</h4>
-                <ul>
-                  <li>Understand ROI and business investment</li>
-                  <li>Want to own your audience (email list), not rent from Instagram</li>
-                  <li>Ready to systematize and delegate with proper documentation</li>
-                  <li>Value your time enough to invest in infrastructure</li>
+                <h4 className="mundayn-rightforyou__section-heading">You're ready for implementation:</h4>
+                <ul className="mundayn-rightforyou__list mundayn-rightforyou__list--check">
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Understand ROI and business investment</li>
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Want to own your audience (email list), not rent from Instagram</li>
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Ready to systematize and delegate with proper documentation</li>
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Value your time enough to invest in infrastructure</li>
+                </ul>
+                
+                <h4 className="mundayn-rightforyou__section-heading">You're commercially savvy:</h4>
+                <ul className="mundayn-rightforyou__list mundayn-rightforyou__list--check">
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />See the value in expert setup vs. DIY struggle</li>
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Understand that software without implementation is just potential</li>
+                  <li><img src={checkmarkIcon} alt="" className="mundayn-rightforyou__icon" />Want transformation, not just tools</li>
                 </ul>
               </div>
               
-              <div className="mundayn-rightforyou__column">
+              <div className="mundayn-rightforyou__column mundayn-rightforyou__column--no">
                 <div className="mundayn-rightforyou__image mundayn-placeholder mundayn-placeholder--elephant">
                   <span>Elephant Image</span>
                 </div>
-                <h3>This isn't for you if:</h3>
+                <h3 className="mundayn-rightforyou__column-title">This isn't for you if:</h3>
                 
-                <h4>You're not ready for systematic infrastructure:</h4>
-                <ul>
-                  <li>Using purpose as excuse for not taking action</li>
-                  <li>Resist technology and systems ("That feels too corporate")</li>
-                  <li>Prefer staying in current operations rather than evolving</li>
-                  <li>Won't invest in business infrastructure</li>
+                <h4 className="mundayn-rightforyou__section-heading">You're not ready for systematic infrastructure:</h4>
+                <ul className="mundayn-rightforyou__list mundayn-rightforyou__list--x">
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Using purpose as excuse for not taking action</li>
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Resist technology and systems ("That feels too corporate")</li>
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Prefer staying in current operations rather than evolving</li>
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Won't invest in business infrastructure</li>
                 </ul>
                 
-                <h4>You're looking for shortcuts, not systems:</h4>
-                <ul>
-                  <li>Want shortcuts over infrastructure - looking for hacks, not systematic foundations</li>
-                  <li>Prioritize growth over foundation - trying to scale before systematizing basics</li>
-                  <li>Expect free solutions - not willing to invest in professional infrastructure</li>
-                  <li>Trial-hopping - sign up for 14 days, never implement, cancel, repeat elsewhere</li>
+                <h4 className="mundayn-rightforyou__section-heading">You're looking for shortcuts, not systems:</h4>
+                <ul className="mundayn-rightforyou__list mundayn-rightforyou__list--x">
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Want shortcuts over infrastructure - looking for hacks, not systematic foundations</li>
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Prioritize growth over foundation - trying to scale before systematizing basics</li>
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Expect free solutions - not willing to invest in professional infrastructure</li>
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Trial-hopping - sign up for 14 days, never implement, cancel, repeat elsewhere</li>
+                </ul>
+                
+                <h4 className="mundayn-rightforyou__section-heading">You're content with current state:</h4>
+                <ul className="mundayn-rightforyou__list mundayn-rightforyou__list--x">
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Happy running everything from your phone indefinitely</li>
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Prefer managing multiple disconnected tools</li>
+                  <li><img src={xMarkIcon} alt="" className="mundayn-rightforyou__icon" />Don't want to delegate or scale operations</li>
                 </ul>
               </div>
             </div>
