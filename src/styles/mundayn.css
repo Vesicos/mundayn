@@ -249,39 +249,61 @@
 }
 
 .mundayn-stage-card {
-  background: linear-gradient(180deg, rgba(71, 29, 60, 0.6) 0%, var(--mundayn-purple-darker) 100%);
-  border-radius: var(--radius-md);
+  border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   position: relative;
+  min-height: 430px;
+  cursor: pointer;
 }
 
-.mundayn-stage-card__image {
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(135deg, #8b5a5a 0%, #6d4545 100%);
-  object-fit: cover;
+.mundayn-stage-card__image-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+}
+
+.mundayn-stage-card__image-placeholder {
+  width: 200px;
+  height: 250px;
+  color: var(--mundayn-cream);
+  transform: rotate(180deg) scaleY(-1);
 }
 
 .mundayn-stage-card__content {
-  padding: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 15px;
+  z-index: 1;
 }
 
 .mundayn-stage-card__title {
-  font-size: 28px;
+  font-size: clamp(32px, 5vw, 62px);
   font-weight: 500;
-  margin-bottom: 8px;
+  line-height: 0.95;
+  letter-spacing: -2.56px;
+  color: var(--mundayn-cream);
+  margin-bottom: 16px;
 }
 
 .mundayn-stage-card__title-italic {
   font-family: var(--font-playfair);
   font-style: italic;
-  color: var(--mundayn-gold);
+  color: var(--mundayn-cream);
 }
 
 .mundayn-stage-card__text {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--mundayn-cream);
-  line-height: 1.6;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  max-width: 261px;
 }
 
 /* ==========================================
