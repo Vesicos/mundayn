@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import '../styles/mundayn.css';
+import StageCard from '../components/StageCard';
 
 // Icon components for placeholders
 const SunIcon = () => (
@@ -109,47 +110,26 @@ const Index = () => {
           <p className="mundayn-section__subtitle">Where Are You On Your Business Journey?</p>
           
           <div className="mundayn-stages__grid">
-            <article className="mundayn-stage-card">
-              <div className="mundayn-stage-card__image mundayn-placeholder mundayn-placeholder--person">
-                <span>Builder Image</span>
-              </div>
-              <div className="mundayn-stage-card__content">
-                <h3 className="mundayn-stage-card__title">
-                  The Foundation <span className="mundayn-stage-card__title-italic">Builder</span>
-                </h3>
-                <p className="mundayn-stage-card__text">
-                  You're building from the ground up. Ready to install professional infrastructure before chaos catches up.
-                </p>
-              </div>
-            </article>
+            <StageCard
+              title="The Foundation"
+              titleItalic="Builder"
+              description="You're building from the ground up. Ready to install professional infrastructure before chaos catches up."
+              bgColor="#58233f"
+            />
             
-            <article className="mundayn-stage-card">
-              <div className="mundayn-stage-card__image mundayn-placeholder mundayn-placeholder--person">
-                <span>Creator Image</span>
-              </div>
-              <div className="mundayn-stage-card__content">
-                <h3 className="mundayn-stage-card__title">
-                  The Impact <span className="mundayn-stage-card__title-italic">Creator</span>
-                </h3>
-                <p className="mundayn-stage-card__text">
-                  You're creating proven impact. Running everything from your phone. Ready to systematize and delegate.
-                </p>
-              </div>
-            </article>
+            <StageCard
+              title="The Impact"
+              titleItalic="Creator"
+              description="You're creating proven impact. Running everything from your phone. Ready to systematize and delegate."
+              bgColor="#2d4a3e"
+            />
             
-            <article className="mundayn-stage-card">
-              <div className="mundayn-stage-card__image mundayn-placeholder mundayn-placeholder--person">
-                <span>Architect Image</span>
-              </div>
-              <div className="mundayn-stage-card__content">
-                <h3 className="mundayn-stage-card__title">
-                  The Flow <span className="mundayn-stage-card__title-italic">Architect</span>
-                </h3>
-                <p className="mundayn-stage-card__text">
-                  You've built courses, audience, offers. Now you're ready to connect them into predictable revenue flow.
-                </p>
-              </div>
-            </article>
+            <StageCard
+              title="The Flow"
+              titleItalic="Architect"
+              description="You've built courses, audience, offers. Now you're ready to connect them into predictable revenue flow."
+              bgColor="#3d3a5c"
+            />
           </div>
         </div>
       </section>
