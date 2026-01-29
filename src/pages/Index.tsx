@@ -547,6 +547,28 @@ const Index = () => {
         </div>
       </section>
 
+      {/* CTA Cards Section */}
+      <section className="mundayn-section mundayn-cta-cards">
+        <div className="mundayn-container">
+          <div className="mundayn-cta-cards__grid">
+            <a href="/done-for-you" className="mundayn-cta-cards__card">
+              <span className="mundayn-cta-cards__text">
+                <span className="mundayn-cta-cards__italic">You</span> Create.<br />
+                <span className="mundayn-cta-cards__italic">We</span> Implement.<br />
+                <span className="mundayn-cta-cards__italic">You</span> Launch.
+              </span>
+            </a>
+            <a href="/ecosystem" className="mundayn-cta-cards__card">
+              <span className="mundayn-cta-cards__text">
+                Your Business<br />
+                Grows. Mundayn<br />
+                <span className="mundayn-cta-cards__italic">Grows With You.</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="mundayn-section mundayn-faq">
         <div className="mundayn-container">
