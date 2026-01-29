@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { ReactNode } from "react";
 
 interface StageCardProps {
   title: string;
@@ -7,7 +6,7 @@ interface StageCardProps {
   description: string;
   bgColor: string;
   hoverBgColor?: string;
-  imagePlaceholder?: ReactNode;
+  image?: string;
 }
 
 const StageCard = ({
@@ -16,7 +15,7 @@ const StageCard = ({
   description,
   bgColor,
   hoverBgColor = "#F4E0BC",
-  imagePlaceholder
+  image
 }: StageCardProps) => {
   return (
     <motion.article
@@ -26,9 +25,14 @@ const StageCard = ({
       transition={{ duration: 0.3 }}
     >
       <div className="mundayn-stage-card__image-container">
-        {imagePlaceholder || (
+        {image ? (
+          <img 
+            src={image} 
+            alt={`${title} ${titleItalic}`} 
+            className="mundayn-stage-card__image"
+          />
+        ) : (
           <div className="mundayn-stage-card__image-placeholder">
-            {/* Elephant silhouette placeholder */}
             <svg viewBox="0 0 100 100" fill="currentColor" opacity="0.3">
               <ellipse cx="50" cy="60" rx="35" ry="25" />
               <ellipse cx="25" cy="55" rx="12" ry="18" />

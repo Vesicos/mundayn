@@ -33,6 +33,11 @@ import logoNav from '@/assets/logonav.svg';
 // Hero image
 import heroElephant from '@/assets/hero-elephant.png';
 
+// Stage card elephant images
+import elephantBuilder from '@/assets/elephant-builder.png';
+import elephantCreator from '@/assets/elephant-creator.png';
+import elephantArchitect from '@/assets/elephant-architect.png';
+
 // Stats data for animated section
 const statsData = [{
   endValue: 15,
@@ -144,11 +149,11 @@ const Index = () => {
           <p className="mundayn-section__subtitle">Where Are You On Your Business Journey?</p>
           
           <div className="mundayn-stages__grid">
-            <StageCard title="The Foundation" titleItalic="Builder" description="You're building from the ground up. Ready to install professional infrastructure before chaos catches up." bgColor="#58233f" />
+            <StageCard title="The Foundation" titleItalic="Builder" description="You're building from the ground up. Ready to install professional infrastructure before chaos catches up." bgColor="#58233f" image={elephantBuilder} />
             
-            <StageCard title="The Impact" titleItalic="Creator" description="You're creating proven impact. Running everything from your phone. Ready to systematize and delegate." bgColor="#2d4a3e" />
+            <StageCard title="The Impact" titleItalic="Creator" description="You're creating proven impact. Running everything from your phone. Ready to systematize and delegate." bgColor="#2d4a3e" image={elephantCreator} />
             
-            <StageCard title="The Flow" titleItalic="Architect" description="You've built courses, audience, offers. Now you're ready to connect them into predictable revenue flow." bgColor="#3d3a5c" />
+            <StageCard title="The Flow" titleItalic="Architect" description="You've built courses, audience, offers. Now you're ready to connect them into predictable revenue flow." bgColor="#3d3a5c" image={elephantArchitect} />
           </div>
         </div>
       </section>
