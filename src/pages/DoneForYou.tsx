@@ -186,35 +186,59 @@ const DoneForYou = () => {
             The DFY Solution
           </h2>
           <p className="dfy-solution__subtitle">
-            Only 2-4 weeks to complete implementation (Realistic, not hype)
+            Only <span className="dfy-solution__subtitle-italic">ONE</span> week to complete implementation (Realistic, not hype)
           </p>
           
           <div className="dfy-solution__grid">
             <article className="dfy-solution__step">
-              <span className="dfy-solution__number">1</span>
-              <h3>Discovery</h3>
-              <p>We interview you to understand how your business works. What do you sell? Who do you serve?</p>
+              <div className="dfy-solution__divider" />
+              <div className="dfy-solution__content">
+                <span className="dfy-solution__number">1</span>
+                <h3 className="dfy-solution__label">Discovery</h3>
+                <ul className="dfy-solution__list">
+                  <li>Live Discovery Call</li>
+                  <li>Understanding your business</li>
+                  <li>Design your architecture</li>
+                </ul>
+              </div>
             </article>
             
             <article className="dfy-solution__step">
-              <span className="dfy-solution__number">2</span>
-              <h3>Build</h3>
-              <p>Complete business and systems building experience: ready for clients, ready to scale.</p>
+              <div className="dfy-solution__divider" />
+              <div className="dfy-solution__content">
+                <span className="dfy-solution__number">2</span>
+                <h3 className="dfy-solution__label">Build</h3>
+                <ul className="dfy-solution__list">
+                  <li>Configure all features</li>
+                  <li>Complete technical setup</li>
+                  <li>Import your data</li>
+                </ul>
+              </div>
             </article>
             
             <article className="dfy-solution__step">
-              <span className="dfy-solution__number">3</span>
-              <h3>Launch</h3>
-              <p>Training to use your new system. Plus ongoing support during first 45-90 days.</p>
+              <div className="dfy-solution__divider" />
+              <div className="dfy-solution__content">
+                <span className="dfy-solution__number">3</span>
+                <h3 className="dfy-solution__label">Launch</h3>
+                <ul className="dfy-solution__list">
+                  <li>Train you on using it (not building)</li>
+                  <li>Hand off a working system</li>
+                  <li>45-day support included</li>
+                </ul>
+              </div>
             </article>
             
-            <article className="dfy-solution__step dfy-solution__step--highlight">
-              <span className="dfy-solution__number">4</span>
-              <h3>Investment</h3>
-              <p>Starting at $599. Most packages $999-$1,999.</p>
-              <a href="#packages" className="dfy-solution__btn">
-                See All Packages <ArrowIcon />
-              </a>
+            <article className="dfy-solution__step">
+              <div className="dfy-solution__divider" />
+              <div className="dfy-solution__content">
+                <span className="dfy-solution__number">4</span>
+                <h3 className="dfy-solution__label">Investment</h3>
+                <p className="dfy-solution__price">Starting at $499 <span className="dfy-solution__price-strike">One-Time Fee</span></p>
+                <a href="#packages" className="dfy-solution__btn">
+                  Save My Costs <ArrowIcon />
+                </a>
+              </div>
             </article>
           </div>
         </div>
