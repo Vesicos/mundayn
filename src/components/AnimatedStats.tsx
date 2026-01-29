@@ -89,7 +89,7 @@ function AnimatedStatCard({
 
 export default function AnimatedStats({ 
   stats, 
-  animationDuration = 1 
+  animationDuration = 1.8 
 }: AnimatedStatsProps) {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -134,7 +134,7 @@ export default function AnimatedStats({
           stat={stat}
           isVisible={isVisible}
           animationDuration={animationDuration}
-          delay={index * 0.2} // Stagger: 0s, 0.2s, 0.4s, 0.6s
+          delay={index * 0.3} // Stagger: 0s, 0.3s, 0.6s, 0.9s
         />
       ))}
     </div>
