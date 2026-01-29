@@ -276,19 +276,6 @@ const Index = () => {
             $300 Saved. 15 Hours Reclaimed. <span className="mundayn-section__title-italic">Every Month.</span>
           </h2>
           
-          <div className="mundayn-savings__logos">
-            <div className="mundayn-savings__logo mundayn-savings__logo--crossed">Mailchimp</div>
-            <div className="mundayn-savings__logo mundayn-savings__logo--crossed">Wix</div>
-            <div className="mundayn-savings__logo mundayn-savings__logo--crossed">Typeform</div>
-            <div className="mundayn-savings__logo mundayn-savings__logo--crossed">Kajabi</div>
-            <div className="mundayn-savings__logo mundayn-savings__logo--crossed">Kartra</div>
-          </div>
-          
-          <p className="mundayn-savings__text">
-            Stop paying for tools that don't talk to each other.<br />
-            One platform. One system.
-          </p>
-          
           <div className="mundayn-savings__video">
             <video 
               autoPlay 
@@ -300,6 +287,11 @@ const Index = () => {
               <source src={animationVideo} type="video/mp4" />
             </video>
           </div>
+          
+          <p className="mundayn-savings__text">
+            Stop paying for tools that don't talk to each other.<br />
+            One platform. One system.
+          </p>
         </div>
       </section>
 
