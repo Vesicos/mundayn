@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import DoneForYou from "./pages/DoneForYou";
 import Ecosystem from "./pages/Ecosystem";
+import FoundationSetup from "./pages/FoundationSetup";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/done-for-you" element={<DoneForYou />} />
           <Route path="/ecosystem" element={<Ecosystem />} />
+          <Route path="/foundation-setup" element={<FoundationSetup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

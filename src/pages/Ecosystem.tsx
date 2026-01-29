@@ -79,9 +79,15 @@ const EcosystemStage = ({
           You don't learn how to <strong>{boldText.build}</strong>. You learn how to <strong>{boldText.use}</strong> it.
         </p>
         
-        <a href={ctaHref} className="eco-stage__cta">
-          {ctaText} <ArrowIcon />
-        </a>
+        {ctaHref.startsWith('/') ? (
+          <Link to={ctaHref} className="eco-stage__cta">
+            {ctaText} <ArrowIcon />
+          </Link>
+        ) : (
+          <a href={ctaHref} className="eco-stage__cta">
+            {ctaText} <ArrowIcon />
+          </a>
+        )}
       </div>
       
       <div className="eco-stage__image">
@@ -141,7 +147,7 @@ const Ecosystem = () => {
             bullets={[]}
             boldText={{ build: "build it", use: "use it" }}
             ctaText="LEARN ALL DETAILS"
-            ctaHref="#foundation"
+            ctaHref="/foundation-setup"
             imagePlaceholder="Elephant with baby"
           />
           
