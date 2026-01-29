@@ -86,6 +86,18 @@ const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNo
   );
 };
 const Index = () => {
+  // Handle scroll to packages section when navigating from other pages
+  React.useEffect(() => {
+    if (window.location.hash === '#packages') {
+      setTimeout(() => {
+        const packagesSection = document.getElementById('packages');
+        if (packagesSection) {
+          packagesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return <div className="mundayn-page">
       {/* Navigation */}
       <nav className="mundayn-nav">
