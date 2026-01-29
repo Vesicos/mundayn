@@ -11,12 +11,15 @@ body {
   height: 100%;
 }
 
-/* a blue color as a generic focus style */
 button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
+  outline: 2px solid #f5ad2d !important;
+  outline-offset: 2px;
 }
 
 a {
   text-decoration: none;
+}
+
+#root {
+  min-height: 100%;
 }
