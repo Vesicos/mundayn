@@ -2,54 +2,13 @@ import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
 
-// Icon components for placeholders
-const SunIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <circle cx="12" cy="12" r="5" />
-    <line x1="12" y1="1" x2="12" y2="3" />
-    <line x1="12" y1="21" x2="12" y2="23" />
-    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-    <line x1="1" y1="12" x2="3" y2="12" />
-    <line x1="21" y1="12" x2="23" y2="12" />
-    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-  </svg>
-);
-
-const PlayIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <polygon points="5 3 19 12 5 21 5 3" />
-  </svg>
-);
-
-const MailIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <rect x="2" y="4" width="20" height="16" rx="2" />
-    <path d="M22 6L12 13L2 6" />
-  </svg>
-);
-
-const GridIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <rect x="3" y="3" width="7" height="7" />
-    <rect x="14" y="3" width="7" height="7" />
-    <rect x="14" y="14" width="7" height="7" />
-    <rect x="3" y="14" width="7" height="7" />
-  </svg>
-);
-
-const StarIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-  </svg>
-);
-
-const HeartIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-  </svg>
-);
+// Hand-drawn icon imports
+import sunIcon from '@/assets/icons/sun.png';
+import playIcon from '@/assets/icons/play.png';
+import envelopeIcon from '@/assets/icons/envelope.png';
+import gridIcon from '@/assets/icons/grid.png';
+import starIcon from '@/assets/icons/star.png';
+import heartIcon from '@/assets/icons/heart.png';
 
 const CheckIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
@@ -245,7 +204,7 @@ const Index = () => {
           
           <div className="mundayn-feels__grid">
             <article className="mundayn-feels__card">
-              <div className="mundayn-feels__card-icon"><SunIcon /></div>
+              <div className="mundayn-feels__card-icon"><img src={sunIcon} alt="Sun icon" /></div>
               <h3 className="mundayn-feels__card-title">Wake up to confirmation emails you never sent.</h3>
               <p className="mundayn-feels__card-text">
                 Your booking system handled the mundane. Payments processed. Reminders sent. Client onboarded. You handle the meaningful: the actual session that creates transformation.
@@ -253,7 +212,7 @@ const Index = () => {
             </article>
             
             <article className="mundayn-feels__card">
-              <div className="mundayn-feels__card-icon"><PlayIcon /></div>
+              <div className="mundayn-feels__card-icon"><img src={playIcon} alt="Play icon" /></div>
               <h3 className="mundayn-feels__card-title">Your assistant manages operations while you create.</h3>
               <p className="mundayn-feels__card-text">
                 Everything's documented. Workflows exist. Systems run without you explaining twice. They handle the mundane. You focus on your genius.
@@ -261,7 +220,7 @@ const Index = () => {
             </article>
             
             <article className="mundayn-feels__card">
-              <div className="mundayn-feels__card-icon"><MailIcon /></div>
+              <div className="mundayn-feels__card-icon"><img src={envelopeIcon} alt="Envelope icon" /></div>
               <h3 className="mundayn-feels__card-title">Your Instagram followers become email subscribers.</h3>
               <p className="mundayn-feels__card-text">
                 Your funnel works 24/7. Lead magnets get delivered magically. Opt-in sequences run with proper tagging. Leads get nurtured while you sleep ready to receive your gifts.
@@ -269,7 +228,7 @@ const Index = () => {
             </article>
             
             <article className="mundayn-feels__card">
-              <div className="mundayn-feels__card-icon"><GridIcon /></div>
+              <div className="mundayn-feels__card-icon"><img src={gridIcon} alt="Grid icon" /></div>
               <h3 className="mundayn-feels__card-title">Courses sell themselves through systematic flow.</h3>
               <p className="mundayn-feels__card-text">
                 Email sequence → landing page → checkout → course delivery → community access. One time setup. Infinite replay.
@@ -277,7 +236,7 @@ const Index = () => {
             </article>
             
             <article className="mundayn-feels__card">
-              <div className="mundayn-feels__card-icon"><StarIcon /></div>
+              <div className="mundayn-feels__card-icon"><img src={starIcon} alt="Star icon" /></div>
               <h3 className="mundayn-feels__card-title">Your community thrives without you micromanaging.</h3>
               <p className="mundayn-feels__card-text">
                 Members connect. Questions get answered. Value gets delivered. You show up to guide, not moderate.
@@ -285,7 +244,7 @@ const Index = () => {
             </article>
             
             <article className="mundayn-feels__card">
-              <div className="mundayn-feels__card-icon"><HeartIcon /></div>
+              <div className="mundayn-feels__card-icon"><img src={heartIcon} alt="Heart icon" /></div>
               <h3 className="mundayn-feels__card-title">Evenings belong to your family again.</h3>
               <p className="mundayn-feels__card-text">
                 No more client WhatsApp chat at 9pm. No more weekend admin marathons. Your business runs. You live.
