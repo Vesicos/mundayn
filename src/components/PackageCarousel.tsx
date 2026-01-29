@@ -289,32 +289,42 @@ export default function PackageCarousel() {
     }
   };
 
+  // Card height is approximately 750px, so we need enough height for scaled cards
+  const cardHeight = 750;
+  const containerHeight = cardHeight * 1.15; // Extra space for the scaled center card
+
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-[850px] py-16 overflow-hidden"
+      className="relative w-full overflow-visible"
+      style={{ height: `${containerHeight}px` }}
     >
+      {/* Cards container - centered vertically */}
+      <div className="absolute inset-0 flex items-center">
+        <div className="relative w-full" style={{ height: `${cardHeight}px` }}>
+          {/* Package cards */}
+          {packages.map((pkg, index) => {
+            const styles = getCardStyles(index);
+            return (
+              <PackageCard
+                key={index}
+                {...pkg}
+                isCenter={styles.isCenter}
+                zIndex={styles.zIndex}
+                x={styles.x}
+                scale={styles.scale}
+                opacity={styles.opacity}
+              />
+            );
+          })}
+        </div>
+      </div>
+
       {/* Edge gradient overlays */}
       <div className="absolute left-0 top-0 w-[150px] md:w-[200px] h-full z-10 pointer-events-none bg-gradient-to-r from-[#471D3C] via-[#471D3C]/70 to-transparent" />
       <div className="absolute right-0 top-0 w-[150px] md:w-[200px] h-full z-10 pointer-events-none bg-gradient-to-l from-[#471D3C] via-[#471D3C]/70 to-transparent" />
 
-      {/* Package cards */}
-      {packages.map((pkg, index) => {
-        const styles = getCardStyles(index);
-        return (
-          <PackageCard
-            key={index}
-            {...pkg}
-            isCenter={styles.isCenter}
-            zIndex={styles.zIndex}
-            x={styles.x}
-            scale={styles.scale}
-            opacity={styles.opacity}
-          />
-        );
-      })}
-
-      {/* Navigation arrows */}
+      {/* Navigation arrows - centered at container midpoint */}
       <NavigationArrow direction="left" onClick={handlePrev} />
       <NavigationArrow direction="right" onClick={handleNext} />
     </div>
