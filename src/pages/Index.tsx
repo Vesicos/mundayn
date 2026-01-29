@@ -445,10 +445,10 @@ const Index = () => {
                 But this isn't about <span className="mundayn-section__title-italic">software</span>
               </h2>
             </div>
-            <div>
-              <p className="mundayn-section__subtitle" style={{ textAlign: 'left', marginBottom: '24px' }}>
-                Here's what <span className="mundayn-section__title-italic">actually</span> matters:
-              </p>
+            <div className="mundayn-matters__right">
+              <h3 className="mundayn-matters__subheading">
+                Here's what <span className="mundayn-matters__italic">actually</span> matters:
+              </h3>
               <ul className="mundayn-matters__list">
                 <li>Sundays with your family instead of catching up on client admin.</li>
                 <li>Evenings that are yours instead of answering booking requests at 9 PM.</li>
@@ -457,8 +457,12 @@ const Index = () => {
                 <li>Growth without burnout because your business runs while you create.</li>
               </ul>
               <div className="mundayn-matters__conclusion">
-                <p>That's what systematic infrastructure creates. Not just efficiency. <strong>Freedom.</strong></p>
-                <p><strong>Your business, running <span className="mundayn-section__title-italic">itself</span>.</strong></p>
+                <p className="mundayn-matters__conclusion-main">
+                  That's what systematic<br />infrastructure creates.<br />Not just efficiency. <strong>Freedom.</strong>
+                </p>
+                <p className="mundayn-matters__conclusion-tagline">
+                  Your business, running <span className="mundayn-matters__italic">itself</span>.
+                </p>
               </div>
             </div>
           </div>
