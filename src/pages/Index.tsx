@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
+import PackageCarousel from '../components/PackageCarousel';
 
 // Hand-drawn icon imports
 import sunIcon from '@/assets/icons/sun.png';
@@ -304,79 +305,8 @@ const Index = () => {
           <p className="mundayn-section__subtitle">
             Start with what you need <span className="mundayn-section__title-italic">Today</span>. Upgrade as you grow.
           </p>
-          
-          <div className="mundayn-packages__grid">
-            <article className="mundayn-package-card">
-              <div className="mundayn-package-card__icon">🏢</div>
-              <h3 className="mundayn-package-card__name">Entrepreneur Package</h3>
-              <p className="mundayn-package-card__price">$59/month</p>
-              
-              <p className="mundayn-package-card__section-title">What's inside:</p>
-              <ul className="mundayn-package-card__list">
-                <li>• Complete contact management</li>
-                <li>• Text and Email marketing & automations</li>
-                <li>• Scheduling with automated booking</li>
-                <li>• Payment processing & invoicing</li>
-                <li>• Forms, quizzes & surveys</li>
-              </ul>
-              
-              <p className="mundayn-package-card__section-title">This is for you:</p>
-              <p className="mundayn-package-card__list">Running a coaching, artist, or consulting business. Need professional operating backbone without complexity you don't need (yet).</p>
-              
-              <div className="mundayn-package-card__cta">
-                <a href="#trial" className="mundayn-btn">
-                  Start With Entrepreneur <ArrowIcon />
-                </a>
-              </div>
-            </article>
-            
-            <article className="mundayn-package-card mundayn-package-card--featured">
-              <div className="mundayn-package-card__icon">🌐</div>
-              <h3 className="mundayn-package-card__name">Creator Package</h3>
-              <p className="mundayn-package-card__price">$99/month</p>
-              
-              <p className="mundayn-package-card__section-title">Everything in Entrepreneur, PLUS:</p>
-              <ul className="mundayn-package-card__list">
-                <li>• Website & landing page builder</li>
-                <li>• WordPress connection</li>
-                <li>• Social media planner</li>
-                <li>• and more</li>
-              </ul>
-              
-              <p className="mundayn-package-card__section-title">This is for you:</p>
-              <p className="mundayn-package-card__list">Creating content. Building audience. Need web presence management without hiring a team.</p>
-              
-              <div className="mundayn-package-card__cta">
-                <a href="#trial" className="mundayn-btn">
-                  Start With Creator <ArrowIcon />
-                </a>
-              </div>
-            </article>
-            
-            <article className="mundayn-package-card">
-              <div className="mundayn-package-card__icon">👑</div>
-              <h3 className="mundayn-package-card__name">Leader Package</h3>
-              <p className="mundayn-package-card__price">$149/month</p>
-              
-              <p className="mundayn-package-card__section-title">Everything in Creator, PLUS:</p>
-              <ul className="mundayn-package-card__list">
-                <li>• Community platform (Skool-comparable)</li>
-                <li>• Course & membership hosting</li>
-                <li>• Advanced automations</li>
-                <li>• Team collaboration tools</li>
-              </ul>
-              
-              <p className="mundayn-package-card__section-title">This is for you:</p>
-              <p className="mundayn-package-card__list">Managing team community. Need enterprise-level infrastructure at startup cost.</p>
-              
-              <div className="mundayn-package-card__cta">
-                <a href="#trial" className="mundayn-btn">
-                  Start With Leader <ArrowIcon />
-                </a>
-              </div>
-            </article>
-          </div>
         </div>
+        <PackageCarousel />
       </section>
 
       {/* About The Mundane Section */}
