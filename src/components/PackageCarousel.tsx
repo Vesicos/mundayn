@@ -40,6 +40,9 @@ function PackageCard({
   const borderRadius = isCenter ? "8px" : "15px";
   const shadow = isCenter ? "0px 4px 23px 0px rgba(0,0,0,0.3)" : "none";
 
+  // Calculate approximate card height based on content
+  const cardHeight = 580;
+  
   return (
     <motion.div
       className="absolute w-[300px] md:w-[340px] lg:w-[380px] px-5 py-6 md:px-6 md:py-8"
@@ -48,13 +51,13 @@ function PackageCard({
         borderRadius,
         boxShadow: shadow,
         zIndex,
-        top: '50%',
         left: '50%',
-        transform: 'translate(-50%, -50%)',
+        top: 0,
+        marginTop: 0,
       }}
       initial={false}
       animate={{
-        x,
+        x: x - 190, // offset for left: 50% (half of max card width)
         y: 0,
         scale,
         opacity
@@ -127,10 +130,11 @@ function PackageCard({
   );
 }
 
-function NavigationArrow({ direction, onClick }: { direction: 'left' | 'right'; onClick: () => void }) {
+function NavigationArrow({ direction, onClick, containerHeight }: { direction: 'left' | 'right'; onClick: () => void; containerHeight: number }) {
   return (
     <motion.button
-      className={`absolute z-20 top-1/2 -translate-y-1/2 ${direction === 'left' ? 'left-4 md:left-8' : 'right-4 md:right-8'}`}
+      className={`absolute z-20 ${direction === 'left' ? 'left-4 md:left-8' : 'right-4 md:right-8'}`}
+      style={{ top: containerHeight / 2, transform: 'translateY(-50%)' }}
       onClick={onClick}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
@@ -292,16 +296,19 @@ export default function PackageCarousel() {
     }
   };
 
+  // Fixed card height that fits all content
+  const cardContainerHeight = 600;
+
   return (
     <div
       ref={containerRef}
       className="relative w-full"
       style={{ overflow: 'visible' }}
     >
-      {/* Cards container - fixed height with visible overflow */}
+      {/* Cards container */}
       <div 
         className="relative w-full"
-        style={{ height: '680px', overflow: 'visible' }}
+        style={{ height: `${cardContainerHeight}px`, overflow: 'visible' }}
       >
         {/* Package cards */}
         {packages.map((pkg, index) => {
@@ -319,9 +326,9 @@ export default function PackageCarousel() {
           );
         })}
 
-        {/* Navigation arrows - centered with cards */}
-        <NavigationArrow direction="left" onClick={handlePrev} />
-        <NavigationArrow direction="right" onClick={handleNext} />
+        {/* Navigation arrows - vertically centered with cards */}
+        <NavigationArrow direction="left" onClick={handlePrev} containerHeight={cardContainerHeight} />
+        <NavigationArrow direction="right" onClick={handleNext} containerHeight={cardContainerHeight} />
       </div>
 
       {/* Edge gradient overlays */}
