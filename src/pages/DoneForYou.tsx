@@ -61,16 +61,19 @@ const DoneForYou = () => {
           <div className="two-paths__wrap">
             <div className="two-paths__panel two-paths__panel--left">
               <div className="two-paths__top">
-                <div className="two-paths__heading">
+                <div className="two-paths__left-col">
                   <div className="two-paths__h1">Path 1:</div>
                   <div className="two-paths__sub">DIY Setup<br />(Included Free)</div>
                 </div>
-                <ul className="two-paths__list">
-                  <li>Free with trial</li>
-                  <li>2–3 months to full implementation</li>
-                  <li>Tutorials and support included</li>
-                  <li>Best if you enjoy technical setup</li>
-                </ul>
+                <div className="two-paths__right-col">
+                  <p className="two-paths__quote">"I have time to set this up myself"</p>
+                  <ul className="two-paths__list">
+                    <li>Free with trial</li>
+                    <li>2–3 months to full implementation</li>
+                    <li>Tutorials and support included</li>
+                    <li>Best if you enjoy technical setup</li>
+                  </ul>
+                </div>
               </div>
               <a href="#trial" className="two-paths__btn">
                 Start Free Trial (DIY) <ArrowIcon />
@@ -81,19 +84,22 @@ const DoneForYou = () => {
             
             <div className="two-paths__panel two-paths__panel--right">
               <div className="two-paths__top">
-                <div className="two-paths__heading">
+                <div className="two-paths__left-col">
                   <div className="two-paths__h1">Path 2:</div>
                   <div className="two-paths__sub">DFY Setup<br />(Recommended)</div>
                 </div>
-                <ul className="two-paths__list">
-                  <li>One week to complete system</li>
-                  <li>Expert implementation guaranteed</li>
-                  <li>You focus on business, we handle tech</li>
-                  <li>Best if you're hitting energy ceiling</li>
-                </ul>
+                <div className="two-paths__right-col">
+                  <p className="two-paths__quote">"I need this working NOW"</p>
+                  <ul className="two-paths__list">
+                    <li>One week to complete system</li>
+                    <li>Expert implementation guaranteed</li>
+                    <li>You focus on business, we handle tech</li>
+                    <li>Best if you're hitting energy ceiling</li>
+                  </ul>
+                </div>
               </div>
               <a href="#packages" className="two-paths__btn">
-                Learn More About DFY <ArrowIcon />
+                Get Done-For-You Quote <ArrowIcon />
               </a>
             </div>
           </div>
