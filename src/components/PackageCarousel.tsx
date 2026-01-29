@@ -42,16 +42,20 @@ function PackageCard({
 
   return (
     <motion.div
-      className="absolute w-[380px] md:w-[448px] top-1/2 -translate-y-1/2 px-8 py-10"
+      className="absolute w-[320px] md:w-[380px] lg:w-[420px] px-6 py-8 md:px-8 md:py-10"
       style={{
         backgroundColor: bgColor,
         borderRadius,
         boxShadow: shadow,
         zIndex,
+        top: '50%',
+        left: '50%',
+        marginLeft: '-160px',
       }}
       initial={false}
       animate={{
         x,
+        y: '-50%',
         scale,
         opacity
       }}
@@ -264,69 +268,61 @@ export default function PackageCarousel() {
 
   const getCardStyles = (index: number) => {
     const relativeIndex = (index - activeIndex + packages.length) % packages.length;
-    const cardWidth = isMobile ? 380 : 448;
+    const cardWidth = isMobile ? 320 : 420;
 
     if (isMobile) {
       if (relativeIndex === 0) {
-        return { x: (containerWidth / 2) - (cardWidth / 2), scale: 1, opacity: 1, zIndex: 3, isCenter: true };
+        return { x: 0, scale: 1, opacity: 1, zIndex: 3, isCenter: true };
       }
       return { x: containerWidth * 2, scale: 0.8, opacity: 0, zIndex: 0, isCenter: false };
     }
 
-    const centerX = (containerWidth / 2) - (cardWidth / 2);
-    const sideGap = 60;
+    const sideGap = 40;
 
     switch (relativeIndex) {
       case 0:
-        return { x: centerX, scale: 1.08, opacity: 1, zIndex: 3, isCenter: true };
+        return { x: 0, scale: 1.05, opacity: 1, zIndex: 3, isCenter: true };
       case 1:
-        return { x: centerX + cardWidth + sideGap, scale: 0.95, opacity: 0.7, zIndex: 2, isCenter: false };
+        return { x: cardWidth + sideGap, scale: 0.9, opacity: 0.6, zIndex: 2, isCenter: false };
       case packages.length - 1:
-        return { x: centerX - cardWidth - sideGap, scale: 0.95, opacity: 0.7, zIndex: 2, isCenter: false };
+        return { x: -(cardWidth + sideGap), scale: 0.9, opacity: 0.6, zIndex: 2, isCenter: false };
       default:
         const direction = relativeIndex < packages.length / 2 ? 1 : -1;
         return { x: containerWidth * direction * 1.5, scale: 0.7, opacity: 0, zIndex: 1, isCenter: false };
     }
   };
 
-  // Card height is approximately 800px with full content, add extra for scaling
-  const cardHeight = 820;
-  const containerHeight = cardHeight * 1.2; // Extra space for the scaled center card
-
   return (
     <div
       ref={containerRef}
       className="relative w-full"
-      style={{ height: `${containerHeight}px` }}
     >
-      {/* Cards container - centered vertically */}
-      <div className="absolute inset-0 flex items-center overflow-visible">
-        <div className="relative w-full overflow-visible" style={{ height: `${cardHeight}px` }}>
-          {/* Package cards */}
-          {packages.map((pkg, index) => {
-            const styles = getCardStyles(index);
-            return (
-              <PackageCard
-                key={index}
-                {...pkg}
-                isCenter={styles.isCenter}
-                zIndex={styles.zIndex}
-                x={styles.x}
-                scale={styles.scale}
-                opacity={styles.opacity}
-              />
-            );
-          })}
-        </div>
+      {/* Cards wrapper with proper height for content */}
+      <div className="relative flex items-center justify-center min-h-[700px] py-8">
+        {/* Package cards */}
+        {packages.map((pkg, index) => {
+          const styles = getCardStyles(index);
+          return (
+            <PackageCard
+              key={index}
+              {...pkg}
+              isCenter={styles.isCenter}
+              zIndex={styles.zIndex}
+              x={styles.x}
+              scale={styles.scale}
+              opacity={styles.opacity}
+            />
+          );
+        })}
+
+        {/* Navigation arrows - positioned relative to cards */}
+        <NavigationArrow direction="left" onClick={handlePrev} />
+        <NavigationArrow direction="right" onClick={handleNext} />
       </div>
 
       {/* Edge gradient overlays */}
       <div className="absolute left-0 top-0 w-[150px] md:w-[200px] h-full z-10 pointer-events-none bg-gradient-to-r from-[#471D3C] via-[#471D3C]/70 to-transparent" />
       <div className="absolute right-0 top-0 w-[150px] md:w-[200px] h-full z-10 pointer-events-none bg-gradient-to-l from-[#471D3C] via-[#471D3C]/70 to-transparent" />
-
-      {/* Navigation arrows - centered at container midpoint */}
-      <NavigationArrow direction="left" onClick={handlePrev} />
-      <NavigationArrow direction="right" onClick={handleNext} />
     </div>
   );
 }
