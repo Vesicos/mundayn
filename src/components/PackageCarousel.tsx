@@ -42,7 +42,7 @@ function PackageCard({
 
   return (
     <motion.div
-      className="absolute w-[380px] md:w-[448px] overflow-hidden top-1/2 -translate-y-1/2 px-8 py-10"
+      className="absolute w-[380px] md:w-[448px] top-1/2 -translate-y-1/2 px-8 py-10"
       style={{
         backgroundColor: bgColor,
         borderRadius,
@@ -289,19 +289,19 @@ export default function PackageCarousel() {
     }
   };
 
-  // Card height is approximately 750px, so we need enough height for scaled cards
-  const cardHeight = 750;
-  const containerHeight = cardHeight * 1.15; // Extra space for the scaled center card
+  // Card height is approximately 800px with full content, add extra for scaling
+  const cardHeight = 820;
+  const containerHeight = cardHeight * 1.2; // Extra space for the scaled center card
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-visible"
+      className="relative w-full"
       style={{ height: `${containerHeight}px` }}
     >
       {/* Cards container - centered vertically */}
-      <div className="absolute inset-0 flex items-center">
-        <div className="relative w-full" style={{ height: `${cardHeight}px` }}>
+      <div className="absolute inset-0 flex items-center overflow-visible">
+        <div className="relative w-full overflow-visible" style={{ height: `${cardHeight}px` }}>
           {/* Package cards */}
           {packages.map((pkg, index) => {
             const styles = getCardStyles(index);
