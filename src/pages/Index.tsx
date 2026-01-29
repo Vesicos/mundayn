@@ -452,7 +452,7 @@ const Index = () => {
             
             <article className="mundayn-choice__card bg-[#280b21]">
               <h2 className="mundayn-choice__card-title" style={{
-              color: 'var(--mundayn-gold)'
+              color: '#DDD7C9'
             }}>Done-For-You?</h2>
               <a href="#offers" className="mundayn-btn">
                 Learn More About Our Offers <ArrowIcon />
