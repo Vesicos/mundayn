@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
@@ -85,13 +86,13 @@ const Index = () => {
   return <div className="mundayn-page">
       {/* Navigation */}
       <nav className="mundayn-nav">
-        <a href="#" className="mundayn-nav__logo">
+        <Link to="/" className="mundayn-nav__logo">
           <div className="mundayn-nav__logo-icon">M</div>
           MUNDAYN
-        </a>
+        </Link>
         <ul className="mundayn-nav__links">
-          <li><a href="#product">Product</a></li>
-          <li><a href="#done-for-you">Done-For-You</a></li>
+          <li><Link to="/">Product</Link></li>
+          <li><Link to="/done-for-you">Done-For-You</Link></li>
           <li><a href="#ecosystem">Ecosystem</a></li>
         </ul>
         <a href="#trial" className="mundayn-nav__cta">
