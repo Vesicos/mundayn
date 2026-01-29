@@ -473,22 +473,22 @@ const Index = () => {
       <section className="mundayn-section mundayn-choice">
         <div className="mundayn-container">
           <div className="mundayn-choice__grid">
-            <article className="mundayn-choice__card">
+            <article className="mundayn-choice__card mundayn-choice__card--light">
               <h2 className="mundayn-choice__card-title">What Package?</h2>
-              <a href="#packages" className="mundayn-btn">
-                Take The Assessment <ArrowIcon />
+              <a href="#packages" className="mundayn-choice__btn">
+                Take The Assessment
               </a>
-              <p className="mundayn-choice__card-text" style={{ marginTop: '24px' }}>
+              <p className="mundayn-choice__card-text">
                 Or start with Entrepreneur and upgrade as you grow. That's the beauty of the right foundation—you're never locked in, never stuck.
               </p>
             </article>
             
-            <article className="mundayn-choice__card">
-              <h2 className="mundayn-choice__card-title" style={{ color: 'var(--mundayn-gold)' }}>Done-For-You?</h2>
-              <a href="#offers" className="mundayn-btn">
-                Learn More About Our Offers <ArrowIcon />
+            <article className="mundayn-choice__card mundayn-choice__card--dark">
+              <h2 className="mundayn-choice__card-title mundayn-choice__card-title--gold">Done-For-You?</h2>
+              <a href="#offers" className="mundayn-choice__btn">
+                Learn More About Our Offers
               </a>
-              <p className="mundayn-choice__card-text" style={{ marginTop: '24px' }}>
+              <p className="mundayn-choice__card-text">
                 Or start with Entrepreneur and upgrade as you grow. That's the beauty of the right foundation—you're never locked in, never stuck.
               </p>
             </article>

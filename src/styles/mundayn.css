@@ -942,24 +942,59 @@
 }
 
 .mundayn-choice__card {
-  background-color: var(--mundayn-red-accent);
   border-radius: var(--radius-md);
-  padding: 48px;
+  padding: 48px 40px;
   text-align: center;
 }
 
+.mundayn-choice__card--light {
+  background-color: #58233f;
+}
+
+.mundayn-choice__card--dark {
+  background-color: #2a0c22;
+}
+
 .mundayn-choice__card-title {
-  font-size: 48px;
+  font-family: var(--font-inter);
+  font-size: 42px;
   font-weight: 500;
+  color: var(--mundayn-cream);
+  letter-spacing: -1px;
+  margin-bottom: 28px;
+}
+
+.mundayn-choice__card-title--gold {
   color: var(--mundayn-gold);
-  margin-bottom: 24px;
+}
+
+.mundayn-choice__btn {
+  display: block;
+  width: 100%;
+  background-color: var(--mundayn-gold);
+  color: var(--mundayn-black);
+  padding: 18px 32px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s;
+  margin-bottom: 28px;
+}
+
+.mundayn-choice__btn:hover {
+  background-color: var(--mundayn-gold-hover);
+  transform: translateY(-2px);
 }
 
 .mundayn-choice__card-text {
+  font-family: var(--font-inter);
   font-size: 18px;
   color: var(--mundayn-cream);
   line-height: 1.5;
-  margin-bottom: 32px;
+  margin: 0;
 }
 
 /* ==========================================
