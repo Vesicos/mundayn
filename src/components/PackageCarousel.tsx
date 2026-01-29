@@ -42,7 +42,7 @@ function PackageCard({
 
   return (
     <motion.div
-      className="absolute w-[320px] md:w-[380px] lg:w-[420px] px-6 py-8 md:px-8 md:py-10"
+      className="absolute w-[280px] md:w-[320px] lg:w-[360px] px-5 py-6 md:px-6 md:py-8"
       style={{
         backgroundColor: bgColor,
         borderRadius,
@@ -50,7 +50,7 @@ function PackageCard({
         zIndex,
         top: '50%',
         left: '50%',
-        marginLeft: '-160px',
+        marginLeft: '-140px',
       }}
       initial={false}
       animate={{
@@ -67,12 +67,12 @@ function PackageCard({
       }}
     >
       {/* Icon */}
-      <div className="mb-3 opacity-70">
-        <Icon size={34} className="text-[#ED5D59]" />
+      <div className="mb-2 opacity-70">
+        <Icon size={28} className="text-[#ED5D59]" />
       </div>
 
       {/* Title */}
-      <h3 className="font-serif text-[26px] text-[#ddd7c9] leading-tight tracking-tight mb-2">
+      <h3 className="font-serif text-[22px] md:text-[24px] text-[#ddd7c9] leading-tight tracking-tight mb-1">
         {title.split(" ").map((word, i) => (
           <span key={i}>
             {word}
@@ -83,41 +83,41 @@ function PackageCard({
       </h3>
 
       {/* Price */}
-      <p className="text-[#F5AD2D] font-semibold text-[16px] tracking-wide mb-4">
+      <p className="text-[#F5AD2D] font-semibold text-[14px] tracking-wide mb-3">
         {price}/MONTH
       </p>
 
       {/* Divider */}
-      <div className="h-[1px] bg-[#ED5D59] mb-6" />
+      <div className="h-[1px] bg-[#ED5D59] mb-4" />
 
       {/* Features */}
-      <div className="text-[#ddd7c9] text-[16px] leading-relaxed">
-        <p className="font-bold mb-2">
+      <div className="text-[#ddd7c9] text-[13px] md:text-[14px] leading-relaxed">
+        <p className="font-bold mb-1.5">
           {previousPackage ? `Everything in ${previousPackage}, PLUS:` : "What's inside:"}
         </p>
         {features.map((feature, index) => (
-          <p key={index} className="mb-1">• {feature}</p>
+          <p key={index} className="mb-0.5">• {feature}</p>
         ))}
 
-        <p className="mt-4 font-bold mb-2">This is for you:</p>
-        <p className="mb-4 opacity-90">{description}</p>
+        <p className="mt-3 font-bold mb-1.5">This is for you:</p>
+        <p className="mb-3 opacity-90">{description}</p>
 
-        <p className="mb-2">Apps you can cancel:</p>
-        <ul className="list-disc pl-5">
+        <p className="mb-1.5">Apps you can cancel:</p>
+        <ul className="list-disc pl-4">
           {apps.map((app, index) => (
-            <li key={index} className="mb-1">{app}</li>
+            <li key={index} className="mb-0.5">{app}</li>
           ))}
         </ul>
       </div>
 
       {/* CTA Button */}
-      <div className="mt-8">
+      <div className="mt-5">
         <a
           href="#trial"
-          className="inline-flex items-center justify-center gap-3 bg-[#F5AD2D] text-black font-bold px-8 py-4 rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full"
+          className="inline-flex items-center justify-center gap-2 bg-[#F5AD2D] text-black font-bold text-sm px-6 py-3 rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full"
         >
           {buttonText}
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
             <line x1="5" y1="12" x2="19" y2="12" />
             <polyline points="12 5 19 12 12 19" />
           </svg>
@@ -268,7 +268,7 @@ export default function PackageCarousel() {
 
   const getCardStyles = (index: number) => {
     const relativeIndex = (index - activeIndex + packages.length) % packages.length;
-    const cardWidth = isMobile ? 320 : 420;
+    const cardWidth = isMobile ? 280 : 360;
 
     if (isMobile) {
       if (relativeIndex === 0) {
@@ -277,15 +277,15 @@ export default function PackageCarousel() {
       return { x: containerWidth * 2, scale: 0.8, opacity: 0, zIndex: 0, isCenter: false };
     }
 
-    const sideGap = 40;
+    const sideGap = 30;
 
     switch (relativeIndex) {
       case 0:
-        return { x: 0, scale: 1.05, opacity: 1, zIndex: 3, isCenter: true };
+        return { x: 0, scale: 1.02, opacity: 1, zIndex: 3, isCenter: true };
       case 1:
-        return { x: cardWidth + sideGap, scale: 0.9, opacity: 0.6, zIndex: 2, isCenter: false };
+        return { x: cardWidth + sideGap, scale: 0.88, opacity: 0.55, zIndex: 2, isCenter: false };
       case packages.length - 1:
-        return { x: -(cardWidth + sideGap), scale: 0.9, opacity: 0.6, zIndex: 2, isCenter: false };
+        return { x: -(cardWidth + sideGap), scale: 0.88, opacity: 0.55, zIndex: 2, isCenter: false };
       default:
         const direction = relativeIndex < packages.length / 2 ? 1 : -1;
         return { x: containerWidth * direction * 1.5, scale: 0.7, opacity: 0, zIndex: 1, isCenter: false };
@@ -295,10 +295,10 @@ export default function PackageCarousel() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full"
+      className="relative w-full overflow-hidden"
     >
       {/* Cards wrapper with proper height for content */}
-      <div className="relative flex items-center justify-center min-h-[700px] py-8">
+      <div className="relative flex items-center justify-center min-h-[580px] md:min-h-[620px] pt-16 pb-8">
         {/* Package cards */}
         {packages.map((pkg, index) => {
           const styles = getCardStyles(index);
@@ -320,9 +320,9 @@ export default function PackageCarousel() {
         <NavigationArrow direction="right" onClick={handleNext} />
       </div>
 
-      {/* Edge gradient overlays */}
-      <div className="absolute left-0 top-0 w-[150px] md:w-[200px] h-full z-10 pointer-events-none bg-gradient-to-r from-[#471D3C] via-[#471D3C]/70 to-transparent" />
-      <div className="absolute right-0 top-0 w-[150px] md:w-[200px] h-full z-10 pointer-events-none bg-gradient-to-l from-[#471D3C] via-[#471D3C]/70 to-transparent" />
+      {/* Edge gradient overlays - narrower and symmetric */}
+      <div className="absolute left-0 top-0 w-[80px] md:w-[120px] h-full z-10 pointer-events-none bg-gradient-to-r from-[#471D3C] to-transparent" />
+      <div className="absolute right-0 top-0 w-[80px] md:w-[120px] h-full z-10 pointer-events-none bg-gradient-to-l from-[#471D3C] to-transparent" />
     </div>
   );
 }
