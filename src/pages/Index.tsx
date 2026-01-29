@@ -24,30 +24,32 @@ import animationVideo from '@/assets/animation_v1.mp4';
 // Stats data for animated section
 const statsData = [
   {
+    endValue: 15,
+    suffix: '+',
+    value: '15+',
+    label: 'Hours Saved Every Week',
+    description: "That's 60+ hours monthly. 720+ hours yearly.\n\nOne full month of your life, every single year, returned to you."
+  },
+  {
+    endValue: 20,
+    suffix: '+',
+    value: '20+',
+    label: 'Tools Replaced',
+    description: 'Calendar. Email marketing. CRM. Payments. Forms. Scheduling. Landing pages. Course hosting. Community.\n\nAll in one. One login. One system.'
+  },
+  {
+    endValue: 300,
+    suffix: '+',
+    value: '300+',
+    label: 'Dollars Saved Monthly',
+    description: "When you add up subscriptions for separate tools (Calendly $15, MailChimp $30, Kajabi $149, Skool $99, website hosting $20, etc.), Mundayn costs less than the scattered stack you're replacing."
+  },
+  {
     endValue: 3,
     suffix: '+',
     value: '3+',
-    label: 'Hours Saved Every Week',
-    description: "That's 60+ hours monthly. 720+ hours yearly."
-  },
-  {
-    prefix: '$',
-    endValue: 300,
-    suffix: '+',
-    value: '$300+',
-    label: 'Monthly Savings',
-    description: 'Replace 15+ scattered apps you pay for today.'
-  },
-  {
-    endValue: 1,
-    value: '1',
-    label: 'Week to Launch',
-    description: 'Done-For-You setup gets you operating fast.'
-  },
-  {
-    value: '∞',
-    label: 'Scalability',
-    description: 'Grow without changing platforms.'
+    label: 'Hours Returned Daily',
+    description: 'The time you spend manually managing what should run automatically.\n\nThree hours you could spend creating. Teaching. Resting. Living.'
   }
 ];
 
