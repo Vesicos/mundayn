@@ -1,3 +1,4 @@
+import React from 'react';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
@@ -58,6 +59,28 @@ const ArrowIcon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="no
     <line x1="5" y1="12" x2="19" y2="12" />
     <polyline points="12 5 19 12 12 19" />
   </svg>;
+
+const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  
+  return (
+    <div className="mundayn-faq__item">
+      <button 
+        className="mundayn-faq__question"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+      >
+        <span>{question}</span>
+        <span className={`mundayn-faq__icon ${isOpen ? 'mundayn-faq__icon--open' : ''}`}>
+          {isOpen ? '−' : '+'}
+        </span>
+      </button>
+      <div className={`mundayn-faq__answer ${isOpen ? 'mundayn-faq__answer--open' : ''}`}>
+        {answer}
+      </div>
+    </div>
+  );
+};
 const Index = () => {
   return <div className="mundayn-page">
       {/* Navigation */}
@@ -575,27 +598,59 @@ const Index = () => {
           <h2 className="mundayn-section__title">Questions? Answered.</h2>
           
           <div className="mundayn-faq__list">
-            <div className="mundayn-faq__item">
-              <p className="mundayn-faq__question">How is this different from Kajabi, ClickFunnels, or other platforms?</p>
-            </div>
-            <div className="mundayn-faq__item">
-              <p className="mundayn-faq__question">What if I outgrow my package?</p>
-            </div>
-            <div className="mundayn-faq__item">
-              <p className="mundayn-faq__question">What if I'm not tech-savvy?</p>
-            </div>
-            <div className="mundayn-faq__item">
-              <p className="mundayn-faq__question">Do I need DFY setup or can I do it myself?</p>
-            </div>
-            <div className="mundayn-faq__item">
-              <p className="mundayn-faq__question">Can I migrate my existing content and contacts?</p>
-            </div>
-            <div className="mundayn-faq__item">
-              <p className="mundayn-faq__question">What's included in 'setup'?</p>
-            </div>
-            <div className="mundayn-faq__item">
-              <p className="mundayn-faq__question">Is there a model for advanced entrepreneurs?</p>
-            </div>
+            <FaqItem 
+              question="How is this different from Kajabi, ClickFunnels, or other platforms?"
+              answer={<>
+                <p>Three ways:</p>
+                <ol>
+                  <li>True all-in-one: They specialize (Kajabi for courses, ClickFunnels for funnels). Mundayn does everything.</li>
+                  <li>Setup included: They hand you software. We implement it for your specific business.</li>
+                  <li>Ongoing partnership: They're software vendors. We're operational partners who grow with you.</li>
+                </ol>
+              </>}
+            />
+            <FaqItem 
+              question="What if I outgrow my package?"
+              answer="Upgrade anytime. Your data stays. Your systems stay. You just unlock new features. Most people start with Entrepreneur or Creator and scale up as they grow. That's the design."
+            />
+            <FaqItem 
+              question="What if I'm not tech-savvy?"
+              answer="That's exactly why DFY setup exists. You don't need to be technical. We build it, you use it. Plus, our training focuses on USING the system (clicking buttons, sending emails), not building it from scratch."
+            />
+            <FaqItem 
+              question="Do I need DFY setup or can I do it myself?"
+              answer={<>
+                <p>Both paths work:</p>
+                <p>DIY: Free with trial. Takes 2-3 months. Best if you have time and enjoy technical setup.</p>
+                <p>DFY: $599-$1,999. Takes max. 2-3 weeks. Best if you're hitting energy ceiling or want expert setup guaranteed to work.</p>
+                <p>Most Impact Entrepreneurs choose DFY because time saved {'>'}{'>'}  money invested.</p>
+              </>}
+            />
+            <FaqItem 
+              question="Can I migrate my existing content and contacts?"
+              answer="Yes. We have migration tools for most platforms. If you choose DFY setup, we handle the entire migration—contacts, courses, automations, everything. Clean transition, zero data loss."
+            />
+            <FaqItem 
+              question="What's included in 'setup'?"
+              answer={<>
+                <p>Complete technical implementation:</p>
+                <ul>
+                  <li>System configuration and branding</li>
+                  <li>All automations and workflows</li>
+                  <li>Payment and invoicing setup</li>
+                  <li>Calendar and scheduling</li>
+                  <li>Client journey mapping with tagging</li>
+                  <li>Email sequences and funnels (if your package includes them)</li>
+                  <li>Testing and training</li>
+                  <li>90-day support guarantee</li>
+                </ul>
+                <p>We build it. You use it. That's the partnership.</p>
+              </>}
+            />
+            <FaqItem 
+              question="Is there a model for advanced entrepreneurs?"
+              answer="Yes. If you're Visionary Entrepreneur with 100K+ audience, ready for COO partnership, we offer a partnership model that includes full operational buildout of Mundayn including management."
+            />
           </div>
         </div>
       </section>
