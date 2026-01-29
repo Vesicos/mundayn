@@ -285,57 +285,85 @@ const DoneForYou = () => {
         </div>
       </section>
 
-      {/* Package Cards Section */}
-      <section className="dfy-packages">
+      {/* What DFY Actually Includes Section */}
+      <section className="dfy-includes">
         <div className="mundayn-container">
-          <div className="dfy-packages__grid">
-            <article className="dfy-packages__card">
-              <h3>Your Better-Messy Capable Business Woman</h3>
-              <p className="dfy-packages__includes">What You Get:</p>
-              <ul>
-                <li>CRM &amp; client management</li>
-                <li>Automated email sequences</li>
-                <li>1 lead magnet set-up/connection</li>
-                <li>Calendar for scheduling</li>
-                <li>Simple payment/invoicing</li>
-                <li>Launch in 2 weeks</li>
-              </ul>
+          <h2 className="dfy-includes__title">
+            What DFY <span className="dfy-includes__title-italic">Actually</span> Includes
+          </h2>
+          <p className="dfy-includes__subtitle">
+            When we say "DFY offers," here's what that means:
+          </p>
+          
+          <div className="dfy-includes__grid">
+            <article className="dfy-includes__card dfy-includes__card--tl">
+              <div className="dfy-includes__overlay" />
+              <div className="dfy-includes__content">
+                <h3 className="dfy-includes__heading">
+                  Your System, Ready<br />
+                  <span className="dfy-includes__heading-italic">Complete Implementation</span>
+                </h3>
+                <p className="dfy-includes__label">What We Build:</p>
+                <ul className="dfy-includes__list">
+                  <li>CRM with intelligent tagging</li>
+                  <li>Automated booking and payments</li>
+                  <li>Email sequences and follow-ups</li>
+                  <li>Calendar and scheduling</li>
+                  <li>Everything tested and working</li>
+                </ul>
+              </div>
             </article>
             
-            <article className="dfy-packages__card">
-              <h3>Your Level-It-Up I mean Creator Boss Mindset</h3>
-              <p className="dfy-packages__includes">What You Get:</p>
-              <ul>
-                <li>One sales funnel or launch funnel</li>
-                <li>Course or digital product setup</li>
-                <li>Checkout &amp; payment integration</li>
-                <li>Landing Page from templates</li>
-                <li>In addition to all Entrepreneur</li>
-              </ul>
+            <article className="dfy-includes__card dfy-includes__card--tr">
+              <div className="dfy-includes__overlay" />
+              <div className="dfy-includes__content">
+                <h3 className="dfy-includes__heading">
+                  Your Brand, Everywhere<br />
+                  <span className="dfy-includes__heading-italic">Presence without a design team</span>
+                </h3>
+                <p className="dfy-includes__label">What We Implement:</p>
+                <ul className="dfy-includes__list">
+                  <li>Your colors, fonts, and visual identity</li>
+                  <li>Branded email templates</li>
+                  <li>Client-facing forms and pages</li>
+                  <li>Professional look across every touchpoint</li>
+                </ul>
+              </div>
             </article>
             
-            <article className="dfy-packages__card">
-              <h3>Your Core Mastery: Method, Mentorship, Mindset</h3>
-              <p className="dfy-packages__includes">What You Get:</p>
-              <ul>
-                <li>Member portal for courses</li>
-                <li>Private or group community space</li>
-                <li>Client Journey Tagging Automation</li>
-                <li>Checkout &amp; Affiliate System</li>
-                <li>In addition to all Creator features</li>
-              </ul>
+            <article className="dfy-includes__card dfy-includes__card--bl">
+              <div className="dfy-includes__overlay" />
+              <div className="dfy-includes__content">
+                <h3 className="dfy-includes__heading">
+                  Your Client Journey, Mapped<br />
+                  <span className="dfy-includes__heading-italic">From stranger to client</span>
+                </h3>
+                <p className="dfy-includes__label">What We Architect:</p>
+                <ul className="dfy-includes__list">
+                  <li>Lead magnet delivery automation</li>
+                  <li>Welcome and nurture sequences</li>
+                  <li>Proper tagging at every stage</li>
+                  <li>Smart pathways based on behavior</li>
+                  <li>Dashboard where you see everything</li>
+                </ul>
+              </div>
             </article>
             
-            <article className="dfy-packages__card">
-              <h3>Your Genius Vision for Scaled Big Mindset Bold!</h3>
-              <p className="dfy-packages__includes">What DFY Covers:</p>
-              <ul>
-                <li>Advanced funnel strategies</li>
-                <li>Team workspace &amp; delegation</li>
-                <li>Multiple product ecosystem</li>
-                <li>Custom integration support</li>
-                <li>Priority support &amp; faster turnaround</li>
-              </ul>
+            <article className="dfy-includes__card dfy-includes__card--br">
+              <div className="dfy-includes__overlay" />
+              <div className="dfy-includes__content">
+                <h3 className="dfy-includes__heading">
+                  Your Launch, Supported<br />
+                  <span className="dfy-includes__heading-italic">We don't disappear after handoff</span>
+                </h3>
+                <p className="dfy-includes__label">What We Guarantee:</p>
+                <ul className="dfy-includes__list">
+                  <li>Training on using your system (not building it)</li>
+                  <li>45 days of free adjustments</li>
+                  <li>Direct access to your implementation specialist</li>
+                  <li>System works perfectly from day one</li>
+                </ul>
+              </div>
             </article>
           </div>
         </div>
