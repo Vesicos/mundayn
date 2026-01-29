@@ -151,9 +151,9 @@ const Index = () => {
           <div className="mundayn-stages__grid">
             <StageCard title="The Foundation" titleItalic="Builder" description="You're building from the ground up. Ready to install professional infrastructure before chaos catches up." bgColor="#58233f" image={elephantBuilder} />
             
-            <StageCard title="The Impact" titleItalic="Creator" description="You're creating proven impact. Running everything from your phone. Ready to systematize and delegate." bgColor="#2d4a3e" image={elephantCreator} />
+            <StageCard title="The Impact" titleItalic="Creator" description="You're creating proven impact. Running everything from your phone. Ready to systematize and delegate." bgColor="#58233f" image={elephantCreator} />
             
-            <StageCard title="The Flow" titleItalic="Architect" description="You've built courses, audience, offers. Now you're ready to connect them into predictable revenue flow." bgColor="#3d3a5c" image={elephantArchitect} />
+            <StageCard title="The Flow" titleItalic="Architect" description="You've built courses, audience, offers. Now you're ready to connect them into predictable revenue flow." bgColor="#58233f" image={elephantArchitect} />
           </div>
         </div>
       </section>
