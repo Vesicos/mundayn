@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
+import logoNav from '@/assets/logonav.svg';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -105,8 +106,7 @@ const Ecosystem = () => {
       {/* Navigation */}
       <nav className="mundayn-nav">
         <Link to="/" className="mundayn-nav__logo">
-          <div className="mundayn-nav__logo-icon">M</div>
-          MUNDAYN
+          <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img" />
         </Link>
         <ul className="mundayn-nav__links">
           <li><Link to="/">Product</Link></li>
