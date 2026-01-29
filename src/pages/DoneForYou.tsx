@@ -125,39 +125,56 @@ const DoneForYou = () => {
       </section>
 
       {/* The Real Cost of DIY Setup Section */}
-      <section className="dfy-cost">
-        <div className="dfy-cost__image mundayn-placeholder mundayn-placeholder--elephant">
-          <span>Elephants Image</span>
-        </div>
-        <div className="dfy-cost__content">
-          <h2 className="dfy-cost__title">
-            The <span className="dfy-cost__title-italic">Real</span> Cost<br />
-            Of DIY Setup
-          </h2>
-          
-          <div className="dfy-cost__item">
-            <h4>Time:</h4>
-            <p>30-40 hours watching tutorials, configuring, and fixing what didn't work the first time (or fourth).</p>
-          </div>
-          
-          <div className="dfy-cost__item">
-            <h4>Mistakes:</h4>
-            <p>Wrong automations. Broken email sequences, late bookings, confused clients.</p>
-          </div>
-          
-          <div className="dfy-cost__item">
-            <h4>Opportunity Cost:</h4>
-            <p>Every week spent learning software is a week NOT growing your business.</p>
-          </div>
-          
-          <div className="dfy-cost__item">
-            <h4>Energy:</h4>
-            <p>The cognitive load of "I still need to do X" every single day.</p>
-          </div>
-          
-          <div className="dfy-cost__truth">
-            <h4>Truth:</h4>
-            <p>Most entrepreneurs underestimate how much DIY costs them—not in money, but in momentum.</p>
+      <section className="split-card">
+        <div className="split-card__wrap">
+          <div className="split-card__card">
+            <div className="split-card__media">
+              <div className="mundayn-placeholder mundayn-placeholder--elephant split-card__img">
+                <span>Elephants Image</span>
+              </div>
+            </div>
+            
+            <div className="split-card__divider" aria-hidden="true"></div>
+            
+            <div className="split-card__content">
+              <div className="split-card__top">
+                <h2 className="split-card__title">
+                  The <span className="split-card__title-italic">Real</span> Cost<br />
+                  Of DIY Setup
+                </h2>
+                
+                <div className="split-card__items">
+                  <div className="split-card__item">
+                    <h4>Time:</h4>
+                    <p>30-40 hours learning, configuring, testing<br />(At your hourly rate: $3,000-$6,000 of your time)</p>
+                  </div>
+                  
+                  <div className="split-card__item">
+                    <h4>Mistakes:</h4>
+                    <p>Incorrect setup = broken automations, lost leads, frustrated clients</p>
+                  </div>
+                  
+                  <div className="split-card__item">
+                    <h4>Opportunity:</h4>
+                    <p>Every week spent learning software = a week NOT creating or selling</p>
+                  </div>
+                  
+                  <div className="split-card__item">
+                    <h4>Energy:</h4>
+                    <p>The cognitive load of "figuring it out" drains what you need for your actual work</p>
+                  </div>
+                </div>
+                
+                <div className="split-card__truth">
+                  <h4>Truth:</h4>
+                  <p>Smart entrepreneurs always chose to invest ~$500 or more to save 40 hours and $6,000 of their time. Always.</p>
+                </div>
+              </div>
+              
+              <a href="#packages" className="split-card__btn">
+                Get Done-For-You Quote <ArrowIcon />
+              </a>
+            </div>
           </div>
         </div>
       </section>
