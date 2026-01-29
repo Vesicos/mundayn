@@ -244,89 +244,42 @@ const DoneForYou = () => {
         </div>
       </section>
 
-      {/* What DFY Actually Includes Section */}
-      <section className="dfy-includes">
-        <div className="dfy-includes__wrap">
-          <div className="dfy-includes__header">
-            <h2 className="dfy-includes__title">
-              What DFY <span className="dfy-includes__title-italic">Actually</span> Includes
+      {/* The Guarantee Section */}
+      <section className="dfy-guarantee">
+        <div className="dfy-guarantee__wrap">
+          <div className="dfy-guarantee__header">
+            <h2 className="dfy-guarantee__title">
+              The <span className="dfy-guarantee__title-italic">Guarantee</span>
             </h2>
-            <p className="dfy-includes__subtitle">When we say "DFY offers," here's what that means:</p>
+            <p className="dfy-guarantee__subtitle">Zero risk. Complete confidence.</p>
           </div>
           
-          <div className="dfy-includes__grid">
-            {/* Top-left card */}
-            <article className="dfy-includes__card dfy-includes__card--tl">
-              <div className="dfy-includes__card-overlay" />
-              <div className="dfy-includes__card-content">
-                <h3 className="dfy-includes__card-title">
-                  Your System, Ready<br />
-                  <span className="dfy-includes__card-title-italic">Complete Implementation</span>
-                </h3>
-                <h4 className="dfy-includes__card-label">What We Build:</h4>
-                <ul className="dfy-includes__card-list">
-                  <li>CRM with intelligent tagging</li>
-                  <li>Automated booking and payments</li>
-                  <li>Email sequences and follow-ups</li>
-                  <li>Calendar and scheduling</li>
-                  <li>Everything tested and working</li>
-                </ul>
-              </div>
+          <div className="dfy-guarantee__grid">
+            <article className="dfy-guarantee__card">
+              <h3 className="dfy-guarantee__card-title">
+                Money-Back<br /><span className="dfy-guarantee__card-title-italic">Promise:</span>
+              </h3>
+              <p className="dfy-guarantee__card-body">
+                If your DFY setup doesn't work as promised, we refund 100%. No questions asked.
+              </p>
             </article>
             
-            {/* Top-right card */}
-            <article className="dfy-includes__card dfy-includes__card--tr">
-              <div className="dfy-includes__card-overlay" />
-              <div className="dfy-includes__card-content">
-                <h3 className="dfy-includes__card-title">
-                  Your Brand, Everywhere<br />
-                  <span className="dfy-includes__card-title-italic">Presence without a design team</span>
-                </h3>
-                <h4 className="dfy-includes__card-label">What We Implement:</h4>
-                <ul className="dfy-includes__card-list">
-                  <li>Your colors, fonts, and visual identity</li>
-                  <li>Branded email templates</li>
-                  <li>Client-facing forms and pages</li>
-                  <li>Professional look across every touchpoint</li>
-                </ul>
-              </div>
+            <article className="dfy-guarantee__card">
+              <h3 className="dfy-guarantee__card-title">
+                45-Day<br /><span className="dfy-guarantee__card-title-italic">Support:</span>
+              </h3>
+              <p className="dfy-guarantee__card-body">
+                If something needs adjustment in your first 45 days, we fix it. Free.
+              </p>
             </article>
             
-            {/* Bottom-left card */}
-            <article className="dfy-includes__card dfy-includes__card--bl">
-              <div className="dfy-includes__card-overlay" />
-              <div className="dfy-includes__card-content">
-                <h3 className="dfy-includes__card-title">
-                  Your Client Journey, Mapped<br />
-                  <span className="dfy-includes__card-title-italic">From stranger to client</span>
-                </h3>
-                <h4 className="dfy-includes__card-label">What We Architect:</h4>
-                <ul className="dfy-includes__card-list">
-                  <li>Lead magnet delivery automation</li>
-                  <li>Welcome and nurture sequences</li>
-                  <li>Proper tagging at every stage</li>
-                  <li>Smart pathways based on behavior</li>
-                  <li>Dashboard where you see everything</li>
-                </ul>
-              </div>
-            </article>
-            
-            {/* Bottom-right card */}
-            <article className="dfy-includes__card dfy-includes__card--br">
-              <div className="dfy-includes__card-overlay" />
-              <div className="dfy-includes__card-content">
-                <h3 className="dfy-includes__card-title">
-                  Your Launch, Supported<br />
-                  <span className="dfy-includes__card-title-italic">We don't disappear after handoff</span>
-                </h3>
-                <h4 className="dfy-includes__card-label">What We Guarantee:</h4>
-                <ul className="dfy-includes__card-list">
-                  <li>Training on using your system (not building it)</li>
-                  <li>45 days of free adjustments</li>
-                  <li>Direct access to your implementation specialist</li>
-                  <li>System works perfectly from day one</li>
-                </ul>
-              </div>
+            <article className="dfy-guarantee__card">
+              <h3 className="dfy-guarantee__card-title">
+                Why we <span className="dfy-guarantee__card-title-italic">can</span><br /><span className="dfy-guarantee__card-title-italic">promise</span> this:
+              </h3>
+              <p className="dfy-guarantee__card-body">
+                We are the Mundayn experts. We know exactly how to build it right. And we don't hand it off until it works.
+              </p>
             </article>
           </div>
         </div>
