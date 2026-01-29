@@ -2480,3 +2480,380 @@
     padding: 40px 24px;
   }
 }
+
+/* ==========================================
+   ECOSYSTEM PAGE STYLES
+   ========================================== */
+
+/* Ecosystem Hero */
+.eco-hero {
+  padding: 160px 20px 80px;
+  text-align: center;
+  background-color: var(--mundayn-purple-dark);
+}
+
+.eco-hero__title {
+  font-family: var(--font-inter);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--mundayn-cream);
+  line-height: 1.15;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.eco-hero__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  color: var(--mundayn-gold);
+}
+
+.eco-hero__subtitle {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  color: var(--mundayn-cream);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.eco-hero__text {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: var(--mundayn-cream-light);
+}
+
+/* Ecosystem Stages */
+.eco-stages {
+  padding: 60px 0;
+  background-color: var(--mundayn-purple-dark);
+}
+
+.eco-stage {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 80px;
+  align-items: start;
+}
+
+.eco-stage:last-child {
+  margin-bottom: 0;
+}
+
+.eco-stage__indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.eco-stage__dot {
+  width: 14px;
+  height: 14px;
+  background-color: var(--mundayn-red-solid);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.eco-stage__line {
+  width: 2px;
+  flex: 1;
+  min-height: 300px;
+  background: linear-gradient(to bottom, var(--mundayn-red-solid) 0%, transparent 100%);
+  margin-top: 8px;
+}
+
+.eco-stage__content {
+  padding-right: 20px;
+}
+
+.eco-stage__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.eco-stage__label {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--mundayn-red-solid);
+  letter-spacing: 0.5px;
+}
+
+.eco-stage__coming {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--mundayn-cream-light);
+  letter-spacing: 0.5px;
+}
+
+.eco-stage__title {
+  font-family: var(--font-inter);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--mundayn-cream);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.eco-stage__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  color: var(--mundayn-cream);
+}
+
+.eco-stage__price {
+  display: inline-block;
+  background-color: var(--mundayn-red-solid);
+  color: var(--mundayn-white);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.eco-stage__subtitle {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--mundayn-gold);
+  margin-bottom: 20px;
+}
+
+.eco-stage__description {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--mundayn-cream-light);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.eco-stage__what-label {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--mundayn-cream);
+  margin-bottom: 8px;
+}
+
+.eco-stage__what-text {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--mundayn-cream-light);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.eco-stage__what-text strong {
+  color: var(--mundayn-cream);
+  font-weight: 600;
+}
+
+.eco-stage__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--mundayn-purple-darker);
+  color: var(--mundayn-cream);
+  border: 1px solid var(--mundayn-cream-light);
+  padding: 14px 24px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 24px;
+  transition: all 0.2s;
+}
+
+.eco-stage__cta:hover {
+  background-color: var(--mundayn-cream);
+  color: var(--mundayn-purple-dark);
+}
+
+.eco-stage__image {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.eco-stage__placeholder {
+  min-height: 280px;
+  border-radius: var(--radius-md);
+}
+
+/* Ecosystem Belief Section */
+.eco-belief {
+  padding: 100px 20px;
+  background-color: var(--mundayn-purple-dark);
+  text-align: center;
+}
+
+.eco-belief__title {
+  font-family: var(--font-inter);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--mundayn-gold);
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.eco-belief__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+}
+
+.eco-belief__quote {
+  font-family: var(--font-inter);
+  font-size: 20px;
+  color: var(--mundayn-cream);
+  margin-bottom: 16px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eco-belief__text {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--mundayn-cream-light);
+  margin-bottom: 32px;
+}
+
+.eco-belief__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--mundayn-gold);
+  color: var(--mundayn-black);
+  padding: 16px 28px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+}
+
+.eco-belief__cta:hover {
+  background-color: var(--mundayn-gold-hover);
+  transform: translateY(-2px);
+}
+
+/* Ecosystem Footer Variant */
+.mundayn-footer--ecosystem {
+  background-color: #1a0915;
+  padding: 60px 0;
+}
+
+.mundayn-footer__logo-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--mundayn-cream);
+}
+
+.mundayn-footer__logo-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.mundayn-footer__brand-name {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--mundayn-cream);
+}
+
+.mundayn-footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.mundayn-footer__legal {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  color: var(--mundayn-cream-light);
+  margin-top: 16px;
+}
+
+.mundayn-footer__links-wrap {
+  display: flex;
+  gap: 60px;
+}
+
+.mundayn-footer__col-label {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mundayn-red-solid);
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Ecosystem Responsive */
+@media (max-width: 900px) {
+  .eco-hero__title {
+    font-size: 36px;
+  }
+  
+  .eco-stage {
+    grid-template-columns: 30px 1fr;
+    gap: 20px;
+  }
+  
+  .eco-stage__image {
+    grid-column: 2;
+    margin-top: 24px;
+  }
+  
+  .eco-stage__title {
+    font-size: 32px;
+  }
+  
+  .eco-stage__line {
+    min-height: 100%;
+  }
+  
+  .eco-belief__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .eco-hero {
+    padding: 140px 20px 60px;
+  }
+  
+  .eco-hero__title {
+    font-size: 28px;
+  }
+  
+  .eco-stage {
+    grid-template-columns: 24px 1fr;
+    gap: 16px;
+  }
+  
+  .eco-stage__title {
+    font-size: 26px;
+  }
+  
+  .eco-stage__placeholder {
+    min-height: 200px;
+  }
+  
+  .mundayn-footer__links-wrap {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

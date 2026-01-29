@@ -93,7 +93,7 @@ const Index = () => {
         <ul className="mundayn-nav__links">
           <li><Link to="/">Product</Link></li>
           <li><Link to="/done-for-you">Done-For-You</Link></li>
-          <li><a href="#ecosystem">Ecosystem</a></li>
+          <li><Link to="/ecosystem">Ecosystem</Link></li>
         </ul>
         <a href="#trial" className="mundayn-nav__cta">
           Start Your 14-Day Free Trial <ArrowIcon />
