@@ -256,7 +256,8 @@ const Index = () => {
                 <p className="mundayn-why__desc">Your business runs from day one, not "someday." Week 1, you're operating. Not learning. Operating.</p>
               </div>
               <a href="#offers" className="mundayn-btn">
-                Learn More About Our Offers <ArrowIcon />
+                Explore The Mundayn 
+Done-For-You Ecosystem <ArrowIcon />
               </a>
             </div>
           </div>
