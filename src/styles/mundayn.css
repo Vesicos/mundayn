@@ -72,11 +72,12 @@
 .mundayn-nav__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: var(--mundayn-cream);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
+}
+
+.mundayn-nav__logo-img {
+  height: 32px;
+  width: auto;
 }
 
 .mundayn-nav__logo-icon {

@@ -27,6 +27,9 @@ import xMarkIcon from '@/assets/icons/x-mark.png';
 // Video import
 import animationVideo from '@/assets/animation_v1.mp4';
 
+// Logo
+import logoNav from '@/assets/logonav.svg';
+
 // Stats data for animated section
 const statsData = [{
   endValue: 15,
@@ -87,8 +90,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="mundayn-nav">
         <Link to="/" className="mundayn-nav__logo">
-          <div className="mundayn-nav__logo-icon">M</div>
-          MUNDAYN
+          <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img" />
         </Link>
         <ul className="mundayn-nav__links">
           <li><Link to="/">Product</Link></li>
