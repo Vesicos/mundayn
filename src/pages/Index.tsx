@@ -50,6 +50,9 @@ import pillowsOnly from '@/assets/pillows-only.png';
 // FAQ section image
 import elephantFaqBg from '@/assets/elephant-faq-bg.png';
 
+// Footer background
+import bgFooter from '@/assets/bgfooter.png';
+
 // Stats data for animated section
 const statsData = [{
   endValue: 15,
@@ -784,28 +787,30 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="mundayn-footer">
-        <div className="mundayn-footer__content">
-          <div className="mundayn-footer__left">
-            <div className="mundayn-footer__logo">
-              <div className="mundayn-nav__logo-icon" style={{
-              background: 'var(--mundayn-purple-dark)',
-              color: 'var(--mundayn-gold)'
-            }}>M</div>
-              MUNDAYN
+      <footer className="site-footer">
+        <div className="site-footer__card">
+          <div className="site-footer__bg" style={{ backgroundImage: `url(${bgFooter})` }}></div>
+          <div className="site-footer__tint"></div>
+          <div className="site-footer__content">
+            <div className="site-footer__brand">
+              <img src={logoNav} alt="Mundayn Logo" className="site-footer__logo" />
+              <span className="site-footer__name">MUNDAYN</span>
             </div>
-            <p className="mundayn-footer__tagline">You Create. We Implement. You Launch.</p>
-            <p className="mundayn-footer__copyright">© 2025 Mundayn. All rights reserved.</p>
-          </div>
-          <div className="mundayn-footer__right">
-            <ul className="mundayn-footer__links">
-              <li><a href="#packages">Find YOUR Package</a></li>
-              <li><a href="#ecosystem">Ecosystem</a></li>
-              <li><a href="#done-for-you">Done For You</a></li>
-            </ul>
-            <div className="mundayn-footer__contact">
-              <p className="mundayn-footer__contact-label">Contact Us:</p>
-              <p className="mundayn-footer__contact-email">care@mundayn.com</p>
+            
+            <nav className="site-footer__nav">
+              <a href="#packages">Find YOUR Package</a>
+              <Link to="/ecosystem">Ecosystem</Link>
+              <Link to="/done-for-you">Done For You</Link>
+            </nav>
+            
+            <div className="site-footer__legal">
+              <p className="site-footer__tagline">You Create. We Implement. You Launch.</p>
+              <p className="site-footer__copyright">© 2025 Mundayn. All rights reserved.</p>
+            </div>
+            
+            <div className="site-footer__contact">
+              <p className="site-footer__contact-label">Contact Us:</p>
+              <a href="mailto:care@mundayn.com" className="site-footer__email">care@mundayn.com</a>
             </div>
           </div>
         </div>
