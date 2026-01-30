@@ -1312,31 +1312,37 @@
   position: relative;
   background-color: #58233f;
   border-radius: var(--radius-md);
-  padding: 60px 80px 100px;
+  padding: 60px 80px 80px;
   overflow: hidden;
+  min-height: 700px;
 }
 
 .mundayn-faq__card-bg {
   position: absolute;
-  right: -50px;
-  bottom: -50px;
-  width: 450px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
   height: auto;
-  opacity: 0.15;
+  opacity: 0.2;
   pointer-events: none;
   mix-blend-mode: luminosity;
 }
 
 .mundayn-faq__title {
-  font-family: var(--font-playfair);
+  font-family: var(--font-inter);
   font-size: 48px;
   font-weight: 400;
-  font-style: italic;
   color: var(--mundayn-cream);
   text-align: center;
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
+}
+
+.mundayn-faq__title-italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
 }
 
 .mundayn-faq__list {
