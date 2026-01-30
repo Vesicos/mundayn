@@ -2469,14 +2469,14 @@
 }
 
 .dfy-solution__content {
-  padding: 0 24px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
 }
 
 .dfy-solution__number {
   font-family: var(--font-inter);
-  font-size: 64px;
+  font-size: 120px;
   font-weight: 500;
   color: var(--mundayn-red-solid);
   line-height: 1;
