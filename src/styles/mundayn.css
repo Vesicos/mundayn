@@ -3045,6 +3045,7 @@
   line-height: 16px;
   text-align: center;
   border-radius: 25px;
+  border: 2px solid #ED5D59;
 }
 
 .eco-stage__subtitle {
