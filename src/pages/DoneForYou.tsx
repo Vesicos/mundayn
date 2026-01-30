@@ -75,11 +75,11 @@ const DoneForYou = () => {
                     <li>Tutorials and support included</li>
                     <li>Best if you enjoy technical setup</li>
                   </ul>
+                  <a href="#trial" className="two-paths__btn">
+                    Start Free Trial (DIY) <ArrowIcon />
+                  </a>
                 </div>
               </div>
-              <a href="#trial" className="two-paths__btn">
-                Start Free Trial (DIY) <ArrowIcon />
-              </a>
             </div>
             
             <div className="two-paths__divider" aria-hidden="true"></div>
@@ -98,11 +98,11 @@ const DoneForYou = () => {
                     <li>You focus on business, we handle tech</li>
                     <li>Best if you're hitting energy ceiling</li>
                   </ul>
+                  <a href="#packages" className="two-paths__btn">
+                    Get Done-For-You Quote <ArrowIcon />
+                  </a>
                 </div>
               </div>
-              <a href="#packages" className="two-paths__btn">
-                Get Done-For-You Quote <ArrowIcon />
-              </a>
             </div>
           </div>
         </div>
