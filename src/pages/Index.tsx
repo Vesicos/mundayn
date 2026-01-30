@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
 import PackageCarousel from '../components/PackageCarousel';
 import AnimatedStats from '../components/AnimatedStats';
+import QuizModal from '../components/quiz/QuizModal';
 
 // Hand-drawn icon imports
 import sunIcon from '@/assets/icons/sun.png';
@@ -96,6 +97,8 @@ const FaqItem = ({
     </div>;
 };
 const Index = () => {
+  const [quizOpen, setQuizOpen] = useState(false);
+  
   // Handle scroll to packages section when navigating from other pages
   React.useEffect(() => {
     if (window.location.hash === '#packages') {
@@ -209,9 +212,9 @@ const Index = () => {
                 Start where you are TODAY. Upgrade only when you're ready. We're with you on the full journey—from first client to full community.
               </p>
               
-              <a href="#packages" className="mundayn-btn">
+              <button onClick={() => setQuizOpen(true)} className="mundayn-btn">
                 SHOW ME MY PACKAGE    <ArrowIcon />
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -776,6 +779,9 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      
+      {/* Quiz Modal */}
+      <QuizModal open={quizOpen} onOpenChange={setQuizOpen} />
     </div>;
 };
 export default Index;
