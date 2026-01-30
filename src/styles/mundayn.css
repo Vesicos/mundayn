@@ -31,6 +31,11 @@
   --text-medium-line-height: 1.4;
   --text-medium-letter-spacing: -1px;
   
+  /* Typography - Tall (32px / Regular / Line height auto / Letter spacing -2.5px) */
+  --text-tall-size: 32px;
+  --text-tall-line-height: 1.4;
+  --text-tall-letter-spacing: -2.5px;
+  
   /* Typography - Small (16px / Mixed weight / Line height auto / Letter spacing -0.5px) */
   --text-small-size: 16px;
   --text-small-line-height: 1.5;
@@ -2436,10 +2441,11 @@
 
 .dfy-solution__subtitle {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
+  font-size: var(--text-tall-size);
+  font-weight: 400;
   text-align: center;
   color: var(--mundayn-cream);
-  letter-spacing: var(--text-small-letter-spacing);
+  letter-spacing: var(--text-tall-letter-spacing);
   margin-bottom: 80px;
 }
 
