@@ -32,7 +32,7 @@ import animationVideo from '@/assets/animation_v1.mp4';
 
 // Logo
 import logoNav from '@/assets/logonav.svg';
-import logoIcon from '@/assets/logo-icon.png';
+import logoIcon from '@/assets/logo-icon.svg';
 import footerLogo from '@/assets/footer-logo.png';
 
 // Hero image
