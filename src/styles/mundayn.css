@@ -2827,10 +2827,10 @@
 
 .dfy-future__content p {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
+  font-size: var(--text-tall-size);
   color: var(--mundayn-cream-light);
-  line-height: var(--text-small-line-height);
-  letter-spacing: var(--text-small-letter-spacing);
+  line-height: var(--text-tall-line-height);
+  letter-spacing: var(--text-tall-letter-spacing);
   margin-bottom: 20px;
 }
 
