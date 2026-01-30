@@ -10,6 +10,17 @@ All colors MUST be HSL.
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    
+    /* Quiz Modal Colors */
+    --quiz-bg: 42 25% 83%;
+    --quiz-option: 315 67% 8%;
+    --quiz-option-hover: 315 67% 12%;
+    --quiz-option-selected: 315 67% 6%;
+    --quiz-option-text: 42 25% 82%;
+    --quiz-accent: 42 91% 57%;
+    --quiz-title: 316 44% 19%;
+    --quiz-progress-bg: 300 8% 75%;
+    --quiz-progress-fill: 316 44% 19%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;

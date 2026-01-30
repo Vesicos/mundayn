@@ -19,6 +19,17 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        quiz: {
+          bg: "hsl(var(--quiz-bg))",
+          option: "hsl(var(--quiz-option))",
+          "option-hover": "hsl(var(--quiz-option-hover))",
+          "option-selected": "hsl(var(--quiz-option-selected))",
+          "option-text": "hsl(var(--quiz-option-text))",
+          accent: "hsl(var(--quiz-accent))",
+          title: "hsl(var(--quiz-title))",
+          "progress-bg": "hsl(var(--quiz-progress-bg))",
+          "progress-fill": "hsl(var(--quiz-progress-fill))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
