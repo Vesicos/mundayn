@@ -4989,6 +4989,10 @@
   justify-content: center;
 }
 
+.fs-time__value-card p {
+  white-space: nowrap;
+}
+
 .fs-time__value-calc {
   font-size: 42px;
   font-weight: 600;
