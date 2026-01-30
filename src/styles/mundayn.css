@@ -4977,26 +4977,30 @@
 .fs-time__value-card {
   background: rgba(35, 7, 28, 0.6);
   border-radius: var(--radius-lg);
-  padding: 55px 28px;
+  padding: 40px 48px;
   font-family: var(--font-inter);
   font-size: 18px;
   color: var(--mundayn-cream);
   letter-spacing: -0.4px;
-  line-height: 22px;
-  text-align: center;
+  line-height: 1.4;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .fs-time__value-calc {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 600;
   color: var(--mundayn-cream);
   letter-spacing: -2.5px;
-  line-height: 36px;
-  margin: 12px 0;
+  line-height: 1.2;
+  margin: 8px 0;
 }
 
 .fs-time__value-card--highlight {
   background: rgba(89, 36, 64, 1);
+  text-align: center;
 }
 
 .fs-time__value-reclaim {
@@ -5004,7 +5008,7 @@
   font-weight: 500;
   color: var(--mundayn-gold);
   letter-spacing: -2.5px;
-  line-height: 36px;
+  line-height: 1.2;
   margin-bottom: 8px;
 }
 
