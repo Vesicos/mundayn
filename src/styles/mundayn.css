@@ -2704,6 +2704,8 @@
   background-size: 200% 200%;
   background-repeat: no-repeat;
   background-color: rgba(40, 0, 40, 0.3);
+  background-blend-mode: multiply;
+  opacity: 0.5;
 }
 
 /* Each card shows a different quadrant */
