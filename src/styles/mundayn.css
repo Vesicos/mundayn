@@ -2440,7 +2440,7 @@
   text-align: center;
   color: var(--mundayn-cream);
   letter-spacing: var(--text-small-letter-spacing);
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 
 .dfy-solution__subtitle-italic {
@@ -2461,10 +2461,11 @@
 }
 
 .dfy-solution__divider {
-  width: 3px;
+  width: 2px;
   background-color: var(--mundayn-red-solid);
   flex-shrink: 0;
-  align-self: stretch;
+  height: 280px;
+  align-self: flex-start;
 }
 
 .dfy-solution__content {
@@ -2476,7 +2477,7 @@
 .dfy-solution__number {
   font-family: var(--font-inter);
   font-size: 64px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--mundayn-red-solid);
   line-height: 1;
   margin-bottom: 16px;
