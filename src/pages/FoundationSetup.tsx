@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
+import logoIcon from '@/assets/logo-icon.png';
 import Footer from '../components/Footer';
 import fsHeroBg from '@/assets/fs-hero-bg.png';
 import fsWhatWeDoElephant from '@/assets/fs-whatwedo-elephant.png';
@@ -83,7 +84,8 @@ const FoundationSetup = () => {
       {/* Navigation */}
       <nav className="mundayn-nav">
         <Link to="/" className="mundayn-nav__logo">
-          <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img" />
+          <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-full" />
+          <img src={logoIcon} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-icon" />
         </Link>
         <ul className="mundayn-nav__links">
           <li><Link to="/">Product</Link></li>

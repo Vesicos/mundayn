@@ -100,6 +100,15 @@
   width: auto;
 }
 
+/* Show full logo on desktop, hide icon */
+.mundayn-nav__logo-full {
+  display: block;
+}
+
+.mundayn-nav__logo-icon {
+  display: none;
+}
+
 .mundayn-nav__logo-icon {
   width: 32px;
   height: 32px;
@@ -1900,6 +1909,16 @@
   
   .mundayn-nav__logo-img {
     height: 22px;
+  }
+  
+  /* Hide full logo, show icon on mobile */
+  .mundayn-nav__logo-full {
+    display: none;
+  }
+  
+  .mundayn-nav__logo-icon {
+    display: block;
+    height: 28px;
   }
   
   /* Global Sections */
