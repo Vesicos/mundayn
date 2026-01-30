@@ -724,37 +724,59 @@ const Index = () => {
               </div>
             </article>
             
-            <article className="mundayn-final-cta__card mundayn-final-cta__card--highlight">
+            <article className="mundayn-final-cta__card mundayn-final-cta__card--highlight" style={{ display: 'flex', flexDirection: 'column' }}>
               <h3 style={{
-              fontSize: '24px',
-              marginBottom: '16px'
-            }}>Not ready yet?</h3>
+                fontFamily: 'var(--font-playfair)',
+                fontStyle: 'italic',
+                fontSize: '28px',
+                fontWeight: 400,
+                marginBottom: '16px',
+                textAlign: 'center',
+                color: '#DDD7C9'
+              }}>Not ready yet?</h3>
               <p style={{
-              fontSize: '16px',
-              marginBottom: '16px'
-            }}>
+                fontFamily: 'var(--font-playfair)',
+                fontStyle: 'italic',
+                fontSize: '16px',
+                marginBottom: '20px',
+                textAlign: 'center',
+                color: '#DDD7C9'
+              }}>
                 Get the Systematic Business Blueprint free.<br />
                 A 5-day email course that shows you:
               </p>
               <ul style={{
-              fontSize: '14px',
-              textAlign: 'left',
-              paddingLeft: '20px',
-              margin: '0 0 24px 0'
-            }}>
-                <li>How to identify which manual processes cost you the most</li>
-                <li>The 3 automations every Impact Entrepreneur needs first</li>
-                <li>When to DIY vs. when to delegate setup</li>
-                <li>How to know which package fits your position</li>
+                fontFamily: 'var(--font-playfair)',
+                fontStyle: 'italic',
+                fontSize: '16px',
+                textAlign: 'left',
+                paddingLeft: '24px',
+                margin: '0 0 auto 0',
+                color: '#DDD7C9',
+                lineHeight: 1.6
+              }}>
+                <li style={{ marginBottom: '4px' }}>How to identify which manual processes cost you the most</li>
+                <li style={{ marginBottom: '4px' }}>The 3 automations every Impact Entrepreneur needs first</li>
+                <li style={{ marginBottom: '4px' }}>When to DIY vs. when to delegate setup</li>
+                <li style={{ marginBottom: '4px' }}>How to know which package fits your position</li>
               </ul>
-              <div style={{ marginTop: 'auto' }}>
+              <div style={{ marginTop: 'auto', paddingTop: '24px', position: 'relative' }}>
                 <input type="email" placeholder="Email Address" style={{
                   width: '100%',
-                  padding: '12px 16px',
+                  padding: '16px 50px 16px 20px',
                   borderRadius: '40px',
                   border: 'none',
-                  fontSize: '14px'
+                  fontSize: '16px',
+                  backgroundColor: '#F5F0E8'
                 }} />
+                <span style={{
+                  position: 'absolute',
+                  right: '20px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  color: '#ED5D59',
+                  fontSize: '20px'
+                }}>💬</span>
               </div>
             </article>
           </div>
