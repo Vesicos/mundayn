@@ -651,7 +651,7 @@ const Index = () => {
         <div className="mundayn-container">
           <div className="mundayn-faq__card">
             <img src={elephantReading} alt="" className="mundayn-faq__card-bg" aria-hidden="true" />
-            <h2 className="mundayn-faq__title">Questions? Answered.</h2>
+            <h2 className="mundayn-faq__title">Questions? <span className="mundayn-faq__title-italic">Answered.</span></h2>
           
             <div className="mundayn-faq__list">
             <FaqItem question="How is this different from Kajabi, ClickFunnels, or other platforms?" answer={<>
