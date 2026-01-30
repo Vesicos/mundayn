@@ -4130,18 +4130,17 @@
   line-height: 22px;
 }
 
-.fs-time__path ul li svg {
+.fs-time__path ul li svg,
+.fs-list-icon {
   flex-shrink: 0;
   margin-top: 2px;
-  color: var(--mundayn-red-solid);
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
 
 .fs-time__path--setup h4 {
   color: var(--mundayn-cream);
-}
-
-.fs-time__path--setup ul li svg {
-  color: var(--mundayn-gold);
 }
 
 .fs-time__value {

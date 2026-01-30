@@ -29,6 +29,8 @@ import guaranteeArrow from '@/assets/icons/fs-guarantee-arrow.png';
 import guaranteeSquiggle from '@/assets/icons/fs-guarantee-squiggle.png';
 import guaranteeSmiley from '@/assets/icons/fs-guarantee-smiley.png';
 import guaranteeEye from '@/assets/icons/fs-guarantee-eye.png';
+import checkYellow from '@/assets/icons/fs-check-yellow.png';
+import xRed from '@/assets/icons/fs-x-red.png';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -37,17 +39,12 @@ const ArrowIcon = () => (
   </svg>
 );
 
-const CheckIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <polyline points="20 6 9 17 4 12" />
-  </svg>
+const CheckIconImg = () => (
+  <img src={checkYellow} alt="" className="fs-list-icon" />
 );
 
-const XIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <line x1="18" y1="6" x2="6" y2="18" />
-    <line x1="6" y1="6" x2="18" y2="18" />
-  </svg>
+const XIconImg = () => (
+  <img src={xRed} alt="" className="fs-list-icon" />
 );
 
 const PlayIcon = () => (
@@ -382,19 +379,19 @@ const FoundationSetup = () => {
               <div className="fs-time__path">
                 <h4>DIY Setup Path:</h4>
                 <ul>
-                  <li><XIcon /> <span>30-40 hours of configuration, testing, and troubleshooting</span></li>
-                  <li><XIcon /> <span>2-3 months before everything works the way you need it to</span></li>
-                  <li><XIcon /> <span>Learning curve with mistakes you'll need to fix later</span></li>
-                  <li><XIcon /> <span>Your business waits while you figure out technical details</span></li>
+                  <li><XIconImg /> <span>30-40 hours of configuration, testing, and troubleshooting</span></li>
+                  <li><XIconImg /> <span>2-3 months before everything works the way you need it to</span></li>
+                  <li><XIconImg /> <span>Learning curve with mistakes you'll need to fix later</span></li>
+                  <li><XIconImg /> <span>Your business waits while you figure out technical details</span></li>
                 </ul>
               </div>
               <div className="fs-time__path fs-time__path--setup">
                 <h4>Foundation Setup Path:</h4>
                 <ul>
-                  <li><CheckIcon /> <span>$599 one-time investment</span></li>
-                  <li><CheckIcon /> <span>One week to working system</span></li>
-                  <li><CheckIcon /> <span>Zero mistakes because we build it right the first time</span></li>
-                  <li><CheckIcon /> <span>You focus on business activities while we handle technical implementation</span></li>
+                  <li><CheckIconImg /> <span>$599 one-time investment</span></li>
+                  <li><CheckIconImg /> <span>One week to working system</span></li>
+                  <li><CheckIconImg /> <span>Zero mistakes because we build it right the first time</span></li>
+                  <li><CheckIconImg /> <span>You focus on business activities while we handle technical implementation</span></li>
                 </ul>
               </div>
             </div>
@@ -496,11 +493,11 @@ const FoundationSetup = () => {
             <div className="fs-options__card fs-options__card--setup">
               <h3 className="fs-options__gold">Option 2:<br />Foundation Setup</h3>
               <ul>
-                <li><CheckIcon /> <span>One week to fully working system</span></li>
-                <li><CheckIcon /> <span>We handle all technical implementation</span></li>
-                <li><CheckIcon /> <span>You focus on your business, not software</span></li>
-                <li><CheckIcon /> <span>Start earning revenue immediately</span></li>
-                <li><CheckIcon /> <span>Launch with confidence</span></li>
+                <li><CheckIconImg /> <span>One week to fully working system</span></li>
+                <li><CheckIconImg /> <span>We handle all technical implementation</span></li>
+                <li><CheckIconImg /> <span>You focus on your business, not software</span></li>
+                <li><CheckIconImg /> <span>Start earning revenue immediately</span></li>
+                <li><CheckIconImg /> <span>Launch with confidence</span></li>
               </ul>
               <a href="#setup" className="fs-options__cta">
                 CHOOSE FOUNDATION SETUP <ArrowIcon />
