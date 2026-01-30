@@ -111,6 +111,84 @@
   width: auto;
 }
 
+/* Desktop: show link logo, hide mobile trigger */
+.mundayn-nav__logo-desktop {
+  display: flex;
+}
+
+.mundayn-nav__logo-mobile {
+  display: none;
+}
+
+/* ==========================================
+   MOBILE MENU STYLES
+   ========================================== */
+.mobile-menu {
+  background-color: var(--mundayn-purple-nav) !important;
+  border-right: none !important;
+  padding: 24px !important;
+}
+
+.mobile-menu__header {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu__logo {
+  height: 32px;
+  width: auto;
+}
+
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobile-menu__link {
+  display: block;
+  padding: 16px 20px;
+  color: var(--mundayn-cream);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s;
+}
+
+.mobile-menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu__link--active {
+  background-color: rgba(245, 173, 45, 0.2);
+  color: var(--mundayn-gold);
+}
+
+.mobile-menu__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: var(--mundayn-gold);
+  color: var(--mundayn-black);
+  padding: 16px 24px;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 32px;
+  transition: background-color 0.2s;
+}
+
+.mobile-menu__cta:hover {
+  background-color: var(--mundayn-gold-hover);
+}
+
 .mundayn-nav__links {
   display: flex;
   gap: 47px;
@@ -1908,6 +1986,19 @@
   .mundayn-nav__logo-icon {
     display: block;
     height: 28px;
+  }
+  
+  /* Show mobile logo trigger, hide desktop */
+  .mundayn-nav__logo-desktop {
+    display: none;
+  }
+  
+  .mundayn-nav__logo-mobile {
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
   
   /* Global Sections */

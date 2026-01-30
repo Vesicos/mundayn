@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
-import logoNav from '@/assets/logonav.svg';
-import logoIcon from '@/assets/logo-icon.svg';
+import MobileNav from '../components/MobileNav';
 import Footer from '../components/Footer';
 import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
 import elephantTruthBg from '@/assets/elephant-truth-bg-new.png';
@@ -21,20 +20,7 @@ const DoneForYou = () => {
   return (
     <div className="mundayn-page">
       {/* Navigation */}
-      <nav className="mundayn-nav">
-        <Link to="/" className="mundayn-nav__logo">
-          <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-full" />
-          <img src={logoIcon} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-icon" />
-        </Link>
-        <ul className="mundayn-nav__links">
-          <li><Link to="/">Product</Link></li>
-          <li><Link to="/done-for-you">Done-For-You</Link></li>
-          <li><Link to="/ecosystem">Ecosystem</Link></li>
-        </ul>
-        <a href="/#packages" className="mundayn-nav__cta">
-          Start Your 14-Day Free Trial <ArrowIcon />
-        </a>
-      </nav>
+      <MobileNav />
 
       {/* Hero Section */}
       <header className="dfy-hero">
