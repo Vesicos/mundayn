@@ -513,48 +513,34 @@ const FoundationSetup = () => {
       {/* What Happens Next Section */}
       <section className="fs-next">
         <div className="mundayn-container">
-          <h2 className="fs-next__title">What Happens Next</h2>
+          <h2 className="fs-next__title"><em>What Happens Next</em></h2>
           <p className="fs-next__subtitle">When you choose Foundation Setup, here's the process:</p>
           
-          <div className="fs-next__timeline">
+          <div className="fs-next__grid">
             <div className="fs-next__step">
               <div className="fs-next__number">1</div>
-              <div className="fs-next__line"></div>
-              <div className="fs-next__content">
-                <h4>Form Submission</h4>
-                <p>Complete a simple 15-minute onboarding form</p>
-              </div>
+              <h4 className="fs-next__heading">Form Submission</h4>
+              <p className="fs-next__text">Complete a simple 15-minute onboarding form</p>
             </div>
             <div className="fs-next__step">
               <div className="fs-next__number">2</div>
-              <div className="fs-next__line"></div>
-              <div className="fs-next__content">
-                <h4>Onboarding Call</h4>
-                <p>We schedule your 30-minute onboarding call</p>
-              </div>
+              <h4 className="fs-next__heading">Onboarding Call</h4>
+              <p className="fs-next__text">We schedule your 30-minute onboarding call</p>
             </div>
             <div className="fs-next__step">
               <div className="fs-next__number">3</div>
-              <div className="fs-next__line"></div>
-              <div className="fs-next__content">
-                <h4>Implementation</h4>
-                <p>Our team implements everything while you focus on your business</p>
-              </div>
+              <h4 className="fs-next__heading">Implementation</h4>
+              <p className="fs-next__text">Our team implements everything while you focus on your business</p>
             </div>
             <div className="fs-next__step">
               <div className="fs-next__number">4</div>
-              <div className="fs-next__line"></div>
-              <div className="fs-next__content">
-                <h4>Walkthrough</h4>
-                <p>One week later, you receive your personalized walkthrough video</p>
-              </div>
+              <h4 className="fs-next__heading">Walkthrough</h4>
+              <p className="fs-next__text">One week later, you receive your personalized walkthrough video</p>
             </div>
             <div className="fs-next__step">
               <div className="fs-next__number">5</div>
-              <div className="fs-next__content">
-                <h4>Go Live</h4>
-                <p>You log in to a system that works—and start operating immediately</p>
-              </div>
+              <h4 className="fs-next__heading">Go Live</h4>
+              <p className="fs-next__text">You log in to a system that works—and start operating immediately</p>
             </div>
           </div>
           
