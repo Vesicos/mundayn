@@ -2700,25 +2700,29 @@
   overflow: hidden;
   padding: 32px;
   min-height: 320px;
+}
+
+.dfy-includes__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url('../assets/4elephants.png');
   background-size: 200% 200%;
   background-repeat: no-repeat;
   background-color: rgba(40, 0, 40, 0.3);
-  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
   opacity: 0.5;
+  z-index: 0;
 }
 
 /* Each card shows a different quadrant */
-.dfy-includes__card--tl { background-position: 0% 0%; }
-.dfy-includes__card--tr { background-position: 100% 0%; }
-.dfy-includes__card--bl { background-position: 0% 100%; }
-.dfy-includes__card--br { background-position: 100% 100%; }
+.dfy-includes__card--tl::before { background-position: 0% 0%; }
+.dfy-includes__card--tr::before { background-position: 100% 0%; }
+.dfy-includes__card--bl::before { background-position: 0% 100%; }
+.dfy-includes__card--br::before { background-position: 100% 100%; }
 
 .dfy-includes__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(60, 20, 50, 0.65);
-  pointer-events: none;
+  display: none;
 }
 
 .dfy-includes__content {
