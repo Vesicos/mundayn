@@ -629,7 +629,7 @@ const Index = () => {
               <span className="mundayn-cta-cards__text">
                 <span className="mundayn-cta-cards__italic">You</span> Create.<br />
                 <span className="mundayn-cta-cards__italic">We</span> Implement.<br />
-                <span className="mundayn-cta-cards__regular">You</span> Launch.
+                You Launch.
               </span>
             </a>
             <a href="/ecosystem" className="mundayn-cta-cards__card">

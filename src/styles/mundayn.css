@@ -1280,9 +1280,9 @@
 }
 
 .mundayn-cta-cards__text {
-  font-family: var(--font-playfair);
+  font-family: var(--font-inter);
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--mundayn-gold);
   text-align: center;
   line-height: 1.15;
@@ -1292,10 +1292,12 @@
 }
 
 .mundayn-cta-cards__regular {
+  font-family: var(--font-inter);
   font-style: normal;
 }
 
 .mundayn-cta-cards__italic {
+  font-family: var(--font-playfair);
   font-style: italic;
 }
 
