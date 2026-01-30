@@ -5087,17 +5087,17 @@
   min-height: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.10);
 }
 
 .fs-guarantee__card--highlight {
-  background: rgba(237, 93, 89, 0.10);
+  background: rgba(35, 7, 28, 0.8);
 }
 
 .fs-guarantee__card-title {
-  font-family: var(--font-playfair);
-  font-style: italic;
+  font-family: var(--font-inter);
+  font-style: normal;
   font-size: 24px;
   font-weight: 400;
   color: var(--mundayn-cream);
@@ -5112,8 +5112,8 @@
 }
 
 .fs-guarantee__card-label {
-  font-family: var(--font-playfair);
-  font-style: italic;
+  font-family: var(--font-inter);
+  font-style: normal;
   font-size: 24px;
   font-weight: 400;
   color: var(--mundayn-cream);
@@ -5137,9 +5137,8 @@
 
 .fs-guarantee__icon {
   position: absolute;
-  top: 50%;
+  top: 40px;
   right: 32px;
-  transform: translateY(-50%);
   width: 80px;
   height: auto;
   object-fit: contain;
