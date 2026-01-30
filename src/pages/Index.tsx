@@ -794,9 +794,8 @@ const Index = () => {
             <div className="site-footer__bg" style={{ backgroundImage: `url(${bgFooter})` }}></div>
             <div className="site-footer__tint"></div>
             <div className="site-footer__content">
-              <div className="site-footer__brand">
-                <img src={footerLogo} alt="Mundayn Logo" className="site-footer__logo" />
-              <span className="site-footer__name">MUNDAYN</span>
+            <div className="site-footer__brand">
+              <img src={footerLogo} alt="Mundayn Logo" className="site-footer__logo" />
             </div>
             
             <nav className="site-footer__nav">
