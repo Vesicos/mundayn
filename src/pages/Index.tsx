@@ -6,6 +6,7 @@ import StageCard from '../components/StageCard';
 import PackageCarousel from '../components/PackageCarousel';
 import AnimatedStats from '../components/AnimatedStats';
 import QuizModal from '../components/quiz/QuizModal';
+import MobileNav from '../components/MobileNav';
 import Footer from '../components/Footer';
 
 // Hand-drawn icon imports
@@ -131,20 +132,7 @@ const Index = () => {
   }, []);
   return <div className="mundayn-page">
       {/* Navigation */}
-      <nav className="mundayn-nav">
-        <Link to="/" className="mundayn-nav__logo">
-          <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-full" />
-          <img src={logoIcon} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-icon" />
-        </Link>
-        <ul className="mundayn-nav__links">
-          <li><Link to="/">Product</Link></li>
-          <li><Link to="/done-for-you">Done-For-You</Link></li>
-          <li><Link to="/ecosystem">Ecosystem</Link></li>
-        </ul>
-        <a href="/#packages" className="mundayn-nav__cta">
-          Start Your 14-Day Free Trial <ArrowIcon />
-        </a>
-      </nav>
+      <MobileNav />
 
       {/* Hero Section */}
       <header className="mundayn-hero">
