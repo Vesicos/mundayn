@@ -2890,11 +2890,11 @@
 
 .eco-hero__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
-  line-height: 1;
-  letter-spacing: -2.5px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 32px;
 }
 
@@ -2906,21 +2906,21 @@
 
 .eco-hero__subtitle {
   font-family: var(--font-inter);
-  font-size: 32px;
-  font-weight: 500;
+  font-size: var(--text-tall-size);
+  font-weight: 400;
   color: var(--mundayn-cream);
-  line-height: 1;
-  letter-spacing: -2.16px;
+  line-height: var(--text-tall-line-height);
+  letter-spacing: var(--text-tall-letter-spacing);
   margin-bottom: 24px;
 }
 
 .eco-hero__text {
   font-family: var(--font-inter);
-  font-size: 18px;
+  font-size: var(--text-medium-size);
   font-weight: 400;
   color: var(--mundayn-cream);
-  letter-spacing: -0.36px;
-  line-height: 1.6;
+  letter-spacing: var(--text-medium-letter-spacing);
+  line-height: var(--text-medium-line-height);
 }
 
 /* Ecosystem Stages */
