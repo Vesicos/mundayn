@@ -4969,17 +4969,17 @@
 
 .fs-time__value {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 31px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
   margin-bottom: 48px;
 }
 
 .fs-time__value-card {
   background: rgba(35, 7, 28, 0.6);
   border-radius: var(--radius-lg);
-  padding: 40px 48px;
+  padding: 28px 36px;
   font-family: var(--font-inter);
-  font-size: 18px;
+  font-size: 16px;
   color: var(--mundayn-cream);
   letter-spacing: -0.4px;
   line-height: 1.4;
