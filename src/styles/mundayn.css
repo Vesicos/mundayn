@@ -1947,12 +1947,11 @@
   padding: 20px 40px;
   border-radius: 50px;
   text-decoration: none;
-  transition: background-color 0.2s, transform 0.2s;
+  transition: transform 0.2s ease;
 }
 
 .dfy-hero__btn:hover {
-  background-color: var(--mundayn-wine);
-  transform: translateY(-2px);
+  transform: scale(1.05);
 }
 
 .dfy-hero__btn svg {
