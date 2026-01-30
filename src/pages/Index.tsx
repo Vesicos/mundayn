@@ -83,6 +83,10 @@ const ArrowIcon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="no
     <line x1="5" y1="12" x2="19" y2="12" />
     <polyline points="12 5 19 12 12 19" />
   </svg>;
+const ArrowIconBold = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>;
 const FaqItem = ({
   question,
   answer
@@ -703,8 +707,8 @@ const Index = () => {
                 Choose your package. See how it feels to have systems running.
               </p>
               <div className="mundayn-final-cta__card-cta">
-                <a href="#packages" className="mundayn-btn">
-                  Start Your Free Trial <ArrowIcon />
+                <a href="#packages" className="mundayn-btn" style={{ fontWeight: 700, textTransform: 'uppercase', padding: '14px 24px' }}>
+                  START YOUR FREE TRIAL <ArrowIconBold />
                 </a>
               </div>
             </article>
@@ -714,8 +718,8 @@ const Index = () => {
                 We build it in one week. You launch with a system that actually works. Guaranteed.
               </p>
               <div className="mundayn-final-cta__card-cta">
-                <Link to="/done-for-you" className="mundayn-btn">
-                  Explore The Done-For-You Options <ArrowIcon />
+                <Link to="/done-for-you" className="mundayn-btn" style={{ fontWeight: 700, textTransform: 'uppercase', padding: '14px 24px', textAlign: 'left', lineHeight: 1.2 }}>
+                  EXPLORE THE DONE-FOR-YOU OPTIONS <ArrowIconBold />
                 </Link>
               </div>
             </article>
