@@ -15,7 +15,10 @@ interface Package {
 
 interface PackageCardProps extends Package {
   isCenter: boolean;
-  position: 'left' | 'center' | 'right' | 'hidden';
+  zIndex: number;
+  x: number;
+  scale: number;
+  opacity: number;
 }
 
 function PackageCard({
@@ -28,66 +31,36 @@ function PackageCard({
   apps,
   buttonText,
   isCenter,
-  position
+  zIndex,
+  x,
+  scale,
+  opacity
 }: PackageCardProps) {
   const bgColor = isCenter ? "#58233f" : "#2a0c22";
-  const borderRadius = isCenter ? "12px" : "12px";
-  const shadow = isCenter ? "0px 8px 40px 0px rgba(0,0,0,0.4)" : "none";
+  const borderRadius = isCenter ? "8px" : "15px";
+  const shadow = isCenter ? "0px 4px 23px 0px rgba(0,0,0,0.3)" : "none";
 
-  // Get transform and style based on position
-  const getPositionStyles = () => {
-    switch (position) {
-      case 'center':
-        return {
-          x: 0,
-          scale: 1.08,
-          opacity: 1,
-          zIndex: 3,
-        };
-      case 'left':
-        return {
-          x: -320, // Push left card far left so only right edge shows
-          scale: 0.95,
-          opacity: 1,
-          zIndex: 1,
-        };
-      case 'right':
-        return {
-          x: 320, // Push right card far right so only left edge shows
-          scale: 0.95,
-          opacity: 1,
-          zIndex: 1,
-        };
-      default:
-        return {
-          x: 0,
-          scale: 0.8,
-          opacity: 0,
-          zIndex: 0,
-        };
-    }
-  };
-
-  const posStyles = getPositionStyles();
-
+  // Calculate approximate card height based on content
+  const cardHeight = 580;
+  
   return (
     <motion.div
-      className="absolute flex flex-col"
+      className="absolute w-[300px] md:w-[340px] lg:w-[380px] px-5 py-6 md:px-6 md:py-8"
       style={{
-        width: '380px',
-        height: '620px',
         backgroundColor: bgColor,
         borderRadius,
         boxShadow: shadow,
+        zIndex,
         left: '50%',
-        top: '50%',
+        top: 0,
+        marginTop: 0,
       }}
       initial={false}
       animate={{
-        x: `calc(-50% + ${posStyles.x}px)`,
-        y: '-50%',
-        scale: posStyles.scale,
-        zIndex: posStyles.zIndex,
+        x: x - 190, // offset for left: 50% (half of max card width)
+        y: 0,
+        scale,
+        opacity
       }}
       transition={{
         type: "spring",
@@ -96,99 +69,79 @@ function PackageCard({
         duration: 0.4
       }}
     >
-      {/* Card content wrapper */}
-      <div className="flex flex-col h-full px-7 py-8">
-        {/* Icon */}
-        <div className="mb-3 opacity-70">
-          <Icon size={28} className="text-[#ED5D59]" />
-        </div>
-
-        {/* Title */}
-        <h3 className="font-serif text-[26px] text-[#ddd7c9] leading-tight tracking-tight mb-1">
-          {title.split(" ").map((word, i) => (
-            <span key={i}>
-              {word}
-              {i === 0 && <br />}
-              {i > 0 && " "}
-            </span>
-          ))}
-        </h3>
-
-        {/* Price */}
-        <p className="text-[#F5AD2D] font-semibold text-[14px] tracking-wide mb-4">
-          {price}/MONTH
-        </p>
-
-        {/* Divider */}
-        <div className="h-[1px] bg-[#ED5D59] mb-5" />
-
-        {/* Features - flex-grow to push button down */}
-        <div className="text-[#ddd7c9] text-[14px] leading-relaxed flex-grow">
-          <p className="font-bold mb-2">
-            {previousPackage ? `Everything in ${previousPackage}, PLUS:` : "What's inside:"}
-          </p>
-          {features.map((feature, index) => (
-            <p key={index} className="mb-1">• {feature}</p>
-          ))}
-
-          <p className="mt-4 font-bold mb-2">This is for you:</p>
-          <p className="mb-4 opacity-90">{description}</p>
-
-          <p className="mb-2">Apps you can cancel:</p>
-          <ul className="list-disc pl-4">
-            {apps.map((app, index) => (
-              <li key={index} className="mb-0.5">{app}</li>
-            ))}
-          </ul>
-        </div>
-
-        {/* CTA Button - pinned to bottom */}
-        <div className="mt-auto pt-5">
-          <a
-            href="#trial"
-            className="inline-flex items-center justify-center gap-2 bg-[#F5AD2D] text-black font-bold text-sm px-6 py-3.5 rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full"
-          >
-            {buttonText}
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-        </div>
+      {/* Icon */}
+      <div className="mb-2 opacity-70">
+        <Icon size={28} className="text-[#ED5D59]" />
       </div>
 
-      {/* Gradient fade overlay for side cards */}
-      {position === 'left' && (
-        <div 
-          className="absolute inset-0 pointer-events-none rounded-[12px]"
-          style={{
-            background: 'linear-gradient(to left, transparent 30%, rgba(71, 29, 60, 0.85) 100%)',
-          }}
-        />
-      )}
-      {position === 'right' && (
-        <div 
-          className="absolute inset-0 pointer-events-none rounded-[12px]"
-          style={{
-            background: 'linear-gradient(to right, transparent 30%, rgba(71, 29, 60, 0.85) 100%)',
-          }}
-        />
-      )}
+      {/* Title */}
+      <h3 className="font-serif text-[22px] md:text-[24px] text-[#ddd7c9] leading-tight tracking-tight mb-1">
+        {title.split(" ").map((word, i) => (
+          <span key={i}>
+            {word}
+            {i === 0 && <br />}
+            {i > 0 && " "}
+          </span>
+        ))}
+      </h3>
+
+      {/* Price */}
+      <p className="text-[#F5AD2D] font-semibold text-[14px] tracking-wide mb-3">
+        {price}/MONTH
+      </p>
+
+      {/* Divider */}
+      <div className="h-[1px] bg-[#ED5D59] mb-4" />
+
+      {/* Features */}
+      <div className="text-[#ddd7c9] text-[13px] md:text-[14px] leading-relaxed">
+        <p className="font-bold mb-1.5">
+          {previousPackage ? `Everything in ${previousPackage}, PLUS:` : "What's inside:"}
+        </p>
+        {features.map((feature, index) => (
+          <p key={index} className="mb-0.5">• {feature}</p>
+        ))}
+
+        <p className="mt-3 font-bold mb-1.5">This is for you:</p>
+        <p className="mb-3 opacity-90">{description}</p>
+
+        <p className="mb-1.5">Apps you can cancel:</p>
+        <ul className="list-disc pl-4">
+          {apps.map((app, index) => (
+            <li key={index} className="mb-0.5">{app}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* CTA Button */}
+      <div className="mt-5">
+        <a
+          href="#trial"
+          className="inline-flex items-center justify-center gap-2 bg-[#F5AD2D] text-black font-bold text-sm px-6 py-3 rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full"
+        >
+          {buttonText}
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
     </motion.div>
   );
 }
 
-function NavigationArrow({ direction, onClick }: { direction: 'left' | 'right'; onClick: () => void }) {
+function NavigationArrow({ direction, onClick, containerHeight }: { direction: 'left' | 'right'; onClick: () => void; containerHeight: number }) {
   return (
     <motion.button
-      className={`absolute z-20 top-1/2 -translate-y-1/2 ${direction === 'left' ? 'left-[15%]' : 'right-[15%]'}`}
+      className={`absolute z-20 ${direction === 'left' ? 'left-4 md:left-8' : 'right-4 md:right-8'}`}
+      style={{ top: containerHeight / 2, transform: 'translateY(-50%)' }}
       onClick={onClick}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       aria-label={direction === 'left' ? 'Previous package' : 'Next package'}
     >
-      <div className="flex items-center justify-center w-12 h-12 bg-[#3e1834]/80 rounded-full backdrop-blur-sm">
-        <span className="text-[#ED5D59] text-xl font-bold">
+      <div className="flex items-center justify-center w-12 h-12 bg-[#3e1834] rounded-full">
+        <span className="text-[#ED5D59] text-xl font-bold opacity-70">
           {direction === 'left' ? '←' : '→'}
         </span>
       </div>
@@ -280,8 +233,28 @@ const packages: Package[] = [
 ];
 
 export default function PackageCarousel() {
-  const [activeIndex, setActiveIndex] = useState(0); // Start with Entrepreneur (index 0)
+  const [activeIndex, setActiveIndex] = useState(1); // Start with Creator (index 1)
   const [isAnimating, setIsAnimating] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const updateSize = () => {
+      if (containerRef.current) {
+        const width = containerRef.current.offsetWidth;
+        setContainerWidth(width);
+        setIsMobile(width < 900);
+      }
+    };
+
+    updateSize();
+    window.addEventListener('resize', updateSize);
+
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
 
   const handlePrev = () => {
     if (isAnimating) return;
@@ -297,45 +270,70 @@ export default function PackageCarousel() {
     setTimeout(() => setIsAnimating(false), 400);
   };
 
-  const getCardPosition = (index: number): 'left' | 'center' | 'right' | 'hidden' => {
+  const getCardStyles = (index: number) => {
     const relativeIndex = (index - activeIndex + packages.length) % packages.length;
-    
-    if (relativeIndex === 0) return 'center';
-    if (relativeIndex === 1) return 'right';
-    if (relativeIndex === packages.length - 1) return 'left';
-    return 'hidden';
+    const cardWidth = isMobile ? 300 : 380;
+
+    if (isMobile) {
+      if (relativeIndex === 0) {
+        return { x: 0, scale: 1, opacity: 1, zIndex: 3, isCenter: true };
+      }
+      return { x: containerWidth * 2, scale: 0.8, opacity: 0, zIndex: 0, isCenter: false };
+    }
+
+    const sideGap = 35;
+
+    switch (relativeIndex) {
+      case 0:
+        return { x: 0, scale: 1.02, opacity: 1, zIndex: 3, isCenter: true };
+      case 1:
+        return { x: cardWidth + sideGap, scale: 0.88, opacity: 0.55, zIndex: 2, isCenter: false };
+      case packages.length - 1:
+        return { x: -(cardWidth + sideGap), scale: 0.88, opacity: 0.55, zIndex: 2, isCenter: false };
+      default:
+        const direction = relativeIndex < packages.length / 2 ? 1 : -1;
+        return { x: containerWidth * direction * 1.5, scale: 0.7, opacity: 0, zIndex: 1, isCenter: false };
+    }
   };
 
+  // Fixed card height that fits all content
+  const cardContainerHeight = 600;
+
   return (
-    <div className="relative w-full">
-      {/* Clipping wrapper - this creates the "masked" effect */}
+    <div
+      ref={containerRef}
+      className="relative w-full"
+      style={{ overflow: 'visible' }}
+    >
+      {/* Cards container */}
       <div 
-        className="relative w-full mx-auto overflow-hidden"
-        style={{ height: '680px' }}
+        className="relative w-full"
+        style={{ height: `${cardContainerHeight}px`, overflow: 'visible' }}
       >
-        {/* Cards container */}
-        <div className="relative w-full h-full">
-          {packages.map((pkg, index) => {
-            const position = getCardPosition(index);
-            return (
-              <PackageCard
-                key={index}
-                {...pkg}
-                isCenter={position === 'center'}
-                position={position}
-              />
-            );
-          })}
-        </div>
+        {/* Package cards */}
+        {packages.map((pkg, index) => {
+          const styles = getCardStyles(index);
+          return (
+            <PackageCard
+              key={index}
+              {...pkg}
+              isCenter={styles.isCenter}
+              zIndex={styles.zIndex}
+              x={styles.x}
+              scale={styles.scale}
+              opacity={styles.opacity}
+            />
+          );
+        })}
 
-        {/* Navigation arrows - inside the clipping wrapper */}
-        <NavigationArrow direction="left" onClick={handlePrev} />
-        <NavigationArrow direction="right" onClick={handleNext} />
-
-        {/* Edge gradient overlays for premium fade effect */}
-        <div className="absolute left-0 top-0 w-[120px] h-full z-10 pointer-events-none bg-gradient-to-r from-[#471D3C] to-transparent" />
-        <div className="absolute right-0 top-0 w-[120px] h-full z-10 pointer-events-none bg-gradient-to-l from-[#471D3C] to-transparent" />
+        {/* Navigation arrows - vertically centered with cards */}
+        <NavigationArrow direction="left" onClick={handlePrev} containerHeight={cardContainerHeight} />
+        <NavigationArrow direction="right" onClick={handleNext} containerHeight={cardContainerHeight} />
       </div>
+
+      {/* Edge gradient overlays */}
+      <div className="absolute left-0 top-0 w-[100px] md:w-[150px] h-full z-10 pointer-events-none bg-gradient-to-r from-[#471D3C] to-transparent" />
+      <div className="absolute right-0 top-0 w-[100px] md:w-[150px] h-full z-10 pointer-events-none bg-gradient-to-l from-[#471D3C] to-transparent" />
     </div>
   );
 }
