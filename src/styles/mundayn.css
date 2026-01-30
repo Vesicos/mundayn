@@ -4567,6 +4567,15 @@
   letter-spacing: -0.4px;
   line-height: 30px;
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fs-comparison__check {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .fs-comparison__cta {
