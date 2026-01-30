@@ -53,12 +53,11 @@ function PackageCard({
         zIndex,
         left: '50%',
         top: '50%',
-        height: '620px',
       }}
       initial={false}
       animate={{
         x: x - 190, // offset for left: 50% (half of max card width)
-        y: -310, // offset for top: 50% (half of card height)
+        y: -310, // offset for top: 50% (half of visible height)
         scale,
         opacity
       }}
