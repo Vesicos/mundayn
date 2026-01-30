@@ -2828,7 +2828,7 @@
 .dfy-future__content p {
   font-family: var(--font-inter);
   font-size: var(--text-tall-size);
-  color: var(--mundayn-cream-light);
+  color: #DDD7C9;
   line-height: var(--text-tall-line-height);
   letter-spacing: var(--text-tall-letter-spacing);
   margin-bottom: 20px;
