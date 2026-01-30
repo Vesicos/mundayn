@@ -4762,7 +4762,7 @@
 }
 
 .fs-provide__card--timeline {
-  background: var(--mundayn-purple-dark);
+  background: rgba(237, 93, 89, 0.1);
   border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
 }
 
