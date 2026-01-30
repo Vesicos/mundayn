@@ -4744,6 +4744,28 @@
   transform: rotate(180deg);
 }
 
+.fs-faq__answer {
+  padding: 0 0 20px 0;
+  font-family: var(--font-inter);
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.fs-faq__answer p {
+  margin-bottom: 12px;
+}
+
+.fs-faq__answer ol,
+.fs-faq__answer ul {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.fs-faq__answer li {
+  margin-bottom: 8px;
+}
+
 /* Foundation Footer Variant */
 .mundayn-footer--foundation {
   background: linear-gradient(135deg, #f5ad2d 0%, #e5a02a 100%);
