@@ -140,9 +140,6 @@ const Index = () => {
         <div className="mundayn-hero__bg mundayn-hero__bg--desktop">
           <img src={heroElephant} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
         </div>
-        <div className="mundayn-hero__mobile-elephant">
-          <img src={heroElephantMobile} alt="Elephant carrying boxes" />
-        </div>
         <div className="mundayn-hero__content">
           <div className="mundayn-hero__text-wrapper">
             <h1 className="mundayn-hero__title">
@@ -153,6 +150,9 @@ const Index = () => {
               We handle the mundane so you can focus on the meaningful.
             </p>
           </div>
+        </div>
+        <div className="mundayn-hero__mobile-elephant">
+          <img src={heroElephantMobile} alt="Elephant carrying boxes" />
         </div>
       </header>
 
