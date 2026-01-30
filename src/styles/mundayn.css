@@ -2991,11 +2991,11 @@
 
 .eco-stage__label {
   font-family: var(--font-inter);
-  font-size: 32px;
+  font-size: var(--text-tall-size);
   font-weight: 700;
   color: var(--mundayn-red-solid);
-  letter-spacing: -2.5px;
-  line-height: 1;
+  letter-spacing: var(--text-tall-letter-spacing);
+  line-height: var(--text-tall-line-height);
 }
 
 .eco-stage__coming {
@@ -3016,12 +3016,12 @@
 
 .eco-stage__title {
   font-family: var(--font-playfair);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 400;
   font-style: italic;
   color: var(--mundayn-cream);
-  line-height: 0.9;
-  letter-spacing: -2.5px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin: 0;
 }
 
@@ -3050,29 +3050,31 @@
 
 .eco-stage__subtitle {
   font-family: var(--font-inter);
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--mundayn-gold);
-  letter-spacing: -0.5px;
+  font-size: var(--text-medium-size);
+  font-weight: 400;
+  color: #DDD7C9;
+  letter-spacing: var(--text-medium-letter-spacing);
+  line-height: var(--text-medium-line-height);
   margin-bottom: 24px;
 }
 
 .eco-stage__what-label {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-medium-size);
   font-weight: 700;
-  color: var(--mundayn-cream);
-  letter-spacing: -0.5px;
+  color: #DDD7C9;
+  letter-spacing: var(--text-medium-letter-spacing);
+  line-height: var(--text-medium-line-height);
   margin-bottom: 8px;
 }
 
 .eco-stage__what-text {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-medium-size);
   font-weight: 400;
-  color: var(--mundayn-cream-light);
-  line-height: 1.5;
-  letter-spacing: -0.5px;
+  color: #DDD7C9;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 12px;
   max-width: 420px;
 }
