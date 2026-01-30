@@ -2089,8 +2089,9 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.2s;
-  margin-top: 24px;
-  align-self: flex-start;
+  margin-top: 32px;
+  margin-left: calc(160px + 32px);
+  white-space: nowrap;
 }
 
 .two-paths__btn:hover {
