@@ -5098,11 +5098,11 @@
 .fs-guarantee__card-title {
   font-family: var(--font-inter);
   font-style: normal;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--mundayn-cream);
   line-height: 1.4;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
   margin: 0;
 }
 
