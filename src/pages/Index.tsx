@@ -634,8 +634,8 @@ const Index = () => {
             </a>
             <a href="/ecosystem" className="mundayn-cta-cards__card">
               <span className="mundayn-cta-cards__text">
-                <span className="mundayn-cta-cards__regular">Your Business</span><br />
-                <span className="mundayn-cta-cards__regular">Grows.</span> <span className="mundayn-cta-cards__italic">Mundayn</span><br />
+                Your Business<br />
+                Grows. <span className="mundayn-cta-cards__italic">Mundayn</span><br />
                 <span className="mundayn-cta-cards__italic">Grows With You</span>
               </span>
             </a>
