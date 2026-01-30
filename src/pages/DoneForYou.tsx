@@ -6,6 +6,7 @@ import logoNav from '@/assets/logonav.svg';
 import Footer from '../components/Footer';
 import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
 import elephantTruthBg from '@/assets/elephant-truth-bg.png';
+import elephantsFamily from '@/assets/elephants-family.png';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -135,12 +136,8 @@ const DoneForYou = () => {
         <div className="split-card__wrap">
           <div className="split-card__card">
             <div className="split-card__media">
-              <div className="mundayn-placeholder mundayn-placeholder--elephant split-card__img">
-                <span>Elephants Image</span>
-              </div>
+              <img src={elephantsFamily} alt="Family of elephants" className="split-card__img" />
             </div>
-            
-            <div className="split-card__divider" aria-hidden="true"></div>
             
             <div className="split-card__content">
               <div className="split-card__top">
