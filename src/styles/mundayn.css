@@ -1319,16 +1319,13 @@
 
 .mundayn-faq__card-bg {
   position: absolute;
-  right: -20%;
-  bottom: -20%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  right: -5%;
+  bottom: -15%;
+  width: auto;
+  height: 110%;
   opacity: 1;
   pointer-events: none;
-  mix-blend-mode: plus-lighter;
-  transform: scale(1.2);
+  mix-blend-mode: multiply;
 }
 
 .mundayn-faq__title {
