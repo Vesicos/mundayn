@@ -1987,6 +1987,7 @@
   display: flex;
   border-radius: 28px;
   overflow: visible;
+  width: 100%;
 }
 
 .two-paths__panel {
