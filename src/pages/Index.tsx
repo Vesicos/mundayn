@@ -224,14 +224,15 @@ const Index = () => {
             Why Mundayn is <span className="mundayn-section__title-italic">Different</span>
           </h2>
           
-          <div className="mundayn-why__card">
+          <div className="mundayn-why__cards">
             {/* Left Panel */}
-            <div className="mundayn-why__side mundayn-why__side--left">
+            <div className="mundayn-why__panel mundayn-why__panel--left">
               <div className="mundayn-why__inner">
                 <div className="mundayn-why__headline">
                   <h3 className="mundayn-why__heading">
-                    The Problem<br />
-                    <span className="mundayn-section__title-italic">with All-in-One</span>
+                    The<br />
+                    Problem<br />
+                    <span className="mundayn-section__title-italic">with All-<br />in-One</span>
                   </h3>
                 </div>
                 <div className="mundayn-why__copy">
@@ -245,16 +246,14 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Divider */}
-            <div className="mundayn-why__divider"></div>
-            
             {/* Right Panel */}
-            <div className="mundayn-why__side mundayn-why__side--right">
+            <div className="mundayn-why__panel mundayn-why__panel--right">
               <div className="mundayn-why__rightStack">
                 <div className="mundayn-why__inner">
                   <div className="mundayn-why__headline">
                     <h3 className="mundayn-why__heading">
-                      What <span className="mundayn-section__title-italic">True All-in-One</span><br />
+                      What<br />
+                      <span className="mundayn-section__title-italic">True All-<br />in-One</span><br />
                       means
                     </h3>
                   </div>
@@ -264,7 +263,7 @@ const Index = () => {
                       <p className="mundayn-why__desc">One platform that replaces 15+ scattered apps you run today. Everything you need in one place. One login. Complete control.</p>
                     </div>
                     <div className="mundayn-why__block">
-                      <p className="mundayn-why__label">THE SETUP (Done-For-You Services)</p>
+                      <p className="mundayn-why__label">THE SETUP<br />(Done-For-You Services)</p>
                       <p className="mundayn-why__desc">We implement it for you, built for your specific business. Your branding. Your client journey. Your workflows. Configured by us.</p>
                     </div>
                     <div className="mundayn-why__block">
@@ -273,8 +272,8 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                <a href="#offers" className="mundayn-btn mundayn-why__btn">
-                  Explore The Mundayn Done-For-You Ecosystem <ArrowIcon />
+                <a href="#offers" className="mundayn-why__cta-btn">
+                  Explore The Mundayn<br />Done-For-You Ecosystem <ArrowIcon />
                 </a>
               </div>
             </div>
