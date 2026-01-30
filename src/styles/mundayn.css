@@ -2021,8 +2021,7 @@
 }
 
 .two-paths__divider {
-  width: 1px;
-  background: rgba(255, 255, 255, 0.18);
+  display: none;
   align-self: stretch;
 }
 
