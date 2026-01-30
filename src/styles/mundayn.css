@@ -1911,7 +1911,7 @@
 .dfy-hero__subtitle {
   font-family: var(--font-inter);
   font-size: 24px;
-  font-style: normal;
+  font-style: italic;
   color: var(--mundayn-purple-dark);
   line-height: 1.4;
   margin-bottom: 16px;
@@ -1929,7 +1929,7 @@
 .dfy-hero__tagline {
   font-family: var(--font-inter);
   font-size: 22px;
-  font-style: normal;
+  font-style: italic;
   color: var(--mundayn-purple-dark);
   margin-bottom: 48px;
 }

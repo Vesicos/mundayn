@@ -4,12 +4,18 @@ import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
 import Footer from '../components/Footer';
-const ArrowIcon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
+
+const ArrowIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <line x1="5" y1="12" x2="19" y2="12" />
     <polyline points="12 5 19 12 12 19" />
-  </svg>;
+  </svg>
+);
+
 const DoneForYou = () => {
-  return <div className="mundayn-page">
+  return (
+    <div className="mundayn-page">
       {/* Navigation */}
       <nav className="mundayn-nav">
         <Link to="/" className="mundayn-nav__logo">
@@ -27,23 +33,22 @@ const DoneForYou = () => {
 
       {/* Hero Section */}
       <header className="dfy-hero">
-        <div className="dfy-hero__bg mundayn-placeholder mundayn-placeholder--elephant">
-          <span>Elephant with boxes</span>
+        <div className="dfy-hero__bg">
+          <img src={dfyHeroElephant} alt="Elephant carrying boxes" className="dfy-hero__image" />
         </div>
         <div className="dfy-hero__content">
           <h1 className="dfy-hero__title">
             Your Business,<br />
             Running From <span className="dfy-hero__title-italic">Day One</span>
           </h1>
-          <ul className="dfy-hero__list">
-            <li>Most platforms hand you software.
-We hand you a system that works.</li>
-            <li>Not "after you watch 47 tutorials."</li>
-            <li>Not "once you hire someone to help."</li>
-            <li>Not "maybe Thursday."</li>
-          </ul>
-          <a href="#packages" className="mundayn-btn">
-            Jump to DFY Packages <ArrowIcon />
+          <p className="dfy-hero__subtitle">
+            Most platforms hand you software. We hand you a<br />
+            system that works.
+          </p>
+          <p className="dfy-hero__week">Week 1: You're operating.</p>
+          <p className="dfy-hero__tagline">Not learning. Operating.</p>
+          <a href="#packages" className="dfy-hero__btn">
+            SEE HOW IT WORKS <ArrowIcon />
           </a>
         </div>
       </header>
@@ -387,6 +392,8 @@ We hand you a system that works.</li>
 
       {/* Footer */}
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default DoneForYou;
