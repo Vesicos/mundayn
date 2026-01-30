@@ -98,7 +98,7 @@ const FaqItem = ({
 };
 const Index = () => {
   const [quizOpen, setQuizOpen] = useState(false);
-  
+
   // Handle scroll to packages section when navigating from other pages
   React.useEffect(() => {
     if (window.location.hash === '#packages') {
@@ -276,7 +276,7 @@ const Index = () => {
                   </div>
                 </div>
                 <a href="#offers" className="mundayn-why__cta-btn">
-                  LEARN MORE ABOUT OUR ACTIONS <ArrowIcon />
+                  LEARN MORE ABOUT OUR OFFERS <ArrowIcon />
                 </a>
               </div>
             </div>
