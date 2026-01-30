@@ -348,7 +348,7 @@ const Index = () => {
             Save $300+ monthly by replacing 15+ tools. Reclaim 15 hours every week.
           </p>
           <div className="mundayn-feels__cta">
-            <a href="#trial" className="mundayn-btn">
+            <a href="#packages" className="mundayn-btn">
               Start Your Free Trial <ArrowIcon />
             </a>
           </div>
