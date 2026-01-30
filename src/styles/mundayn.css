@@ -2043,6 +2043,7 @@
   }
   
   /* Hero - Mobile Layout */
+  /* Hero - Mobile Layout */
   .mundayn-hero {
     height: auto;
     min-height: auto;
@@ -2060,15 +2061,14 @@
   .mundayn-hero__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 100px 20px 0 20px;
+    align-items: flex-start;
+    width: 100%;
+    padding: 100px 24px 0 24px;
   }
   
   .mundayn-hero__text-wrapper {
     max-width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
   
   .mundayn-hero__title {
@@ -2083,8 +2083,9 @@
   
   .mundayn-hero__mobile-elephant {
     display: block;
-    width: 100%;
-    margin-top: 16px;
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
   }
   
   .mundayn-hero__mobile-elephant img {
