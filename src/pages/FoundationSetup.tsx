@@ -4,6 +4,11 @@ import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
 import Footer from '../components/Footer';
+import fsHeroBg from '@/assets/fs-hero-bg.png';
+import fsWhatWeDoElephant from '@/assets/fs-whatwedo-elephant.png';
+import fsDiyPillow from '@/assets/fs-diy-pillow.png';
+import fsSetupElephant from '@/assets/fs-setup-elephant.png';
+import fsHorizontalBg from '@/assets/fs-horizontal-bg.png';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -71,8 +76,7 @@ const FoundationSetup = () => {
       {/* Hero Section */}
       <header className="fs-hero">
         <div className="fs-hero__bg">
-          {/* Image placeholder for hero background */}
-          <div className="fs-hero__bg-placeholder"></div>
+          <img src={fsHeroBg} alt="Foundation Setup" className="fs-hero__bg-img" />
         </div>
         <div className="fs-hero__content">
           <h1 className="fs-hero__title">We're Here to Help You Launch</h1>
@@ -172,8 +176,7 @@ const FoundationSetup = () => {
           
           <div className="fs-whatwedo__card">
             <div className="fs-whatwedo__image">
-              {/* Elephant image placeholder */}
-              <div className="fs-whatwedo__image-placeholder"></div>
+              <img src={fsWhatWeDoElephant} alt="What we do" className="fs-whatwedo__img" />
             </div>
             <div className="fs-whatwedo__content">
               <p className="fs-whatwedo__intro">Foundation Setup means you stop configuring and start operating.</p>
@@ -348,10 +351,12 @@ const FoundationSetup = () => {
             <p className="fs-time__text">Your time is valuable. Every hour you spend configuring software is an hour you're not spending on revenue-generating activities.</p>
             
             <div className="fs-time__images">
-              {/* Sad elephant placeholder */}
-              <div className="fs-time__img-placeholder"></div>
-              {/* Happy elephant placeholder */}
-              <div className="fs-time__img-placeholder"></div>
+              <div className="fs-time__img-wrap">
+                <img src={fsDiyPillow} alt="DIY Setup" className="fs-time__img" />
+              </div>
+              <div className="fs-time__img-wrap">
+                <img src={fsSetupElephant} alt="Foundation Setup" className="fs-time__img" />
+              </div>
             </div>
             
             <div className="fs-time__comparison">
@@ -545,8 +550,7 @@ const FoundationSetup = () => {
       {/* Final CTA Section */}
       <section className="fs-final" id="setup">
         <div className="fs-final__bg">
-          {/* Big elephant image placeholder */}
-          <div className="fs-final__bg-placeholder"></div>
+          <img src={fsHorizontalBg} alt="Get Foundation Setup" className="fs-final__bg-img" />
         </div>
         <div className="fs-final__content">
           <h2 className="fs-final__title">Get Foundation Setup Now</h2>
