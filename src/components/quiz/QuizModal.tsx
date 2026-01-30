@@ -119,17 +119,7 @@ const QuizModal = ({ open, onOpenChange }: QuizModalProps) => {
               </div>
               
               {/* Navigation */}
-              <div className="flex items-center justify-center gap-4 mb-6">
-                {currentQuestion > 0 && (
-                  <button
-                    onClick={handleBack}
-                    className="flex items-center gap-2 px-5 py-3 rounded-full text-quiz-title hover:bg-quiz-title/10 transition-all font-medium"
-                  >
-                    <ArrowLeft className="w-4 h-4" />
-                    Back
-                  </button>
-                )}
-                
+              <div className="flex items-center justify-center mb-6">
                 <button
                   onClick={handleNext}
                   disabled={selectedOptions[currentQuestion] === null}
