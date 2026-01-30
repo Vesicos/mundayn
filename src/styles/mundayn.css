@@ -2163,8 +2163,42 @@
 
 /* DFY The Honest Truth Section */
 .dfy-truth {
-  padding: 80px 0;
+  position: relative;
+  padding: 100px 0;
   background-color: var(--mundayn-purple-dark);
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.dfy-truth__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.dfy-truth__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.dfy-truth__content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  width: 100%;
+}
+
+.dfy-truth__inner {
+  max-width: 500px;
 }
 
 .dfy-truth__title {
@@ -2174,7 +2208,7 @@
   color: var(--mundayn-gold);
   line-height: var(--text-title-line-height);
   letter-spacing: var(--text-title-letter-spacing);
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .dfy-truth__title-italic {
@@ -2185,16 +2219,38 @@
 
 .dfy-truth__text {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
-  color: var(--mundayn-cream);
-  line-height: 1.8;
-  letter-spacing: var(--text-small-letter-spacing);
-  margin-bottom: 32px;
+  font-size: var(--text-medium-size);
+  color: var(--mundayn-cream-light);
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
+  margin-bottom: 8px;
 }
 
-.dfy-truth__text em {
-  font-family: var(--font-playfair);
-  font-style: italic;
+.dfy-truth__text--bold {
+  font-weight: 600;
+  color: var(--mundayn-cream);
+}
+
+.dfy-truth__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--mundayn-gold);
+  color: var(--mundayn-black);
+  padding: 14px 28px;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 24px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.dfy-truth__btn:hover {
+  background-color: var(--mundayn-gold-hover);
+  transform: scale(1.02);
 }
 
 /* Split Card Section (Real Cost) */
