@@ -501,17 +501,17 @@
   padding: 80px 0;
 }
 
-/* Container for the two separate cards */
+/* Unified combined card - joined panels */
 .mundayn-why__cards {
   display: flex;
-  gap: 16px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
 }
 
-/* Each panel as separate card */
+/* Each panel inside the unified card */
 .mundayn-why__panel {
   flex: 1;
-  padding: 48px;
-  border-radius: var(--radius-xl);
+  padding: 40px 36px;
 }
 
 .mundayn-why__panel--left {
