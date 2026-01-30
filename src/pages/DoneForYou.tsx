@@ -386,7 +386,7 @@ const DoneForYou = () => {
           </div>
           
           <a href="#start" className="mundayn-btn">
-            Jump to DFY Packages <ArrowIcon />
+            LEARN MORE ABOUT DFY <ArrowIcon />
           </a>
         </div>
       </section>
