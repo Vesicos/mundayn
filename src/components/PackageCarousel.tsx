@@ -52,13 +52,13 @@ function PackageCard({
         boxShadow: shadow,
         zIndex,
         left: '50%',
-        top: 0,
-        marginTop: 0,
+        top: '50%',
+        height: '520px',
       }}
       initial={false}
       animate={{
         x: x - 190, // offset for left: 50% (half of max card width)
-        y: 0,
+        y: -260, // offset for top: 50% (half of card height)
         scale,
         opacity
       }}
