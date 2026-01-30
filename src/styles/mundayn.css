@@ -181,8 +181,15 @@
 .mundayn-hero__content {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  text-align: left;
+}
+
+.mundayn-hero__text-wrapper {
   max-width: 450px;
-  padding: 40px;
 }
 
 .mundayn-hero__title {
