@@ -2607,14 +2607,19 @@
 }
 
 .dfy-guarantee__card {
-  background-color: #58233f;
-  border-radius: 26px;
+  background: rgba(35, 7, 28, 0.80);
+  border-radius: 8px;
+  box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.10);
   padding: 34px;
   min-height: 430px;
   display: flex;
   flex-direction: column;
   transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
   will-change: transform;
+}
+
+.dfy-guarantee__card:nth-child(2) {
+  background: rgba(237, 93, 89, 0.10);
 }
 
 .dfy-guarantee__card:hover {
@@ -2625,11 +2630,11 @@
 
 .dfy-guarantee__card-title {
   font-family: var(--font-inter);
-  font-size: var(--text-medium-size);
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-cream);
-  line-height: var(--text-medium-line-height);
-  letter-spacing: var(--text-medium-letter-spacing);
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
 }
 
 .dfy-guarantee__card-title-italic {
@@ -2640,9 +2645,11 @@
 
 .dfy-guarantee__card-body {
   font-family: var(--font-inter);
-  font-size: 15px;
+  font-size: var(--text-medium-size);
+  font-weight: 400;
   color: var(--mundayn-cream-light);
-  line-height: 1.6;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-top: auto;
   max-width: 28ch;
 }
