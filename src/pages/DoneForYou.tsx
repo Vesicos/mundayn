@@ -175,7 +175,7 @@ const DoneForYou = () => {
               </div>
               
               <a href="#packages" className="split-card__btn">
-                Get Done-For-You Quote <ArrowIcon />
+                LEARN MORE ABOUT DFY <ArrowIcon />
               </a>
             </div>
           </div>
