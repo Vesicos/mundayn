@@ -131,13 +131,15 @@ const Index = () => {
           <img src={heroElephant} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
         </div>
         <div className="mundayn-hero__content">
-          <h1 className="mundayn-hero__title">
-            Your Business, Running <span className="mundayn-hero__title-italic">Itself</span>
-          </h1>
-          <p className="mundayn-hero__subtitle">
-            The only platform that delivers true all-in-one: the systems AND the setup.
-            We handle the mundane so you can focus on the meaningful.
-          </p>
+          <div className="mundayn-hero__text-wrapper">
+            <h1 className="mundayn-hero__title">
+              Your Business, Running <span className="mundayn-hero__title-italic">Itself</span>
+            </h1>
+            <p className="mundayn-hero__subtitle">
+              The only platform that delivers true all-in-one: the systems AND the setup.
+              We handle the mundane so you can focus on the meaningful.
+            </p>
+          </div>
         </div>
       </header>
 
