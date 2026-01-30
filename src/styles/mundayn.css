@@ -3876,13 +3876,11 @@
   justify-content: flex-end;
 }
 
-.fs-implement__card-icon {
+.fs-implement__icon {
   width: 50px;
   height: 50px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  object-fit: contain;
   margin-bottom: auto;
-  /* Placeholder for icon */
 }
 
 .fs-implement__card-content p {
