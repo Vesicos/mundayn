@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
+import Footer from '../components/Footer';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -389,31 +390,7 @@ const DoneForYou = () => {
       </section>
 
       {/* Footer */}
-      <footer className="mundayn-footer">
-        <div className="mundayn-container">
-          <div className="mundayn-footer__content">
-            <div className="mundayn-footer__brand">
-              <div className="mundayn-footer__logo">
-                <div className="mundayn-nav__logo-icon">M</div>
-                MUNDAYN
-              </div>
-              <p className="mundayn-footer__tagline">You Create. We Implement. You Launch.</p>
-            </div>
-            
-            <div className="mundayn-footer__links">
-              <div className="mundayn-footer__col">
-                <a href="/">Find DFY Package</a>
-                <a href="/">Ecosystem</a>
-                <a href="/">Social Proof</a>
-              </div>
-              <div className="mundayn-footer__col">
-                <a href="/">Contact us</a>
-                <a href="/">Login to Mundayn</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

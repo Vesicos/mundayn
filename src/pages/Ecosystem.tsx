@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
+import Footer from '../components/Footer';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -215,40 +216,7 @@ const Ecosystem = () => {
       </section>
 
       {/* Footer */}
-      <footer className="mundayn-footer mundayn-footer--ecosystem">
-        <div className="mundayn-container">
-          <div className="mundayn-footer__content">
-            <div className="mundayn-footer__brand">
-              <div className="mundayn-footer__logo">
-                <div className="mundayn-footer__logo-icon">
-                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 8C20 8 12 12 12 20C12 28 20 32 20 32C20 32 28 28 28 20C28 12 20 8 20 8Z" stroke="currentColor" strokeWidth="2" fill="none"/>
-                    <path d="M14 16C14 16 17 14 20 14C23 14 26 16 26 16" stroke="currentColor" strokeWidth="2"/>
-                    <circle cx="16" cy="18" r="1.5" fill="currentColor"/>
-                    <circle cx="24" cy="18" r="1.5" fill="currentColor"/>
-                    <path d="M20 22C20 22 18 28 20 32" stroke="currentColor" strokeWidth="2"/>
-                  </svg>
-                </div>
-                <span className="mundayn-footer__brand-name">MUNDAYN</span>
-              </div>
-              <p className="mundayn-footer__tagline">You Create. We Implement. You Launch.</p>
-              <p className="mundayn-footer__legal">© 2025, Mundayn - All rights reserved</p>
-            </div>
-            
-            <div className="mundayn-footer__links-wrap">
-              <div className="mundayn-footer__col">
-                <Link to="/">Find YOUR Package</Link>
-                <Link to="/ecosystem">Ecosystem</Link>
-                <Link to="/done-for-you">Done For You</Link>
-              </div>
-              <div className="mundayn-footer__col">
-                <span className="mundayn-footer__col-label">Contact Us:</span>
-                <a href="mailto:care@mundayn.com">care@mundayn.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
