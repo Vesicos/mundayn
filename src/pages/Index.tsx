@@ -276,7 +276,7 @@ const Index = () => {
                   </div>
                 </div>
                 <a href="#offers" className="mundayn-why__cta-btn">
-                  Explore The Mundayn<br />Done-For-You Ecosystem <ArrowIcon />
+                  LEARN MORE ABOUT OUR ACTIONS <ArrowIcon />
                 </a>
               </div>
             </div>
