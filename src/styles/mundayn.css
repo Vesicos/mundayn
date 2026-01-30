@@ -1888,8 +1888,10 @@
 .dfy-hero__content {
   position: relative;
   z-index: 1;
-  max-width: 600px;
-  padding: 80px 40px;
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 
 .dfy-hero__title {
@@ -1901,6 +1903,14 @@
   line-height: 1.05;
   letter-spacing: -2.56px;
   margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.dfy-hero__subtitle,
+.dfy-hero__week,
+.dfy-hero__tagline,
+.dfy-hero__btn {
+  max-width: 500px;
 }
 
 .dfy-hero__title-italic {
