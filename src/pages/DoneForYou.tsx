@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
@@ -193,7 +194,13 @@ const DoneForYou = () => {
           </p>
           
           <div className="dfy-solution__grid">
-            <article className="dfy-solution__step">
+            <motion.article 
+              className="dfy-solution__step"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0 }}
+            >
               <div className="dfy-solution__divider" />
               <div className="dfy-solution__content">
                 <span className="dfy-solution__number">1</span>
@@ -204,9 +211,15 @@ const DoneForYou = () => {
                   <li>Design your architecture</li>
                 </ul>
               </div>
-            </article>
+            </motion.article>
             
-            <article className="dfy-solution__step">
+            <motion.article 
+              className="dfy-solution__step"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <div className="dfy-solution__divider" />
               <div className="dfy-solution__content">
                 <span className="dfy-solution__number">2</span>
@@ -217,9 +230,15 @@ const DoneForYou = () => {
                   <li>Import your data</li>
                 </ul>
               </div>
-            </article>
+            </motion.article>
             
-            <article className="dfy-solution__step">
+            <motion.article 
+              className="dfy-solution__step"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               <div className="dfy-solution__divider" />
               <div className="dfy-solution__content">
                 <span className="dfy-solution__number">3</span>
@@ -230,9 +249,15 @@ const DoneForYou = () => {
                   <li>45-day support included</li>
                 </ul>
               </div>
-            </article>
+            </motion.article>
             
-            <article className="dfy-solution__step">
+            <motion.article 
+              className="dfy-solution__step"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
               <div className="dfy-solution__divider" />
               <div className="dfy-solution__content">
                 <span className="dfy-solution__number">4</span>
@@ -242,7 +267,7 @@ const DoneForYou = () => {
                   Save My Costs <ArrowIcon />
                 </a>
               </div>
-            </article>
+            </motion.article>
           </div>
         </div>
       </section>
