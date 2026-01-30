@@ -5,7 +5,7 @@ import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
 import Footer from '../components/Footer';
 import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
-import elephantTruthBg from '@/assets/elephant-truth-bg.png';
+import elephantTruthBg from '@/assets/elephant-truth-bg-new.png';
 import elephantsFamily from '@/assets/elephants-family.png';
 
 const ArrowIcon = () => (
