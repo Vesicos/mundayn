@@ -48,7 +48,7 @@ import elephantHappy from '@/assets/elephant-happy.png';
 import pillowsOnly from '@/assets/pillows-only.png';
 
 // FAQ section image
-import elephantReading from '@/assets/elephant-reading.png';
+import elephantFaqBg from '@/assets/elephant-faq-bg.png';
 
 // Stats data for animated section
 const statsData = [{
@@ -650,7 +650,7 @@ const Index = () => {
       <section className="mundayn-section mundayn-faq">
         <div className="mundayn-container">
           <div className="mundayn-faq__card">
-            <img src={elephantReading} alt="" className="mundayn-faq__card-bg" aria-hidden="true" />
+            <img src={elephantFaqBg} alt="" className="mundayn-faq__card-bg" aria-hidden="true" />
             <h2 className="mundayn-faq__title">Questions? <span className="mundayn-faq__title-italic">Answered.</span></h2>
           
             <div className="mundayn-faq__list">
