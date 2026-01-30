@@ -2951,7 +2951,7 @@
 .eco-stage__dot {
   width: 34px;
   height: 34px;
-  background-color: var(--mundayn-gold);
+  background-color: var(--mundayn-red-solid);
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -2960,7 +2960,7 @@
   width: 2px;
   flex: 1;
   min-height: 400px;
-  background: linear-gradient(to bottom, var(--mundayn-gold) 0%, transparent 100%);
+  background-color: var(--mundayn-red-solid);
   margin-top: 12px;
 }
 
