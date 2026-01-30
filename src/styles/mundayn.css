@@ -21,20 +21,20 @@
   --font-inter: 'Inter', sans-serif;
   --font-playfair: 'Playfair Display', serif;
   
-  /* Typography - Titles */
-  --text-title-size: 62px;
+  /* Typography - Titles (52px / Medium / Line height 64.6 / Letter spacing -2.56px) */
+  --text-title-size: 52px;
   --text-title-line-height: 64.6px;
   --text-title-letter-spacing: -2.56px;
   
-  /* Typography - Medium (subtitles/body) */
-  --text-medium-size: 32px;
-  --text-medium-line-height: 30px;
+  /* Typography - Medium (20px / Regular / Line height auto / Letter spacing -1px) */
+  --text-medium-size: 20px;
+  --text-medium-line-height: 1.4;
   --text-medium-letter-spacing: -1px;
   
-  /* Typography - Small */
-  --text-small-size: 18px;
-  --text-small-line-height: auto;
-  --text-small-letter-spacing: -0.4px;
+  /* Typography - Small (16px / Mixed weight / Line height auto / Letter spacing -0.5px) */
+  --text-small-size: 16px;
+  --text-small-line-height: 1.5;
+  --text-small-letter-spacing: -0.5px;
   
   --container-width: 1040px;
   --container-padding: 20px;
@@ -195,11 +195,11 @@
 
 .mundayn-hero__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-purple-dark);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 24px;
 }
 
@@ -209,10 +209,10 @@
 }
 
 .mundayn-hero__subtitle {
-  font-size: 22px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-purple-dark);
-  line-height: 1.4;
-  letter-spacing: -0.5px;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
 }
 
 .mundayn-hero__elephant {
@@ -238,12 +238,12 @@
 
 .mundayn-section__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
   text-align: center;
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 16px;
 }
 
@@ -253,11 +253,11 @@
 }
 
 .mundayn-section__subtitle {
-  font-size: 26px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-cream);
   text-align: center;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 40px;
 }
 
@@ -319,10 +319,10 @@
 }
 
 .mundayn-stage-card__title {
-  font-size: clamp(32px, 5vw, 62px);
+  font-size: clamp(32px, 5vw, var(--text-title-size));
   font-weight: 500;
   line-height: 0.95;
-  letter-spacing: -2.56px;
+  letter-spacing: var(--text-title-letter-spacing);
   color: var(--mundayn-cream);
   margin-bottom: 16px;
 }
@@ -334,10 +334,10 @@
 }
 
 .mundayn-stage-card__text {
-  font-size: 20px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-cream);
-  line-height: 1.4;
-  letter-spacing: -1px;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   max-width: 261px;
 }
 
@@ -349,12 +349,12 @@
 }
 
 .mundayn-choose__header {
-  font-size: 52px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   text-align: center;
   color: var(--mundayn-cream);
-  letter-spacing: -2px;
-  line-height: 1.2;
+  letter-spacing: var(--text-title-letter-spacing);
+  line-height: var(--text-title-line-height);
   margin-bottom: 60px;
 }
 
@@ -389,10 +389,10 @@
 }
 
 .mundayn-choose__title {
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 24px;
 }
 
@@ -542,9 +542,9 @@
 }
 
 .mundayn-why__heading {
-  font-size: 42px;
+  font-size: var(--text-title-size);
   font-weight: 400;
-  letter-spacing: -1.5px;
+  letter-spacing: var(--text-title-letter-spacing);
   line-height: 1.05;
   color: var(--mundayn-cream);
 }
@@ -555,9 +555,10 @@
 }
 
 .mundayn-why__copy p {
-  font-size: 14px;
-  line-height: 1.65;
+  font-size: var(--text-small-size);
+  line-height: var(--text-small-line-height);
   color: var(--mundayn-cream-light);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 14px;
 }
 
@@ -678,10 +679,10 @@
 }
 
 .mundayn-feels__card-title {
-  font-size: 26px;
+  font-size: var(--text-medium-size);
   font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.5px;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   max-width: 260px;
   margin-bottom: 16px;
 }
@@ -699,18 +700,18 @@
 }
 
 .mundayn-feels__tagline {
-  font-size: 52px;
+  font-size: var(--text-title-size);
   font-weight: 400;
   text-align: center;
-  letter-spacing: -2px;
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 24px;
 }
 
 .mundayn-feels__savings {
-  font-size: 26px;
+  font-size: var(--text-medium-size);
   text-align: center;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 40px;
 }
 
@@ -753,8 +754,9 @@
 }
 
 .mundayn-savings__text {
-  font-size: 26px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-cream);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-top: 40px;
   margin-bottom: 60px;
 }
@@ -1002,10 +1004,10 @@
 
 .mundayn-matters__heading {
   font-family: var(--font-inter);
-  font-size: 52px;
+  font-size: var(--text-title-size);
   font-weight: 400;
-  letter-spacing: -2px;
-  line-height: 1.15;
+  letter-spacing: var(--text-title-letter-spacing);
+  line-height: var(--text-title-line-height);
   margin: 0;
 }
 
@@ -1015,10 +1017,10 @@
 
 .mundayn-matters__subheading {
   font-family: var(--font-inter);
-  font-size: 28px;
+  font-size: var(--text-medium-size);
   font-weight: 400;
-  letter-spacing: -0.5px;
-  line-height: 1.3;
+  letter-spacing: var(--text-medium-letter-spacing);
+  line-height: var(--text-medium-line-height);
   margin: 0 0 24px 0;
 }
 
@@ -1049,10 +1051,10 @@
 
 .mundayn-matters__conclusion-main {
   font-family: var(--font-inter);
-  font-size: 28px;
+  font-size: var(--text-medium-size);
   font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: -0.5px;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 20px;
 }
 
@@ -1062,10 +1064,10 @@
 
 .mundayn-matters__conclusion-tagline {
   font-family: var(--font-inter);
-  font-size: 28px;
+  font-size: var(--text-medium-size);
   font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: -0.5px;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin: 0;
 }
 
@@ -1098,10 +1100,10 @@
 
 .mundayn-choice__card-title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-cream);
-  letter-spacing: -1px;
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 28px;
 }
 
@@ -1154,12 +1156,12 @@
 
 .mundayn-rightforyou__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   text-align: center;
   color: var(--mundayn-cream);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 48px;
 }
 
@@ -1282,12 +1284,12 @@
 
 .mundayn-cta-cards__text {
   font-family: var(--font-inter);
-  font-size: 48px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
   text-align: center;
-  line-height: 1.15;
-  letter-spacing: -1px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
@@ -1333,7 +1335,7 @@
 
 .mundayn-faq__title {
   font-family: var(--font-inter);
-  font-size: 48px;
+  font-size: var(--text-title-size);
   font-weight: 400;
   color: var(--mundayn-cream);
   text-align: center;
@@ -1363,7 +1365,7 @@
   background: none;
   border: none;
   font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: var(--text-medium-size);
   font-weight: 400;
   color: var(--mundayn-cream);
   cursor: pointer;
@@ -1373,6 +1375,7 @@
   padding: 24px 0;
   text-align: left;
   gap: 20px;
+  letter-spacing: var(--text-medium-letter-spacing);
 }
 
 .mundayn-faq__question:hover {
@@ -1405,9 +1408,10 @@
 
 .mundayn-faq__answer p {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream-light);
-  line-height: 1.6;
+  line-height: var(--text-small-line-height);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 12px;
 }
 
@@ -1438,20 +1442,20 @@
 }
 
 .mundayn-final-cta__title {
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 16px;
 }
 
 .mundayn-final-cta__subtitle {
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-family: var(--font-playfair);
   font-style: italic;
   color: var(--mundayn-cream);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 60px;
 }
 
@@ -1521,8 +1525,9 @@
 }
 
 .mundayn-footer__tagline {
-  font-size: 26px;
+  font-size: var(--text-medium-size);
   font-weight: 400;
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 16px;
 }
 
@@ -1896,12 +1901,12 @@
 
 .dfy-hero__title {
   font-family: var(--font-inter);
-  font-size: 72px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   font-style: normal;
   color: var(--mundayn-purple-dark);
-  line-height: 1.05;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 32px;
   max-width: 500px;
 }
@@ -1921,27 +1926,30 @@
 
 .dfy-hero__subtitle {
   font-family: var(--font-inter);
-  font-size: 24px;
+  font-size: var(--text-medium-size);
   font-style: normal;
   color: var(--mundayn-purple-dark);
-  line-height: 1.4;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 16px;
 }
 
 .dfy-hero__week {
   font-family: var(--font-inter);
-  font-size: 22px;
+  font-size: var(--text-medium-size);
   font-weight: 700;
   font-style: normal;
   color: var(--mundayn-purple-dark);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 4px;
 }
 
 .dfy-hero__tagline {
   font-family: var(--font-inter);
-  font-size: 22px;
+  font-size: var(--text-medium-size);
   font-style: normal;
   color: var(--mundayn-purple-dark);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 48px;
 }
 
@@ -1982,12 +1990,12 @@
 
 .two-paths__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   text-align: center;
   color: var(--mundayn-gold);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 56px;
 }
 
@@ -2161,11 +2169,11 @@
 
 .dfy-truth__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 24px;
 }
 
@@ -2241,11 +2249,11 @@
 
 .split-card__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 32px;
 }
 
@@ -2264,17 +2272,19 @@
 
 .split-card__item h4 {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: var(--text-small-size);
   font-weight: 700;
   color: var(--mundayn-cream);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 4px;
 }
 
 .split-card__item p {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream);
-  line-height: 1.5;
+  line-height: var(--text-small-line-height);
+  letter-spacing: var(--text-small-letter-spacing);
   opacity: 0.9;
   margin: 0;
 }
@@ -2286,17 +2296,19 @@
 
 .split-card__truth h4 {
   font-family: var(--font-inter);
-  font-size: 24px;
+  font-size: var(--text-medium-size);
   font-weight: 500;
   color: var(--mundayn-cream);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 12px;
 }
 
 .split-card__truth p {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream);
-  line-height: 1.6;
+  line-height: var(--text-small-line-height);
+  letter-spacing: var(--text-small-letter-spacing);
   opacity: 0.9;
   margin: 0;
 }
@@ -2359,12 +2371,12 @@
 
 .dfy-solution__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   text-align: center;
   color: var(--mundayn-gold);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 12px;
 }
 
@@ -2504,11 +2516,11 @@
 
 .dfy-guarantee__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 8px;
 }
 
@@ -2579,12 +2591,12 @@
 
 .dfy-includes__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-cream);
   text-align: center;
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 16px;
 }
 
@@ -2596,9 +2608,10 @@
 
 .dfy-includes__subtitle {
   font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-cream);
   text-align: center;
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 48px;
 }
 
@@ -2640,10 +2653,11 @@
 
 .dfy-includes__heading {
   font-family: var(--font-inter);
-  font-size: 24px;
+  font-size: var(--text-medium-size);
   font-weight: 500;
   color: var(--mundayn-gold);
-  line-height: 1.3;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 20px;
 }
 
@@ -2651,7 +2665,6 @@
   font-family: var(--font-playfair);
   font-style: italic;
   color: var(--mundayn-cream);
-  font-size: 22px;
 }
 
 .dfy-includes__label {
@@ -2709,11 +2722,11 @@
 
 .dfy-future__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-cream);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 32px;
 }
 
@@ -2730,9 +2743,10 @@
 
 .dfy-future__content p {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream-light);
-  line-height: 1.7;
+  line-height: var(--text-small-line-height);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 20px;
 }
 
@@ -2792,11 +2806,11 @@
 
 .eco-hero__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-cream);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 24px;
 }
 
@@ -2817,8 +2831,9 @@
 
 .eco-hero__text {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream-light);
+  letter-spacing: var(--text-small-letter-spacing);
 }
 
 /* Ecosystem Stages */
@@ -2891,11 +2906,11 @@
 
 .eco-stage__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-cream);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 12px;
 }
 
@@ -2919,33 +2934,37 @@
 
 .eco-stage__subtitle {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-small-size);
   font-weight: 600;
   color: var(--mundayn-gold);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 20px;
 }
 
 .eco-stage__description {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream-light);
-  line-height: 1.6;
+  line-height: var(--text-small-line-height);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 16px;
 }
 
 .eco-stage__what-label {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: var(--text-small-size);
   font-weight: 700;
   color: var(--mundayn-cream);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 8px;
 }
 
 .eco-stage__what-text {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream-light);
-  line-height: 1.7;
+  line-height: var(--text-small-line-height);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 12px;
 }
 
@@ -2998,11 +3017,11 @@
 
 .eco-belief__title {
   font-family: var(--font-inter);
-  font-size: 62px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
-  line-height: 64.6px;
-  letter-spacing: -2.56px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 24px;
 }
 
@@ -3013,8 +3032,9 @@
 
 .eco-belief__quote {
   font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-cream);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 16px;
   max-width: 600px;
   margin-left: auto;
@@ -3023,8 +3043,9 @@
 
 .eco-belief__text {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream-light);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 32px;
 }
 
@@ -3182,11 +3203,11 @@
 
 .fs-hero__title {
   font-family: var(--font-inter);
-  font-size: 48px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-purple-dark);
-  line-height: 1.1;
-  letter-spacing: -2px;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 20px;
 }
 
@@ -3248,10 +3269,11 @@
 
 .fs-video__title {
   font-family: var(--font-inter);
-  font-size: 28px;
+  font-size: var(--text-medium-size);
   font-weight: 500;
   color: var(--mundayn-gold);
-  line-height: 1.4;
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 40px;
 }
 
@@ -3307,11 +3329,11 @@
 
 .fs-know__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
   text-align: center;
-  letter-spacing: -1px;
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 48px;
 }
 
@@ -3324,9 +3346,10 @@
 
 .fs-know__text {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream);
-  line-height: 1.7;
+  line-height: var(--text-small-line-height);
+  letter-spacing: var(--text-small-letter-spacing);
 }
 
 .fs-know__text p {
@@ -3404,11 +3427,11 @@
 
 .fs-whatwedo__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-cream);
   text-align: center;
-  letter-spacing: -1px;
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 48px;
 }
 
@@ -3433,9 +3456,10 @@
 .fs-whatwedo__content {
   padding: 40px;
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream);
-  line-height: 1.7;
+  line-height: var(--text-small-line-height);
+  letter-spacing: var(--text-small-letter-spacing);
 }
 
 .fs-whatwedo__content p {
@@ -3475,9 +3499,10 @@
 
 .fs-comparison__title {
   font-family: var(--font-inter);
-  font-size: 24px;
+  font-size: var(--text-medium-size);
   font-weight: 500;
   color: var(--mundayn-cream);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 20px;
 }
 
@@ -3546,29 +3571,31 @@
 
 .fs-implement__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-cream);
   text-align: center;
-  letter-spacing: -1px;
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 16px;
 }
 
 .fs-implement__subtitle {
   font-family: var(--font-playfair);
   font-style: italic;
-  font-size: 20px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-cream);
   text-align: center;
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 40px;
 }
 
 .fs-implement__section-title {
   font-family: var(--font-playfair);
   font-style: italic;
-  font-size: 22px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-cream);
   text-align: center;
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 32px;
 }
 
@@ -3611,9 +3638,10 @@
 
 .fs-onboarding__title {
   font-family: var(--font-inter);
-  font-size: 28px;
+  font-size: var(--text-medium-size);
   font-weight: 500;
   color: var(--mundayn-cream);
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 24px;
 }
 
@@ -3628,8 +3656,9 @@
   align-items: flex-start;
   gap: 12px;
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream);
+  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 16px;
 }
 
@@ -3738,28 +3767,30 @@
 
 .fs-time__title {
   font-family: var(--font-inter);
-  font-size: 42px;
+  font-size: var(--text-title-size);
   font-weight: 500;
   color: var(--mundayn-gold);
   text-align: center;
-  letter-spacing: -1px;
+  letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 16px;
 }
 
 .fs-time__subtitle {
   font-family: var(--font-playfair);
   font-style: italic;
-  font-size: 20px;
+  font-size: var(--text-medium-size);
   color: var(--mundayn-cream);
   text-align: center;
+  letter-spacing: var(--text-medium-letter-spacing);
   margin-bottom: 16px;
 }
 
 .fs-time__text {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-small-size);
   color: var(--mundayn-cream);
   text-align: center;
+  letter-spacing: var(--text-small-letter-spacing);
   max-width: 700px;
   margin: 0 auto 40px;
 }
