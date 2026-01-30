@@ -2046,48 +2046,24 @@
   .mundayn-hero {
     height: auto;
     min-height: auto;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     flex-direction: column;
     background-color: #c9bfb3;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
   }
   
   .mundayn-hero__bg--desktop {
     display: none;
   }
   
-  .mundayn-hero__mobile-elephant {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-  .mundayn-hero__mobile-elephant img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center bottom;
-    transform: translateX(7%) translateY(-15%);
-  }
-  
   .mundayn-hero__content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 110px 24px 24px 24px;
-    max-width: 100%;
-    position: relative;
-    z-index: 2;
-    min-height: calc(100svh - 40px);
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 100px 20px 0 20px;
   }
   
   .mundayn-hero__text-wrapper {
@@ -2103,6 +2079,18 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--mundayn-purple-dark);
+  }
+  
+  .mundayn-hero__mobile-elephant {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  .mundayn-hero__mobile-elephant img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   /* Stage Cards */
