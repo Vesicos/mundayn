@@ -189,6 +189,14 @@
   background-color: var(--mundayn-gold-hover);
 }
 
+/* Hide nav when mobile menu is open */
+@media (max-width: 640px) {
+  .mundayn-nav--menu-open {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 .mundayn-nav__links {
   display: flex;
   gap: 47px;

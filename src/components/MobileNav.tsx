@@ -23,7 +23,7 @@ const MobileNav = () => {
   ];
 
   return (
-    <nav className="mundayn-nav">
+    <nav className={`mundayn-nav ${open ? 'mundayn-nav--menu-open' : ''}`}>
       {/* Desktop: Link to home */}
       <Link to="/" className="mundayn-nav__logo mundayn-nav__logo-desktop">
         <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-full" />
