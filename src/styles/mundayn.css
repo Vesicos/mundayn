@@ -2087,9 +2087,9 @@
     margin-left: -24px;
     margin-right: -24px;
     margin-top: 16px;
-    height: 48vh;
-    max-height: 520px;
-    min-height: 360px;
+    height: 38vh;
+    min-height: 280px;
+    max-height: 420px;
     overflow: hidden;
   }
   
@@ -2098,7 +2098,9 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: 50% 72%;
+    object-position: 50% 92%;
+    transform: scale(1.18);
+    transform-origin: 50% 92%;
   }
 
   /* Stage Cards */
