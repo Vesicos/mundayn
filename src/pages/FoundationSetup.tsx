@@ -9,6 +9,14 @@ import fsWhatWeDoElephant from '@/assets/fs-whatwedo-elephant.png';
 import fsDiyPillow from '@/assets/fs-diy-pillow.png';
 import fsSetupElephant from '@/assets/fs-setup-elephant.png';
 import fsHorizontalBg from '@/assets/fs-horizontal-bg.png';
+import iconCalendar from '@/assets/icons/fs-calendar.png';
+import iconPayment from '@/assets/icons/fs-payment.png';
+import iconContacts from '@/assets/icons/fs-contacts.png';
+import iconEmail from '@/assets/icons/fs-email.png';
+import iconBranding from '@/assets/icons/fs-branding.png';
+import iconDomain from '@/assets/icons/fs-domain.png';
+import iconIntegrations from '@/assets/icons/fs-integrations.png';
+import iconDashboard from '@/assets/icons/fs-dashboard.png';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -126,36 +134,35 @@ const FoundationSetup = () => {
             
             <div className="fs-know__grid">
               <div className="fs-know__grid-item">
-                {/* Icon placeholder */}
-                <div className="fs-know__icon-placeholder"></div>
+                <img src={iconCalendar} alt="" className="fs-know__icon" />
                 <span>Calendar Setup</span>
               </div>
               <div className="fs-know__grid-item">
-                <div className="fs-know__icon-placeholder"></div>
+                <img src={iconPayment} alt="" className="fs-know__icon" />
                 <span>Payment Gateway</span>
               </div>
               <div className="fs-know__grid-item">
-                <div className="fs-know__icon-placeholder"></div>
+                <img src={iconContacts} alt="" className="fs-know__icon" />
                 <span>Contact Import</span>
               </div>
               <div className="fs-know__grid-item">
-                <div className="fs-know__icon-placeholder"></div>
+                <img src={iconEmail} alt="" className="fs-know__icon" />
                 <span>Email Automation</span>
               </div>
               <div className="fs-know__grid-item">
-                <div className="fs-know__icon-placeholder"></div>
+                <img src={iconBranding} alt="" className="fs-know__icon" />
                 <span>Branding</span>
               </div>
               <div className="fs-know__grid-item">
-                <div className="fs-know__icon-placeholder"></div>
+                <img src={iconDomain} alt="" className="fs-know__icon" />
                 <span>Domain Connection</span>
               </div>
               <div className="fs-know__grid-item">
-                <div className="fs-know__icon-placeholder"></div>
+                <img src={iconIntegrations} alt="" className="fs-know__icon" />
                 <span>Integrations</span>
               </div>
               <div className="fs-know__grid-item">
-                <div className="fs-know__icon-placeholder"></div>
+                <img src={iconDashboard} alt="" className="fs-know__icon" />
                 <span>Dashboard</span>
               </div>
             </div>
