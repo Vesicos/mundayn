@@ -535,9 +535,9 @@ const Index = () => {
               <h2 className="mundayn-choice__card-title" style={{
               color: '#DDD7C9'
             }}>Done-For-You?</h2>
-              <a href="#offers" className="mundayn-btn">
+              <Link to="/done-for-you" className="mundayn-btn">
                 Learn More About Our Offers <ArrowIcon />
-              </a>
+              </Link>
               <p className="mundayn-choice__card-text text-[#ded8ca]" style={{
               marginTop: '24px'
             }}>
