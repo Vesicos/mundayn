@@ -1892,9 +1892,10 @@
 }
 
 .dfy-hero__title {
-  font-family: var(--font-playfair);
+  font-family: var(--font-inter);
   font-size: 72px;
-  font-weight: 400;
+  font-weight: 500;
+  font-style: normal;
   color: var(--mundayn-purple-dark);
   line-height: 1.05;
   letter-spacing: -2.56px;
@@ -1902,11 +1903,13 @@
 }
 
 .dfy-hero__title-italic {
+  font-family: var(--font-playfair);
   font-style: italic;
+  font-weight: 400;
 }
 
 .dfy-hero__subtitle {
-  font-family: var(--font-playfair);
+  font-family: var(--font-inter);
   font-size: 24px;
   font-style: italic;
   color: var(--mundayn-purple-dark);
@@ -1918,12 +1921,13 @@
   font-family: var(--font-inter);
   font-size: 22px;
   font-weight: 700;
+  font-style: normal;
   color: var(--mundayn-purple-dark);
   margin-bottom: 4px;
 }
 
 .dfy-hero__tagline {
-  font-family: var(--font-playfair);
+  font-family: var(--font-inter);
   font-size: 22px;
   font-style: italic;
   color: var(--mundayn-purple-dark);
