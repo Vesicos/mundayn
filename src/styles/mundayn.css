@@ -107,19 +107,8 @@
 
 .mundayn-nav__logo-icon {
   display: none;
-}
-
-.mundayn-nav__logo-icon {
-  width: 32px;
-  height: 32px;
-  background: var(--mundayn-cream);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--mundayn-purple-dark);
-  font-weight: bold;
-  font-size: 14px;
+  height: 28px;
+  width: auto;
 }
 
 .mundayn-nav__links {
