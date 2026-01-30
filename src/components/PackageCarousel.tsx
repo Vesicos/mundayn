@@ -21,6 +21,9 @@ interface PackageCardProps extends Package {
   opacity: number;
 }
 
+// Fixed height for all cards - based on the tallest card (Entrepreneur with 5 apps)
+const CARD_FIXED_HEIGHT = 520;
+
 function PackageCard({
   title,
   price,
@@ -39,13 +42,10 @@ function PackageCard({
   const bgColor = isCenter ? "#58233f" : "#2a0c22";
   const borderRadius = isCenter ? "8px" : "15px";
   const shadow = isCenter ? "0px 4px 23px 0px rgba(0,0,0,0.3)" : "none";
-
-  // Calculate approximate card height based on content
-  const cardHeight = 580;
   
   return (
     <motion.div
-      className="absolute w-[300px] md:w-[340px] lg:w-[380px] px-5 py-6 md:px-6 md:py-8 flex flex-col"
+      className="absolute w-[300px] md:w-[340px] lg:w-[380px] flex flex-col"
       style={{
         backgroundColor: bgColor,
         borderRadius,
@@ -53,11 +53,13 @@ function PackageCard({
         zIndex,
         left: '50%',
         top: '50%',
+        height: `${CARD_FIXED_HEIGHT}px`,
+        padding: '24px',
       }}
       initial={false}
       animate={{
-        x: x - 190, // offset for left: 50% (half of max card width)
-        y: -310, // offset for top: 50% (half of visible height)
+        x: x - 190,
+        y: -(CARD_FIXED_HEIGHT / 2),
         scale,
         opacity
       }}
@@ -69,12 +71,12 @@ function PackageCard({
       }}
     >
       {/* Icon */}
-      <div className="mb-2 opacity-70">
+      <div className="mb-2 opacity-70 shrink-0">
         <Icon size={28} className="text-[#ED5D59]" />
       </div>
 
       {/* Title */}
-      <h3 className="font-serif text-[22px] md:text-[24px] text-[#ddd7c9] leading-tight tracking-tight mb-1">
+      <h3 className="font-serif text-[22px] md:text-[24px] text-[#ddd7c9] leading-tight tracking-tight mb-1 shrink-0">
         {title.split(" ").map((word, i) => (
           <span key={i}>
             {word}
@@ -85,15 +87,15 @@ function PackageCard({
       </h3>
 
       {/* Price */}
-      <p className="text-[#F5AD2D] font-semibold text-[14px] tracking-wide mb-3">
+      <p className="text-[#F5AD2D] font-semibold text-[14px] tracking-wide mb-3 shrink-0">
         {price}/MONTH
       </p>
 
       {/* Divider */}
-      <div className="h-[1px] bg-[#ED5D59] mb-4" />
+      <div className="h-[1px] bg-[#ED5D59] mb-4 shrink-0" />
 
-      {/* Features */}
-      <div className="text-[#ddd7c9] text-[13px] md:text-[14px] leading-relaxed">
+      {/* Features - scrollable if needed but hidden overflow */}
+      <div className="text-[#ddd7c9] text-[13px] md:text-[14px] leading-relaxed flex-1 overflow-hidden">
         <p className="font-bold mb-1.5">
           {previousPackage ? `Everything in ${previousPackage}, PLUS:` : "What's inside:"}
         </p>
@@ -112,8 +114,8 @@ function PackageCard({
         </ul>
       </div>
 
-      {/* CTA Button - pushed to bottom */}
-      <div className="mt-auto pt-4">
+      {/* CTA Button - always at bottom */}
+      <div className="shrink-0 pt-4">
         <a
           href="#trial"
           className="inline-flex items-center justify-center gap-2 bg-[#F5AD2D] text-black font-bold text-sm px-6 py-3 rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full"
@@ -295,8 +297,8 @@ export default function PackageCarousel() {
     }
   };
 
-  // Fixed card height that fits all content
-  const cardContainerHeight = 700;
+  // Container height based on fixed card height plus some padding
+  const cardContainerHeight = CARD_FIXED_HEIGHT + 100;
 
   return (
     <div
