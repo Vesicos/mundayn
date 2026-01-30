@@ -21,8 +21,9 @@ interface PackageCardProps extends Package {
   opacity: number;
 }
 
-// Fixed height for all cards - based on the tallest card (Entrepreneur with 5 apps)
-const CARD_FIXED_HEIGHT = 520;
+// Fixed height for side cards - based on consistent visual alignment
+const SIDE_CARD_HEIGHT = 520;
+const CENTER_CARD_OFFSET = 310; // Half of center card's approximate height for centering
 
 function PackageCard({
   title,
@@ -53,13 +54,13 @@ function PackageCard({
         zIndex,
         left: '50%',
         top: '50%',
-        height: `${CARD_FIXED_HEIGHT}px`,
+        height: isCenter ? 'auto' : `${SIDE_CARD_HEIGHT}px`,
         padding: '24px',
       }}
       initial={false}
       animate={{
         x: x - 190,
-        y: -(CARD_FIXED_HEIGHT / 2),
+        y: isCenter ? -CENTER_CARD_OFFSET : -(SIDE_CARD_HEIGHT / 2),
         scale,
         opacity
       }}
@@ -297,8 +298,8 @@ export default function PackageCarousel() {
     }
   };
 
-  // Container height based on fixed card height plus some padding
-  const cardContainerHeight = CARD_FIXED_HEIGHT + 100;
+  // Container height to accommodate the center card
+  const cardContainerHeight = 700;
 
   return (
     <div
