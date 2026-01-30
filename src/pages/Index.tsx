@@ -613,7 +613,7 @@ const Index = () => {
             </div>
             
             <div className="mundayn-rightforyou__cta">
-              <a href="#trial" className="mundayn-btn">
+              <a href="#packages" className="mundayn-btn">
                 Start Your Free Trial <ArrowIcon />
               </a>
             </div>
