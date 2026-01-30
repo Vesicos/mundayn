@@ -1992,8 +1992,10 @@
 .two-paths__panel {
   flex: 1;
   padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-content: start;
 }
 
 .two-paths__panel--left {
@@ -2005,11 +2007,7 @@
 }
 
 .two-paths__top {
-  flex: 1;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 32px;
-  align-items: start;
+  display: contents;
 }
 
 .two-paths__left-col {
@@ -2089,8 +2087,9 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.2s;
-  margin-top: 32px;
-  align-self: center;
+  margin-top: 16px;
+  grid-column: 2;
+  justify-self: start;
 }
 
 .two-paths__btn:hover {
