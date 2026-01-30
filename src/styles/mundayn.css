@@ -1966,6 +1966,10 @@
   background-color: var(--mundayn-purple-dark);
 }
 
+.two-paths .mundayn-container {
+  padding: 0;
+}
+
 .two-paths__title {
   font-family: var(--font-inter);
   font-size: 62px;
