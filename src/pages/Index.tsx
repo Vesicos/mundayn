@@ -275,9 +275,9 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                <a href="#offers" className="mundayn-why__cta-btn">
-                  LEARN MORE ABOUT OUR OFFERS <ArrowIcon />
-                </a>
+                <Link to="/done-for-you" className="mundayn-why__cta-btn">
+                  LEARN MORE ABOUT OUR ACTIONS <ArrowIcon />
+                </Link>
               </div>
             </div>
           </div>
