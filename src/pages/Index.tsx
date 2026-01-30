@@ -224,43 +224,59 @@ const Index = () => {
             Why Mundayn is <span className="mundayn-section__title-italic">Different</span>
           </h2>
           
-          <div className="mundayn-why__content">
-            <div className="mundayn-why__left">
-              <h3 className="mundayn-why__heading">
-                The Problem with <span className="mundayn-section__title-italic">All-in-One</span>
-              </h3>
-              <div className="mundayn-why__text">
-                <p>Most platforms give you software and wish you luck.</p>
-                <br />
-                <p>They hand you the tools—CRM, email marketing, course hosting, funnels, and say "figure it out."</p>
-                <br />
-                <p>You spend 30+ hours learning. Then two weeks setting up. Then months fixing what you did wrong.</p>
-                <br />
-                <p><strong>Here's what we learned after watching so many Impact Entrepreneurs struggle:</strong></p>
-                <br />
-                <p>Software doesn't create transformation. Implementation does.</p>
-                <br />
-                <p><strong>Features are just potential. Implementation is transformation.</strong></p>
+          <div className="mundayn-why__card">
+            {/* Left Panel */}
+            <div className="mundayn-why__side mundayn-why__side--left">
+              <div className="mundayn-why__inner">
+                <div className="mundayn-why__headline">
+                  <h3 className="mundayn-why__heading">
+                    The Problem<br />
+                    <span className="mundayn-section__title-italic">with All-in-One</span>
+                  </h3>
+                </div>
+                <div className="mundayn-why__copy">
+                  <p>Most platforms give you software and wish you luck.</p>
+                  <p>They hand you the tools—CRM, email marketing, course hosting, funnels, and say "figure it out."</p>
+                  <p>You spend 30+ hours learning. Then two weeks setting up. Then months fixing what you did wrong.</p>
+                  <p className="mundayn-why__bold">Here's what we learned after watching so many Impact Entrepreneurs struggle:</p>
+                  <p>Software doesn't create transformation.<br />Implementation does.</p>
+                  <p className="mundayn-why__bold">Features are just potential. Implementation is transformation.</p>
+                </div>
               </div>
             </div>
-            <div className="mundayn-why__right">
-              <h3 className="mundayn-why__heading">
-                What <span className="mundayn-section__title-italic">True All-in-One</span> means
-              </h3>
-              <div className="mundayn-why__text">
-                <p className="mundayn-why__label">THE TOOL</p>
-                <p className="mundayn-why__desc">One platform that replaces 15+ scattered apps you run today. Everything you need in one place. One login. Complete control.</p>
-                
-                <p className="mundayn-why__label">THE SETUP (Done-For-You Services)</p>
-                <p className="mundayn-why__desc">We implement it for you, built for your specific business. Your branding. Your client journey. Your workflows. Configured by us.</p>
-                
-                <p className="mundayn-why__label">THE TRANSFORMATION</p>
-                <p className="mundayn-why__desc">Your business runs from day one, not "someday." Week 1, you're operating. Not learning. Operating.</p>
+            
+            {/* Divider */}
+            <div className="mundayn-why__divider"></div>
+            
+            {/* Right Panel */}
+            <div className="mundayn-why__side mundayn-why__side--right">
+              <div className="mundayn-why__rightStack">
+                <div className="mundayn-why__inner">
+                  <div className="mundayn-why__headline">
+                    <h3 className="mundayn-why__heading">
+                      What <span className="mundayn-section__title-italic">True All-in-One</span><br />
+                      means
+                    </h3>
+                  </div>
+                  <div className="mundayn-why__copy">
+                    <div className="mundayn-why__block">
+                      <p className="mundayn-why__label">THE TOOL</p>
+                      <p className="mundayn-why__desc">One platform that replaces 15+ scattered apps you run today. Everything you need in one place. One login. Complete control.</p>
+                    </div>
+                    <div className="mundayn-why__block">
+                      <p className="mundayn-why__label">THE SETUP (Done-For-You Services)</p>
+                      <p className="mundayn-why__desc">We implement it for you, built for your specific business. Your branding. Your client journey. Your workflows. Configured by us.</p>
+                    </div>
+                    <div className="mundayn-why__block">
+                      <p className="mundayn-why__label">THE TRANSFORMATION</p>
+                      <p className="mundayn-why__desc">Your business runs from day one, not "someday." Week 1, you're operating. Not learning. Operating.</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="#offers" className="mundayn-btn mundayn-why__btn">
+                  Explore The Mundayn Done-For-You Ecosystem <ArrowIcon />
+                </a>
               </div>
-              <a href="#offers" className="mundayn-btn">
-                Explore The Mundayn 
-Done-For-You Ecosystem <ArrowIcon />
-              </a>
             </div>
           </div>
         </div>
