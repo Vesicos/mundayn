@@ -2883,19 +2883,19 @@
 
 /* Ecosystem Hero */
 .eco-hero {
-  padding: 160px 20px 80px;
+  padding: 200px 20px 100px;
   text-align: center;
   background-color: var(--mundayn-purple-dark);
 }
 
 .eco-hero__title {
   font-family: var(--font-inter);
-  font-size: var(--text-title-size);
+  font-size: 62px;
   font-weight: 500;
-  color: var(--mundayn-cream);
-  line-height: var(--text-title-line-height);
-  letter-spacing: var(--text-title-letter-spacing);
-  margin-bottom: 24px;
+  color: var(--mundayn-gold);
+  line-height: 1;
+  letter-spacing: -2.5px;
+  margin-bottom: 32px;
 }
 
 .eco-hero__title-italic {
@@ -2906,31 +2906,34 @@
 
 .eco-hero__subtitle {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
+  font-size: 32px;
+  font-weight: 500;
   color: var(--mundayn-cream);
-  line-height: 1.6;
-  letter-spacing: var(--text-small-letter-spacing);
-  margin-bottom: 16px;
+  line-height: 1;
+  letter-spacing: -2.16px;
+  margin-bottom: 24px;
 }
 
 .eco-hero__text {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
-  color: var(--mundayn-cream-light);
-  letter-spacing: var(--text-small-letter-spacing);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--mundayn-cream);
+  letter-spacing: -0.36px;
+  line-height: 1.6;
 }
 
 /* Ecosystem Stages */
 .eco-stages {
-  padding: 60px 0;
+  padding: 80px 0;
   background-color: var(--mundayn-purple-dark);
 }
 
 .eco-stage {
   display: grid;
-  grid-template-columns: 40px 1fr 1fr;
-  gap: 32px;
-  margin-bottom: 80px;
+  grid-template-columns: 50px 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 100px;
   align-items: start;
 }
 
@@ -2942,13 +2945,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8px;
+  padding-top: 4px;
 }
 
 .eco-stage__dot {
-  width: 14px;
-  height: 14px;
-  background-color: var(--mundayn-red-solid);
+  width: 34px;
+  height: 34px;
+  background-color: var(--mundayn-gold);
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -2956,9 +2959,9 @@
 .eco-stage__line {
   width: 2px;
   flex: 1;
-  min-height: 300px;
-  background: linear-gradient(to bottom, var(--mundayn-red-solid) 0%, transparent 100%);
-  margin-top: 8px;
+  min-height: 400px;
+  background: linear-gradient(to bottom, var(--mundayn-gold) 0%, transparent 100%);
+  margin-top: 12px;
 }
 
 .eco-stage__content {
@@ -2974,28 +2977,38 @@
 
 .eco-stage__label {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--mundayn-red-solid);
-  letter-spacing: 0.5px;
+  letter-spacing: -2.5px;
+  line-height: 1;
 }
 
 .eco-stage__coming {
   font-family: var(--font-inter);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--mundayn-cream-light);
-  letter-spacing: 0.5px;
+  font-size: 32px;
+  font-weight: 200;
+  color: rgba(237, 93, 89, 0.7);
+  letter-spacing: -0.8px;
+}
+
+.eco-stage__title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .eco-stage__title {
-  font-family: var(--font-inter);
-  font-size: var(--text-title-size);
-  font-weight: 500;
+  font-family: var(--font-playfair);
+  font-size: 62px;
+  font-weight: 400;
+  font-style: italic;
   color: var(--mundayn-cream);
-  line-height: var(--text-title-line-height);
-  letter-spacing: var(--text-title-letter-spacing);
-  margin-bottom: 12px;
+  line-height: 0.9;
+  letter-spacing: -2.5px;
+  margin: 0;
 }
 
 .eco-stage__title-italic {
@@ -3005,108 +3018,106 @@
 }
 
 .eco-stage__price {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--mundayn-red-solid);
   color: var(--mundayn-white);
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
-  padding: 6px 16px;
-  border-radius: 4px;
-  margin-bottom: 16px;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  margin-left: 8px;
 }
 
 .eco-stage__subtitle {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
+  font-size: 16px;
   font-weight: 600;
   color: var(--mundayn-gold);
-  letter-spacing: var(--text-small-letter-spacing);
-  margin-bottom: 20px;
-}
-
-.eco-stage__description {
-  font-family: var(--font-inter);
-  font-size: var(--text-small-size);
-  color: var(--mundayn-cream-light);
-  line-height: var(--text-small-line-height);
-  letter-spacing: var(--text-small-letter-spacing);
-  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
 }
 
 .eco-stage__what-label {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
+  font-size: 16px;
   font-weight: 700;
   color: var(--mundayn-cream);
-  letter-spacing: var(--text-small-letter-spacing);
+  letter-spacing: -0.5px;
   margin-bottom: 8px;
 }
 
 .eco-stage__what-text {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
+  font-size: 16px;
+  font-weight: 400;
   color: var(--mundayn-cream-light);
-  line-height: var(--text-small-line-height);
-  letter-spacing: var(--text-small-letter-spacing);
+  line-height: 1.5;
+  letter-spacing: -0.5px;
   margin-bottom: 12px;
+  max-width: 420px;
 }
 
 .eco-stage__what-text strong {
   color: var(--mundayn-cream);
-  font-weight: 600;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .eco-stage__cta {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background-color: var(--mundayn-purple-darker);
-  color: var(--mundayn-cream);
-  border: 1px solid var(--mundayn-cream-light);
-  padding: 14px 24px;
+  gap: 12px;
+  background-color: var(--mundayn-gold);
+  color: var(--mundayn-black);
+  padding: 20px 32px;
   border-radius: var(--radius-full);
   text-decoration: none;
   font-family: var(--font-inter);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-top: 24px;
+  letter-spacing: 0;
+  margin-top: 32px;
   transition: all 0.2s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .eco-stage__cta:hover {
-  background-color: var(--mundayn-cream);
-  color: var(--mundayn-purple-dark);
+  background-color: var(--mundayn-gold-hover);
   transform: scale(1.05);
 }
 
 .eco-stage__image {
-  border-radius: var(--radius-md);
+  border-radius: 12px;
   overflow: hidden;
+  background: linear-gradient(135deg, #c4b8a5 0%, #a89b88 100%);
 }
 
-.eco-stage__placeholder {
-  min-height: 280px;
-  border-radius: var(--radius-md);
+.eco-stage__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
 }
 
 /* Ecosystem Belief Section */
 .eco-belief {
-  padding: 100px 20px;
+  padding: 120px 20px;
   background-color: var(--mundayn-purple-dark);
   text-align: center;
 }
 
 .eco-belief__title {
   font-family: var(--font-inter);
-  font-size: var(--text-title-size);
+  font-size: 62px;
   font-weight: 500;
   color: var(--mundayn-gold);
-  line-height: var(--text-title-line-height);
-  letter-spacing: var(--text-title-letter-spacing);
-  margin-bottom: 24px;
+  line-height: 1;
+  letter-spacing: -2.5px;
+  margin-bottom: 32px;
 }
 
 .eco-belief__title-italic {
@@ -3116,38 +3127,42 @@
 
 .eco-belief__quote {
   font-family: var(--font-inter);
-  font-size: var(--text-medium-size);
+  font-size: 32px;
+  font-weight: 500;
   color: var(--mundayn-cream);
-  letter-spacing: var(--text-medium-letter-spacing);
-  margin-bottom: 16px;
-  max-width: 600px;
+  letter-spacing: -2.16px;
+  line-height: 1;
+  margin-bottom: 24px;
+  max-width: 921px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .eco-belief__text {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
-  color: var(--mundayn-cream-light);
-  letter-spacing: var(--text-small-letter-spacing);
-  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--mundayn-cream);
+  letter-spacing: -0.36px;
+  margin-bottom: 40px;
 }
 
 .eco-belief__cta {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background-color: var(--mundayn-gold);
   color: var(--mundayn-black);
-  padding: 16px 28px;
+  padding: 20px 32px;
   border-radius: var(--radius-full);
   text-decoration: none;
   font-family: var(--font-inter);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0;
   transition: all 0.2s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .eco-belief__cta:hover {
@@ -3209,13 +3224,44 @@
 }
 
 /* Ecosystem Responsive */
+@media (max-width: 1100px) {
+  .eco-hero__title {
+    font-size: 48px;
+  }
+  
+  .eco-hero__subtitle {
+    font-size: 24px;
+  }
+  
+  .eco-stage__title {
+    font-size: 48px;
+  }
+  
+  .eco-stage__label,
+  .eco-stage__coming {
+    font-size: 24px;
+  }
+  
+  .eco-belief__title {
+    font-size: 48px;
+  }
+  
+  .eco-belief__quote {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 900px) {
   .eco-hero__title {
     font-size: 36px;
   }
   
+  .eco-hero__subtitle {
+    font-size: 20px;
+  }
+  
   .eco-stage {
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 40px 1fr;
     gap: 20px;
   }
   
@@ -3225,15 +3271,29 @@
   }
   
   .eco-stage__title {
-    font-size: 32px;
+    font-size: 38px;
+  }
+  
+  .eco-stage__label,
+  .eco-stage__coming {
+    font-size: 20px;
   }
   
   .eco-stage__line {
     min-height: 100%;
   }
   
+  .eco-stage__dot {
+    width: 26px;
+    height: 26px;
+  }
+  
   .eco-belief__title {
-    font-size: 32px;
+    font-size: 36px;
+  }
+  
+  .eco-belief__quote {
+    font-size: 20px;
   }
 }
 
@@ -3246,17 +3306,56 @@
     font-size: 28px;
   }
   
+  .eco-hero__subtitle {
+    font-size: 18px;
+  }
+  
   .eco-stage {
-    grid-template-columns: 24px 1fr;
+    grid-template-columns: 30px 1fr;
     gap: 16px;
+    margin-bottom: 60px;
   }
   
   .eco-stage__title {
-    font-size: 26px;
+    font-size: 28px;
   }
   
-  .eco-stage__placeholder {
-    min-height: 200px;
+  .eco-stage__title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .eco-stage__price {
+    margin-left: 0;
+  }
+  
+  .eco-stage__label,
+  .eco-stage__coming {
+    font-size: 16px;
+  }
+  
+  .eco-stage__dot {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .eco-stage__cta {
+    padding: 16px 24px;
+    font-size: 14px;
+  }
+  
+  .eco-belief__title {
+    font-size: 28px;
+  }
+  
+  .eco-belief__quote {
+    font-size: 18px;
+  }
+  
+  .eco-belief__cta {
+    padding: 16px 24px;
+    font-size: 14px;
   }
   
   .mundayn-footer__links-wrap {
