@@ -1986,11 +1986,11 @@
 .two-paths__wrap {
   display: flex;
   border-radius: 28px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .two-paths__panel {
-  flex: 1;
+  flex: 1 1 50%;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
@@ -1998,10 +1998,12 @@
 
 .two-paths__panel--left {
   background-color: #2a0c22;
+  border-radius: 28px 0 0 28px;
 }
 
 .two-paths__panel--right {
   background-color: #58233f;
+  border-radius: 0 28px 28px 0;
 }
 
 .two-paths__top {
