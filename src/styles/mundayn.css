@@ -4735,13 +4735,10 @@
   line-height: 20px;
 }
 
-.fs-onboarding__icon {
+.fs-onboarding__check {
   width: 24px;
   height: 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
   flex-shrink: 0;
-  /* Placeholder for checkmark icon */
 }
 
 

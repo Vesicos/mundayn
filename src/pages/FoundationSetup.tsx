@@ -306,19 +306,19 @@ const FoundationSetup = () => {
             <h3 className="fs-onboarding__title">Plus Your Personal Onboarding:</h3>
             <ul className="fs-onboarding__list">
               <li>
-                <div className="fs-onboarding__icon"></div>
+                <img src={checkYellow} alt="" className="fs-onboarding__check" />
                 <span>30-minute personalized video walkthrough of YOUR system</span>
               </li>
               <li>
-                <div className="fs-onboarding__icon"></div>
+                <img src={checkYellow} alt="" className="fs-onboarding__check" />
                 <span>Custom tutorial library with recordings for your specific setup</span>
               </li>
               <li>
-                <div className="fs-onboarding__icon"></div>
+                <img src={checkYellow} alt="" className="fs-onboarding__check" />
                 <span>Direct access to tutorials on every feature you'll actually use</span>
               </li>
               <li>
-                <div className="fs-onboarding__icon"></div>
+                <img src={checkYellow} alt="" className="fs-onboarding__check" />
                 <span>Everything recorded so you can reference it anytime</span>
               </li>
             </ul>
