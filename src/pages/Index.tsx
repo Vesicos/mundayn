@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
 import PackageCarousel from '../components/PackageCarousel';
 import AnimatedStats from '../components/AnimatedStats';
+import QuizModal from '../components/quiz/QuizModal';
 
 // Hand-drawn icon imports
 import sunIcon from '@/assets/icons/sun.png';
@@ -96,6 +97,8 @@ const FaqItem = ({
     </div>;
 };
 const Index = () => {
+  const [quizOpen, setQuizOpen] = useState(false);
+  
   // Handle scroll to packages section when navigating from other pages
   React.useEffect(() => {
     if (window.location.hash === '#packages') {
@@ -131,13 +134,15 @@ const Index = () => {
           <img src={heroElephant} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
         </div>
         <div className="mundayn-hero__content">
-          <h1 className="mundayn-hero__title">
-            Your Business, Running <span className="mundayn-hero__title-italic">Itself</span>
-          </h1>
-          <p className="mundayn-hero__subtitle">
-            The only platform that delivers true all-in-one: the systems AND the setup.
-            We handle the mundane so you can focus on the meaningful.
-          </p>
+          <div className="mundayn-hero__text-wrapper">
+            <h1 className="mundayn-hero__title">
+              Your Business, Running <span className="mundayn-hero__title-italic">Itself</span>
+            </h1>
+            <p className="mundayn-hero__subtitle">
+              The only platform that delivers true all-in-one: the systems AND the setup.
+              We handle the mundane so you can focus on the meaningful.
+            </p>
+          </div>
         </div>
       </header>
 
@@ -207,9 +212,9 @@ const Index = () => {
                 Start where you are TODAY. Upgrade only when you're ready. We're with you on the full journey—from first client to full community.
               </p>
               
-              <a href="#packages" className="mundayn-btn">
+              <button onClick={() => setQuizOpen(true)} className="mundayn-btn">
                 SHOW ME MY PACKAGE    <ArrowIcon />
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -222,43 +227,58 @@ const Index = () => {
             Why Mundayn is <span className="mundayn-section__title-italic">Different</span>
           </h2>
           
-          <div className="mundayn-why__content">
-            <div className="mundayn-why__left">
-              <h3 className="mundayn-why__heading">
-                The Problem with <span className="mundayn-section__title-italic">All-in-One</span>
-              </h3>
-              <div className="mundayn-why__text">
-                <p>Most platforms give you software and wish you luck.</p>
-                <br />
-                <p>They hand you the tools—CRM, email marketing, course hosting, funnels, and say "figure it out."</p>
-                <br />
-                <p>You spend 30+ hours learning. Then two weeks setting up. Then months fixing what you did wrong.</p>
-                <br />
-                <p><strong>Here's what we learned after watching so many Impact Entrepreneurs struggle:</strong></p>
-                <br />
-                <p>Software doesn't create transformation. Implementation does.</p>
-                <br />
-                <p><strong>Features are just potential. Implementation is transformation.</strong></p>
+          <div className="mundayn-why__cards">
+            {/* Left Panel */}
+            <div className="mundayn-why__panel mundayn-why__panel--left">
+              <div className="mundayn-why__inner">
+                <div className="mundayn-why__headline">
+                  <h3 className="mundayn-why__heading">
+                    The<br />
+                    Problem<br />
+                    <span className="mundayn-section__title-italic">with All-<br />in-One</span>
+                  </h3>
+                </div>
+                <div className="mundayn-why__copy">
+                  <p>Most platforms give you software and wish you luck.</p>
+                  <p>They hand you the tools—CRM, email marketing, course hosting, funnels, and say "figure it out."</p>
+                  <p>You spend 30+ hours learning. Then two weeks setting up. Then months fixing what you did wrong.</p>
+                  <p className="mundayn-why__bold">Here's what we learned after watching so many Impact Entrepreneurs struggle:</p>
+                  <p>Software doesn't create transformation.<br />Implementation does.</p>
+                  <p className="mundayn-why__bold">Features are just potential. Implementation is transformation.</p>
+                </div>
               </div>
             </div>
-            <div className="mundayn-why__right">
-              <h3 className="mundayn-why__heading">
-                What <span className="mundayn-section__title-italic">True All-in-One</span> means
-              </h3>
-              <div className="mundayn-why__text">
-                <p className="mundayn-why__label">THE TOOL</p>
-                <p className="mundayn-why__desc">One platform that replaces 15+ scattered apps you run today. Everything you need in one place. One login. Complete control.</p>
-                
-                <p className="mundayn-why__label">THE SETUP (Done-For-You Services)</p>
-                <p className="mundayn-why__desc">We implement it for you, built for your specific business. Your branding. Your client journey. Your workflows. Configured by us.</p>
-                
-                <p className="mundayn-why__label">THE TRANSFORMATION</p>
-                <p className="mundayn-why__desc">Your business runs from day one, not "someday." Week 1, you're operating. Not learning. Operating.</p>
+            
+            {/* Right Panel */}
+            <div className="mundayn-why__panel mundayn-why__panel--right">
+              <div className="mundayn-why__rightStack">
+                <div className="mundayn-why__inner">
+                  <div className="mundayn-why__headline">
+                    <h3 className="mundayn-why__heading">
+                      What<br />
+                      <span className="mundayn-section__title-italic">True All-<br />in-One</span><br />
+                      means
+                    </h3>
+                  </div>
+                  <div className="mundayn-why__copy">
+                    <div className="mundayn-why__block">
+                      <p className="mundayn-why__label">THE TOOL</p>
+                      <p className="mundayn-why__desc">One platform that replaces 15+ scattered apps you run today. Everything you need in one place. One login. Complete control.</p>
+                    </div>
+                    <div className="mundayn-why__block">
+                      <p className="mundayn-why__label">THE SETUP<br />(Done-For-You Services)</p>
+                      <p className="mundayn-why__desc">We implement it for you, built for your specific business. Your branding. Your client journey. Your workflows. Configured by us.</p>
+                    </div>
+                    <div className="mundayn-why__block">
+                      <p className="mundayn-why__label">THE TRANSFORMATION</p>
+                      <p className="mundayn-why__desc">Your business runs from day one, not "someday." Week 1, you're operating. Not learning. Operating.</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="#offers" className="mundayn-why__cta-btn">
+                  Explore The Mundayn<br />Done-For-You Ecosystem <ArrowIcon />
+                </a>
               </div>
-              <a href="#offers" className="mundayn-btn">
-                Explore The Mundayn 
-Done-For-You Ecosystem <ArrowIcon />
-              </a>
             </div>
           </div>
         </div>
@@ -275,7 +295,9 @@ Done-For-You Ecosystem <ArrowIcon />
             <article className="mundayn-feels__card">
               <div className="mundayn-feels__card-icon"><img src={sunIcon} alt="Sun icon" /></div>
               <h3 className="mundayn-feels__card-title">Wake up to confirmation emails you never sent.</h3>
-              <p className="mundayn-feels__card-text">​</p>
+              <p className="mundayn-feels__card-text">
+                Your booking system handled the mundane. Payments processed. Reminders sent. Client onboarded. You handle the meaningful: the actual session that creates transformation.
+              </p>
             </article>
             
             <article className="mundayn-feels__card">
@@ -757,6 +779,9 @@ Done-For-You Ecosystem <ArrowIcon />
           </div>
         </div>
       </footer>
+      
+      {/* Quiz Modal */}
+      <QuizModal open={quizOpen} onOpenChange={setQuizOpen} />
     </div>;
 };
 export default Index;
