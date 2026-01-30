@@ -45,7 +45,7 @@ function PackageCard({
   
   return (
     <motion.div
-      className="absolute w-[300px] md:w-[340px] lg:w-[380px] px-5 py-6 md:px-6 md:py-8"
+      className="absolute w-[300px] md:w-[340px] lg:w-[380px] px-5 py-6 md:px-6 md:py-8 flex flex-col"
       style={{
         backgroundColor: bgColor,
         borderRadius,
@@ -53,12 +53,12 @@ function PackageCard({
         zIndex,
         left: '50%',
         top: '50%',
-        height: '520px',
+        height: '620px',
       }}
       initial={false}
       animate={{
         x: x - 190, // offset for left: 50% (half of max card width)
-        y: -260, // offset for top: 50% (half of card height)
+        y: -310, // offset for top: 50% (half of card height)
         scale,
         opacity
       }}
@@ -113,8 +113,8 @@ function PackageCard({
         </ul>
       </div>
 
-      {/* CTA Button */}
-      <div className="mt-5">
+      {/* CTA Button - pushed to bottom */}
+      <div className="mt-auto pt-4">
         <a
           href="#trial"
           className="inline-flex items-center justify-center gap-2 bg-[#F5AD2D] text-black font-bold text-sm px-6 py-3 rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full"
@@ -297,7 +297,7 @@ export default function PackageCarousel() {
   };
 
   // Fixed card height that fits all content
-  const cardContainerHeight = 600;
+  const cardContainerHeight = 700;
 
   return (
     <div
