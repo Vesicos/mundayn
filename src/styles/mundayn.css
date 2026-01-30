@@ -1308,13 +1308,46 @@
   padding: 80px 0;
 }
 
+.mundayn-faq__card {
+  position: relative;
+  background-color: #58233f;
+  border-radius: var(--radius-md);
+  padding: 60px 80px 100px;
+  overflow: hidden;
+}
+
+.mundayn-faq__card-bg {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 450px;
+  height: auto;
+  opacity: 0.15;
+  pointer-events: none;
+  mix-blend-mode: luminosity;
+}
+
+.mundayn-faq__title {
+  font-family: var(--font-playfair);
+  font-size: 48px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--mundayn-cream);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
 .mundayn-faq__list {
-  max-width: 900px;
-  margin: 60px auto 0;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .mundayn-faq__item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .mundayn-faq__question {

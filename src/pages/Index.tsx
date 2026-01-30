@@ -47,6 +47,9 @@ import elephantFiling from '@/assets/elephant-filing.png';
 import elephantHappy from '@/assets/elephant-happy.png';
 import pillowsOnly from '@/assets/pillows-only.png';
 
+// FAQ section image
+import elephantReading from '@/assets/elephant-reading.png';
+
 // Stats data for animated section
 const statsData = [{
   endValue: 15,
@@ -646,9 +649,11 @@ const Index = () => {
       {/* FAQ Section */}
       <section className="mundayn-section mundayn-faq">
         <div className="mundayn-container">
-          <h2 className="mundayn-section__title">Questions? Answered.</h2>
+          <div className="mundayn-faq__card">
+            <img src={elephantReading} alt="" className="mundayn-faq__card-bg" aria-hidden="true" />
+            <h2 className="mundayn-faq__title">Questions? Answered.</h2>
           
-          <div className="mundayn-faq__list">
+            <div className="mundayn-faq__list">
             <FaqItem question="How is this different from Kajabi, ClickFunnels, or other platforms?" answer={<>
                 <p>Three ways:</p>
                 <ol>
@@ -681,6 +686,7 @@ const Index = () => {
                 <p>We build it. You use it. That's the partnership.</p>
               </>} />
             <FaqItem question="Is there a model for advanced entrepreneurs?" answer="Yes. If you're Visionary Entrepreneur with 100K+ audience, ready for COO partnership, we offer a partnership model that includes full operational buildout of Mundayn including management." />
+            </div>
           </div>
         </div>
       </section>
