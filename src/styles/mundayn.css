@@ -4767,12 +4767,13 @@
 }
 
 .fs-provide__title {
-  font-family: var(--font-playfair);
-  font-size: 28px;
+  font-family: var(--font-inter);
+  font-size: 52px;
   font-weight: 400;
   font-style: normal;
   color: var(--mundayn-cream);
-  letter-spacing: -0.5px;
+  letter-spacing: -2.56px;
+  line-height: 64.6px;
   margin-bottom: 24px;
 }
 
