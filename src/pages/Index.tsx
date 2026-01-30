@@ -521,9 +521,9 @@ const Index = () => {
           <div className="mundayn-choice__grid">
             <article className="mundayn-choice__card bg-[#b14349]/[0.19]">
               <h2 className="mundayn-choice__card-title">What Package?</h2>
-              <a href="#packages" className="mundayn-btn">
+              <button onClick={() => setQuizOpen(true)} className="mundayn-btn">
                 Take The Assessment <ArrowIcon />
-              </a>
+              </button>
               <p className="mundayn-choice__card-text" style={{
               marginTop: '24px'
             }}>
