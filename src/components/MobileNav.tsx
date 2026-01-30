@@ -19,7 +19,6 @@ const MobileNav = () => {
     { to: '/', label: 'Product' },
     { to: '/done-for-you', label: 'Done-For-You' },
     { to: '/ecosystem', label: 'Ecosystem' },
-    { to: '/foundation-setup', label: 'Foundation Setup' },
   ];
 
   return (
