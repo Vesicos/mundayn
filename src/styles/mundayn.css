@@ -4746,57 +4746,73 @@
 .fs-provide {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 0;
   margin-bottom: 40px;
+  border-radius: var(--radius-lg);
+  overflow: visible;
 }
 
 .fs-provide__card {
-  background: rgba(50, 25, 40, 0.6);
-  border-radius: var(--radius-md);
-  padding: 32px;
+  padding: 40px;
+}
+
+.fs-provide__card:first-child {
+  background: rgba(30, 15, 25, 0.85);
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
 }
 
 .fs-provide__card--timeline {
-  background: rgba(50, 25, 40, 0.8);
+  background: var(--mundayn-purple-dark);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
 }
 
 .fs-provide__title {
-  font-family: var(--font-inter);
-  font-size: var(--text-small-size);
-  font-weight: 600;
+  font-family: var(--font-playfair);
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
   color: var(--mundayn-cream);
-  letter-spacing: var(--text-small-letter-spacing);
-  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
 }
 
 .fs-provide__list {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 24px;
   margin: 0;
 }
 
 .fs-provide__list li {
   font-family: var(--font-inter);
-  font-size: 15px;
+  font-size: 16px;
   color: var(--mundayn-cream);
-  margin-bottom: 8px;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
 .fs-provide__highlight {
-  font-family: var(--font-inter);
-  font-size: 24px;
-  font-weight: 600;
+  font-family: var(--font-playfair);
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 400;
   color: var(--mundayn-gold);
   margin-bottom: 8px;
+}
+
+.fs-provide__text {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: var(--mundayn-cream);
+  line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 .fs-provide__cta {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background-color: transparent;
-  color: var(--mundayn-cream);
-  border: 1px solid var(--mundayn-cream);
+  background-color: var(--mundayn-gold);
+  color: var(--mundayn-black);
   padding: 14px 24px;
   border-radius: var(--radius-full);
   text-decoration: none;
@@ -4806,7 +4822,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.2s;
-  margin-top: 20px;
+  margin-top: 8px;
+  white-space: nowrap;
 }
 
 .fs-provide__cta:hover {
