@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
+import logoIcon from '@/assets/logo-icon.png';
 import Footer from '../components/Footer';
 import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
 import elephantTruthBg from '@/assets/elephant-truth-bg-new.png';
@@ -22,7 +23,8 @@ const DoneForYou = () => {
       {/* Navigation */}
       <nav className="mundayn-nav">
         <Link to="/" className="mundayn-nav__logo">
-          <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img" />
+          <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-full" />
+          <img src={logoIcon} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-icon" />
         </Link>
         <ul className="mundayn-nav__links">
           <li><Link to="/">Product</Link></li>
