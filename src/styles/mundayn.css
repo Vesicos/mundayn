@@ -2929,12 +2929,28 @@
   background-color: var(--mundayn-purple-dark);
 }
 
+.eco-stages__container {
+  position: relative;
+}
+
+.eco-stages__timeline-line {
+  position: absolute;
+  left: 36px;
+  top: 17px;
+  width: 2px;
+  height: calc(100% - 100px);
+  background-color: var(--mundayn-red-solid);
+  z-index: 0;
+}
+
 .eco-stage {
   display: grid;
   grid-template-columns: 50px 1fr 1fr;
   gap: 40px;
   margin-bottom: 100px;
   align-items: start;
+  position: relative;
+  z-index: 1;
 }
 
 .eco-stage:last-child {
@@ -2954,14 +2970,8 @@
   background-color: var(--mundayn-red-solid);
   border-radius: 50%;
   flex-shrink: 0;
-}
-
-.eco-stage__line {
-  width: 2px;
-  flex: 1;
-  min-height: 400px;
-  background-color: var(--mundayn-red-solid);
-  margin-top: 12px;
+  position: relative;
+  z-index: 2;
 }
 
 .eco-stage__content {

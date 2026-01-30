@@ -43,13 +43,11 @@ const EcosystemStage = ({
   ctaText,
   ctaHref,
   image,
-  isLast = false,
 }: StageProps) => {
   return (
     <article className="eco-stage">
       <div className="eco-stage__indicator">
         <span className="eco-stage__dot" />
-        {!isLast && <span className="eco-stage__line" />}
       </div>
       
       <div className="eco-stage__content">
@@ -137,7 +135,10 @@ const Ecosystem = () => {
 
       {/* Stages Timeline */}
       <section className="eco-stages">
-        <div className="mundayn-container">
+        <div className="mundayn-container eco-stages__container">
+          {/* Continuous vertical line */}
+          <div className="eco-stages__timeline-line" />
+          
           <EcosystemStage
             stageNumber={1}
             stageLabel=""
