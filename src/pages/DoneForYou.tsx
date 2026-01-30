@@ -41,14 +41,14 @@ const DoneForYou = () => {
             Your Business,<br />
             Running From <span className="dfy-hero__title-italic">Day One</span>
           </h1>
-          <ul className="dfy-hero__list">
-            <li>Not "some day when you configure it."</li>
-            <li>Not "after you watch 47 tutorials."</li>
-            <li>Not "once you hire someone to help."</li>
-            <li>Not "maybe Thursday."</li>
-          </ul>
-          <a href="#packages" className="mundayn-btn">
-            Jump to DFY Packages <ArrowIcon />
+          <p className="dfy-hero__subtitle">
+            Most platforms hand you software. We hand you a<br />
+            system that works.
+          </p>
+          <p className="dfy-hero__week">Week 1: You're operating.</p>
+          <p className="dfy-hero__tagline">Not learning. Operating.</p>
+          <a href="#packages" className="dfy-hero__btn">
+            SEE HOW IT WORKS <ArrowIcon />
           </a>
         </div>
       </header>

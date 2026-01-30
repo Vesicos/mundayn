@@ -1887,35 +1887,73 @@
 .dfy-hero__content {
   position: relative;
   z-index: 1;
-  max-width: 500px;
-  padding: 40px;
+  max-width: 600px;
+  padding: 80px 40px;
 }
 
 .dfy-hero__title {
   font-family: var(--font-playfair);
-  font-size: 62px;
+  font-size: 72px;
   font-weight: 400;
   color: var(--mundayn-purple-dark);
-  line-height: 64.6px;
+  line-height: 1.05;
   letter-spacing: -2.56px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .dfy-hero__title-italic {
   font-style: italic;
 }
 
-.dfy-hero__list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 32px 0;
+.dfy-hero__subtitle {
+  font-family: var(--font-playfair);
+  font-size: 24px;
+  font-style: italic;
+  color: var(--mundayn-purple-dark);
+  line-height: 1.4;
+  margin-bottom: 16px;
 }
 
-.dfy-hero__list li {
+.dfy-hero__week {
+  font-family: var(--font-inter);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--mundayn-purple-dark);
+  margin-bottom: 4px;
+}
+
+.dfy-hero__tagline {
+  font-family: var(--font-playfair);
+  font-size: 22px;
+  font-style: italic;
+  color: var(--mundayn-purple-dark);
+  margin-bottom: 48px;
+}
+
+.dfy-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 80px;
+  background-color: var(--mundayn-purple-dark);
+  color: white;
   font-family: var(--font-inter);
   font-size: 16px;
-  color: var(--mundayn-purple-dark);
-  line-height: 1.8;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.dfy-hero__btn:hover {
+  background-color: var(--mundayn-wine);
+  transform: translateY(-2px);
+}
+
+.dfy-hero__btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Two Paths Section - Unified Container */
