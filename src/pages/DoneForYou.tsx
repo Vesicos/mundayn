@@ -5,18 +5,12 @@ import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
 import Footer from '../components/Footer';
 import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
-import elephantTruthBg from '@/assets/elephant-truth-bg.png';
-
-const ArrowIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+const ArrowIcon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <line x1="5" y1="12" x2="19" y2="12" />
     <polyline points="12 5 19 12 12 19" />
-  </svg>
-);
-
+  </svg>;
 const DoneForYou = () => {
-  return (
-    <div className="mundayn-page">
+  return <div className="mundayn-page">
       {/* Navigation */}
       <nav className="mundayn-nav">
         <Link to="/" className="mundayn-nav__logo">
@@ -111,22 +105,19 @@ const DoneForYou = () => {
 
       {/* The Honest Truth Section */}
       <section className="dfy-truth">
-        <div className="dfy-truth__bg">
-          <img src={elephantTruthBg} alt="" className="dfy-truth__bg-image" />
-        </div>
-        <div className="dfy-truth__content">
-          <div className="dfy-truth__inner">
-            <h2 className="dfy-truth__title">
-              The Honest <span className="dfy-truth__title-italic">Truth</span>
-            </h2>
-            <p className="dfy-truth__text">Most people don't fully implement the tools they buy.</p>
-            <p className="dfy-truth__text dfy-truth__text--bold">That's not your fault.</p>
-            <p className="dfy-truth__text">That's human nature meeting complexity.</p>
-            <p className="dfy-truth__text dfy-truth__text--bold">That's why DFY exists.</p>
-            <a href="#trial" className="dfy-truth__btn">
-              Start Free Trial (DIY) <ArrowIcon />
-            </a>
-          </div>
+        <div className="mundayn-container">
+          <h2 className="dfy-truth__title">
+            The Honest <span className="dfy-truth__title-italic opacity-40">Truth</span>
+          </h2>
+          <p className="dfy-truth__text">
+            Most people don't fail because the tools are too hard.<br />
+            That's not your fault.<br />
+            But it <em>is</em> why you're still seeking something different.<br />
+            That's why DFY exists.
+          </p>
+          <a href="#packages" className="mundayn-btn">
+            Explore DFY Packages <ArrowIcon />
+          </a>
         </div>
       </section>
 
@@ -396,8 +387,6 @@ const DoneForYou = () => {
 
       {/* Footer */}
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default DoneForYou;
