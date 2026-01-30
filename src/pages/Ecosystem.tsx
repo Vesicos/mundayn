@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
-import logoIcon from '@/assets/logo-icon.png';
+import logoIcon from '@/assets/logo-icon.svg';
 import Footer from '../components/Footer';
 
 // Import elephant images

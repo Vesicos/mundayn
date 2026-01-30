@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
-import logoIcon from '@/assets/logo-icon.png';
+import logoIcon from '@/assets/logo-icon.svg';
 import Footer from '../components/Footer';
 import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
 import elephantTruthBg from '@/assets/elephant-truth-bg-new.png';
