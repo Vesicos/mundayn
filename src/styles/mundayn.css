@@ -2935,7 +2935,7 @@
 
 .eco-stages__timeline-line {
   position: absolute;
-  left: 24px;
+  left: calc(25px - 1px);
   top: 21px;
   width: 2px;
   height: calc(100% - 60px);
@@ -2974,7 +2974,6 @@
   flex-shrink: 0;
   position: relative;
   z-index: 10;
-  box-shadow: 0 0 0 6px var(--mundayn-purple-dark);
 }
 
 .eco-stage__content {
