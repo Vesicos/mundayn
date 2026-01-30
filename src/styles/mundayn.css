@@ -4994,25 +4994,25 @@
 }
 
 .fs-time__value-calc {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 600;
   color: var(--mundayn-cream);
   letter-spacing: -2.5px;
-  line-height: 1.2;
+  line-height: 1.4;
   margin: 8px 0;
 }
 
 .fs-time__value-card--highlight {
   background: rgba(89, 36, 64, 1);
-  text-align: center;
+  text-align: left;
 }
 
 .fs-time__value-reclaim {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   color: var(--mundayn-gold);
   letter-spacing: -2.5px;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 8px;
 }
 
