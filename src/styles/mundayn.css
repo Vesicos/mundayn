@@ -2596,8 +2596,10 @@
 
 .dfy-guarantee__subtitle {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-tall-size);
+  font-weight: 400;
   color: var(--mundayn-cream-light);
+  letter-spacing: var(--text-tall-letter-spacing);
 }
 
 .dfy-guarantee__grid {
