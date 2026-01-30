@@ -416,20 +416,20 @@ const FoundationSetup = () => {
           
           <div className="fs-guarantee__grid">
             <div className="fs-guarantee__card">
-              <p className="fs-guarantee__card-title">Your system works perfectly from day one, or we keep fixing it until it does. Free. No time limit.</p>
+              <p className="fs-guarantee__card-title">Your system works<br />perfectly from day one,<br />or we keep fixing it until it<br />does. Free. No time limit.</p>
               <img src={guaranteeSquiggle} alt="" className="fs-guarantee__icon" />
             </div>
             <div className="fs-guarantee__card">
-              <p className="fs-guarantee__card-title">If we don't deliver what we promised, 100% money back. No questions asked.</p>
+              <p className="fs-guarantee__card-title">If we don't deliver what<br />we promised, 100%<br />money back. No<br />questions asked.</p>
               <img src={guaranteeArrow} alt="" className="fs-guarantee__icon" />
             </div>
             <div className="fs-guarantee__card">
               <p className="fs-guarantee__card-label">Why we can promise this:</p>
-              <p className="fs-guarantee__card-text">We're Mundayn experts. We've built this hundreds of times. We know exactly how to make it work for your specific business needs.</p>
+              <p className="fs-guarantee__card-text">We're Mundayn experts. We've built<br />this hundreds of times. We know<br />exactly how to make it work for your<br />specific business needs.</p>
               <img src={guaranteeEye} alt="" className="fs-guarantee__icon" />
             </div>
             <div className="fs-guarantee__card fs-guarantee__card--highlight">
-              <p className="fs-guarantee__card-title"><strong>Plus: 45 days of free adjustments.</strong> If something needs tweaking in your first 45 days, we handle it. No charge.</p>
+              <p className="fs-guarantee__card-title"><strong>Plus: 45 days of free<br />adjustments.</strong> If something<br />needs tweaking in your first 45<br />days, we handle it. No charge.</p>
               <img src={guaranteeSmiley} alt="" className="fs-guarantee__icon" />
             </div>
           </div>
