@@ -1171,6 +1171,17 @@
 .mundayn-rightforyou__column {
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Complex hover effect: hovering one column scales it up and fades the other */
+.mundayn-rightforyou__grid:hover .mundayn-rightforyou__column {
+  opacity: 0.3;
+}
+
+.mundayn-rightforyou__grid .mundayn-rightforyou__column:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 .mundayn-rightforyou__column-title {
