@@ -3031,14 +3031,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--mundayn-red-solid);
-  color: var(--mundayn-white);
+  width: 111px;
+  height: 51px;
+  background-color: #3E1834;
+  color: rgba(237, 93, 89, 0.70);
   font-family: var(--font-inter);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  padding: 8px 20px;
-  border-radius: var(--radius-full);
-  margin-left: 8px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 25px;
 }
 
 .eco-stage__subtitle {
