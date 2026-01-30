@@ -212,11 +212,11 @@ const FoundationSetup = () => {
             </div>
             <div className="fs-comparison__card fs-comparison__card--setup">
               <h3 className="fs-comparison__title">Foundation Setup</h3>
-              <ul className="fs-comparison__list">
-                <li>One week to launch</li>
-                <li>Built right the first time</li>
-                <li>Zero mistakes</li>
-                <li>Start operating immediately</li>
+              <ul className="fs-comparison__list fs-comparison__list--checks">
+                <li><img src={checkYellow} alt="" className="fs-comparison__check" />One week to launch</li>
+                <li><img src={checkYellow} alt="" className="fs-comparison__check" />Built right the first time</li>
+                <li><img src={checkYellow} alt="" className="fs-comparison__check" />Zero mistakes</li>
+                <li><img src={checkYellow} alt="" className="fs-comparison__check" />Start operating immediately</li>
               </ul>
               <a href="#setup" className="fs-comparison__cta">
                 YES, I WANT FOUNDATION SETUP <ArrowIcon />
