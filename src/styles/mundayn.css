@@ -2464,30 +2464,33 @@
   width: 2px;
   background-color: var(--mundayn-red-solid);
   flex-shrink: 0;
-  height: 280px;
+  height: 400px;
   align-self: flex-start;
 }
 
 .dfy-solution__content {
-  padding: 0 30px;
+  padding: 0 21px;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
 }
 
 .dfy-solution__number {
   font-family: var(--font-inter);
-  font-size: 120px;
+  font-size: 90px;
   font-weight: 500;
-  color: var(--mundayn-red-solid);
-  line-height: 1;
+  color: #ED5D59;
+  line-height: 120px;
+  letter-spacing: -4px;
   margin-bottom: 16px;
 }
 
 .dfy-solution__label {
   font-family: var(--font-inter);
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--mundayn-cream);
+  font-size: 32px;
+  font-weight: 500;
+  color: #DDD7C9;
+  line-height: 32px;
   margin-bottom: 20px;
 }
 
