@@ -25,6 +25,10 @@ import implContacts from '@/assets/icons/fs-impl-contacts.png';
 import implEmail from '@/assets/icons/fs-impl-email.png';
 import implDomain from '@/assets/icons/fs-impl-domain.png';
 import implDashboard from '@/assets/icons/fs-impl-dashboard.png';
+import guaranteeArrow from '@/assets/icons/fs-guarantee-arrow.png';
+import guaranteeSquiggle from '@/assets/icons/fs-guarantee-squiggle.png';
+import guaranteeSmiley from '@/assets/icons/fs-guarantee-smiley.png';
+import guaranteeEye from '@/assets/icons/fs-guarantee-eye.png';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -423,20 +427,20 @@ const FoundationSetup = () => {
           <div className="fs-guarantee__grid">
             <div className="fs-guarantee__card">
               <p className="fs-guarantee__card-title">Your system works perfectly from day one, or we keep fixing it until it does. Free. No time limit.</p>
-              <div className="fs-guarantee__card-icon"></div>
+              <img src={guaranteeArrow} alt="" className="fs-guarantee__icon" />
             </div>
             <div className="fs-guarantee__card">
               <p className="fs-guarantee__card-title">If we don't deliver what we promised, 100% money back. No questions asked.</p>
-              <div className="fs-guarantee__card-icon"></div>
+              <img src={guaranteeSquiggle} alt="" className="fs-guarantee__icon" />
             </div>
             <div className="fs-guarantee__card">
               <p className="fs-guarantee__card-label">Why we can promise this:</p>
               <p className="fs-guarantee__card-text">We're Mundayn experts. We've built this hundreds of times. We know exactly how to make it work for your specific business needs.</p>
-              <div className="fs-guarantee__card-icon"></div>
+              <img src={guaranteeSmiley} alt="" className="fs-guarantee__icon" />
             </div>
             <div className="fs-guarantee__card">
               <p className="fs-guarantee__card-title"><strong>Plus: 45 days of free adjustments.</strong> If something needs tweaking in your first 45 days, we handle it. No charge.</p>
-              <div className="fs-guarantee__card-icon"></div>
+              <img src={guaranteeEye} alt="" className="fs-guarantee__icon" />
             </div>
           </div>
           
