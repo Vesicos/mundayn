@@ -6,7 +6,7 @@ import QuizProgress from "./QuizProgress";
 import QuizResult from "./QuizResult";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logoNav from '@/assets/logonav.svg';
+import elephantYellow from '@/assets/icons/elephant-yellow.png';
 
 interface QuizModalProps {
   open: boolean;
@@ -81,7 +81,7 @@ const QuizModal = ({ open, onOpenChange }: QuizModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-quiz-bg border-0 max-w-xl p-8 rounded-3xl overflow-hidden">
+      <DialogContent className="bg-quiz-bg border-0 max-w-2xl p-8 md:p-12 rounded-3xl overflow-hidden">
         <AnimatePresence mode="wait" custom={direction}>
           {!showResult ? (
             <motion.div
@@ -92,17 +92,22 @@ const QuizModal = ({ open, onOpenChange }: QuizModalProps) => {
               animate="center"
               exit="exit"
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="flex flex-col"
+              className="flex flex-col items-center"
             >
-              <img src={logoNav} alt="Mundayn" className="h-8 mb-6 self-start" />
+              {/* Yellow Elephant Logo */}
+              <img 
+                src={elephantYellow} 
+                alt="Mundayn" 
+                className="w-16 h-auto mb-6" 
+              />
               
-              <QuizProgress current={currentQuestion + 1} total={quizQuestions.length} />
-              
-              <h2 className="text-xl md:text-2xl font-serif text-quiz-title mt-6 mb-6">
+              {/* Question Title */}
+              <h2 className="text-2xl md:text-4xl font-serif text-quiz-title text-center mb-8 leading-tight">
                 {quizQuestions[currentQuestion].question}
               </h2>
               
-              <div className="space-y-3 mb-8">
+              {/* Options */}
+              <div className="w-full max-w-lg space-y-3 mb-8">
                 {quizQuestions[currentQuestion].options.map((option, index) => (
                   <QuizOption
                     key={index}
@@ -113,33 +118,34 @@ const QuizModal = ({ open, onOpenChange }: QuizModalProps) => {
                 ))}
               </div>
               
-              <div className="flex items-center justify-between">
-                <button
-                  onClick={handleBack}
-                  disabled={currentQuestion === 0}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
-                    currentQuestion === 0
-                      ? "opacity-0 pointer-events-none"
-                      : "text-quiz-title hover:bg-quiz-title/10"
-                  }`}
-                >
-                  <ArrowLeft className="w-4 h-4" />
-                  Back
-                </button>
+              {/* Navigation */}
+              <div className="flex items-center justify-center gap-4 mb-6">
+                {currentQuestion > 0 && (
+                  <button
+                    onClick={handleBack}
+                    className="flex items-center gap-2 px-5 py-3 rounded-full text-quiz-title hover:bg-quiz-title/10 transition-all font-medium"
+                  >
+                    <ArrowLeft className="w-4 h-4" />
+                    Back
+                  </button>
+                )}
                 
                 <button
                   onClick={handleNext}
                   disabled={selectedOptions[currentQuestion] === null}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all ${
+                  className={`flex items-center gap-2 px-8 py-3.5 rounded-full font-bold uppercase tracking-wide transition-all ${
                     selectedOptions[currentQuestion] === null
                       ? "bg-quiz-title/20 text-quiz-title/50 cursor-not-allowed"
                       : "bg-quiz-accent text-quiz-option hover:brightness-110"
                   }`}
                 >
-                  {currentQuestion === quizQuestions.length - 1 ? "Get My Package" : "Next"}
+                  {currentQuestion === quizQuestions.length - 1 ? "Get My Package" : "NEXT"}
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
+              
+              {/* Progress Bar */}
+              <QuizProgress current={currentQuestion + 1} total={quizQuestions.length} />
             </motion.div>
           ) : (
             <motion.div
