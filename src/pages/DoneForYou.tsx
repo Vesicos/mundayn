@@ -101,7 +101,7 @@ const DoneForYou = () => {
                 </div>
               </div>
               <a href="#packages" className="two-paths__btn">
-                Learn More About DFY <ArrowIcon />
+                Get Done-For-You Quote <ArrowIcon />
               </a>
             </div>
           </div>

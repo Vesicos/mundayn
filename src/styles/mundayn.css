@@ -1992,10 +1992,8 @@
 .two-paths__panel {
   flex: 1;
   padding: 48px 40px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr auto;
-  gap: 24px 32px;
+  display: flex;
+  flex-direction: column;
 }
 
 .two-paths__panel--left {
@@ -2007,17 +2005,15 @@
 }
 
 .two-paths__top {
-  display: contents;
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: start;
 }
 
 .two-paths__left-col {
-  grid-row: 1;
-  grid-column: 1;
-}
-
-.two-paths__right-col {
-  grid-row: 1;
-  grid-column: 2;
+  min-width: 160px;
 }
 
 .two-paths__right-col {
@@ -2093,10 +2089,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.2s;
-  grid-row: 2;
-  grid-column: 2;
-  justify-self: end;
-  align-self: end;
+  margin-top: 32px;
+  align-self: center;
 }
 
 .two-paths__btn:hover {
