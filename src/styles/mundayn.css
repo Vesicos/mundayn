@@ -4762,7 +4762,7 @@
 }
 
 .fs-provide__card--timeline {
-  background: var(--mundayn-purple-light);
+  background: var(--mundayn-purple-dark);
   border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
 }
 
@@ -4811,9 +4811,9 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background-color: var(--mundayn-cream);
+  background-color: var(--mundayn-gold);
   color: var(--mundayn-black);
-  padding: 14px 28px;
+  padding: 14px 24px;
   border-radius: var(--radius-full);
   text-decoration: none;
   font-family: var(--font-inter);
@@ -4822,12 +4822,12 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.2s;
-  margin-top: 16px;
+  margin-top: 8px;
   white-space: nowrap;
 }
 
 .fs-provide__cta:hover {
-  background-color: var(--mundayn-gold);
+  background-color: var(--mundayn-cream);
   color: var(--mundayn-purple-dark);
   transform: scale(1.05);
 }
