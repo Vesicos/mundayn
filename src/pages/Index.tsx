@@ -38,6 +38,7 @@ import footerLogo from '@/assets/footer-logo.png';
 
 // Hero image
 import heroElephant from '@/assets/hero-elephant.png';
+import heroElephantMobile from '@/assets/hero-elephant-mobile.png';
 
 // Stage card elephant images
 import elephantBuilder from '@/assets/elephant-builder.png';
@@ -136,7 +137,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <header className="mundayn-hero">
-        <div className="mundayn-hero__bg">
+        <div className="mundayn-hero__bg mundayn-hero__bg--desktop">
           <img src={heroElephant} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
         </div>
         <div className="mundayn-hero__content">
@@ -148,6 +149,9 @@ const Index = () => {
               The only platform that delivers true all-in-one: the systems AND the setup.
               We handle the mundane so you can focus on the meaningful.
             </p>
+          </div>
+          <div className="mundayn-hero__mobile-elephant">
+            <img src={heroElephantMobile} alt="Elephant carrying boxes" />
           </div>
         </div>
       </header>
