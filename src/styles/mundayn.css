@@ -4768,12 +4768,12 @@
 
 .fs-provide__title {
   font-family: var(--font-inter);
-  font-size: 52px;
+  font-size: 32px;
   font-weight: 400;
   font-style: normal;
   color: var(--mundayn-cream);
-  letter-spacing: -2.56px;
-  line-height: 64.6px;
+  letter-spacing: -2.5px;
+  line-height: 1.4;
   margin-bottom: 24px;
 }
 
