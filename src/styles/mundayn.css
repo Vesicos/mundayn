@@ -2935,7 +2935,7 @@
 
 .eco-stages__timeline-line {
   position: absolute;
-  left: 36px;
+  left: 24px;
   top: 17px;
   width: 2px;
   height: calc(100% - 100px);
