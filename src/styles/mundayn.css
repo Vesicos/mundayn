@@ -2271,7 +2271,7 @@
   border-radius: 28px;
   overflow: hidden;
   min-height: 700px;
-  background-color: #58233f;
+  background-color: rgba(35, 7, 28, 0.8);
 }
 
 .split-card__media {
