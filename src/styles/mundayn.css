@@ -2191,7 +2191,8 @@
   height: 100%;
   object-fit: cover;
   object-position: right center;
-  mix-blend-mode: plus-darker;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 .dfy-truth__content {
