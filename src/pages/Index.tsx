@@ -6,6 +6,7 @@ import StageCard from '../components/StageCard';
 import PackageCarousel from '../components/PackageCarousel';
 import AnimatedStats from '../components/AnimatedStats';
 import QuizModal from '../components/quiz/QuizModal';
+import Footer from '../components/Footer';
 
 // Hand-drawn icon imports
 import sunIcon from '@/assets/icons/sun.png';
@@ -788,35 +789,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="site-footer">
-        <div className="mundayn-container">
-          <div className="site-footer__card">
-            <div className="site-footer__bg" style={{ backgroundImage: `url(${bgFooter})` }}></div>
-            <div className="site-footer__tint"></div>
-            <div className="site-footer__content">
-            <div className="site-footer__brand">
-              <img src={footerLogo} alt="Mundayn Logo" className="site-footer__logo" />
-            </div>
-            
-            <nav className="site-footer__nav">
-              <a href="#packages">Find YOUR Package</a>
-              <Link to="/ecosystem">Ecosystem</Link>
-              <Link to="/done-for-you">Done For You</Link>
-              </nav>
-              
-              <div className="site-footer__legal">
-                <p className="site-footer__tagline">You Create. We Implement. You Launch.</p>
-                <p className="site-footer__copyright">© 2025 Mundayn. All rights reserved.</p>
-              </div>
-              
-              <div className="site-footer__contact">
-                <p className="site-footer__contact-label">Contact Us:</p>
-                <a href="mailto:care@mundayn.com" className="site-footer__email">care@mundayn.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
       
       {/* Quiz Modal */}
       <QuizModal open={quizOpen} onOpenChange={setQuizOpen} />
