@@ -501,55 +501,109 @@
   padding: 80px 0;
 }
 
-.mundayn-why__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+/* Outer combined card */
+.mundayn-why__card {
+  display: flex;
   border-radius: var(--radius-xl);
   overflow: hidden;
 }
 
-.mundayn-why__left {
-  background-color: var(--mundayn-purple-card);
+/* Each panel */
+.mundayn-why__side {
+  flex: 1;
   padding: 48px;
-  border-radius: var(--radius-xl) 0 0 var(--radius-xl);
 }
 
-.mundayn-why__right {
+.mundayn-why__side--left {
+  background-color: var(--mundayn-purple-card);
+}
+
+.mundayn-why__side--right {
   background-color: var(--mundayn-red-card);
-  padding: 48px;
-  border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
+}
+
+/* Thin divider between panels */
+.mundayn-why__divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Inner 2-column layout inside each side */
+.mundayn-why__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Headline column */
+.mundayn-why__headline {
+  /* Stays left */
 }
 
 .mundayn-why__heading {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
   line-height: 1.15;
-  margin-bottom: 24px;
 }
 
-.mundayn-why__text {
-  font-size: 16px;
+/* Copy column */
+.mundayn-why__copy {
+  max-width: 36ch;
+}
+
+.mundayn-why__copy p {
+  font-size: 14px;
   line-height: 1.7;
   color: var(--mundayn-cream);
+  margin-bottom: 16px;
 }
 
-.mundayn-why__text strong {
+.mundayn-why__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.mundayn-why__bold {
   font-weight: 600;
+}
+
+/* Right side stacking for button pin */
+.mundayn-why__rightStack {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mundayn-why__rightStack .mundayn-why__inner {
+  flex: 1;
+}
+
+.mundayn-why__btn {
+  margin-top: 28px;
+  align-self: flex-end;
+}
+
+/* Mini-section blocks on right side */
+.mundayn-why__block {
+  margin-bottom: 20px;
+}
+
+.mundayn-why__block:last-child {
+  margin-bottom: 0;
 }
 
 .mundayn-why__label {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .mundayn-why__desc {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   color: var(--mundayn-cream);
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 
 /* ==========================================
@@ -1461,16 +1515,22 @@
     border-radius: 0 0 var(--radius-xl) var(--radius-xl);
   }
   
-  .mundayn-why__content {
+  .mundayn-why__card {
+    flex-direction: column;
+  }
+  
+  .mundayn-why__divider {
+    width: 100%;
+    height: 1px;
+  }
+  
+  .mundayn-why__inner {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   
-  .mundayn-why__left {
-    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-  }
-  
-  .mundayn-why__right {
-    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  .mundayn-why__btn {
+    align-self: stretch;
   }
   
   .mundayn-feels__grid {
@@ -1587,9 +1647,12 @@
     padding: 24px;
   }
   
-  .mundayn-why__left,
-  .mundayn-why__right {
+  .mundayn-why__side {
     padding: 24px;
+  }
+  
+  .mundayn-why__heading {
+    font-size: 28px;
   }
   
   .mundayn-feels__card {
