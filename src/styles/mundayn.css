@@ -2044,11 +2044,13 @@
   
   /* Hero - Mobile Layout */
   .mundayn-hero {
-    min-height: 100vh;
+    min-height: 100svh;
     padding-top: 90px;
     padding-bottom: 0;
     flex-direction: column;
     background-color: #c9bfb3;
+    position: relative;
+    overflow: hidden;
   }
   
   .mundayn-hero__bg--desktop {
@@ -2062,11 +2064,13 @@
     padding: 24px;
     max-width: 100%;
     flex: 1;
+    position: relative;
+    z-index: 1;
   }
   
   .mundayn-hero__text-wrapper {
     max-width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
   
   .mundayn-hero__title {
@@ -2081,8 +2085,12 @@
   
   .mundayn-hero__mobile-elephant {
     display: block;
-    width: 100%;
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    max-width: 320px;
   }
   
   .mundayn-hero__mobile-elephant img {
