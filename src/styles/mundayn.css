@@ -1996,7 +1996,7 @@
 
 .two-paths__panel {
   flex: 1 1 50%;
-  padding: 48px 40px;
+  padding: 48px 32px;
   display: flex;
   flex-direction: column;
 }
