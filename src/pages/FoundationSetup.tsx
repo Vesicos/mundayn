@@ -17,6 +17,14 @@ import iconBranding from '@/assets/icons/fs-branding.png';
 import iconDomain from '@/assets/icons/fs-domain.png';
 import iconIntegrations from '@/assets/icons/fs-integrations.png';
 import iconDashboard from '@/assets/icons/fs-dashboard.png';
+import implCheck from '@/assets/icons/fs-impl-check.png';
+import implBranding from '@/assets/icons/fs-impl-branding.png';
+import implCalendar from '@/assets/icons/fs-impl-calendar.png';
+import implPayment from '@/assets/icons/fs-impl-payment.png';
+import implContacts from '@/assets/icons/fs-impl-contacts.png';
+import implEmail from '@/assets/icons/fs-impl-email.png';
+import implDomain from '@/assets/icons/fs-impl-domain.png';
+import implDashboard from '@/assets/icons/fs-impl-dashboard.png';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -237,7 +245,7 @@ const FoundationSetup = () => {
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
-                <div className="fs-implement__card-icon"></div>
+                <img src={implCheck} alt="" className="fs-implement__icon" />
                 <p>Everything your package includes—fully configured and tested</p>
               </div>
             </div>
@@ -245,7 +253,7 @@ const FoundationSetup = () => {
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
-                <div className="fs-implement__card-icon"></div>
+                <img src={implBranding} alt="" className="fs-implement__icon" />
                 <p>Complete technical setup with your branding (colors, fonts, styling)</p>
               </div>
             </div>
@@ -253,7 +261,7 @@ const FoundationSetup = () => {
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
-                <div className="fs-implement__card-icon"></div>
+                <img src={implCalendar} alt="" className="fs-implement__icon" />
                 <p>Calendar and booking system, fully automated</p>
               </div>
             </div>
@@ -261,7 +269,7 @@ const FoundationSetup = () => {
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
-                <div className="fs-implement__card-icon"></div>
+                <img src={implPayment} alt="" className="fs-implement__icon" />
                 <p>Payment gateway and invoicing, ready to process</p>
               </div>
             </div>
@@ -269,7 +277,7 @@ const FoundationSetup = () => {
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
-                <div className="fs-implement__card-icon"></div>
+                <img src={implContacts} alt="" className="fs-implement__icon" />
                 <p>Contact import with intelligent tagging system</p>
               </div>
             </div>
@@ -277,7 +285,7 @@ const FoundationSetup = () => {
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
-                <div className="fs-implement__card-icon"></div>
+                <img src={implEmail} alt="" className="fs-implement__icon" />
                 <p>3-piece opt-in automation (lead magnet → welcome → nurture)</p>
               </div>
             </div>
@@ -285,7 +293,7 @@ const FoundationSetup = () => {
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
-                <div className="fs-implement__card-icon"></div>
+                <img src={implDomain} alt="" className="fs-implement__icon" />
                 <p>Domain connection and all integrations</p>
               </div>
             </div>
@@ -293,7 +301,7 @@ const FoundationSetup = () => {
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
-                <div className="fs-implement__card-icon"></div>
+                <img src={implDashboard} alt="" className="fs-implement__icon" />
                 <p>Dashboard customized for your specific business</p>
               </div>
             </div>
