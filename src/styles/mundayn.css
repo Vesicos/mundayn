@@ -2889,10 +2889,11 @@
 }
 
 .eco-hero__title {
-  font-family: var(--font-inter);
+  font-family: var(--font-playfair);
   font-size: var(--text-title-size);
-  font-weight: 500;
-  color: var(--mundayn-cream);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--mundayn-gold);
   line-height: var(--text-title-line-height);
   letter-spacing: var(--text-title-letter-spacing);
   margin-bottom: 24px;
@@ -2916,7 +2917,8 @@
 .eco-hero__text {
   font-family: var(--font-inter);
   font-size: var(--text-small-size);
-  color: var(--mundayn-cream-light);
+  font-weight: 600;
+  color: var(--mundayn-cream);
   letter-spacing: var(--text-small-letter-spacing);
 }
 
@@ -2988,6 +2990,14 @@
   letter-spacing: 0.5px;
 }
 
+.eco-stage__title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
 .eco-stage__title {
   font-family: var(--font-inter);
   font-size: var(--text-title-size);
@@ -2995,7 +3005,7 @@
   color: var(--mundayn-cream);
   line-height: var(--text-title-line-height);
   letter-spacing: var(--text-title-letter-spacing);
-  margin-bottom: 12px;
+  margin: 0;
 }
 
 .eco-stage__title-italic {
@@ -3013,7 +3023,6 @@
   font-weight: 700;
   padding: 6px 16px;
   border-radius: 4px;
-  margin-bottom: 16px;
 }
 
 .eco-stage__subtitle {
@@ -3083,13 +3092,15 @@
 }
 
 .eco-stage__image {
-  border-radius: var(--radius-md);
+  border-radius: 12px;
   overflow: hidden;
 }
 
-.eco-stage__placeholder {
-  min-height: 280px;
-  border-radius: var(--radius-md);
+.eco-stage__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
 }
 
 /* Ecosystem Belief Section */
