@@ -43,6 +43,10 @@ import elephantArchitect from '@/assets/elephant-architect.png';
 // Choose section elephant image
 import elephantFiling from '@/assets/elephant-filing.png';
 
+// Right for you section images
+import elephantHappy from '@/assets/elephant-happy.png';
+import pillowsOnly from '@/assets/pillows-only.png';
+
 // Stats data for animated section
 const statsData = [{
   endValue: 15,
@@ -549,8 +553,8 @@ const Index = () => {
             
             <div className="mundayn-rightforyou__grid">
               <div className="mundayn-rightforyou__column mundayn-rightforyou__column--yes">
-                <div className="mundayn-rightforyou__image mundayn-placeholder mundayn-placeholder--elephant">
-                  <span>Elephant Image</span>
+                <div className="mundayn-rightforyou__image">
+                  <img src={elephantHappy} alt="Happy elephant sitting on pillows" />
                 </div>
                 <h3 className="mundayn-rightforyou__column-title">This is for you if:</h3>
                 
@@ -578,8 +582,8 @@ const Index = () => {
               </div>
               
               <div className="mundayn-rightforyou__column mundayn-rightforyou__column--no">
-                <div className="mundayn-rightforyou__image mundayn-placeholder mundayn-placeholder--elephant">
-                  <span>Elephant Image</span>
+                <div className="mundayn-rightforyou__image">
+                  <img src={pillowsOnly} alt="Empty pillows" />
                 </div>
                 <h3 className="mundayn-rightforyou__column-title">This isn't for you if:</h3>
                 
