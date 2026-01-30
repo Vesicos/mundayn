@@ -2935,12 +2935,13 @@
 
 .eco-stages__timeline-line {
   position: absolute;
-  left: calc(25px - 1px);
+  left: 0;
   top: 21px;
   width: 2px;
   height: calc(100% - 60px);
   background-color: var(--mundayn-red-solid);
   z-index: 1;
+  margin-left: 48px;
 }
 
 .eco-stage {
@@ -2964,6 +2965,7 @@
   padding-top: 4px;
   position: relative;
   z-index: 3;
+  width: 50px;
 }
 
 .eco-stage__dot {
