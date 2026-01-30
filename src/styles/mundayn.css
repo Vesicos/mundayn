@@ -4462,17 +4462,11 @@
 }
 
 .site-footer__logo {
-  width: 70px;
+  width: 140px;
   height: auto;
 }
-
-.site-footer__name {
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: 0.1em;
-  color: white;
-}
-
 .site-footer__nav {
   display: flex;
   flex-direction: column;
