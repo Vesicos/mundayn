@@ -2936,11 +2936,11 @@
 .eco-stages__timeline-line {
   position: absolute;
   left: 24px;
-  top: 17px;
+  top: 21px;
   width: 2px;
-  height: calc(100% - 100px);
+  height: calc(100% - 60px);
   background-color: var(--mundayn-red-solid);
-  z-index: 0;
+  z-index: 1;
 }
 
 .eco-stage {
@@ -2950,7 +2950,7 @@
   margin-bottom: 100px;
   align-items: start;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .eco-stage:last-child {
@@ -2962,6 +2962,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: 4px;
+  position: relative;
+  z-index: 3;
 }
 
 .eco-stage__dot {
@@ -2971,7 +2973,7 @@
   border-radius: 50%;
   flex-shrink: 0;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .eco-stage__content {
