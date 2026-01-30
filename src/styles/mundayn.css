@@ -659,6 +659,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.mundayn-feels__card:hover {
+  transform: scale(1.1);
 }
 
 .mundayn-feels__card-icon {
