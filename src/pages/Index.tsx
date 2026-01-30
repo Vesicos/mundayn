@@ -31,6 +31,7 @@ import animationVideo from '@/assets/animation_v1.mp4';
 
 // Logo
 import logoNav from '@/assets/logonav.svg';
+import footerLogo from '@/assets/footer-logo.png';
 
 // Hero image
 import heroElephant from '@/assets/hero-elephant.png';
@@ -788,12 +789,13 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="site-footer">
-        <div className="site-footer__card">
-          <div className="site-footer__bg" style={{ backgroundImage: `url(${bgFooter})` }}></div>
-          <div className="site-footer__tint"></div>
-          <div className="site-footer__content">
-            <div className="site-footer__brand">
-              <img src={logoNav} alt="Mundayn Logo" className="site-footer__logo" />
+        <div className="mundayn-container">
+          <div className="site-footer__card">
+            <div className="site-footer__bg" style={{ backgroundImage: `url(${bgFooter})` }}></div>
+            <div className="site-footer__tint"></div>
+            <div className="site-footer__content">
+              <div className="site-footer__brand">
+                <img src={footerLogo} alt="Mundayn Logo" className="site-footer__logo" />
               <span className="site-footer__name">MUNDAYN</span>
             </div>
             
@@ -801,16 +803,17 @@ const Index = () => {
               <a href="#packages">Find YOUR Package</a>
               <Link to="/ecosystem">Ecosystem</Link>
               <Link to="/done-for-you">Done For You</Link>
-            </nav>
-            
-            <div className="site-footer__legal">
-              <p className="site-footer__tagline">You Create. We Implement. You Launch.</p>
-              <p className="site-footer__copyright">© 2025 Mundayn. All rights reserved.</p>
-            </div>
-            
-            <div className="site-footer__contact">
-              <p className="site-footer__contact-label">Contact Us:</p>
-              <a href="mailto:care@mundayn.com" className="site-footer__email">care@mundayn.com</a>
+              </nav>
+              
+              <div className="site-footer__legal">
+                <p className="site-footer__tagline">You Create. We Implement. You Launch.</p>
+                <p className="site-footer__copyright">© 2025 Mundayn. All rights reserved.</p>
+              </div>
+              
+              <div className="site-footer__contact">
+                <p className="site-footer__contact-label">Contact Us:</p>
+                <a href="mailto:care@mundayn.com" className="site-footer__email">care@mundayn.com</a>
+              </div>
             </div>
           </div>
         </div>
