@@ -2313,7 +2313,7 @@
 .split-card__title-italic {
   font-family: var(--font-playfair);
   font-style: italic;
-  color: var(--mundayn-gold);
+  color: #DDD7C9;
 }
 
 .split-card__items {
