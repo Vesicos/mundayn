@@ -703,7 +703,7 @@ const Index = () => {
                 Choose your package. See how it feels to have systems running.
               </p>
               <div className="mundayn-final-cta__card-cta">
-                <a href="#trial" className="mundayn-btn">
+                <a href="#packages" className="mundayn-btn">
                   Start Your Free Trial <ArrowIcon />
                 </a>
               </div>
@@ -714,9 +714,9 @@ const Index = () => {
                 We build it in one week. You launch with a system that actually works. Guaranteed.
               </p>
               <div className="mundayn-final-cta__card-cta">
-                <a href="#offers" className="mundayn-btn">
+                <Link to="/done-for-you" className="mundayn-btn">
                   Explore The Done-For-You Options <ArrowIcon />
-                </a>
+                </Link>
               </div>
             </article>
             
@@ -743,20 +743,15 @@ const Index = () => {
                 <li>When to DIY vs. when to delegate setup</li>
                 <li>How to know which package fits your position</li>
               </ul>
-              <input type="email" placeholder="Email Address" style={{
-              width: '100%',
-              padding: '12px 16px',
-              borderRadius: '40px',
-              border: 'none',
-              fontSize: '14px',
-              marginBottom: '12px'
-            }} />
-              <a href="#" className="mundayn-btn" style={{
-              width: '100%',
-              justifyContent: 'center'
-            }}>
-                Get The Blueprint <ArrowIcon />
-              </a>
+              <div style={{ marginTop: 'auto' }}>
+                <input type="email" placeholder="Email Address" style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: '40px',
+                  border: 'none',
+                  fontSize: '14px'
+                }} />
+              </div>
             </article>
           </div>
         </div>
