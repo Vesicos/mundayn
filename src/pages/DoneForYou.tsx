@@ -4,6 +4,7 @@ import '../styles/globals.css';
 import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
 import Footer from '../components/Footer';
+import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -32,8 +33,8 @@ const DoneForYou = () => {
 
       {/* Hero Section */}
       <header className="dfy-hero">
-        <div className="dfy-hero__bg mundayn-placeholder mundayn-placeholder--elephant">
-          <span>Elephant with boxes</span>
+        <div className="dfy-hero__bg">
+          <img src={dfyHeroElephant} alt="Elephant carrying boxes" className="dfy-hero__image" />
         </div>
         <div className="dfy-hero__content">
           <h1 className="dfy-hero__title">
