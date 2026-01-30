@@ -5,6 +5,12 @@ import '../styles/mundayn.css';
 import logoNav from '@/assets/logonav.svg';
 import Footer from '../components/Footer';
 
+// Import elephant images
+import elephantStage1 from '@/assets/elephant-ecosystem-stage1.png';
+import elephantStage2 from '@/assets/elephant-ecosystem-stage2.png';
+import elephantStage3 from '@/assets/elephant-ecosystem-stage3.png';
+import elephantStage4 from '@/assets/elephant-ecosystem-stage4.png';
+
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <line x1="5" y1="12" x2="19" y2="12" />
@@ -18,14 +24,12 @@ interface StageProps {
   title: string;
   subtitle: string;
   price?: string;
-  description: string;
-  whatYouGetLabel: string;
-  bullets: string[];
+  whatYouGetText: string;
   boldText: { build: string; use: string };
   ctaText: string;
   ctaHref: string;
-  imagePlaceholder: string;
-  isReversed?: boolean;
+  image: string;
+  isLast?: boolean;
 }
 
 const EcosystemStage = ({
@@ -34,20 +38,18 @@ const EcosystemStage = ({
   title,
   subtitle,
   price,
-  description,
-  whatYouGetLabel,
-  bullets,
+  whatYouGetText,
   boldText,
   ctaText,
   ctaHref,
-  imagePlaceholder,
-  isReversed = false,
+  image,
+  isLast = false,
 }: StageProps) => {
   return (
-    <article className={`eco-stage ${isReversed ? 'eco-stage--reversed' : ''}`}>
+    <article className="eco-stage">
       <div className="eco-stage__indicator">
         <span className="eco-stage__dot" />
-        <span className="eco-stage__line" />
+        {!isLast && <span className="eco-stage__line" />}
       </div>
       
       <div className="eco-stage__content">
@@ -56,27 +58,24 @@ const EcosystemStage = ({
           {stageLabel && <span className="eco-stage__coming">{stageLabel}</span>}
         </div>
         
-        <h2 className="eco-stage__title">
-          {title.split('\n').map((line, i) => (
-            <React.Fragment key={i}>
-              <span className="eco-stage__title-italic">{line}</span>
-              {i < title.split('\n').length - 1 && <br />}
-            </React.Fragment>
-          ))}
-        </h2>
-        
-        {price && (
-          <span className="eco-stage__price">{price}</span>
-        )}
+        <div className="eco-stage__title-row">
+          <h2 className="eco-stage__title">
+            {title.split('\n').map((line, i) => (
+              <React.Fragment key={i}>
+                <span className="eco-stage__title-italic">{line}</span>
+                {i < title.split('\n').length - 1 && <br />}
+              </React.Fragment>
+            ))}
+          </h2>
+          {price && (
+            <span className="eco-stage__price">{price}</span>
+          )}
+        </div>
         
         <p className="eco-stage__subtitle">{subtitle}</p>
         
-        <p className="eco-stage__description">{description}</p>
-        
-        <p className="eco-stage__what-label">{whatYouGetLabel}</p>
-        <p className="eco-stage__what-text">
-          One week from now, you log in to a Mundayn account that works. Everything configured. Your branding implemented. Automations tested. Payments processing. Calendar synced. Email sending.
-        </p>
+        <p className="eco-stage__what-label">What you get:</p>
+        <p className="eco-stage__what-text">{whatYouGetText}</p>
         <p className="eco-stage__what-text">
           You don't learn how to <strong>{boldText.build}</strong>. You learn how to <strong>{boldText.use}</strong> it.
         </p>
@@ -93,9 +92,11 @@ const EcosystemStage = ({
       </div>
       
       <div className="eco-stage__image">
-        <div className="mundayn-placeholder mundayn-placeholder--elephant eco-stage__placeholder">
-          <span>{imagePlaceholder}</span>
-        </div>
+        <img 
+          src={image} 
+          alt={`Stage ${stageNumber} - ${title}`} 
+          className="eco-stage__img"
+        />
       </div>
     </article>
   );
@@ -122,8 +123,8 @@ const Ecosystem = () => {
       {/* Hero Section */}
       <header className="eco-hero">
         <h1 className="eco-hero__title">
-          Your Business Grows.<br />
-          Mundayn <span className="eco-hero__title-italic">Grows With You.</span>
+          <span className="eco-hero__title-italic">Your Business Grows.</span><br />
+          <span className="eco-hero__title-italic">Mundayn Grows With You.</span>
         </h1>
         <p className="eco-hero__subtitle">
           Setting up your system is step one. Running and evolving<br />
@@ -143,13 +144,11 @@ const Ecosystem = () => {
             title="Foundation"
             subtitle="Your Account, fully set up and running in one week."
             price="$599"
-            description=""
-            whatYouGetLabel="What you get:"
-            bullets={[]}
+            whatYouGetText="One week from now, you log in to a Mundayn account that works. Everything configured. Your branding implemented. Automations tested. Payments processing. Calendar synced. Email sending."
             boldText={{ build: "build it", use: "use it" }}
             ctaText="LEARN ALL DETAILS"
             ctaHref="/foundation-setup"
-            imagePlaceholder="Elephant with baby"
+            image={elephantStage1}
           />
           
           <EcosystemStage
@@ -158,41 +157,38 @@ const Ecosystem = () => {
             title="Frameworks"
             subtitle="Your Account, fully set up and running in one week."
             price="$59"
-            description=""
-            whatYouGetLabel="What you get:"
-            bullets={[]}
+            whatYouGetText="One week from now, you log in to a Mundayn account that works. Everything configured. Your branding implemented. Automations tested. Payments processing. Calendar synced. Email sending."
             boldText={{ build: "build it", use: "use it" }}
             ctaText="SUBMIT YOUR REQUEST"
             ctaHref="#frameworks"
-            imagePlaceholder="Elephant looking in mirror"
+            image={elephantStage2}
           />
           
           <EcosystemStage
             stageNumber={3}
             stageLabel="(COMING 2025)"
-            title="On-Demand\nImplementation"
+            title="On-Demand
+Implementation"
             subtitle="Your Account, fully set up and running in one week."
-            description=""
-            whatYouGetLabel="What you get:"
-            bullets={[]}
+            whatYouGetText="One week from now, you log in to a Mundayn account that works. Everything configured. Your branding implemented. Automations tested. Payments processing. Calendar synced. Email sending."
             boldText={{ build: "build it", use: "use it" }}
             ctaText="JOIN THE WAITLIST"
             ctaHref="#on-demand"
-            imagePlaceholder="Elephant with boxes"
+            image={elephantStage3}
           />
           
           <EcosystemStage
             stageNumber={4}
             stageLabel="(EARLY 2026)"
-            title="Dedicated Support\nHours"
+            title="Dedicated Support
+Hours"
             subtitle="Your Account, fully set up and running in one week."
-            description=""
-            whatYouGetLabel="What you get:"
-            bullets={[]}
+            whatYouGetText="One week from now, you log in to a Mundayn account that works. Everything configured. Your branding implemented. Automations tested. Payments processing. Calendar synced. Email sending."
             boldText={{ build: "build it", use: "use it" }}
             ctaText="JOIN THE WAITLIST"
             ctaHref="#support"
-            imagePlaceholder="Yellow elephant figurines"
+            image={elephantStage4}
+            isLast
           />
         </div>
       </section>
@@ -209,7 +205,7 @@ const Ecosystem = () => {
           <p className="eco-belief__text">
             Start with Stage 1. Access more as you grow.
           </p>
-          <a href="#learn" className="eco-belief__cta">
+          <a href="/foundation-setup" className="eco-belief__cta">
             LEARN ALL DETAILS <ArrowIcon />
           </a>
         </div>
