@@ -627,15 +627,15 @@ const Index = () => {
           <div className="mundayn-cta-cards__grid">
             <a href="/done-for-you" className="mundayn-cta-cards__card">
               <span className="mundayn-cta-cards__text">
-                <span className="mundayn-cta-cards__italic">You</span> Create.<br />
-                <span className="mundayn-cta-cards__italic">We</span> Implement.<br />
+                You Create.<br />
+                <span className="mundayn-cta-cards__italic">We Implement.</span><br />
                 You Launch.
               </span>
             </a>
             <a href="/ecosystem" className="mundayn-cta-cards__card">
               <span className="mundayn-cta-cards__text">
                 Your Business<br />
-                Grows. <span className="mundayn-cta-cards__italic">Mundayn</span><br />
+                Grows. Mundayn<br />
                 <span className="mundayn-cta-cards__italic">Grows With You</span>
               </span>
             </a>
