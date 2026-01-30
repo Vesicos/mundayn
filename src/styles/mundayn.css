@@ -4798,75 +4798,1085 @@
   color: var(--mundayn-red-solid);
 }
 
-/* Foundation Setup Responsive */
-@media (max-width: 900px) {
+/* ===========================
+   FOUNDATION SETUP RESPONSIVE
+   =========================== */
+
+/* Tablet: max-width 1024px */
+@media (max-width: 1024px) {
+  /* Hero */
   .fs-hero {
-    grid-template-columns: 1fr;
-    padding-top: 140px;
     min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 40px;
   }
   
   .fs-hero__content {
-    padding: 40px 20px;
+    padding: 40px 24px;
   }
   
   .fs-hero__title {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -3px;
+    max-width: 340px;
+  }
+  
+  .fs-hero__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .fs-hero__cta {
+    padding: 20px 28px;
+    font-size: 14px;
+  }
+
+  /* Video Section */
+  .fs-video {
+    padding: 60px 20px;
+  }
+  
+  .fs-video__title {
     font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -1.5px;
+    margin-bottom: 48px;
   }
   
-  .fs-hero__image {
-    order: -1;
-    height: 300px;
+  .fs-video__elephant-placeholder {
+    width: 350px;
+    height: 280px;
+  }
+
+  /* We Know How This Goes */
+  .fs-know {
+    padding: 60px 0;
   }
   
-  .fs-know__content {
+  .fs-know__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 48px;
+  }
+  
+  .fs-know__layout {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .fs-know__text {
+    font-size: 16px;
+  }
+  
+  .fs-know__highlight {
+    font-size: 20px;
+  }
+  
+  .fs-know__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .fs-know__grid-item {
+    padding: 16px;
+    min-height: 100px;
+    font-size: 14px;
+  }
+  
+  .fs-know__cta {
+    padding: 20px 32px;
+    font-size: 14px;
+  }
+
+  /* What We Do Section */
+  .fs-whatwedo {
+    padding: 60px 0;
+  }
+  
+  .fs-whatwedo__title {
+    font-size: 36px;
+    line-height: 42px;
   }
   
   .fs-whatwedo__card {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
   
+  .fs-whatwedo__image {
+    height: 300px;
+  }
+  
+  .fs-whatwedo__content {
+    padding: 32px 24px;
+  }
+  
+  .fs-whatwedo__intro,
+  .fs-whatwedo__text,
+  .fs-whatwedo__bold,
+  .fs-whatwedo__small {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Comparison */
   .fs-comparison {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  
+  .fs-comparison__card--diy {
+    border-radius: 24px 24px 0 0;
+  }
+  
+  .fs-comparison__card--setup {
+    border-radius: 0 0 24px 24px;
+  }
+  
+  .fs-comparison__title {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+
+  /* Implement Section */
+  .fs-implement {
+    padding: 60px 0;
+  }
+  
+  .fs-implement__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
+  .fs-implement__intro {
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  
+  .fs-implement__section-title {
+    font-size: 24px;
+    letter-spacing: -1.5px;
+    line-height: 32px;
   }
   
   .fs-implement__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .fs-implement__card {
+    min-height: 180px;
+  }
+  
+  .fs-implement__card-content p {
+    font-size: 16px;
+  }
+  
+  .fs-onboarding {
+    padding: 32px 24px;
+  }
+  
+  .fs-onboarding__title {
+    font-size: 32px;
+    letter-spacing: -1.5px;
+    line-height: 40px;
+  }
+  
+  .fs-onboarding__list li {
+    font-size: 16px;
   }
   
   .fs-provide {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
   
-  .fs-time__images,
-  .fs-time__comparison,
-  .fs-time__value {
-    grid-template-columns: 1fr;
+  .fs-provide__card {
+    padding: 24px;
+  }
+
+  /* Time Investment */
+  .fs-time {
+    padding: 60px 0;
   }
   
   .fs-time__card {
-    padding: 40px 24px;
+    padding: 48px 32px;
+  }
+  
+  .fs-time__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
+  .fs-time__subtitle {
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  
+  .fs-time__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .fs-time__images {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .fs-time__img-wrap {
+    height: 220px;
+  }
+  
+  .fs-time__comparison {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .fs-time__path h4 {
+    font-size: 24px;
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+  }
+  
+  .fs-time__path ul li {
+    font-size: 16px;
+  }
+  
+  .fs-time__value {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .fs-time__value-card {
+    padding: 32px 24px;
+  }
+  
+  .fs-time__value-calc,
+  .fs-time__value-reclaim {
+    font-size: 28px;
+    letter-spacing: -1.5px;
+  }
+  
+  .fs-time__cta {
+    padding: 18px 32px;
+    font-size: 14px;
+  }
+
+  /* Guarantee */
+  .fs-guarantee {
+    padding: 60px 0;
+  }
+  
+  .fs-guarantee__title {
+    font-size: 32px;
+  }
+  
+  .fs-guarantee__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .fs-guarantee__card {
+    padding: 24px;
+    padding-right: 80px;
+  }
+  
+  .fs-guarantee__icon {
+    width: 48px;
+    top: 20px;
+    right: 16px;
+  }
+
+  /* Reaching Out */
+  .fs-reaching {
+    padding: 60px 0;
+  }
+  
+  .fs-reaching__title {
+    font-size: 32px;
+  }
+  
+  .fs-reaching__text {
+    font-size: 15px;
+  }
+
+  /* Options */
+  .fs-options {
+    padding: 60px 0;
+  }
+  
+  .fs-options__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .fs-options__subtitle {
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+  }
+  
+  .fs-options__grid {
+    flex-direction: column;
+  }
+  
+  .fs-options__card--diy {
+    border-radius: 24px 24px 0 0;
+  }
+  
+  .fs-options__card--setup {
+    border-radius: 0 0 24px 24px;
+  }
+  
+  .fs-options__card {
+    padding: 32px 24px;
+  }
+  
+  .fs-options__card h3 {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+  }
+  
+  .fs-options__text {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+
+  /* What Happens Next */
+  .fs-next {
+    padding: 60px 0;
+  }
+  
+  .fs-next__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .fs-next__subtitle {
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 48px;
+  }
+  
+  .fs-next__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  
+  .fs-next__step {
+    padding-left: 16px;
+  }
+  
+  .fs-next__number {
+    font-size: 64px;
+  }
+  
+  .fs-next__heading {
+    font-size: 16px;
+  }
+  
+  .fs-next__text {
+    font-size: 14px;
+    max-width: none;
+  }
+  
+  .fs-next__message {
+    font-size: 24px;
+  }
+  
+  .fs-next__message-bold {
+    font-size: 16px;
+  }
+
+  /* Final CTA */
+  .fs-final {
+    min-height: 400px;
+  }
+  
+  .fs-final__content {
+    padding: 60px 24px;
+  }
+  
+  .fs-final__title {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+  
+  .fs-final__text {
+    font-size: 16px;
+  }
+
+  /* FAQ */
+  .fs-faq {
+    padding: 60px 0;
+  }
+  
+  .fs-faq__title {
+    font-size: 28px;
+  }
+  
+  .fs-faq__question {
+    font-size: 15px;
+    gap: 16px;
+  }
+  
+  .fs-faq__answer {
+    font-size: 14px;
+  }
+}
+
+/* Mobile: max-width 640px */
+@media (max-width: 640px) {
+  /* Hero */
+  .fs-hero {
+    padding-top: 100px;
+    padding-bottom: 24px;
+  }
+  
+  .fs-hero__bg-img {
+    object-position: 70% center;
+  }
+  
+  .fs-hero__content {
+    padding: 24px 20px;
+  }
+  
+  .fs-hero__title {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -2px;
+    max-width: 280px;
+    margin-bottom: 16px;
+  }
+  
+  .fs-hero__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    max-width: 280px;
+  }
+  
+  .fs-hero__cta {
+    padding: 16px 24px;
+    font-size: 13px;
+  }
+
+  /* Video Section */
+  .fs-video {
+    padding: 48px 20px;
+  }
+  
+  .fs-video__title {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-video__title br {
+    display: none;
+  }
+  
+  .fs-video__elephant-placeholder {
+    width: 200px;
+    height: 160px;
+  }
+  
+  .fs-video__play-ring {
+    width: 80px;
+    height: 80px;
+    border-width: 8px;
+  }
+  
+  .fs-video__play-btn svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* We Know How This Goes */
+  .fs-know {
+    padding: 48px 0;
+  }
+  
+  .fs-know__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1.5px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-know__layout {
+    gap: 32px;
+  }
+  
+  .fs-know__text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .fs-know__text p {
+    margin-bottom: 16px;
+  }
+  
+  .fs-know__text-bold {
+    font-size: 16px;
+  }
+  
+  .fs-know__highlight {
+    font-size: 18px;
+  }
+  
+  .fs-know__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .fs-know__grid-item {
+    padding: 14px 12px;
+    min-height: 90px;
+    font-size: 13px;
+    gap: 8px;
+  }
+  
+  .fs-know__icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .fs-know__cta {
+    padding: 16px 24px;
+    font-size: 13px;
+  }
+
+  /* What We Do Section */
+  .fs-whatwedo {
+    padding: 48px 0;
+  }
+  
+  .fs-whatwedo__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1.5px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-whatwedo__card {
+    border-radius: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-whatwedo__image {
+    height: 240px;
+  }
+  
+  .fs-whatwedo__content {
+    padding: 24px 20px;
+  }
+  
+  .fs-whatwedo__intro,
+  .fs-whatwedo__text,
+  .fs-whatwedo__bold,
+  .fs-whatwedo__small {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .fs-whatwedo__label {
+    font-size: 16px;
+  }
+
+  /* Comparison */
+  .fs-comparison__card {
+    padding: 24px 20px;
+  }
+  
+  .fs-comparison__title {
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+  
+  .fs-comparison__list li {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  
+  .fs-comparison__cta {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  /* Implement Section */
+  .fs-implement {
+    padding: 48px 0;
+  }
+  
+  .fs-implement__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1.5px;
+  }
+  
+  .fs-implement__intro {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-implement__section-title {
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+  
+  .fs-implement__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .fs-implement__card {
+    min-height: 160px;
+  }
+  
+  .fs-implement__icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .fs-implement__card-content {
+    padding: 20px;
+  }
+  
+  .fs-implement__card-content p {
+    font-size: 15px;
+  }
+  
+  .fs-onboarding {
+    padding: 24px 20px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+  }
+  
+  .fs-onboarding__title {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+  
+  .fs-onboarding__list {
+    gap: 16px;
+  }
+  
+  .fs-onboarding__list li {
+    font-size: 14px;
+    line-height: 20px;
+    gap: 12px;
+  }
+  
+  .fs-provide__card {
+    padding: 20px;
+  }
+  
+  .fs-provide__title {
+    font-size: 15px;
+  }
+  
+  .fs-provide__list li {
+    font-size: 14px;
+  }
+  
+  .fs-provide__highlight {
+    font-size: 20px;
+  }
+  
+  .fs-provide__text {
+    font-size: 14px;
+  }
+  
+  .fs-provide__cta {
+    padding: 12px 20px;
+    font-size: 11px;
+  }
+  
+  .fs-implement__price {
+    font-size: 16px;
+  }
+
+  /* Time Investment */
+  .fs-time {
+    padding: 48px 0;
+  }
+  
+  .fs-time__card {
+    padding: 32px 20px;
+    border-radius: 20px;
+  }
+  
+  .fs-time__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1.5px;
+  }
+  
+  .fs-time__subtitle {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+  
+  .fs-time__text {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-time__img-wrap {
+    height: 180px;
+    border-radius: 12px;
+  }
+  
+  .fs-time__path h4 {
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+  
+  .fs-time__path ul li {
+    font-size: 14px;
+    line-height: 20px;
+    gap: 10px;
+  }
+  
+  .fs-list-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .fs-time__value-card {
+    padding: 24px 20px;
+    font-size: 15px;
+  }
+  
+  .fs-time__value-calc,
+  .fs-time__value-reclaim {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 30px;
+  }
+  
+  .fs-time__cta {
+    padding: 16px 24px;
+    font-size: 13px;
+  }
+
+  /* Guarantee */
+  .fs-guarantee {
+    padding: 48px 0;
+  }
+  
+  .fs-guarantee__title {
+    font-size: 28px;
+    letter-spacing: -1px;
+  }
+  
+  .fs-guarantee__subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
   }
   
   .fs-guarantee__grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
   
-  .fs-options__grid {
+  .fs-guarantee__card {
+    padding: 20px;
+    padding-right: 70px;
+  }
+  
+  .fs-guarantee__card p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .fs-guarantee__card-label {
+    font-size: 13px;
+  }
+  
+  .fs-guarantee__card-text {
+    font-size: 13px;
+  }
+  
+  .fs-guarantee__icon {
+    width: 40px;
+    top: 16px;
+    right: 12px;
+  }
+  
+  .fs-guarantee__note {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  
+  .fs-guarantee__cta {
+    padding: 14px 24px;
+    font-size: 11px;
+  }
+  
+  .fs-guarantee__small {
+    font-size: 12px;
+  }
+
+  /* Reaching Out */
+  .fs-reaching {
+    padding: 48px 0;
+  }
+  
+  .fs-reaching__title {
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  
+  .fs-reaching__label {
+    font-size: 14px;
+  }
+  
+  .fs-reaching__text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .fs-reaching__bold {
+    font-size: 15px;
+  }
+  
+  .fs-reaching__highlight {
+    font-size: 15px;
+  }
+  
+  .fs-reaching__cta {
+    padding: 14px 24px;
+    font-size: 11px;
+  }
+  
+  .fs-reaching__price {
+    font-size: 13px;
+  }
+
+  /* Options */
+  .fs-options {
+    padding: 48px 0;
+  }
+  
+  .fs-options__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1.5px;
+  }
+  
+  .fs-options__subtitle {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-options__card {
+    padding: 24px 20px;
+  }
+  
+  .fs-options__card h3 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  
+  .fs-options__card--diy ul li {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  
+  .fs-options__card--setup ul li {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .fs-options__cta {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+  
+  .fs-options__note {
+    font-size: 14px;
+  }
+  
+  .fs-options__text {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+  }
+
+  /* What Happens Next */
+  .fs-next {
+    padding: 48px 0;
+  }
+  
+  .fs-next__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1.5px;
+  }
+  
+  .fs-next__subtitle {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-next__grid {
     grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 40px;
   }
   
-  .fs-know__title,
-  .fs-whatwedo__title,
-  .fs-implement__title,
-  .fs-time__title,
-  .fs-guarantee__title,
-  .fs-reaching__title,
-  .fs-options__title,
-  .fs-next__title,
+  .fs-next__step {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 4px 16px;
+  }
+  
+  .fs-next__number {
+    font-size: 48px;
+    grid-row: span 2;
+    align-self: center;
+    margin-bottom: 0;
+  }
+  
+  .fs-next__heading {
+    font-size: 16px;
+    align-self: end;
+  }
+  
+  .fs-next__text {
+    font-size: 14px;
+    max-width: none;
+    align-self: start;
+  }
+  
+  .fs-next__message {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+  }
+  
+  .fs-next__message-bold {
+    font-size: 15px;
+  }
+
+  /* Final CTA */
+  .fs-final {
+    min-height: 320px;
+  }
+  
+  .fs-final__content {
+    padding: 48px 20px;
+  }
+  
   .fs-final__title {
-    font-size: 32px;
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+  }
+  
+  .fs-final__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .fs-final__cta {
+    padding: 16px 24px;
+    font-size: 13px;
+  }
+
+  /* FAQ */
+  .fs-faq {
+    padding: 48px 0;
+  }
+  
+  .fs-faq__title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .fs-faq__question {
+    font-size: 14px;
+    padding: 16px 0;
+    gap: 12px;
+  }
+  
+  .fs-faq__question span:first-child {
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+  }
+  
+  .fs-faq__icon {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  
+  .fs-faq__answer {
+    font-size: 13px;
+    padding-bottom: 16px;
+  }
+  
+  .fs-faq__answer ol,
+  .fs-faq__answer ul {
+    padding-left: 20px;
+  }
+}
+
+/* Navigation responsive for Foundation Setup page */
+@media (max-width: 900px) {
+  .fs-page .mundayn-nav__links {
+    display: none;
+  }
+  
+  .fs-page .mundayn-nav {
+    justify-content: space-between;
+  }
+  
+  .fs-page .mundayn-nav__cta {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .fs-page .mundayn-nav {
+    padding: 16px 20px;
+  }
+  
+  .fs-page .mundayn-nav__logo-img {
+    height: 28px;
+  }
+  
+  .fs-page .mundayn-nav__cta {
+    padding: 10px 16px;
+    font-size: 11px;
+  }
+  
+  .fs-page .mundayn-nav__cta svg {
+    width: 12px;
+    height: 12px;
   }
 }
 
