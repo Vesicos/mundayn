@@ -515,7 +515,7 @@ const FoundationSetup = () => {
               <div className="fs-next__content">
                 <div className="fs-next__number">1</div>
                 <h4 className="fs-next__heading">Form Submission</h4>
-                <p className="fs-next__text">Complete a simple 15-minute onboarding form</p>
+                <p className="fs-next__text">Complete a<br />simple 15-minute<br />onboarding form</p>
               </div>
             </div>
             <div className="fs-next__step">
@@ -523,7 +523,7 @@ const FoundationSetup = () => {
               <div className="fs-next__content">
                 <div className="fs-next__number">2</div>
                 <h4 className="fs-next__heading">Onboarding Call</h4>
-                <p className="fs-next__text">We schedule your 30-minute onboarding call</p>
+                <p className="fs-next__text">We schedule your<br />30-minute<br />onboarding call</p>
               </div>
             </div>
             <div className="fs-next__step">
@@ -531,7 +531,7 @@ const FoundationSetup = () => {
               <div className="fs-next__content">
                 <div className="fs-next__number">3</div>
                 <h4 className="fs-next__heading">Implementation</h4>
-                <p className="fs-next__text">Our team implements everything while you focus on your business</p>
+                <p className="fs-next__text">Our team<br />implements<br />everything while<br />you focus on your<br />business</p>
               </div>
             </div>
             <div className="fs-next__step">
@@ -539,7 +539,7 @@ const FoundationSetup = () => {
               <div className="fs-next__content">
                 <div className="fs-next__number">4</div>
                 <h4 className="fs-next__heading">Walkthrough</h4>
-                <p className="fs-next__text">One week later, you receive your personalized walkthrough video</p>
+                <p className="fs-next__text">One week later,<br />you receive your<br />personalized<br />walkthrough<br />video</p>
               </div>
             </div>
             <div className="fs-next__step">
@@ -547,7 +547,7 @@ const FoundationSetup = () => {
               <div className="fs-next__content">
                 <div className="fs-next__number">5</div>
                 <h4 className="fs-next__heading">Go Live</h4>
-                <p className="fs-next__text">You log in to a system that works—and start operating immediately</p>
+                <p className="fs-next__text">You log in to a<br />system that<br />works—and start<br />operating<br />immediately</p>
               </div>
             </div>
           </div>
