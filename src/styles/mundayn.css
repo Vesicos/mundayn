@@ -209,11 +209,6 @@
   .mundayn-nav__links {
     gap: 24px;
   }
-
-  /* Center elephant images in stage cards */
-  .mundayn-stage-card__image {
-    object-position: center center;
-  }
 }
 
 .mundayn-nav__links {
