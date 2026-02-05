@@ -2145,6 +2145,11 @@
     --container-padding: 16px;
   }
   
+  /* Hide mobile hero elephant image */
+  .mundayn-hero__mobile-elephant {
+    display: none !important;
+  }
+  
   /* Navigation */
   .mundayn-nav {
     top: 16px;
