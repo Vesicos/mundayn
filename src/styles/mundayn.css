@@ -183,7 +183,7 @@
 }
 
 /* Hide nav when mobile menu is open */
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .mundayn-nav--menu-open {
     opacity: 0;
     pointer-events: none;
@@ -191,6 +191,16 @@
 
   .mundayn-nav__burger {
     display: flex;
+  }
+
+  .mundayn-nav__links {
+    display: none;
+  }
+
+  .mundayn-nav__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
