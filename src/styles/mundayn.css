@@ -6921,7 +6921,7 @@
 
 @media (max-width: 760px) {
   .site-footer {
-    padding: 18px;
+    padding: 0 0 24px;
   }
 
   .site-footer__content {
@@ -6929,6 +6929,7 @@
     grid-template-rows: auto auto auto auto;
     text-align: left;
     gap: 24px;
+    padding: 24px 20px;
   }
 
   .site-footer__nav,
@@ -6954,5 +6955,1212 @@
 
   .site-footer__tagline {
     font-size: 22px;
+  }
+}
+
+/* ===========================
+   COMPREHENSIVE MOBILE/TABLET FIXES
+   =========================== */
+
+/* Ecosystem Page Responsive */
+@media (max-width: 1024px) {
+  .eco-hero {
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+  
+  .eco-hero__title {
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: -1.5px;
+  }
+  
+  .eco-hero__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .eco-hero__text {
+    font-size: 16px;
+  }
+  
+  .eco-stage {
+    grid-template-columns: 40px 1fr 200px;
+    gap: 24px;
+  }
+  
+  .eco-stage__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
+  .eco-stage__price {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+  
+  .eco-stage__subtitle,
+  .eco-stage__what-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+  }
+  
+  .eco-stage__img {
+    max-width: 200px;
+  }
+  
+  .eco-belief__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
+  .eco-belief__quote {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eco-hero {
+    padding-top: 120px;
+    padding-bottom: 48px;
+    text-align: center;
+  }
+  
+  .eco-hero__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  
+  .eco-hero__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .eco-hero__subtitle br {
+    display: none;
+  }
+  
+  .eco-hero__text {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
+  
+  .eco-stages__container {
+    padding: 0 16px;
+  }
+  
+  .eco-stage {
+    grid-template-columns: 24px 1fr;
+    gap: 16px;
+  }
+  
+  .eco-stage__image {
+    grid-column: 1 / -1;
+    order: -1;
+    padding: 24px 0;
+    justify-content: center;
+  }
+  
+  .eco-stage__img {
+    max-width: 160px;
+    height: auto;
+  }
+  
+  .eco-stage__indicator {
+    padding-top: 16px;
+  }
+  
+  .eco-stage__dot {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .eco-stage__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .eco-stage__label {
+    font-size: 13px;
+  }
+  
+  .eco-stage__coming {
+    font-size: 11px;
+  }
+  
+  .eco-stage__title-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .eco-stage__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .eco-stage__price {
+    font-size: 16px;
+    padding: 6px 16px;
+    align-self: flex-start;
+  }
+  
+  .eco-stage__subtitle {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+  }
+  
+  .eco-stage__what-label {
+    font-size: 14px;
+  }
+  
+  .eco-stage__what-text {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+  }
+  
+  .eco-stage__cta {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+  
+  .eco-stages__timeline-line {
+    left: 12px;
+  }
+  
+  .eco-belief {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .eco-belief__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .eco-belief__quote {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    padding: 0 16px;
+  }
+  
+  .eco-belief__text {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
+  
+  .eco-belief__cta {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+}
+
+/* Done For You Page Responsive Fixes */
+@media (max-width: 1024px) {
+  .dfy-hero {
+    min-height: auto;
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+  
+  .dfy-hero__title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  
+  .dfy-hero__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .two-paths__wrap {
+    flex-direction: column;
+  }
+  
+  .two-paths__panel {
+    border-radius: 0;
+  }
+  
+  .two-paths__panel--left {
+    border-radius: 24px 24px 0 0;
+  }
+  
+  .two-paths__panel--right {
+    border-radius: 0 0 24px 24px;
+  }
+  
+  .two-paths__divider {
+    display: none;
+  }
+  
+  .split-card__card {
+    grid-template-columns: 1fr;
+  }
+  
+  .split-card__media {
+    height: 300px;
+    border-radius: 24px 24px 0 0;
+  }
+  
+  .split-card__content {
+    padding: 40px 32px;
+  }
+  
+  .dfy-solution__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  .dfy-guarantee__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dfy-includes__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dfy-hero {
+    padding-top: 120px;
+    padding-bottom: 48px;
+  }
+  
+  .dfy-hero__content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .dfy-hero__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  
+  .dfy-hero__title br {
+    display: none;
+  }
+  
+  .dfy-hero__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+  }
+  
+  .dfy-hero__subtitle br {
+    display: none;
+  }
+  
+  .dfy-hero__week,
+  .dfy-hero__tagline {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
+  
+  .dfy-hero__btn {
+    font-size: 13px;
+    padding: 14px 24px;
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+  
+  .dfy-hero__image {
+    object-position: 70% center;
+  }
+  
+  .two-paths {
+    padding: 60px 0;
+  }
+  
+  .two-paths__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+  }
+  
+  .two-paths__panel {
+    padding: 24px 20px;
+  }
+  
+  .two-paths__top {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .two-paths__left-col,
+  .two-paths__right-col {
+    width: 100%;
+  }
+  
+  .two-paths__h1 {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1px;
+  }
+  
+  .two-paths__sub {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+  }
+  
+  .two-paths__quote {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
+  
+  .two-paths__list li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .two-paths__btn {
+    font-size: 12px;
+    padding: 14px 20px;
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  /* Honest Truth Section */
+  .dfy-truth {
+    padding: 60px 0;
+  }
+  
+  .dfy-truth__inner {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .dfy-truth__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .dfy-truth__text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+  }
+  
+  .dfy-truth__btn {
+    font-size: 12px;
+    padding: 14px 24px;
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+  
+  /* Split Card Section */
+  .split-card__wrap {
+    padding: 0 16px;
+  }
+  
+  .split-card__card {
+    border-radius: 20px;
+  }
+  
+  .split-card__media {
+    height: 240px;
+  }
+  
+  .split-card__content {
+    padding: 24px 20px;
+  }
+  
+  .split-card__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  
+  .split-card__item h4 {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+  }
+  
+  .split-card__item p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+  }
+  
+  .split-card__truth h4 {
+    font-size: 16px;
+  }
+  
+  .split-card__truth p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .split-card__btn {
+    font-size: 12px;
+    padding: 14px 24px;
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  /* DFY Solution Section */
+  .dfy-solution {
+    padding: 60px 0;
+  }
+  
+  .dfy-solution__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .dfy-solution__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+  }
+  
+  .dfy-solution__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .dfy-solution__step {
+    padding-bottom: 24px;
+  }
+  
+  .dfy-solution__number {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  
+  .dfy-solution__label {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+  }
+  
+  .dfy-solution__list li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .dfy-solution__price {
+    font-size: 16px;
+  }
+  
+  .dfy-solution__btn {
+    font-size: 12px;
+    padding: 12px 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* DFY Guarantee Section */
+  .dfy-guarantee {
+    padding: 60px 0;
+  }
+  
+  .dfy-guarantee__wrap {
+    padding: 0 16px;
+  }
+  
+  .dfy-guarantee__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .dfy-guarantee__subtitle {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+  }
+  
+  .dfy-guarantee__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .dfy-guarantee__card {
+    padding: 24px 20px;
+    min-height: auto;
+    height: auto;
+  }
+  
+  .dfy-guarantee__card-title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+  }
+  
+  .dfy-guarantee__card-title br {
+    display: none;
+  }
+  
+  .dfy-guarantee__card-body {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+  }
+  
+  /* DFY Includes Section */
+  .dfy-includes {
+    padding: 60px 0;
+  }
+  
+  .dfy-includes__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .dfy-includes__subtitle {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+  }
+  
+  .dfy-includes__card {
+    border-radius: 16px;
+    min-height: auto;
+  }
+  
+  .dfy-includes__content {
+    padding: 24px 20px;
+  }
+  
+  .dfy-includes__heading {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+  }
+  
+  .dfy-includes__label {
+    font-size: 14px;
+  }
+  
+  .dfy-includes__list li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* DFY Future Section */
+  .dfy-future {
+    padding: 60px 0;
+  }
+  
+  .dfy-future__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  
+  .dfy-future__content {
+    padding: 0 16px;
+  }
+  
+  .dfy-future__content p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    text-align: center;
+  }
+  
+  .dfy-future__cta {
+    font-size: 12px;
+    padding: 14px 24px;
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    margin: 32px auto 0;
+    display: flex;
+  }
+}
+
+/* Foundation Setup - Fix card heights and clipping */
+@media (max-width: 768px) {
+  .fs-guarantee__card {
+    height: auto;
+    min-height: auto;
+    padding: 20px;
+    padding-right: 20px;
+  }
+  
+  .fs-guarantee__card-title {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+  }
+  
+  .fs-guarantee__card-title br {
+    display: none;
+  }
+  
+  .fs-guarantee__card-label {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+  }
+  
+  .fs-guarantee__card-label br {
+    display: none;
+  }
+  
+  .fs-guarantee__card-text br {
+    display: none;
+  }
+  
+  .fs-guarantee__icon {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 48px;
+    margin-top: 16px;
+  }
+  
+  .fs-guarantee__note {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+  }
+  
+  .fs-guarantee__cta {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 16px 24px;
+    font-size: 13px;
+    min-width: auto;
+  }
+  
+  /* Fix What You Provide Section */
+  .fs-provide {
+    gap: 16px;
+  }
+  
+  .fs-provide__card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  
+  .fs-provide__title {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+  }
+  
+  .fs-provide__list {
+    padding-left: 20px;
+  }
+  
+  .fs-provide__list li {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .fs-provide__highlight {
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+  
+  .fs-provide__text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+  }
+  
+  .fs-provide__cta {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  
+  /* Fix Time Investment Value Cards */
+  .fs-time__value-card {
+    text-align: center;
+  }
+  
+  .fs-time__value-card p {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  .fs-time__value-calc {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+  
+  .fs-time__value-reclaim {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+  
+  .fs-time__cta {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 16px 24px;
+    font-size: 12px;
+    text-align: center;
+    white-space: normal;
+  }
+  
+  /* Fix What Happens Next - Grid doesn't need explicit br */
+  .fs-next__text br {
+    display: none;
+  }
+  
+  .fs-next__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/* Global CTA and Button Fixes for Mobile */
+@media (max-width: 640px) {
+  /* Ensure buttons don't get clipped */
+  .mundayn-btn,
+  .mundayn-nav__cta,
+  .two-paths__btn,
+  .split-card__btn,
+  .dfy-solution__btn,
+  .fs-time__cta,
+  .fs-guarantee__cta,
+  .fs-provide__cta,
+  .fs-options__cta,
+  .eco-stage__cta,
+  .eco-belief__cta {
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Make sure container doesn't clip content */
+  .mundayn-container {
+    overflow: visible;
+  }
+  
+  /* Fix any horizontal overflow */
+  .mundayn-page {
+    overflow-x: hidden;
+  }
+  
+  section {
+    overflow: visible;
+  }
+  
+  /* Index Page - FAQ Card fixes */
+  .mundayn-faq__card {
+    padding: 32px 20px;
+    border-radius: 20px;
+    min-height: auto;
+  }
+  
+  .mundayn-faq__card-bg {
+    opacity: 0.3;
+  }
+  
+  .mundayn-faq__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  
+  .mundayn-faq__question {
+    font-size: 14px;
+    padding: 16px 0;
+    gap: 12px;
+    text-align: left;
+  }
+  
+  .mundayn-faq__question span:first-child {
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+  }
+  
+  .mundayn-faq__icon {
+    flex-shrink: 0;
+  }
+  
+  .mundayn-faq__answer {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  /* Index Page - Final CTA fixes */
+  .mundayn-final-cta__grid {
+    gap: 16px;
+  }
+  
+  .mundayn-final-cta__card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  
+  .mundayn-final-cta__card-title {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+  }
+  
+  .mundayn-final-cta__card-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+  }
+  
+  .mundayn-final-cta__card-btn {
+    font-size: 12px;
+    padding: 14px 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Index Page - Qualification section */
+  .mundayn-qual__columns {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .mundayn-qual__col {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  
+  .mundayn-qual__col-title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+  }
+  
+  .mundayn-qual__col-list li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* Index Page - CTA Cards section */
+  .mundayn-cta-cards__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .mundayn-cta-cards__card {
+    padding: 32px 24px;
+    min-height: auto;
+  }
+  
+  .mundayn-cta-cards__card-title {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+  }
+  
+  /* Index Page - Feels Like section */
+  .mundayn-feels__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .mundayn-feels__card {
+    padding: 24px 20px;
+  }
+  
+  .mundayn-feels__card-title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+  }
+  
+  .mundayn-feels__card-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .mundayn-feels__tagline {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+  
+  .mundayn-feels__savings {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
+  
+  /* Index Page - Why Different section */
+  .mundayn-why__cards {
+    flex-direction: column;
+  }
+  
+  .mundayn-why__panel {
+    border-radius: 16px;
+    padding: 24px 20px;
+  }
+  
+  .mundayn-why__panel--left {
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .mundayn-why__panel--right {
+    border-radius: 0 0 16px 16px;
+  }
+  
+  .mundayn-why__heading {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .mundayn-why__copy p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .mundayn-why__label {
+    font-size: 13px;
+  }
+  
+  .mundayn-why__desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .mundayn-why__cta-btn {
+    font-size: 12px;
+    padding: 14px 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Index Page - Choose section */
+  .mundayn-choose__content {
+    grid-template-columns: 1fr;
+  }
+  
+  .mundayn-choose__image {
+    min-height: 300px;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .mundayn-choose__info {
+    padding: 24px 20px;
+    border-radius: 0 0 16px 16px;
+  }
+  
+  .mundayn-choose__header {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    margin-bottom: 32px;
+  }
+  
+  .mundayn-choose__title {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+  }
+  
+  .mundayn-choose__desc {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .mundayn-choose__list li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* Index Page - Stages Grid */
+  .mundayn-stages__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .mundayn-stage-card {
+    min-height: 360px;
+  }
+  
+  .mundayn-stage-card__title {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1px;
+  }
+  
+  .mundayn-stage-card__text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  /* Index Page - Section titles */
+  .mundayn-section__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    padding: 0 16px;
+  }
+  
+  .mundayn-section__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    padding: 0 16px;
+  }
+  
+  /* Index Page - Mundane section */
+  .mundayn-mundane__cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .mundayn-mundane__card {
+    padding: 24px 20px;
+    padding-right: 20px;
+  }
+  
+  .mundayn-mundane__card-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .mundayn-mundane__card-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .mundayn-mundane__icon {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 16px;
+    width: 48px;
+  }
+  
+  /* Index Page - Savings section */
+  .mundayn-savings__video {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+  
+  .mundayn-savings__text {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 0 16px;
+  }
+  
+  /* Index Page - Stats section */
+  .animated-stats__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .animated-stats__item {
+    padding: 24px 20px;
+  }
+  
+  .animated-stats__value {
+    font-size: 48px;
+    line-height: 1;
+  }
+  
+  .animated-stats__label {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+  }
+  
+  .animated-stats__desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* Package Carousel */
+  .package-carousel {
+    padding: 0 16px;
+  }
+  
+  .package-carousel__card {
+    padding: 24px 20px;
+    min-height: auto;
+  }
+  
+  .package-carousel__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .package-carousel__price {
+    font-size: 32px;
+  }
+  
+  .package-carousel__features li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .package-carousel__cta {
+    font-size: 12px;
+    padding: 14px 20px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 380px) {
+  .mundayn-nav__cta {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+  
+  .mundayn-hero__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  .mundayn-section__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .two-paths__h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  .dfy-hero__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  .eco-hero__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  .fs-hero__title {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
