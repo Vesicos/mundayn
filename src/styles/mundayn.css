@@ -3767,6 +3767,11 @@
   position: relative;
 }
 
+/* NEW: Timeline wrapper for mobile - line and dots share same parent */
+.eco-timeline {
+  display: none; /* Hidden on desktop, shown on mobile */
+}
+
 .eco-stages__timeline-line {
   position: absolute;
   left: 0;
@@ -4247,6 +4252,54 @@
    left: 9px;
    z-index: 3;
    display: none;
+  }
+  
+  /* NEW: Mobile timeline wrapper - line and dots share same parent */
+  .eco-timeline {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 24px;
+    height: 100%;
+  }
+  
+  .eco-timeline__line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--mundayn-red-solid);
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .eco-timeline__dot {
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--mundayn-red-solid);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .eco-timeline__dot--1 {
+    top: 8px;
+  }
+  
+  .eco-timeline__dot--2 {
+   top: 480px;
+  }
+  
+  .eco-timeline__dot--3 {
+   top: 960px;
+  }
+  
+  .eco-timeline__dot--4 {
+   top: 1440px;
   }
   
   .eco-stage__content {

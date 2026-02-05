@@ -126,8 +126,14 @@ const Ecosystem = () => {
       {/* Stages Timeline */}
       <section className="eco-stages">
         <div className="mundayn-container eco-stages__container">
-          {/* Continuous vertical line */}
-          <div className="eco-stages__timeline-line" />
+         {/* Timeline wrapper with line and dots */}
+         <div className="eco-timeline">
+           <div className="eco-timeline__line" />
+           <div className="eco-timeline__dot eco-timeline__dot--1" />
+           <div className="eco-timeline__dot eco-timeline__dot--2" />
+           <div className="eco-timeline__dot eco-timeline__dot--3" />
+           <div className="eco-timeline__dot eco-timeline__dot--4" />
+         </div>
           
           <EcosystemStage
             stageNumber={1}
