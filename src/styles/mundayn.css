@@ -5216,7 +5216,7 @@
 .fs-reaching__label {
   font-family: var(--font-inter);
   font-size: var(--text-tall-size);
-  font-weight: 700;
+  font-weight: 600;
   line-height: var(--text-tall-line-height);
   letter-spacing: var(--text-tall-letter-spacing);
   color: var(--mundayn-cream);
@@ -5236,7 +5236,7 @@
 .fs-reaching__bold {
   font-family: var(--font-inter);
   font-size: var(--text-tall-size);
-  font-weight: 700;
+  font-weight: 600;
   line-height: var(--text-tall-line-height);
   letter-spacing: var(--text-tall-letter-spacing);
   color: var(--mundayn-cream);
@@ -5251,6 +5251,10 @@
   letter-spacing: var(--text-tall-letter-spacing);
   color: var(--mundayn-gold);
   margin: 32px 0;
+}
+
+.fs-reaching__highlight strong {
+  font-weight: 600;
 }
 
 .fs-reaching__cta {
