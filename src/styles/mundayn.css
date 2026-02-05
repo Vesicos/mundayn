@@ -2234,13 +2234,13 @@
   /* Hero - Mobile Layout */
   /* Hero - Mobile Layout */
   .mundayn-hero {
-    height: auto;
-    min-height: auto;
+    height: 100vh;
+    min-height: 100vh;
     padding: 0;
     flex-direction: column;
-    background-color: #c9bfb3;
+    background-color: transparent;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
   }
   
   .mundayn-hero__bg--desktop {
