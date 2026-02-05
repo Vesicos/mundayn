@@ -5215,37 +5215,41 @@
 
 .fs-reaching__label {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
-  font-weight: 600;
+  font-size: var(--text-tall-size);
+  font-weight: 400;
+  line-height: var(--text-tall-line-height);
+  letter-spacing: var(--text-tall-letter-spacing);
   color: var(--mundayn-cream);
-  letter-spacing: var(--text-small-letter-spacing);
   margin-bottom: 16px;
 }
 
 .fs-reaching__text {
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: var(--text-medium-size);
+  line-height: var(--text-medium-line-height);
+  letter-spacing: var(--text-medium-letter-spacing);
   color: var(--mundayn-cream);
-  line-height: 1.7;
   max-width: 700px;
   margin: 0 auto 16px;
 }
 
 .fs-reaching__bold {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
-  font-weight: 700;
+  font-size: var(--text-tall-size);
+  font-weight: 400;
+  line-height: var(--text-tall-line-height);
+  letter-spacing: var(--text-tall-letter-spacing);
   color: var(--mundayn-cream);
-  letter-spacing: var(--text-small-letter-spacing);
   margin: 24px 0;
 }
 
 .fs-reaching__highlight {
   font-family: var(--font-inter);
-  font-size: var(--text-small-size);
-  font-weight: 600;
+  font-size: var(--text-tall-size);
+  font-weight: 400;
+  line-height: var(--text-tall-line-height);
+  letter-spacing: var(--text-tall-letter-spacing);
   color: var(--mundayn-gold);
-  letter-spacing: var(--text-small-letter-spacing);
   margin: 32px 0;
 }
 
