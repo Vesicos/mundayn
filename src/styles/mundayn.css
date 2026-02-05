@@ -4555,8 +4555,8 @@
 }
 
 .fs-comparison__list {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding: 0 0 0 20px;
   margin: 0 0 24px 0;
 }
 
@@ -4567,6 +4567,14 @@
   letter-spacing: -0.4px;
   line-height: 30px;
   margin-bottom: 0;
+}
+
+.fs-comparison__list--checks {
+  list-style: none;
+  padding: 0;
+}
+
+.fs-comparison__list--checks li {
   display: flex;
   align-items: center;
   gap: 8px;
