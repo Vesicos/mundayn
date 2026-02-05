@@ -457,7 +457,7 @@ const FoundationSetup = () => {
           <p className="fs-reaching__text">That's why we're reaching out.</p>
           <p className="fs-reaching__text">You invested in Mundayn because you wanted to systematize your business. We want to make sure you actually get there—not get stuck in configuration purgatory.</p>
           
-          <p className="fs-reaching__highlight"><strong>Foundation Setup</strong> is how we help you launch successfully instead of struggling alone.</p>
+          <p className="fs-reaching__highlight"><strong>Foundation Setup</strong> is how we help you launch<br />successfully instead of struggling alone.</p>
           
           <a href="#setup" className="fs-reaching__cta">
             I'M READY TO LAUNCH PROPERLY <ArrowIcon />
