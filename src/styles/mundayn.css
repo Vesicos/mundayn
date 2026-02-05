@@ -4338,7 +4338,7 @@
     white-space: normal;
     text-align: center;
     margin-top: 20px;
-    border-radius: 8px;
+    border-radius: var(--radius-full);
   }
   
   /* Hide images on mobile - PDF design */
