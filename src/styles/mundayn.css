@@ -198,9 +198,8 @@
   }
 
   .mundayn-nav__logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
+    justify-content: center;
   }
 }
 
