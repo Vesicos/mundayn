@@ -9029,3 +9029,36 @@
     line-height: 32px;
   }
 }
+
+/* ==========================================
+   MOBILE HERO TEXT CENTERING FIX
+   ========================================== */
+@media (max-width: 640px) {
+  .mundayn-hero__content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    padding: 100px 24px 0 24px !important;
+  }
+  
+  .mundayn-hero__text-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+  
+  .mundayn-hero__title {
+    text-align: left !important;
+    width: auto !important;
+  }
+  
+  .mundayn-hero__subtitle {
+    text-align: left !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+}
