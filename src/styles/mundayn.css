@@ -5558,15 +5558,16 @@
   z-index: 1;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 80px 40px;
-  text-align: center;
+  padding: 80px 0;
+  text-align: left;
+  width: 100%;
 }
 
 .fs-final__title {
   font-family: var(--font-inter);
   font-size: 48px;
   font-weight: 600;
-  color: var(--mundayn-cream);
+  color: #F5AD2D;
   letter-spacing: -2.5px;
   margin-bottom: 16px;
 }
@@ -5595,6 +5596,7 @@
   letter-spacing: 0;
   transition: all 0.2s;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  align-self: flex-start;
 }
 
 .fs-final__cta:hover {
@@ -6104,7 +6106,7 @@
   }
   
   .fs-final__content {
-    padding: 60px 24px;
+    padding: 60px 0;
   }
   
   .fs-final__title {
@@ -6695,7 +6697,7 @@
   }
   
   .fs-final__content {
-    padding: 48px 20px;
+    padding: 48px 0;
   }
   
   .fs-final__title {
