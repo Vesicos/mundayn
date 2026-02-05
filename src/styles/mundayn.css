@@ -4153,25 +4153,38 @@
 
 @media (max-width: 640px) {
   .eco-hero {
-    padding: 140px 16px 40px;
+    padding: 120px 24px 50px;
   }
   
   .eco-hero__title {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.1;
-    letter-spacing: -1.5px;
-    margin-bottom: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .eco-hero__title br {
     display: none;
   }
   
+  .eco-hero__title-italic {
+    font-family: var(--font-inter);
+    font-style: normal;
+    color: var(--mundayn-gold);
+    display: block;
+  }
+  
   .eco-hero__subtitle {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
     margin-bottom: 16px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .eco-hero__subtitle br {
@@ -4179,47 +4192,53 @@
   }
   
   .eco-hero__text {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: -0.3px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   /* Mobile Ecosystem Stages - PDF Design */
   .eco-stages {
-    padding: 40px 0;
+    padding: 50px 0 40px;
   }
   
   .eco-stages__container {
-    padding: 0 24px;
+    padding: 0 20px;
+    position: relative;
   }
   
   .eco-stages__timeline-line {
-    left: 24px;
+    left: 28px;
     margin-left: 0;
-    top: 0;
-    height: calc(100% - 40px);
+    top: 8px;
+    height: calc(100% - 60px);
     z-index: 0;
+    width: 2px;
+    transform: none;
   }
   
   .eco-stage {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 48px;
+    gap: 16px;
+    margin-bottom: 40px;
     position: relative;
   }
   
   .eco-stage__indicator {
     flex-shrink: 0;
-    width: 28px;
+    width: 20px;
     padding-top: 0;
     z-index: 2;
     position: relative;
   }
   
   .eco-stage__dot {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     position: relative;
     z-index: 3;
   }
@@ -4234,38 +4253,36 @@
   }
   
   .eco-stage__header {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
-    margin-bottom: 12px;
+    gap: 0;
+    margin-bottom: 4px;
   }
   
   .eco-stage__label {
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
   
   .eco-stage__coming {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.5px;
+    display: none;
   }
   
   .eco-stage__title-row {
     flex-direction: row;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 12px;
-    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
   }
   
   .eco-stage__title {
-    font-size: 32px;
-    letter-spacing: -1.5px;
-    line-height: 1.1;
+    font-size: 28px;
+    letter-spacing: -1px;
+    line-height: 1.0;
     margin: 0;
-    white-space: nowrap;
+    white-space: normal;
   }
   
   .eco-stage__title-italic {
@@ -4276,46 +4293,48 @@
   .eco-stage__price {
     width: auto;
     height: auto;
-    padding: 8px 16px;
+    padding: 4px 10px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
     flex-shrink: 0;
+    border-width: 1px;
   }
   
   .eco-stage__subtitle {
-    font-size: 18px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 1.5;
-    margin-bottom: 16px;
+    line-height: 1.4;
+    margin-bottom: 14px;
   }
   
   .eco-stage__what-label {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     letter-spacing: 0;
-    line-height: 1.4;
-    margin-bottom: 8px;
+    line-height: 1.5;
+    margin-bottom: 6px;
   }
   
   .eco-stage__what-text {
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: 0;
-    line-height: 1.6;
-    margin-bottom: 8px;
+    line-height: 1.55;
+    margin-bottom: 6px;
     max-width: 100%;
   }
   
   .eco-stage__cta {
-    padding: 18px 24px;
-    font-size: 14px;
+    padding: 14px 20px;
+    font-size: 12px;
     width: 100%;
     justify-content: center;
-    white-space: nowrap;
+    white-space: normal;
     text-align: center;
-    margin-top: 28px;
+    margin-top: 20px;
+    border-radius: 8px;
   }
   
   /* Hide images on mobile - PDF design */
@@ -4323,35 +4342,47 @@
     display: none !important;
   }
   
-  .eco-belief__title {
-    font-size: 28px;
-    letter-spacing: -1px;
-    line-height: 1.1;
-    margin-bottom: 20px;
+  .eco-belief {
+    padding: 60px 24px 50px;
   }
   
-  .eco-belief__quote {
-    font-size: 16px;
-    letter-spacing: -0.5px;
-    line-height: 1.4;
+  .eco-belief__title {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1.1;
     margin-bottom: 16px;
   }
   
+  .eco-belief__title-italic {
+    font-family: var(--font-inter);
+    font-style: normal;
+  }
+  
+  .eco-belief__quote {
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .eco-belief__cta {
-    padding: 14px 24px;
+    padding: 14px 20px;
     font-size: 12px;
-    white-space: nowrap;
+    white-space: normal;
     text-align: center;
+    border-radius: 8px;
   }
   
   .eco-belief__text {
     font-size: 14px;
     letter-spacing: 0;
-    margin-bottom: 24px;
-  }
-  
-  .eco-belief {
-    padding: 60px 16px;
+    margin-bottom: 20px;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .mundayn-footer__links-wrap {
