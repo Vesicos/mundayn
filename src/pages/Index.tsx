@@ -725,18 +725,20 @@ const Index = () => {
             
             <article className="mundayn-final-cta__card mundayn-final-cta__card--highlight" style={{ display: 'flex', flexDirection: 'column' }}>
               <h3 style={{
-                fontFamily: 'var(--font-playfair)',
-                fontStyle: 'italic',
-                fontSize: '28px',
+                fontFamily: 'var(--font-inter)',
+                fontSize: 'var(--text-tall-size)',
                 fontWeight: 400,
+                lineHeight: 'var(--text-tall-line-height)',
+                letterSpacing: 'var(--text-tall-letter-spacing)',
                 marginBottom: '16px',
                 textAlign: 'center',
                 color: '#DDD7C9'
               }}>Not ready yet?</h3>
               <p style={{
-                fontFamily: 'var(--font-playfair)',
-                fontStyle: 'italic',
-                fontSize: '16px',
+                fontFamily: 'var(--font-inter)',
+                fontSize: 'var(--text-small-size)',
+                lineHeight: 'var(--text-small-line-height)',
+                letterSpacing: 'var(--text-small-letter-spacing)',
                 marginBottom: '20px',
                 textAlign: 'center',
                 color: '#DDD7C9'
@@ -745,14 +747,14 @@ const Index = () => {
                 A 5-day email course that shows you:
               </p>
               <ul style={{
-                fontFamily: 'var(--font-playfair)',
-                fontStyle: 'italic',
-                fontSize: '16px',
+                fontFamily: 'var(--font-inter)',
+                fontSize: 'var(--text-medium-size)',
+                lineHeight: 'var(--text-medium-line-height)',
+                letterSpacing: 'var(--text-medium-letter-spacing)',
                 textAlign: 'left',
                 paddingLeft: '24px',
                 margin: '0 0 auto 0',
                 color: '#DDD7C9',
-                lineHeight: 1.6
               }}>
                 <li style={{ marginBottom: '4px' }}>How to identify which manual processes cost you the most</li>
                 <li style={{ marginBottom: '4px' }}>The 3 automations every Impact Entrepreneur needs first</li>
