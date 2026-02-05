@@ -4232,6 +4232,7 @@
     gap: 16px;
     margin-bottom: 40px;
     position: relative;
+   padding-left: 60px;
   }
   
   .eco-stage__indicator {
