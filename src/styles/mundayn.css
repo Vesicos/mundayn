@@ -4217,6 +4217,7 @@
    z-index: 1;
     width: 2px;
     transform: none;
+   display: none;
   }
   
   .eco-stage {
@@ -4236,6 +4237,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+   display: none;
   }
   
   .eco-stage__dot {
@@ -4244,6 +4246,7 @@
    position: relative;
    left: 9px;
    z-index: 3;
+   display: none;
   }
   
   .eco-stage__content {
