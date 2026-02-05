@@ -4333,7 +4333,7 @@
   .eco-stage__title-row {
     flex-direction: row;
     align-items: baseline;
-    gap: 40px;
+    gap: 80px;
     margin-bottom: 14px;
    flex-wrap: nowrap;
    justify-content: flex-start;
