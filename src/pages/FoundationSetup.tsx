@@ -28,6 +28,7 @@ import implDashboard from '@/assets/icons/fs-impl-dashboard.png';
 import guaranteeArrow from '@/assets/icons/fs-guarantee-arrow.png';
 import guaranteeSquiggle from '@/assets/icons/fs-guarantee-squiggle.png';
 import guaranteeSmiley from '@/assets/icons/fs-guarantee-smiley.png';
+import elephantFaqBg from '@/assets/elephant-faq-bg.png';
 import guaranteeEye from '@/assets/icons/fs-guarantee-eye.png';
 import checkYellow from '@/assets/icons/fs-check-yellow.png';
 import xRed from '@/assets/icons/fs-x-red.png';
@@ -572,46 +573,31 @@ const FoundationSetup = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="fs-faq">
+      <section className="mundayn-section mundayn-faq">
         <div className="mundayn-container">
-          <h2 className="fs-faq__title">Questions? Answered.</h2>
+          <div className="mundayn-faq__card">
+            <img src={elephantFaqBg} alt="" className="mundayn-faq__card-bg" aria-hidden="true" />
+            <h2 className="mundayn-faq__title">Questions? <span className="mundayn-faq__title-italic">Answered.</span></h2>
           
-          <div className="fs-faq__list">
-            <FaqItem 
-              question="How is this different from Kajabi, ClickFunnels, or other platforms?" 
-              answer={<>
+            <div className="mundayn-faq__list">
+            <FaqItem question="How is this different from Kajabi, ClickFunnels, or other platforms?" answer={<>
                 <p>Three ways:</p>
                 <ol>
                   <li>True all-in-one: They specialize (Kajabi for courses, ClickFunnels for funnels). Mundayn does everything.</li>
                   <li>Setup included: They hand you software. We implement it for your specific business.</li>
                   <li>Ongoing partnership: They're software vendors. We're operational partners who grow with you.</li>
                 </ol>
-              </>} 
-            />
-            <FaqItem 
-              question="What if I outgrow my package?" 
-              answer="Upgrade anytime. Your data stays. Your systems stay. You just unlock new features. Most people start with Entrepreneur or Creator and scale up as they grow. That's the design." 
-            />
-            <FaqItem 
-              question="What if I'm not tech-savvy?" 
-              answer="That's exactly why DFY setup exists. You don't need to be technical. We build it, you use it. Plus, our training focuses on USING the system (clicking buttons, sending emails), not building it from scratch." 
-            />
-            <FaqItem 
-              question="Do I need DFY setup or can I do it myself?" 
-              answer={<>
+              </>} />
+            <FaqItem question="What if I outgrow my package?" answer="Upgrade anytime. Your data stays. Your systems stay. You just unlock new features. Most people start with Entrepreneur or Creator and scale up as they grow. That's the design." />
+            <FaqItem question="What if I'm not tech-savvy?" answer="That's exactly why DFY setup exists. You don't need to be technical. We build it, you use it. Plus, our training focuses on USING the system (clicking buttons, sending emails), not building it from scratch." />
+            <FaqItem question="Do I need DFY setup or can I do it myself?" answer={<>
                 <p>Both paths work:</p>
                 <p>DIY: Free with trial. Takes 2-3 months. Best if you have time and enjoy technical setup.</p>
                 <p>DFY: $599-$1,999. Takes max. 2-3 weeks. Best if you're hitting energy ceiling or want expert setup guaranteed to work.</p>
                 <p>Most Impact Entrepreneurs choose DFY because time saved {'>'}{'>'}  money invested.</p>
-              </>} 
-            />
-            <FaqItem 
-              question="Can I migrate my existing content and contacts?" 
-              answer="Yes. We have migration tools for most platforms. If you choose DFY setup, we handle the entire migration—contacts, courses, automations, everything. Clean transition, zero data loss." 
-            />
-            <FaqItem 
-              question="What's included in 'setup'?" 
-              answer={<>
+              </>} />
+            <FaqItem question="Can I migrate my existing content and contacts?" answer="Yes. We have migration tools for most platforms. If you choose DFY setup, we handle the entire migration—contacts, courses, automations, everything. Clean transition, zero data loss." />
+            <FaqItem question="What's included in 'setup'?" answer={<>
                 <p>Complete technical implementation:</p>
                 <ul>
                   <li>System configuration and branding</li>
@@ -624,12 +610,9 @@ const FoundationSetup = () => {
                   <li>90-day support guarantee</li>
                 </ul>
                 <p>We build it. You use it. That's the partnership.</p>
-              </>} 
-            />
-            <FaqItem 
-              question="Is there a model for advanced entrepreneurs?" 
-              answer="Yes. If you're Visionary Entrepreneur with 100K+ audience, ready for COO partnership, we offer a partnership model that includes full operational buildout of Mundayn including management." 
-            />
+              </>} />
+            <FaqItem question="Is there a model for advanced entrepreneurs?" answer="Yes. If you're Visionary Entrepreneur with 100K+ audience, ready for COO partnership, we offer a partnership model that includes full operational buildout of Mundayn including management." />
+            </div>
           </div>
         </div>
       </section>
