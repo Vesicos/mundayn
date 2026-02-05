@@ -2234,8 +2234,8 @@
   /* Hero - Mobile Layout */
   /* Hero - Mobile Layout */
   .mundayn-hero {
-    height: 100vh;
-    min-height: 100vh;
+    height: 55vh;
+    min-height: 55vh;
     padding: 0;
     flex-direction: column;
     background-color: transparent;
