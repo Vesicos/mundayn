@@ -1431,7 +1431,9 @@
 .mundayn-faq__title {
   font-family: var(--font-inter);
   font-size: var(--text-title-size);
-  font-weight: 400;
+  font-weight: 500;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
   color: var(--mundayn-cream);
   text-align: center;
   margin-bottom: 40px;
@@ -1440,8 +1442,9 @@
 }
 
 .mundayn-faq__title-italic {
-  font-family: var(--font-playfair);
-  font-style: italic;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .mundayn-faq__list {
