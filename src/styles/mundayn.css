@@ -1964,6 +1964,158 @@
 }
 
 /* ==========================================
+   RESPONSIVE STYLES - TABLET SMALL (641px - 850px)
+   ========================================== */
+@media (max-width: 850px) and (min-width: 641px) {
+  /* Keep 2-column layouts on tablet */
+  .mundayn-stages__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .mundayn-stage-card {
+    min-height: 300px;
+  }
+  
+  .mundayn-stage-card__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  /* Choose section - 2 columns */
+  .mundayn-choose__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .mundayn-choose__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  /* Why Section - horizontal layout */
+  .mundayn-why__cards {
+    flex-direction: row;
+    gap: 0;
+  }
+  
+  .mundayn-why__inner {
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+  }
+  
+  .mundayn-why__headline {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .mundayn-why__copy {
+    font-size: 14px;
+  }
+  
+  /* Feels Grid - 2 columns */
+  .mundayn-feels__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  /* Numbers Grid */
+  .mundayn-numbers__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .mundayn-number-card__value {
+    font-size: 50px;
+  }
+  
+  .mundayn-number-card__label {
+    font-size: 18px;
+  }
+  
+  /* Choice Grid - 2 columns */
+  .mundayn-choice__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  /* Right For You - 2 columns */
+  .mundayn-rightforyou__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .mundayn-rightforyou__content {
+    padding: 32px 24px;
+  }
+  
+  /* CTA Cards */
+  .mundayn-cta-cards__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mundayn-cta-cards__text {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  /* FAQ */
+  .mundayn-faq__card {
+    padding: 32px 24px 48px;
+    min-height: auto;
+  }
+  
+  .mundayn-faq__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  /* Final CTA */
+  .mundayn-final-cta__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .mundayn-final-cta__content {
+    padding: 32px 24px;
+  }
+  
+  .mundayn-final-cta__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  /* Footer */
+  .mundayn-footer__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  /* Mundane Grid - keep 2 columns */
+  .mundayn-mundane__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .mundayn-mundane__card {
+    padding: 24px;
+  }
+  
+  .mundayn-mundane__card-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  /* Matters Content */
+  .mundayn-matters__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .mundayn-matters__heading {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+/* ==========================================
    RESPONSIVE STYLES - MOBILE (max-width: 640px)
    ========================================== */
 @media (max-width: 640px) {
@@ -2957,6 +3109,94 @@
      white-space: normal;
      text-align: center;
    }
+}
+
+/* Done For You Page - Tablet Small (641px - 850px) */
+@media (max-width: 850px) and (min-width: 641px) {
+  .dfy-hero {
+    min-height: auto;
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
+  
+  .dfy-hero__title {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+  }
+  
+  .dfy-hero__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .two-paths__wrap {
+    flex-direction: row;
+    gap: 0;
+  }
+  
+  .two-paths__panel {
+    padding: 30px 24px;
+  }
+  
+  .two-paths__heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .two-paths__list {
+    font-size: 14px;
+  }
+  
+  .split-card__card {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .split-card__media {
+    height: 100%;
+  }
+  
+  .split-card__content {
+    padding: 32px 24px;
+  }
+  
+  .split-card__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  .split-card__text {
+    font-size: 14px;
+  }
+  
+  .dfy-solution__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .dfy-solution__number {
+    font-size: 64px;
+    line-height: 80px;
+  }
+  
+  .dfy-solution__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .dfy-guarantee__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .dfy-guarantee__card {
+    padding: 24px;
+  }
+  
+  .dfy-includes__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -6414,6 +6654,127 @@
   }
 }
 
+/* Foundation Setup - Tablet Small (641px - 850px) */
+@media (max-width: 850px) and (min-width: 641px) {
+  .fs-hero {
+    padding-top: 110px;
+    padding-bottom: 32px;
+  }
+  
+  .fs-hero__title {
+    font-size: 36px;
+    line-height: 42px;
+    max-width: 300px;
+  }
+  
+  .fs-hero__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .fs-know__layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .fs-know__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  .fs-know__grid-item {
+    padding: 12px;
+    min-height: 80px;
+    font-size: 12px;
+  }
+  
+  .fs-whatwedo__card {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .fs-whatwedo__content {
+    padding: 28px 20px;
+  }
+  
+  .fs-comparison {
+    flex-direction: row;
+    gap: 0;
+  }
+  
+  .fs-comparison__card--diy {
+    border-radius: 24px 0 0 24px;
+  }
+  
+  .fs-comparison__card--setup {
+    border-radius: 0 24px 24px 0;
+  }
+  
+  .fs-comparison__title {
+    font-size: 28px;
+  }
+  
+  .fs-comparison__card {
+    padding: 28px 20px;
+  }
+  
+  .fs-implement__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .fs-implement__card {
+    min-height: 150px;
+    padding: 20px;
+  }
+  
+  .fs-provide {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .fs-time__images {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  
+  .fs-time__comparison {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  
+  .fs-time__value {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .fs-guarantee__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .fs-options__grid {
+    flex-direction: row;
+    gap: 0;
+  }
+  
+  .fs-options__card--diy {
+    border-radius: 24px 0 0 24px;
+  }
+  
+  .fs-options__card--setup {
+    border-radius: 0 24px 24px 0;
+  }
+  
+  .fs-next__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 0;
+  }
+  
+  .fs-next__number {
+    font-size: 64px;
+  }
+}
+
 /* Mobile: max-width 640px */
 @media (max-width: 640px) {
    /* =======================================
@@ -7383,7 +7744,86 @@
   }
 }
 
-@media (max-width: 768px) {
+/* Tablet Small (641px - 850px) - Keep desktop-like layout but scaled down */
+@media (max-width: 850px) and (min-width: 641px) {
+  .eco-hero {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  
+  .eco-hero__title {
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -1.2px;
+  }
+  
+  .eco-hero__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .eco-hero__subtitle br {
+    display: none;
+  }
+  
+  .eco-hero__text {
+    font-size: 15px;
+  }
+  
+  .eco-stages__container {
+    padding: 0 20px;
+  }
+  
+  /* Keep 3-column grid on tablet - just smaller */
+  .eco-stage {
+    grid-template-columns: 36px 1fr 160px;
+    gap: 20px;
+  }
+  
+  .eco-stage__title {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+  }
+  
+  .eco-stage__price {
+    font-size: 16px;
+    padding: 6px 16px;
+  }
+  
+  .eco-stage__subtitle,
+  .eco-stage__what-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .eco-stage__what-label {
+    font-size: 13px;
+  }
+  
+  .eco-stage__img {
+    max-width: 160px;
+  }
+  
+  .eco-stage__cta {
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+  
+  .eco-belief__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  .eco-belief__quote {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+/* Mobile only (max-width: 640px) */
+@media (max-width: 640px) {
   .eco-hero {
     padding-top: 120px;
     padding-bottom: 48px;
