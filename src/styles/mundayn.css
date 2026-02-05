@@ -1577,11 +1577,13 @@
 }
 
 .mundayn-final-cta__card-text {
-  font-size: 22px;
-  font-weight: 500;
+  font-family: var(--font-inter);
+  font-size: var(--text-tall-size);
+  font-weight: 400;
+  line-height: var(--text-tall-line-height);
+  letter-spacing: var(--text-tall-letter-spacing);
   text-align: center;
   margin-bottom: auto;
-  letter-spacing: -1px;
 }
 
 .mundayn-final-cta__card-cta {
