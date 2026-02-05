@@ -147,7 +147,8 @@ const Index = () => {
         <div className="mundayn-hero__content">
           <div className="mundayn-hero__text-wrapper">
             <h1 className="mundayn-hero__title">
-              Your Business, Running <span className="mundayn-hero__title-italic">Itself</span>
+              Your Business,<br />
+              Running <span className="mundayn-hero__title-italic">Itself</span>
             </h1>
             <p className="mundayn-hero__subtitle">
               The only platform that delivers true all-in-one: the systems AND the setup.
