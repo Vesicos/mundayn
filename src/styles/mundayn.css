@@ -183,8 +183,8 @@
 }
 
 /* Hide nav when mobile menu is open */
-/* Tablet and Mobile: burger menu layout */
-@media (max-width: 850px) {
+/* Mobile only: burger menu layout */
+@media (max-width: 640px) {
   .mundayn-nav--menu-open {
     opacity: 0;
     pointer-events: none;
@@ -201,6 +201,19 @@
   .mundayn-nav__logo {
     flex: 1;
     justify-content: center;
+  }
+}
+
+/* Tablet: logo left, tighter nav spacing */
+@media (max-width: 850px) and (min-width: 641px) {
+  .mundayn-nav__links {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .mundayn-nav__cta {
+    padding: 10px 14px;
+    font-size: 10px;
   }
 }
 
