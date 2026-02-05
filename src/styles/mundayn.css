@@ -4288,19 +4288,19 @@
   }
   
   .eco-timeline__dot--1 {
-    top: 8px;
+    top: 0;
   }
   
   .eco-timeline__dot--2 {
-   top: 480px;
+   top: 515px;
   }
   
   .eco-timeline__dot--3 {
-   top: 960px;
+   top: 1030px;
   }
   
   .eco-timeline__dot--4 {
-   top: 1440px;
+   top: 1545px;
   }
   
   .eco-stage__content {
