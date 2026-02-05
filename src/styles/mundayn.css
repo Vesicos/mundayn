@@ -184,6 +184,13 @@
 
 /* Hide nav when mobile menu is open */
 @media (max-width: 1024px) {
+  .mundayn-nav__logo {
+    /* Keep logo on left, nav links visible */
+  }
+}
+
+/* Mobile only: burger menu and hide nav links */
+@media (max-width: 640px) {
   .mundayn-nav--menu-open {
     opacity: 0;
     pointer-events: none;
