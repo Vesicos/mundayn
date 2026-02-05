@@ -39,6 +39,7 @@ import footerLogo from '@/assets/footer-logo.png';
 // Hero image
 import heroElephant from '@/assets/hero-elephant.png';
 import heroElephantMobile from '@/assets/hero-elephant-mobile.png';
+import heroMobileBg from '@/assets/hero-bg-mobile.png';
 
 // Stage card elephant images
 import elephantBuilder from '@/assets/elephant-builder.png';
@@ -139,6 +140,9 @@ const Index = () => {
       <header className="mundayn-hero">
         <div className="mundayn-hero__bg mundayn-hero__bg--desktop">
           <img src={heroElephant} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
+        </div>
+        <div className="mundayn-hero__bg mundayn-hero__bg--mobile">
+          <img src={heroMobileBg} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
         </div>
         <div className="mundayn-hero__content">
           <div className="mundayn-hero__text-wrapper">
