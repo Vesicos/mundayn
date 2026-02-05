@@ -727,7 +727,7 @@ const Index = () => {
               <h3 style={{
                 fontFamily: 'var(--font-inter)',
                 fontSize: 'var(--text-medium-size)',
-                fontWeight: 400,
+                fontWeight: 600,
                 lineHeight: 'var(--text-medium-line-height)',
                 letterSpacing: 'var(--text-medium-letter-spacing)',
                 marginBottom: '16px',
