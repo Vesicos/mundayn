@@ -24,6 +24,7 @@ interface StageProps {
   title: string;
   subtitle: string;
   price?: string;
+  comingLabel?: string;
   whatYouGetText: string;
   boldText: { build: string; use: string };
   ctaText: string;
@@ -38,6 +39,7 @@ const EcosystemStage = ({
   title,
   subtitle,
   price,
+  comingLabel,
   whatYouGetText,
   boldText,
   ctaText,
@@ -65,8 +67,8 @@ const EcosystemStage = ({
               </React.Fragment>
             ))}
           </h2>
-          {price && (
-            <span className="eco-stage__price">{price}</span>
+          {(price || comingLabel) && (
+            <span className="eco-stage__price">{price || comingLabel}</span>
           )}
         </div>
         
@@ -155,10 +157,11 @@ const Ecosystem = () => {
           
           <EcosystemStage
             stageNumber={3}
-            stageLabel="(COMING 2025)"
+            stageLabel=""
             title="On-Demand
 Implementation"
             subtitle="Your Account, fully set up and running in one week."
+            comingLabel="COMING 2025"
             whatYouGetText="One week from now, you log in to a Mundayn account that works. Everything configured. Your branding implemented. Automations tested. Payments processing. Calendar synced. Email sending."
             boldText={{ build: "build it", use: "use it" }}
             ctaText="JOIN THE WAITLIST"
@@ -168,10 +171,11 @@ Implementation"
           
           <EcosystemStage
             stageNumber={4}
-            stageLabel="(EARLY 2026)"
+            stageLabel=""
             title="Dedicated Support
 Hours"
             subtitle="Your Account, fully set up and running in one week."
+            comingLabel="COMING 2026"
             whatYouGetText="One week from now, you log in to a Mundayn account that works. Everything configured. Your branding implemented. Automations tested. Payments processing. Calendar synced. Email sending."
             boldText={{ build: "build it", use: "use it" }}
             ctaText="JOIN THE WAITLIST"
