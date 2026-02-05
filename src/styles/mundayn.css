@@ -100,24 +100,16 @@
   width: auto;
 }
 
-/* Show full logo on desktop, hide icon */
-.mundayn-nav__logo-full {
-  display: block;
-}
-
-.mundayn-nav__logo-icon {
+/* Burger menu icon */
+.mundayn-nav__burger {
   display: none;
-  height: 28px;
-  width: auto;
-}
-
-/* Desktop: show link logo, hide mobile trigger */
-.mundayn-nav__logo-desktop {
-  display: flex;
-}
-
-.mundayn-nav__logo-mobile {
-  display: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: var(--mundayn-cream);
 }
 
 /* ==========================================
@@ -195,6 +187,10 @@
   .mundayn-nav--menu-open {
     opacity: 0;
     pointer-events: none;
+  }
+
+  .mundayn-nav__burger {
+    display: flex;
   }
 }
 

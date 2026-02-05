@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import logoNav from '@/assets/logonav.svg';
-import logoIcon from '@/assets/logo-icon.svg';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <line x1="5" y1="12" x2="19" y2="12" />
     <polyline points="12 5 19 12 12 19" />
+  </svg>
+);
+
+const BurgerIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+    <line x1="3" y1="6" x2="21" y2="6" />
+    <line x1="3" y1="12" x2="21" y2="12" />
+    <line x1="3" y1="18" x2="21" y2="18" />
   </svg>
 );
 
@@ -23,16 +30,11 @@ const MobileNav = () => {
 
   return (
     <nav className={`mundayn-nav ${open ? 'mundayn-nav--menu-open' : ''}`}>
-      {/* Desktop: Link to home */}
-      <Link to="/" className="mundayn-nav__logo mundayn-nav__logo-desktop">
-        <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-full" />
-      </Link>
-
-      {/* Mobile: Open menu sheet */}
+      {/* Burger menu trigger */}
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
-          <button className="mundayn-nav__logo mundayn-nav__logo-mobile" aria-label="Open menu">
-            <img src={logoIcon} alt="Mundayn" className="mundayn-nav__logo-img mundayn-nav__logo-icon" />
+          <button className="mundayn-nav__burger" aria-label="Open menu">
+            <BurgerIcon />
           </button>
         </SheetTrigger>
         <SheetContent side="left" className="mobile-menu">
@@ -56,6 +58,11 @@ const MobileNav = () => {
           </a>
         </SheetContent>
       </Sheet>
+
+      {/* Logo - always links to home */}
+      <Link to="/" className="mundayn-nav__logo">
+        <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img" />
+      </Link>
 
       <ul className="mundayn-nav__links">
         <li><Link to="/">Product</Link></li>
