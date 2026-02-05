@@ -506,34 +506,49 @@ const FoundationSetup = () => {
       {/* What Happens Next Section */}
       <section className="fs-next">
         <div className="mundayn-container">
-          <h2 className="fs-next__title"><em>What Happens Next</em></h2>
+          <h2 className="fs-next__title">What Happens Next</h2>
           <p className="fs-next__subtitle">When you choose Foundation Setup, here's the process:</p>
           
           <div className="fs-next__grid">
             <div className="fs-next__step">
-              <div className="fs-next__number">1</div>
-              <h4 className="fs-next__heading">Form Submission</h4>
-              <p className="fs-next__text">Complete a simple 15-minute onboarding form</p>
+              <div className="fs-next__divider"></div>
+              <div className="fs-next__content">
+                <div className="fs-next__number">1</div>
+                <h4 className="fs-next__heading">Form Submission</h4>
+                <p className="fs-next__text">Complete a simple 15-minute onboarding form</p>
+              </div>
             </div>
             <div className="fs-next__step">
-              <div className="fs-next__number">2</div>
-              <h4 className="fs-next__heading">Onboarding Call</h4>
-              <p className="fs-next__text">We schedule your 30-minute onboarding call</p>
+              <div className="fs-next__divider"></div>
+              <div className="fs-next__content">
+                <div className="fs-next__number">2</div>
+                <h4 className="fs-next__heading">Onboarding Call</h4>
+                <p className="fs-next__text">We schedule your 30-minute onboarding call</p>
+              </div>
             </div>
             <div className="fs-next__step">
-              <div className="fs-next__number">3</div>
-              <h4 className="fs-next__heading">Implementation</h4>
-              <p className="fs-next__text">Our team implements everything while you focus on your business</p>
+              <div className="fs-next__divider"></div>
+              <div className="fs-next__content">
+                <div className="fs-next__number">3</div>
+                <h4 className="fs-next__heading">Implementation</h4>
+                <p className="fs-next__text">Our team implements everything while you focus on your business</p>
+              </div>
             </div>
             <div className="fs-next__step">
-              <div className="fs-next__number">4</div>
-              <h4 className="fs-next__heading">Walkthrough</h4>
-              <p className="fs-next__text">One week later, you receive your personalized walkthrough video</p>
+              <div className="fs-next__divider"></div>
+              <div className="fs-next__content">
+                <div className="fs-next__number">4</div>
+                <h4 className="fs-next__heading">Walkthrough</h4>
+                <p className="fs-next__text">One week later, you receive your personalized walkthrough video</p>
+              </div>
             </div>
             <div className="fs-next__step">
-              <div className="fs-next__number">5</div>
-              <h4 className="fs-next__heading">Go Live</h4>
-              <p className="fs-next__text">You log in to a system that works—and start operating immediately</p>
+              <div className="fs-next__divider"></div>
+              <div className="fs-next__content">
+                <div className="fs-next__number">5</div>
+                <h4 className="fs-next__heading">Go Live</h4>
+                <p className="fs-next__text">You log in to a system that works—and start operating immediately</p>
+              </div>
             </div>
           </div>
           
