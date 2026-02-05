@@ -39,6 +39,7 @@ import footerLogo from '@/assets/footer-logo.png';
 // Hero image
 import heroElephant from '@/assets/hero-elephant.png';
 import heroElephantMobile from '@/assets/hero-elephant-mobile.png';
+import heroBgMobile from '@/assets/hero-bg-mobile.png';
 
 // Stage card elephant images
 import elephantBuilder from '@/assets/elephant-builder.png';
@@ -140,7 +141,7 @@ const Index = () => {
         <div className="mundayn-hero__bg mundayn-hero__bg--desktop">
           <img src={heroElephant} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
         </div>
-        <div className="mundayn-hero__content">
+        <div className="mundayn-hero__content" style={{ '--mobile-bg': `url(${heroBgMobile})` } as React.CSSProperties}>
           <div className="mundayn-hero__text-wrapper">
             <h1 className="mundayn-hero__title">
               Your Business, Running <span className="mundayn-hero__title-italic">Itself</span>
@@ -149,9 +150,6 @@ const Index = () => {
               The only platform that delivers true all-in-one: the systems AND the setup.
               We handle the mundane so you can focus on the meaningful.
             </p>
-          </div>
-          <div className="mundayn-hero__mobile-elephant">
-            <img src={heroElephantMobile} alt="Elephant carrying boxes" />
           </div>
         </div>
       </header>
