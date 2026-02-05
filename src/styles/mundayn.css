@@ -4243,16 +4243,21 @@
     position: relative;
     display: flex;
     justify-content: center;
-   display: none;
+   position: absolute;
+   left: 0;
+   top: 0;
   }
   
   .eco-stage__dot {
     width: 20px;
     height: 20px;
-   position: relative;
-   left: 9px;
+   position: absolute;
+   left: 12px;
+   top: 0;
    z-index: 3;
-   display: none;
+   display: block;
+   background: var(--mundayn-red-solid);
+   border-radius: 50%;
   }
   
   /* NEW: Mobile timeline wrapper - line and dots share same parent */
@@ -4285,22 +4290,23 @@
     border-radius: 50%;
     transform: translateX(-50%);
     z-index: 2;
+   display: none;
   }
   
   .eco-timeline__dot--1 {
-    top: 0;
+    top: 0px;
   }
   
   .eco-timeline__dot--2 {
-   top: 500px;
+   top: 495px;
   }
   
   .eco-timeline__dot--3 {
-   top: 1000px;
+   top: 990px;
   }
   
   .eco-timeline__dot--4 {
-   top: 1510px;
+   top: 1505px;
   }
   
   .eco-stage__content {
