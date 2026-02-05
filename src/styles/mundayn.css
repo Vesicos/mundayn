@@ -4333,10 +4333,10 @@
   .eco-stage__title-row {
     flex-direction: row;
     align-items: baseline;
-    gap: 12px;
+    gap: 20px;
     margin-bottom: 14px;
    flex-wrap: nowrap;
-   justify-content: space-between;
+   justify-content: flex-start;
   }
   
   .eco-stage__title {
