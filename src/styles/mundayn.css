@@ -4361,6 +4361,7 @@
     line-height: 1;
     flex-shrink: 0;
     border-width: 1px;
+    margin-left: 60px !important;
   }
   
   .eco-stage__subtitle {
