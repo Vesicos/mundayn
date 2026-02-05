@@ -5542,6 +5542,7 @@
   position: absolute;
   inset: 0;
   z-index: 0;
+  background-color: #471D3C;
 }
 
 .fs-final__bg-img {
