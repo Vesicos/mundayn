@@ -54,8 +54,10 @@ const EcosystemStage = ({
       
       <div className="eco-stage__content">
         <div className="eco-stage__header">
-          <span className="eco-stage__label">STAGE {stageNumber}</span>
-          {stageLabel && <span className="eco-stage__coming">{stageLabel}</span>}
+          <span className="eco-stage__label">
+            STAGE {stageNumber}
+            {comingLabel && <span className="eco-stage__coming-inline"> ({comingLabel})</span>}
+          </span>
         </div>
         
         <div className="eco-stage__title-row">
@@ -68,7 +70,7 @@ const EcosystemStage = ({
             ))}
           </h2>
           {(price || comingLabel) && (
-            <span className="eco-stage__price">{price || comingLabel}</span>
+            <span className="eco-stage__price">{price}</span>
           )}
         </div>
         
