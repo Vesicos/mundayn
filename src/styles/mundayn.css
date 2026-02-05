@@ -4153,45 +4153,64 @@
 
 @media (max-width: 640px) {
   .eco-hero {
-    padding: 140px 20px 60px;
+    padding: 140px 16px 40px;
   }
   
   .eco-hero__title {
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+  }
+  
+  .eco-hero__title br {
+    display: none;
   }
   
   .eco-hero__subtitle {
     font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+  }
+  
+  .eco-hero__subtitle br {
+    display: none;
+  }
+  
+  .eco-hero__text {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+  }
+  
+  /* Mobile Ecosystem Stages - PDF Design */
+  .eco-stages {
+    padding: 40px 0;
+  }
+  
+  .eco-stages__container {
+    padding: 0 16px;
+  }
+  
+  .eco-stages__timeline-line {
+    left: 9px;
+    margin-left: 0;
+    top: 12px;
+    height: calc(100% - 40px);
   }
   
   .eco-stage {
-    grid-template-columns: 30px 1fr;
-    gap: 16px;
-    margin-bottom: 60px;
-  }
-  
-  .eco-stage__title {
-    font-size: 28px;
-     letter-spacing: -1px;
-     line-height: 1.1;
-  }
-  
-  .eco-stage__title-row {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
     gap: 12px;
+    margin-bottom: 32px;
   }
   
-  .eco-stage__price {
-    margin-left: 0;
-     font-size: 13px;
-     padding: 6px 14px;
-  }
-  
-  .eco-stage__label,
-  .eco-stage__coming {
-    font-size: 16px;
-     letter-spacing: 0;
+  .eco-stage__indicator {
+    flex-shrink: 0;
+    width: 20px;
+    padding-top: 0;
   }
   
   .eco-stage__dot {
@@ -4199,59 +4218,130 @@
     height: 20px;
   }
   
+  .eco-stage__content {
+    flex: 1;
+    padding-right: 0;
+    background-color: rgba(62, 24, 52, 0.6);
+    border-radius: 12px;
+    padding: 20px 16px;
+    border: 1px solid rgba(237, 93, 89, 0.2);
+  }
+  
+  .eco-stage__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .eco-stage__label {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  
+  .eco-stage__coming {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .eco-stage__title-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .eco-stage__title {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin: 0;
+  }
+  
+  .eco-stage__title-italic {
+    font-family: var(--font-playfair);
+    font-style: italic;
+  }
+  
+  .eco-stage__price {
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  
+  .eco-stage__subtitle {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  
+  .eco-stage__what-label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  
+  .eco-stage__what-text {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    max-width: 100%;
+  }
+  
   .eco-stage__cta {
-     padding: 14px 20px;
-     font-size: 11px;
-     width: 100%;
-     justify-content: center;
-     white-space: normal;
-     text-align: center;
-   }
-   
-   .eco-stage__subtitle,
-   .eco-stage__what-label,
-   .eco-stage__what-text {
-     font-size: 14px;
-     letter-spacing: 0;
-     line-height: 1.5;
-   }
-   
-   .eco-stage__content {
-     padding-right: 0;
-   }
-   
-   .eco-stage__image {
-     grid-column: 2;
-     margin-top: 16px;
-   }
-   
-   .eco-stage__img {
-     width: 100%;
-     max-height: 180px;
-     object-fit: cover;
-     border-radius: 10px;
+    padding: 14px 20px;
+    font-size: 12px;
+    width: 100%;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Hide images on mobile - PDF design */
+  .eco-stage__image {
+    display: none !important;
   }
   
   .eco-belief__title {
     font-size: 28px;
-     letter-spacing: -1px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 20px;
   }
   
   .eco-belief__quote {
-    font-size: 18px;
-     letter-spacing: 0;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+    margin-bottom: 16px;
   }
   
   .eco-belief__cta {
-     padding: 14px 20px;
-     font-size: 11px;
-     white-space: normal;
-     text-align: center;
-   }
-   
-   .eco-belief__text {
-     font-size: 14px;
-     letter-spacing: 0;
+    padding: 14px 24px;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  .eco-belief__text {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-bottom: 24px;
+  }
+  
+  .eco-belief {
+    padding: 60px 16px;
   }
   
   .mundayn-footer__links-wrap {
