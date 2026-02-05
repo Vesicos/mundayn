@@ -7469,6 +7469,23 @@
     padding: 6px 16px;
     align-self: flex-start;
   }
+ .eco-stage__title-row {
+   flex-direction: row;
+   align-items: center;
+   gap: 16px;
+ }
+ 
+ .eco-stage__title {
+   font-size: 28px;
+   line-height: 34px;
+   letter-spacing: -1px;
+ }
+ 
+ .eco-stage__price {
+   font-size: 16px;
+   padding: 6px 20px;
+   flex-shrink: 0;
+ }
   
   .eco-stage__subtitle {
     font-size: 15px;
