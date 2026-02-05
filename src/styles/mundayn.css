@@ -295,6 +295,11 @@
   object-position: center bottom;
 }
 
+/* Hide mobile bg on desktop, show desktop bg */
+.mundayn-hero__bg--mobile {
+  display: none;
+}
+
 .mundayn-hero__content {
   position: relative;
   z-index: 1;
@@ -2240,6 +2245,14 @@
   
   .mundayn-hero__bg--desktop {
     display: none;
+  }
+  
+  .mundayn-hero__bg--mobile {
+    display: block;
+  }
+  
+  .mundayn-hero__bg--mobile .mundayn-hero__bg-img {
+    object-position: center 70%;
   }
   
   .mundayn-hero__content {
