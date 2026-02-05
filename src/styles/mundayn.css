@@ -4325,8 +4325,9 @@
     letter-spacing: 0.5px;
   }
   
-  .eco-stage__coming {
-    display: none;
+  .eco-stage__coming-inline {
+    color: var(--mundayn-red-solid);
+    font-weight: 400;
   }
   
   .eco-stage__title-row {
