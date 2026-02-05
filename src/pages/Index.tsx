@@ -748,18 +748,19 @@ const Index = () => {
               </p>
               <ul style={{
                 fontFamily: 'var(--font-inter)',
-                fontSize: 'var(--text-medium-size)',
-                lineHeight: 'var(--text-medium-line-height)',
-                letterSpacing: 'var(--text-medium-letter-spacing)',
+                fontSize: 'var(--text-small-size)',
+                lineHeight: 'var(--text-small-line-height)',
+                letterSpacing: 'var(--text-small-letter-spacing)',
                 textAlign: 'left',
                 paddingLeft: '24px',
                 margin: '0 0 auto 0',
                 color: '#DDD7C9',
+                listStyleType: 'disc',
               }}>
-                <li style={{ marginBottom: '4px' }}>How to identify which manual processes cost you the most</li>
-                <li style={{ marginBottom: '4px' }}>The 3 automations every Impact Entrepreneur needs first</li>
-                <li style={{ marginBottom: '4px' }}>When to DIY vs. when to delegate setup</li>
-                <li style={{ marginBottom: '4px' }}>How to know which package fits your position</li>
+                <li style={{ marginBottom: '4px', display: 'list-item' }}>How to identify which manual processes cost you the most</li>
+                <li style={{ marginBottom: '4px', display: 'list-item' }}>The 3 automations every Impact Entrepreneur needs first</li>
+                <li style={{ marginBottom: '4px', display: 'list-item' }}>When to DIY vs. when to delegate setup</li>
+                <li style={{ display: 'list-item' }}>How to know which package fits your position</li>
               </ul>
               <div style={{ marginTop: 'auto', paddingTop: '24px', position: 'relative' }}>
                 <input type="email" placeholder="Email Address" style={{
