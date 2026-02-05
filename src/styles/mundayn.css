@@ -5154,34 +5154,39 @@
 }
 
 .fs-guarantee__note {
-  font-family: var(--font-inter);
-  font-size: var(--text-small-size);
+  font-family: var(--font-playfair);
+  font-style: italic;
+  font-size: var(--text-tall-size);
+  line-height: var(--text-tall-line-height);
+  letter-spacing: var(--text-tall-letter-spacing);
   color: var(--mundayn-cream);
-  letter-spacing: var(--text-small-letter-spacing);
-  margin-bottom: 32px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .fs-guarantee__cta {
   display: inline-flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
-  background-color: transparent;
-  color: var(--mundayn-cream);
-  border: 1px solid var(--mundayn-cream);
-  padding: 16px 28px;
+  background-color: var(--mundayn-gold);
+  color: var(--mundayn-purple-dark);
+  border: none;
+  padding: 18px 40px;
+  min-width: 320px;
   border-radius: var(--radius-full);
   text-decoration: none;
   font-family: var(--font-inter);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  text-transform: none;
+  letter-spacing: -0.3px;
   transition: all 0.2s;
   margin-bottom: 16px;
 }
 
 .fs-guarantee__cta:hover {
-  background-color: var(--mundayn-cream);
+  background-color: var(--mundayn-gold-light);
   color: var(--mundayn-purple-dark);
   transform: scale(1.05);
 }
