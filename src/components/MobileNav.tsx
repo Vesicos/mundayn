@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import logoNav from '@/assets/logonav.svg';
+import logoIcon from '@/assets/logo-icon.svg';
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -61,7 +62,7 @@ const MobileNav = () => {
 
       {/* Logo - always links to home */}
       <Link to="/" className="mundayn-nav__logo">
-        <img src={logoNav} alt="Mundayn" className="mundayn-nav__logo-img" />
+        <img src={logoIcon} alt="Mundayn" className="mundayn-nav__logo-img" />
       </Link>
 
       <ul className="mundayn-nav__links">
