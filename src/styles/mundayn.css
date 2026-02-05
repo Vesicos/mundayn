@@ -5186,7 +5186,7 @@
 }
 
 .fs-guarantee__cta:hover {
-  background-color: var(--mundayn-gold-light);
+  background-color: #f7bc4d;
   color: var(--mundayn-purple-dark);
   transform: scale(1.05);
 }
