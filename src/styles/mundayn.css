@@ -2509,47 +2509,59 @@
   .dfy-solution__title {
     font-size: 28px;
     line-height: 1.2;
+     letter-spacing: -1px;
   }
   
   .dfy-solution__subtitle {
     font-size: 20px;
-    letter-spacing: -1px;
+     letter-spacing: -0.5px;
     margin-bottom: 48px;
   }
   
   .dfy-solution__grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+     gap: 24px;
   }
   
   .dfy-solution__divider {
-    height: auto;
-    min-height: 200px;
+     height: 100%;
+     min-height: 80px;
+     max-height: 120px;
   }
   
   .dfy-solution__content {
-    padding-bottom: 0;
+     padding-bottom: 16px;
+     padding-left: 16px;
   }
   
   .dfy-solution__number {
-    font-size: 56px;
-    line-height: 64px;
+     font-size: 48px;
+     line-height: 52px;
     letter-spacing: -2px;
+     margin-bottom: 8px;
   }
   
   .dfy-solution__label {
-    font-size: 22px;
-    line-height: 26px;
+     font-size: 20px;
+     line-height: 24px;
+     margin-bottom: 12px;
   }
   
   .dfy-solution__list li {
-    font-size: 13px;
+     font-size: 14px;
+     letter-spacing: 0;
+     margin-bottom: 4px;
   }
   
   .dfy-solution__btn {
     width: 100%;
     justify-content: center;
+     margin-top: 16px;
   }
+   
+   .dfy-solution__step {
+     padding: 0;
+   }
   
   /* DFY Guarantee */
   .dfy-guarantee {
@@ -2938,12 +2950,20 @@
   .two-paths__left-col {
     min-width: auto;
   }
+   
+   .two-paths__btn {
+     margin-left: 0;
+     width: 100%;
+     white-space: normal;
+     text-align: center;
+   }
 }
 
 @media (max-width: 768px) {
   .two-paths__wrap {
     flex-direction: column;
     border-radius: 20px;
+     overflow: visible;
   }
   
   .two-paths__divider {
@@ -2953,8 +2973,18 @@
   
   .two-paths__panel {
     padding: 32px 28px;
+     border-radius: 20px;
+     overflow: visible;
   }
   
+   .two-paths__panel--left {
+     border-radius: 20px 20px 0 0;
+   }
+   
+   .two-paths__panel--right {
+     border-radius: 0 0 20px 20px;
+   }
+   
   .two-paths__title {
     font-size: 32px;
     margin-bottom: 32px;
@@ -2962,6 +2992,11 @@
   
   .two-paths__btn {
     width: 100%;
+     margin-left: 0;
+     white-space: normal;
+     text-align: center;
+     padding: 16px 20px;
+     font-size: 12px;
   }
 }
 
@@ -4137,6 +4172,8 @@
   
   .eco-stage__title {
     font-size: 28px;
+     letter-spacing: -1px;
+     line-height: 1.1;
   }
   
   .eco-stage__title-row {
@@ -4147,11 +4184,14 @@
   
   .eco-stage__price {
     margin-left: 0;
+     font-size: 13px;
+     padding: 6px 14px;
   }
   
   .eco-stage__label,
   .eco-stage__coming {
     font-size: 16px;
+     letter-spacing: 0;
   }
   
   .eco-stage__dot {
@@ -4160,21 +4200,58 @@
   }
   
   .eco-stage__cta {
-    padding: 16px 24px;
-    font-size: 14px;
+     padding: 14px 20px;
+     font-size: 11px;
+     width: 100%;
+     justify-content: center;
+     white-space: normal;
+     text-align: center;
+   }
+   
+   .eco-stage__subtitle,
+   .eco-stage__what-label,
+   .eco-stage__what-text {
+     font-size: 14px;
+     letter-spacing: 0;
+     line-height: 1.5;
+   }
+   
+   .eco-stage__content {
+     padding-right: 0;
+   }
+   
+   .eco-stage__image {
+     grid-column: 2;
+     margin-top: 16px;
+   }
+   
+   .eco-stage__img {
+     width: 100%;
+     max-height: 180px;
+     object-fit: cover;
+     border-radius: 10px;
   }
   
   .eco-belief__title {
     font-size: 28px;
+     letter-spacing: -1px;
   }
   
   .eco-belief__quote {
     font-size: 18px;
+     letter-spacing: 0;
   }
   
   .eco-belief__cta {
-    padding: 16px 24px;
-    font-size: 14px;
+     padding: 14px 20px;
+     font-size: 11px;
+     white-space: normal;
+     text-align: center;
+   }
+   
+   .eco-belief__text {
+     font-size: 14px;
+     letter-spacing: 0;
   }
   
   .mundayn-footer__links-wrap {
@@ -6145,6 +6222,84 @@
 
 /* Mobile: max-width 640px */
 @media (max-width: 640px) {
+   /* =======================================
+      GLOBAL MOBILE FIXES
+      ======================================= */
+   
+   /* All buttons must be properly contained */
+   .mundayn-btn,
+   .two-paths__btn,
+   .dfy-solution__btn,
+   .split-card__btn,
+   .eco-stage__cta,
+   .eco-belief__cta,
+   .fs-time__cta,
+   .fs-guarantee__cta,
+   .fs-provide__cta,
+   .fs-options__cta,
+   .fs-comparison__cta {
+     white-space: normal !important;
+     text-align: center !important;
+     max-width: 100% !important;
+     box-sizing: border-box !important;
+     word-wrap: break-word !important;
+     overflow-wrap: break-word !important;
+   }
+   
+   /* Fix letter spacing for readability */
+   body, p, span, div, li, a {
+     letter-spacing: normal;
+   }
+   
+   /* Two Paths Section - Ensure buttons don't clip */
+   .two-paths {
+     overflow: visible !important;
+   }
+   
+   .two-paths__wrap {
+     overflow: visible !important;
+   }
+   
+   .two-paths__panel {
+     overflow: visible !important;
+     padding: 28px 20px !important;
+   }
+   
+   .two-paths__h1 {
+     font-size: 28px;
+     line-height: 32px;
+     letter-spacing: -0.5px;
+   }
+   
+   .two-paths__sub {
+     font-size: 16px;
+     line-height: 22px;
+     letter-spacing: -0.3px;
+   }
+   
+   .two-paths__quote {
+     font-size: 14px;
+     letter-spacing: 0;
+   }
+   
+   .two-paths__list li {
+     font-size: 14px;
+     line-height: 22px;
+     letter-spacing: 0;
+   }
+   
+   .two-paths__btn {
+     width: 100% !important;
+     margin-left: 0 !important;
+     margin-top: 24px;
+     padding: 16px 20px;
+     font-size: 11px;
+     white-space: normal !important;
+     text-align: center !important;
+     display: flex;
+     justify-content: center;
+   }
+   
   /* Hero */
   .fs-hero {
     padding-top: 100px;
@@ -6559,28 +6714,41 @@
   
   .fs-reaching__label {
     font-size: 14px;
+     letter-spacing: 0;
+     line-height: 1.5;
   }
   
   .fs-reaching__text {
     font-size: 14px;
     line-height: 1.6;
+     letter-spacing: 0;
+     word-spacing: normal;
   }
   
   .fs-reaching__bold {
     font-size: 15px;
+     letter-spacing: 0;
+     line-height: 1.5;
   }
   
   .fs-reaching__highlight {
     font-size: 15px;
+     letter-spacing: 0;
+     line-height: 1.5;
   }
   
   .fs-reaching__cta {
     padding: 14px 24px;
     font-size: 11px;
+     width: 100%;
+     justify-content: center;
+     white-space: normal;
+     text-align: center;
   }
   
   .fs-reaching__price {
     font-size: 13px;
+     letter-spacing: 0;
   }
 
   /* Options */
