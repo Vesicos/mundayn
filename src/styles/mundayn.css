@@ -5434,10 +5434,9 @@
 }
 
 .fs-next__title {
-  font-family: var(--font-playfair);
+  font-family: var(--font-inter);
   font-size: var(--text-title-size);
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 500;
   color: var(--mundayn-red-solid);
   text-align: center;
   line-height: var(--text-title-line-height);
@@ -5449,7 +5448,6 @@
   font-family: var(--font-inter);
   font-size: 26px;
   font-weight: 400;
-  font-style: italic;
   color: #DDD7C9;
   text-align: center;
   letter-spacing: -1px;
@@ -5484,11 +5482,11 @@
 
 .fs-next__number {
   font-family: var(--font-inter);
-  font-size: 140px;
+  font-size: 90px;
   font-weight: 400;
   color: #ED5D59;
   line-height: 1;
-  letter-spacing: -6px;
+  letter-spacing: -4px;
   margin-bottom: 24px;
 }
 
