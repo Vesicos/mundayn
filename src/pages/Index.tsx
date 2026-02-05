@@ -726,10 +726,10 @@ const Index = () => {
             <article className="mundayn-final-cta__card mundayn-final-cta__card--highlight" style={{ display: 'flex', flexDirection: 'column' }}>
               <h3 style={{
                 fontFamily: 'var(--font-inter)',
-                fontSize: 'var(--text-tall-size)',
+                fontSize: 'var(--text-medium-size)',
                 fontWeight: 400,
-                lineHeight: 'var(--text-tall-line-height)',
-                letterSpacing: 'var(--text-tall-letter-spacing)',
+                lineHeight: 'var(--text-medium-line-height)',
+                letterSpacing: 'var(--text-medium-letter-spacing)',
                 marginBottom: '16px',
                 textAlign: 'center',
                 color: '#DDD7C9'
