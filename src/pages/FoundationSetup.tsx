@@ -562,7 +562,7 @@ const FoundationSetup = () => {
         <div className="fs-final__bg">
           <img src={fsHorizontalBg} alt="Get Foundation Setup" className="fs-final__bg-img" />
         </div>
-        <div className="fs-final__content">
+        <div className="fs-final__content mundayn-container">
           <h2 className="fs-final__title">Get Foundation Setup Now</h2>
           <p className="fs-final__text">$599 one-time investment. Setup starts immediately. Working system in one week.</p>
           <a href="#" className="fs-final__cta">
