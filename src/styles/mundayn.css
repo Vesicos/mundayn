@@ -4335,7 +4335,8 @@
     align-items: baseline;
     gap: 12px;
     margin-bottom: 14px;
-    flex-wrap: wrap;
+   flex-wrap: nowrap;
+   justify-content: space-between;
   }
   
   .eco-stage__title {
