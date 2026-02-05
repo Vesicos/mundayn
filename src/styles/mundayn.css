@@ -4189,75 +4189,83 @@
   }
   
   .eco-stages__container {
-    padding: 0 16px;
+    padding: 0 24px;
   }
   
   .eco-stages__timeline-line {
-    left: 9px;
+    left: 24px;
     margin-left: 0;
-    top: 12px;
+    top: 0;
     height: calc(100% - 40px);
+    z-index: 0;
   }
   
   .eco-stage {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 32px;
+    gap: 20px;
+    margin-bottom: 48px;
+    position: relative;
   }
   
   .eco-stage__indicator {
     flex-shrink: 0;
-    width: 20px;
+    width: 28px;
     padding-top: 0;
+    z-index: 2;
+    position: relative;
   }
   
   .eco-stage__dot {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    z-index: 3;
   }
   
   .eco-stage__content {
     flex: 1;
     padding-right: 0;
-    background-color: rgba(62, 24, 52, 0.6);
-    border-radius: 12px;
-    padding: 20px 16px;
-    border: 1px solid rgba(237, 93, 89, 0.2);
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    border: none;
   }
   
   .eco-stage__header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 4px;
+    gap: 8px;
     margin-bottom: 12px;
   }
   
   .eco-stage__label {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
   
   .eco-stage__coming {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
   
   .eco-stage__title-row {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
     margin-bottom: 12px;
+    flex-wrap: nowrap;
   }
   
   .eco-stage__title {
-    font-size: 24px;
-    letter-spacing: -1px;
+    font-size: 32px;
+    letter-spacing: -1.5px;
     line-height: 1.1;
     margin: 0;
+    white-space: nowrap;
   }
   
   .eco-stage__title-italic {
@@ -4268,22 +4276,24 @@
   .eco-stage__price {
     width: auto;
     height: auto;
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 700;
     line-height: 1;
     flex-shrink: 0;
   }
   
   .eco-stage__subtitle {
-    font-size: 14px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
     letter-spacing: 0;
     line-height: 1.5;
     margin-bottom: 16px;
   }
   
   .eco-stage__what-label {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 1.4;
@@ -4291,7 +4301,7 @@
   }
   
   .eco-stage__what-text {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0;
     line-height: 1.6;
     margin-bottom: 8px;
@@ -4299,13 +4309,13 @@
   }
   
   .eco-stage__cta {
-    padding: 14px 20px;
-    font-size: 12px;
+    padding: 18px 24px;
+    font-size: 14px;
     width: 100%;
     justify-content: center;
     white-space: nowrap;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 28px;
   }
   
   /* Hide images on mobile - PDF design */
