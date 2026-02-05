@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useIsMobile } from '@/hooks/use-mobile';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
@@ -118,6 +119,7 @@ const FaqItem = ({
 };
 const Index = () => {
   const [quizOpen, setQuizOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   // Handle scroll to packages section when navigating from other pages
   React.useEffect(() => {
@@ -145,12 +147,21 @@ const Index = () => {
           <img src={heroMobileBg} alt="Elephant carrying boxes" className="mundayn-hero__bg-img" />
         </div>
         <div className="mundayn-hero__content">
-          <div className="mundayn-hero__text-wrapper max-sm:mx-auto max-sm:w-fit">
-            <h1 className="mundayn-hero__title max-sm:text-left">
+          <div 
+            className="mundayn-hero__text-wrapper"
+            style={isMobile ? { 
+              margin: '0 auto', 
+              width: 'fit-content',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start'
+            } : undefined}
+          >
+            <h1 className="mundayn-hero__title" style={isMobile ? { textAlign: 'left' } : undefined}>
               Your Business,<br />
               Running <span className="mundayn-hero__title-italic">Itself</span>
             </h1>
-            <p className="mundayn-hero__subtitle max-sm:text-left max-sm:w-full">
+            <p className="mundayn-hero__subtitle" style={isMobile ? { textAlign: 'left', width: '100%' } : undefined}>
               The only platform that delivers true all-in-one: the systems AND the setup.
               We handle the mundane so you can focus on the meaningful.
             </p>
