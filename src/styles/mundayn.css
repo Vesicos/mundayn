@@ -195,7 +195,7 @@
   }
 
   .mundayn-nav__links {
-    display: none;
+    display: none !important;
   }
 
   .mundayn-nav__logo {
