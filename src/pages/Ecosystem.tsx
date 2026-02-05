@@ -69,9 +69,9 @@ const EcosystemStage = ({
               </React.Fragment>
             ))}
           </h2>
-          {(price || comingLabel) && (
-            <span className="eco-stage__price">{price}</span>
-          )}
+         {price && (
+           <span className="eco-stage__price">{price}</span>
+         )}
         </div>
         
         <p className="eco-stage__subtitle">{subtitle}</p>
