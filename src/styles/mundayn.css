@@ -7472,7 +7472,7 @@
  .eco-stage__title-row {
    flex-direction: row;
    align-items: center;
-   gap: 10px;
+   gap: 6px;
  }
  
  .eco-stage__title {
