@@ -156,8 +156,10 @@ const Index = () => {
               Running <span className="mundayn-hero__title-italic">Itself</span>
             </h1>
             <p className="mundayn-hero__subtitle">
-              The only platform that delivers true all-in-one: the systems AND the setup.
-              We handle the mundane so you can focus on the meaningful.
+              The only platform that delivers true<br />
+              all-in-one: the systems AND the setup.<br />
+              We handle the mundane so you can focus<br />
+              on the meaningful.
             </p>
           </div>
           <div className="mundayn-hero__mobile-elephant">
