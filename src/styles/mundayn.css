@@ -9061,4 +9061,67 @@
     width: auto !important;
     max-width: none !important;
   }
+
+  /* ==========================================
+     DFY & FS HERO - MATCH HOME HERO ON MOBILE
+     ========================================== */
+
+  /* DFY Hero */
+  .dfy-hero {
+    height: 55vh !important;
+    min-height: 55vh !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .dfy-hero__content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    padding: 100px 24px 0 24px !important;
+    max-width: 100% !important;
+  }
+
+  .dfy-hero__title,
+  .dfy-hero__subtitle,
+  .dfy-hero__week,
+  .dfy-hero__tagline {
+    max-width: none !important;
+    text-align: left !important;
+    width: auto !important;
+  }
+
+  .dfy-hero__btn {
+    max-width: none !important;
+  }
+
+  /* FS Hero */
+  .fs-hero {
+    height: 55vh !important;
+    min-height: 55vh !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .fs-hero__content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    padding: 100px 24px 0 24px !important;
+    max-width: 100% !important;
+  }
+
+  .fs-hero__title,
+  .fs-hero__subtitle {
+    text-align: left !important;
+    width: auto !important;
+  }
+
+  .fs-hero__cta {
+    max-width: none !important;
+  }
 }
