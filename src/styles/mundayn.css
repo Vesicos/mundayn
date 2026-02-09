@@ -5540,6 +5540,14 @@
 }
 
 
+.fs-time__value {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 31px;
+  margin-bottom: 48px;
+  align-items: stretch;
+}
+
 .fs-time__value-card {
   background: rgba(35, 7, 28, 0.6);
   border-radius: var(--radius-lg);
