@@ -321,7 +321,7 @@
   color: var(--mundayn-purple-dark);
   line-height: var(--text-title-line-height);
   letter-spacing: var(--text-title-letter-spacing);
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .mundayn-hero__title-italic {
