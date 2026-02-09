@@ -2275,21 +2275,19 @@
     color: var(--mundayn-purple-dark);
     text-align: left !important;
     width: auto !important;
-    font-size: 40px;
-    line-height: 38px;
-    letter-spacing: -5px;
+    font-size: var(--text-title-size);
+    line-height: var(--text-title-line-height);
+    letter-spacing: var(--text-title-letter-spacing);
     font-weight: 500;
-    margin-bottom: 8px;
   }
   
   .mundayn-hero__subtitle {
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0;
+    font-size: 16px;
+    line-height: 1.5;
     color: var(--mundayn-purple-dark);
     text-align: left !important;
     max-width: 340px !important;
-    margin-top: 0;
+    margin-top: 12px;
   }
   
   .mundayn-hero__mobile-elephant {
