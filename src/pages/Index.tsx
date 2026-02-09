@@ -158,8 +158,8 @@ const Index = () => {
             <p className="mundayn-hero__subtitle">
               The only platform that delivers true<br />
               all-in-one: the systems AND the setup.<br />
-              We handle the mundane so you can focus<br />
-              on the meaningful.
+              We handle the mundane so you can<br />
+              focus on the meaningful.
             </p>
           </div>
           <div className="mundayn-hero__mobile-elephant">
