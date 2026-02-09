@@ -9068,20 +9068,41 @@
 
   /* DFY Hero */
   .dfy-hero {
-    height: 55vh !important;
-    min-height: 55vh !important;
+    height: auto !important;
+    min-height: 100vh !important;
     padding: 0 !important;
     overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .dfy-hero__bg {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    flex-shrink: 0 !important;
+    order: 2 !important;
+  }
+
+  .dfy-hero__image {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
   }
 
   .dfy-hero__content {
+    position: relative !important;
+    z-index: 1 !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: flex-start !important;
     width: 100% !important;
-    padding: 100px 24px 0 24px !important;
+    padding: 100px 24px 32px 24px !important;
     max-width: 100% !important;
+    order: 1 !important;
   }
 
   .dfy-hero__title,
