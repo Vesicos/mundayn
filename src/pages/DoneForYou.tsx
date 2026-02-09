@@ -7,6 +7,7 @@ import '../styles/mundayn.css';
 import MobileNav from '../components/MobileNav';
 import Footer from '../components/Footer';
 import dfyHeroElephant from '@/assets/dfy-hero-elephant.png';
+import dfyHeroElephantMobile from '@/assets/dfy-hero-elephant-mobile.png';
 import elephantTruthBg from '@/assets/elephant-truth-bg-new.png';
 import elephantsFamily from '@/assets/elephants-family.png';
 
@@ -28,7 +29,7 @@ const DoneForYou = () => {
       {/* Hero Section */}
       <header className="dfy-hero">
         <div className="dfy-hero__bg">
-          <img src={dfyHeroElephant} alt="Elephant carrying boxes" className="dfy-hero__image" />
+          <img src={isMobile ? dfyHeroElephantMobile : dfyHeroElephant} alt="Elephant carrying boxes" className="dfy-hero__image" />
         </div>
         <div className="dfy-hero__content">
           <div style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
