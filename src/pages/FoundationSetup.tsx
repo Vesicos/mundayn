@@ -366,45 +366,43 @@ const FoundationSetup = () => {
             <p className="fs-time__subtitle">Let's be honest about what DIY setup actually costs:</p>
             <p className="fs-time__text">Your time is valuable. Every hour you spend configuring software is an hour you're not spending on revenue-generating activities.</p>
             
-            <div className="fs-time__images">
-              <div className="fs-time__img-wrap">
-                <img src={fsDiyPillow} alt="DIY Setup" className="fs-time__img" />
+            <div className="fs-time__pillars">
+              <div className="fs-time__pillar">
+                <div className="fs-time__img-wrap">
+                  <img src={fsDiyPillow} alt="DIY Setup" className="fs-time__img" />
+                </div>
+                <div className="fs-time__path">
+                  <h4>DIY Setup Path:</h4>
+                  <ul>
+                    <li><XIconImg /> <span>30-40 hours of configuration, testing, and troubleshooting</span></li>
+                    <li><XIconImg /> <span>2-3 months before everything works the way you need it to</span></li>
+                    <li><XIconImg /> <span>Learning curve with mistakes you'll need to fix later</span></li>
+                    <li><XIconImg /> <span>Your business waits while you figure out technical details</span></li>
+                  </ul>
+                </div>
+                <div className="fs-time__value-card">
+                  <p>At $100/hour (conservative estimate):</p>
+                  <p className="fs-time__value-calc">30 hours × $100 = $3,000</p>
+                  <p>in time value</p>
+                </div>
               </div>
-              <div className="fs-time__img-wrap">
-                <img src={fsSetupElephant} alt="Foundation Setup" className="fs-time__img" />
-              </div>
-            </div>
-            
-            <div className="fs-time__comparison">
-              <div className="fs-time__path">
-                <h4>DIY Setup Path:</h4>
-                <ul>
-                  <li><XIconImg /> <span>30-40 hours of configuration, testing, and troubleshooting</span></li>
-                  <li><XIconImg /> <span>2-3 months before everything works the way you need it to</span></li>
-                  <li><XIconImg /> <span>Learning curve with mistakes you'll need to fix later</span></li>
-                  <li><XIconImg /> <span>Your business waits while you figure out technical details</span></li>
-                </ul>
-              </div>
-              <div className="fs-time__path fs-time__path--setup">
-                <h4>Foundation Setup Path:</h4>
-                <ul>
-                  <li><CheckIconImg /> <span>$599 one-time investment</span></li>
-                  <li><CheckIconImg /> <span>One week to working system</span></li>
-                  <li><CheckIconImg /> <span>Zero mistakes because we build it right the first time</span></li>
-                  <li><CheckIconImg /> <span>You focus on business activities while we handle technical implementation</span></li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="fs-time__value">
-              <div className="fs-time__value-card">
-                <p>At $100/hour (conservative estimate):</p>
-                <p className="fs-time__value-calc">30 hours × $100 = $3,000</p>
-                <p>in time value</p>
-              </div>
-              <div className="fs-time__value-card fs-time__value-card--highlight">
-                <p className="fs-time__value-reclaim">You reclaim 30+ hours</p>
-                <p>to spend on what actually grows your business.</p>
+              <div className="fs-time__pillar">
+                <div className="fs-time__img-wrap">
+                  <img src={fsSetupElephant} alt="Foundation Setup" className="fs-time__img" />
+                </div>
+                <div className="fs-time__path fs-time__path--setup">
+                  <h4>Foundation Setup Path:</h4>
+                  <ul>
+                    <li><CheckIconImg /> <span>$599 one-time investment</span></li>
+                    <li><CheckIconImg /> <span>One week to working system</span></li>
+                    <li><CheckIconImg /> <span>Zero mistakes because we build it right the first time</span></li>
+                    <li><CheckIconImg /> <span>You focus on business activities while we handle technical implementation</span></li>
+                  </ul>
+                </div>
+                <div className="fs-time__value-card fs-time__value-card--highlight">
+                  <p className="fs-time__value-reclaim">You reclaim 30+ hours</p>
+                  <p>to spend on what actually grows your business.</p>
+                </div>
               </div>
             </div>
             
