@@ -35,7 +35,8 @@ const DoneForYou = () => {
           <div style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
             <h1 className="dfy-hero__title">
               Your Business,<br />
-              Running From <span className="dfy-hero__title-italic">Day One</span>
+              Running From<br />
+              <span className="dfy-hero__title-italic">Day One</span>
             </h1>
             <p className="dfy-hero__subtitle">
               Most platforms hand you software.<br />
