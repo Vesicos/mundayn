@@ -32,7 +32,7 @@ const DoneForYou = () => {
           <img src={isMobile ? dfyHeroElephantMobile : dfyHeroElephant} alt="Elephant carrying boxes" className="dfy-hero__image" />
         </div>
         <div className="dfy-hero__content">
-          <div style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
+          <div id="dfy-hero-content" style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
             <h1 className="dfy-hero__title">
               Your Business,<br />
               Running From<br />
