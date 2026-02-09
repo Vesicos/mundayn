@@ -9167,7 +9167,7 @@
 
   .dfy-hero__btn {
     max-width: none !important;
-    width: 242px !important;
+    width: auto !important;
     height: 39px !important;
     font-size: 14px !important;
     font-weight: 700 !important;
@@ -9176,8 +9176,10 @@
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    padding: 0 16px !important;
+    padding: 0 20px !important;
     box-shadow: 0px 0px 10px #00000080 !important;
+    white-space: nowrap !important;
+    gap: 12px !important;
   }
 
   /* FS Hero */
