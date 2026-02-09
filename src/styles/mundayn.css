@@ -9109,8 +9109,8 @@
 
   .dfy-hero__title {
     font-size: 40px !important;
-    line-height: 42px !important;
-    letter-spacing: -2.5px !important;
+    line-height: 38px !important;
+    letter-spacing: -5px !important;
     font-weight: 500 !important;
     color: var(--mundayn-purple-dark) !important;
     margin-bottom: 6px !important;
