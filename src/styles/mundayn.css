@@ -2275,9 +2275,9 @@
     color: var(--mundayn-purple-dark);
     text-align: left !important;
     width: auto !important;
-    font-size: 40px;
-    line-height: 38px;
-    letter-spacing: -5px;
+    font-size: var(--text-title-size);
+    line-height: var(--text-title-line-height);
+    letter-spacing: var(--text-title-letter-spacing);
     font-weight: 500;
   }
   
