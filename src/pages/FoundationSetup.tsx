@@ -6,6 +6,7 @@ import '../styles/mundayn.css';
 import MobileNav from '../components/MobileNav';
 import Footer from '../components/Footer';
 import fsHeroBg from '@/assets/fs-hero-bg.png';
+import fsHeroBgMobile from '@/assets/fs-hero-bg-mobile.png';
 import fsWhatWeDoElephant from '@/assets/fs-whatwedo-elephant.png';
 import fsDiyPillow from '@/assets/fs-diy-pillow.png';
 import fsSetupElephant from '@/assets/fs-setup-elephant.png';
@@ -90,7 +91,7 @@ const FoundationSetup = () => {
       {/* Hero Section */}
       <header className="fs-hero">
         <div className="fs-hero__bg">
-          <img src={fsHeroBg} alt="Foundation Setup" className="fs-hero__bg-img" />
+          <img src={isMobile ? fsHeroBgMobile : fsHeroBg} alt="Foundation Setup" className="fs-hero__bg-img" />
         </div>
         <div className="fs-hero__content">
           <div style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
