@@ -150,19 +150,12 @@ const Index = () => {
           <div 
             id="home-hero-content"
             className="mundayn-hero__text-wrapper"
-            style={isMobile ? { 
-              margin: '0 auto', 
-              width: 'fit-content',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start'
-            } : undefined}
           >
-            <h1 className="mundayn-hero__title" style={isMobile ? { textAlign: 'left' } : undefined}>
+            <h1 className="mundayn-hero__title">
               Your Business,<br />
               Running <span className="mundayn-hero__title-italic">Itself</span>
             </h1>
-            <p className="mundayn-hero__subtitle" style={isMobile ? { textAlign: 'left', width: '100%' } : undefined}>
+            <p className="mundayn-hero__subtitle">
               The only platform that delivers true all-in-one: the systems AND the setup.
               We handle the mundane so you can focus on the meaningful.
             </p>
