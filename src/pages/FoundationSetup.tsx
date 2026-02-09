@@ -95,7 +95,7 @@ const FoundationSetup = () => {
         </div>
         <div className="fs-hero__content">
           <div style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
-            <h1 className="fs-hero__title">We're Here to Help You Launch</h1>
+            <h1 className="fs-hero__title">We're Here to<br />Help You Launch</h1>
             <p className="fs-hero__subtitle">
               Getting stuck on technical setup? Let us handle it for you.
             </p>
