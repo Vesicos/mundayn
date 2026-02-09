@@ -6945,6 +6945,10 @@
   .fs-know {
     padding: 48px 0;
   }
+
+  .fs-know .mundayn-container {
+    padding: 0 24px;
+  }
   
   .fs-know__title {
     font-size: 28px;
