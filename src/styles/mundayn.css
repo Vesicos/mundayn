@@ -7027,6 +7027,8 @@
   .fs-whatwedo__small {
     font-size: 15px;
     line-height: 22px;
+    letter-spacing: 0;
+    word-spacing: normal;
   }
   
   .fs-whatwedo__label {
@@ -7066,14 +7068,15 @@
   }
   
   .fs-implement__intro {
-    font-size: 16px;
-    letter-spacing: -0.5px;
+    font-size: 15px;
+    letter-spacing: 0;
+    word-spacing: normal;
     margin-bottom: 32px;
   }
   
   .fs-implement__section-title {
     font-size: 20px;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     line-height: 28px;
     margin-bottom: 24px;
   }
@@ -7084,20 +7087,23 @@
   }
   
   .fs-implement__card {
-    min-height: 160px;
+    min-height: auto;
   }
   
   .fs-implement__icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
   }
   
   .fs-implement__card-content {
-    padding: 20px;
+    padding: 16px 20px 20px;
   }
   
   .fs-implement__card-content p {
-    font-size: 15px;
+    font-size: 14px;
+    letter-spacing: 0;
+    word-spacing: normal;
+    line-height: 1.5;
   }
   
   .fs-onboarding {
@@ -7149,7 +7155,11 @@
   }
   
   .fs-implement__price {
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 0;
+    word-spacing: normal;
+    white-space: normal;
+    line-height: 1.4;
   }
 
   /* Time Investment */
@@ -7234,7 +7244,9 @@
   }
   
   .fs-guarantee__subtitle {
-    font-size: 16px;
+    font-size: 15px;
+    letter-spacing: 0;
+    word-spacing: normal;
     margin-bottom: 32px;
   }
   
@@ -7245,30 +7257,43 @@
   
   .fs-guarantee__card {
     padding: 20px;
-    padding-right: 70px;
+    padding-right: 20px;
   }
   
   .fs-guarantee__card p {
     font-size: 14px;
+    letter-spacing: 0;
+    word-spacing: normal;
+    line-height: 1.5;
     margin-bottom: 8px;
   }
   
   .fs-guarantee__card-label {
-    font-size: 13px;
+    font-size: 14px;
+    letter-spacing: 0;
+    word-spacing: normal;
+    line-height: 1.5;
   }
   
   .fs-guarantee__card-text {
-    font-size: 13px;
+    font-size: 14px;
+    letter-spacing: 0;
+    word-spacing: normal;
+    line-height: 1.5;
   }
   
   .fs-guarantee__icon {
     width: 40px;
-    top: 16px;
-    right: 12px;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 12px;
   }
   
   .fs-guarantee__note {
     font-size: 14px;
+    letter-spacing: 0;
+    word-spacing: normal;
     margin-bottom: 24px;
   }
   
@@ -7279,6 +7304,7 @@
   
   .fs-guarantee__small {
     font-size: 12px;
+    letter-spacing: 0;
   }
 
   /* Reaching Out */
@@ -7397,65 +7423,77 @@
   }
   
   .fs-next__subtitle {
-    font-size: 16px;
-    letter-spacing: -0.5px;
+    font-size: 15px;
+    letter-spacing: 0;
+    word-spacing: normal;
     margin-bottom: 32px;
   }
   
   .fs-next__grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 0;
   }
   
   .fs-next__step {
     flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 0;
   }
   
   .fs-next__divider {
     align-self: stretch;
+    width: 3px;
+    flex-shrink: 0;
+    margin-right: 20px;
   }
   
   .fs-next__content {
-    padding: 16px;
+    padding: 0;
   }
   
   .fs-next__number {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    letter-spacing: -2px;
   }
   
   .fs-next__heading {
     font-size: 16px;
     line-height: 1.2;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+    letter-spacing: 0;
   }
   
   .fs-next__text {
     font-size: 14px;
+    letter-spacing: 0;
+    word-spacing: normal;
+    line-height: 1.5;
   }
   
   .fs-next__message {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: -0.5px;
-    margin-top: 40px;
+    margin-top: 32px;
   }
   
   .fs-next__message-bold {
-    font-size: 15px;
+    font-size: 14px;
+    letter-spacing: 0;
   }
 
   /* Final CTA */
   .fs-final {
-    min-height: 320px;
+    min-height: auto;
   }
   
   .fs-final__content {
-    padding: 48px 0;
+    padding: 48px 24px;
   }
   
   .fs-final__title {
-    font-size: 28px;
+    font-size: 26px;
     letter-spacing: -1px;
     margin-bottom: 12px;
   }
@@ -7463,6 +7501,8 @@
   .fs-final__text {
     font-size: 14px;
     line-height: 20px;
+    letter-spacing: 0;
+    word-spacing: normal;
     margin-bottom: 24px;
   }
   
