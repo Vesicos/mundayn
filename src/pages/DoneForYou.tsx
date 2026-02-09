@@ -39,8 +39,8 @@ const DoneForYou = () => {
               <span className="dfy-hero__title-italic">Day One</span>
             </h1>
             <p className="dfy-hero__subtitle">
-              Most platforms hand you software.<br />
-              We hand you a system that works.
+              Most platforms hand you software. We<br />
+              hand you a system that works.
             </p>
             <p className="dfy-hero__week">Week 1: You're operating.</p>
             <p className="dfy-hero__tagline">Not learning. Operating.</p>
