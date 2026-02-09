@@ -7097,10 +7097,16 @@
   .fs-implement__icon {
     width: 36px;
     height: 36px;
+    margin-bottom: 0;
+    flex-shrink: 0;
   }
   
   .fs-implement__card-content {
-    padding: 16px 20px 20px;
+    padding: 20px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: flex-start;
   }
   
   .fs-implement__card-content p {
