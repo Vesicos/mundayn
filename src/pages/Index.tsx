@@ -148,6 +148,7 @@ const Index = () => {
         </div>
         <div className="mundayn-hero__content">
           <div 
+            id="home-hero-content"
             className="mundayn-hero__text-wrapper"
             style={isMobile ? { 
               margin: '0 auto', 
