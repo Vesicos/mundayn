@@ -9104,12 +9104,11 @@
   }
 
   .dfy-hero__title {
-    font-family: var(--font-inter) !important;
-    font-size: var(--text-title-size) !important;
-    line-height: var(--text-title-line-height) !important;
-    letter-spacing: var(--text-title-letter-spacing) !important;
+    font-size: 40px !important;
+    line-height: 38px !important;
+    letter-spacing: -5px !important;
     font-weight: 500 !important;
-    color: var(--mundayn-purple-dark) !important;
+    color: #471d3c !important;
     margin-bottom: 16px !important;
     text-align: left !important;
     width: auto !important;
@@ -9119,20 +9118,19 @@
   .dfy-hero__title-italic {
     font-family: 'Playfair Display', serif !important;
     font-style: italic !important;
-    letter-spacing: var(--text-title-letter-spacing) !important;
+    letter-spacing: -2px !important;
   }
 
   .dfy-hero__subtitle {
-    font-family: var(--font-inter) !important;
-    font-size: var(--text-small-size) !important;
-    line-height: var(--text-small-line-height) !important;
-    letter-spacing: var(--text-small-letter-spacing) !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    letter-spacing: -0.48px !important;
     font-weight: 400 !important;
-    color: var(--mundayn-purple-dark) !important;
+    color: #471d3c !important;
     text-align: left !important;
     width: auto !important;
-    max-width: none !important;
-    margin-bottom: 0 !important;
+    max-width: 280px !important;
+    margin-bottom: 4px !important;
   }
 
   .dfy-hero__subtitle br {
@@ -9140,12 +9138,11 @@
   }
 
   .dfy-hero__week {
-    font-family: var(--font-inter) !important;
-    font-size: var(--text-small-size) !important;
-    line-height: var(--text-small-line-height) !important;
-    letter-spacing: var(--text-small-letter-spacing) !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    letter-spacing: -0.06px !important;
     font-weight: 700 !important;
-    color: var(--mundayn-purple-dark) !important;
+    color: #471d3c !important;
     text-align: left !important;
     width: auto !important;
     max-width: none !important;
@@ -9153,37 +9150,30 @@
   }
 
   .dfy-hero__tagline {
-    font-family: var(--font-inter) !important;
-    font-size: var(--text-small-size) !important;
-    line-height: var(--text-small-line-height) !important;
-    letter-spacing: var(--text-small-letter-spacing) !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    letter-spacing: -0.06px !important;
     font-weight: 400 !important;
-    color: var(--mundayn-purple-dark) !important;
+    color: #471d3c !important;
     text-align: left !important;
     width: auto !important;
-    max-width: none !important;
-    margin-bottom: 20px !important;
+    max-width: 280px !important;
+    margin-bottom: 16px !important;
   }
 
   .dfy-hero__btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-    background-color: var(--mundayn-gold) !important;
-    color: var(--mundayn-black) !important;
-    padding: 16px 28px !important;
-    border-radius: var(--radius-full) !important;
+    max-width: none !important;
+    width: 242px !important;
+    height: 39px !important;
     font-size: 14px !important;
     font-weight: 700 !important;
-    width: auto !important;
-    height: auto !important;
-    box-shadow: none !important;
-    justify-content: center !important;
-  }
-
-  .dfy-hero__btn:hover {
-    background-color: var(--mundayn-gold-hover) !important;
-    transform: scale(1.05) !important;
+    border-radius: 2000px !important;
+    background-color: #471d3c !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 16px !important;
+    box-shadow: 0px 0px 10px #00000080 !important;
   }
 
   /* FS Hero */
