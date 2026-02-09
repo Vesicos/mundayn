@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useIsMobile } from '@/hooks/use-mobile';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import MobileNav from '../components/MobileNav';
@@ -79,6 +80,8 @@ const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNo
 };
 
 const FoundationSetup = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div className="mundayn-page fs-page">
       {/* Navigation */}
@@ -90,13 +93,15 @@ const FoundationSetup = () => {
           <img src={fsHeroBg} alt="Foundation Setup" className="fs-hero__bg-img" />
         </div>
         <div className="fs-hero__content">
-          <h1 className="fs-hero__title">We're Here to Help You Launch</h1>
-          <p className="fs-hero__subtitle">
-            Getting stuck on technical setup? Let us handle it for you.
-          </p>
-          <a href="#setup" className="fs-hero__cta">
-            SET UP MY ACCOUNT FOR ME <ArrowIcon />
-          </a>
+          <div style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
+            <h1 className="fs-hero__title">We're Here to Help You Launch</h1>
+            <p className="fs-hero__subtitle">
+              Getting stuck on technical setup? Let us handle it for you.
+            </p>
+            <a href="#setup" className="fs-hero__cta">
+              SET UP MY ACCOUNT FOR ME <ArrowIcon />
+            </a>
+          </div>
         </div>
       </header>
 

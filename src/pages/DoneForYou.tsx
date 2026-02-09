@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useIsMobile } from '@/hooks/use-mobile';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import MobileNav from '../components/MobileNav';
@@ -17,6 +18,8 @@ const ArrowIcon = () => (
 );
 
 const DoneForYou = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div className="mundayn-page">
       {/* Navigation */}
@@ -28,19 +31,21 @@ const DoneForYou = () => {
           <img src={dfyHeroElephant} alt="Elephant carrying boxes" className="dfy-hero__image" />
         </div>
         <div className="dfy-hero__content">
-          <h1 className="dfy-hero__title">
-            Your Business,<br />
-            Running From <span className="dfy-hero__title-italic">Day One</span>
-          </h1>
-          <p className="dfy-hero__subtitle">
-            Most platforms hand you software.<br />
-            We hand you a system that works.
-          </p>
-          <p className="dfy-hero__week">Week 1: You're operating.</p>
-          <p className="dfy-hero__tagline">Not learning. Operating.</p>
-          <a href="#packages" className="dfy-hero__btn">
-            SEE HOW IT WORKS <ArrowIcon />
-          </a>
+          <div style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
+            <h1 className="dfy-hero__title">
+              Your Business,<br />
+              Running From <span className="dfy-hero__title-italic">Day One</span>
+            </h1>
+            <p className="dfy-hero__subtitle">
+              Most platforms hand you software.<br />
+              We hand you a system that works.
+            </p>
+            <p className="dfy-hero__week">Week 1: You're operating.</p>
+            <p className="dfy-hero__tagline">Not learning. Operating.</p>
+            <a href="#packages" className="dfy-hero__btn">
+              SEE HOW IT WORKS <ArrowIcon />
+            </a>
+          </div>
         </div>
       </header>
 
