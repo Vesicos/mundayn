@@ -7460,37 +7460,46 @@
   
   .fs-next__grid {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 12px;
   }
   
   .fs-next__step {
     flex-direction: row;
-    align-items: flex-start;
-    padding: 20px 0;
+    align-items: stretch;
+    padding: 0;
+    background: rgba(35, 7, 28, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
   }
   
   .fs-next__divider {
     align-self: stretch;
-    width: 3px;
+    width: 4px;
     flex-shrink: 0;
-    margin-right: 20px;
+    margin-right: 0;
+    border-radius: 0;
   }
   
   .fs-next__content {
-    padding: 0;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 12px;
   }
   
   .fs-next__number {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1;
-    margin-bottom: 8px;
-    letter-spacing: -2px;
+    margin-bottom: 0;
+    letter-spacing: -1px;
   }
   
   .fs-next__heading {
     font-size: 16px;
-    line-height: 1.2;
-    margin-bottom: 6px;
+    line-height: 32px;
+    margin-bottom: 0;
     letter-spacing: 0;
   }
   
@@ -7499,6 +7508,8 @@
     letter-spacing: 0;
     word-spacing: normal;
     line-height: 1.5;
+    width: 100%;
+    margin-top: 4px;
   }
   
   .fs-next__message {
