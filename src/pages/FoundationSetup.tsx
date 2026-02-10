@@ -97,7 +97,7 @@ const FoundationSetup = () => {
           <div style={isMobile ? { display: 'flex', flexDirection: 'column' as const, alignItems: 'flex-start', margin: '0 auto', width: 'fit-content' } : undefined}>
             <h1 className="fs-hero__title">We're Here to<br />Help You Launch</h1>
             <p className="fs-hero__subtitle">
-              Getting stuck on technical setup? Let us handle it for you.
+              Getting stuck on technical setup?<br />Let us handle it for you.
             </p>
             <a href="#setup" className="fs-hero__cta">
               SET UP MY ACCOUNT FOR ME <ArrowIcon />
