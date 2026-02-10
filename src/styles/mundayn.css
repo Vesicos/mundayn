@@ -9279,3 +9279,59 @@
     gap: 12px !important;
   }
 }
+
+/* ============================================
+   MOBILE SCROLL-ACTIVE (replaces hover on touch)
+   ============================================ */
+@media (max-width: 640px) {
+  /* Disable hover transforms on section cards (not buttons) */
+  .mundayn-feels__card:hover,
+  .mundayn-mundane__card:hover,
+  .mundayn-rightforyou__grid:hover .mundayn-rightforyou__column,
+  .mundayn-rightforyou__grid .mundayn-rightforyou__column:hover,
+  .mundayn-cta-cards__card:hover,
+  .dfy-guarantee__card:hover {
+    transform: none;
+    box-shadow: inherit;
+    opacity: 1;
+    filter: none;
+  }
+
+  .mundayn-cta-cards__card:hover .mundayn-cta-cards__text {
+    opacity: inherit;
+  }
+
+  /* Scroll-active states */
+  .mundayn-feels__card.scroll-active {
+    transform: scale(1.05);
+  }
+
+  .mundayn-mundane__card.scroll-active {
+    transform: scale(1.05);
+  }
+
+  .mundayn-rightforyou__column.scroll-active {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+
+  .mundayn-rightforyou__column:not(.scroll-active) {
+    opacity: 0.4;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .mundayn-cta-cards__card.scroll-active {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .mundayn-cta-cards__card.scroll-active .mundayn-cta-cards__text {
+    opacity: 1;
+  }
+
+  .dfy-guarantee__card.scroll-active {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.03);
+  }
+}

@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface StageCardProps {
   title: string;
@@ -17,11 +18,21 @@ const StageCard = ({
   hoverBgColor = "#F4E0BC",
   image
 }: StageCardProps) => {
+  const isMobile = useIsMobile();
+
   return (
     <motion.article
       className="mundayn-stage-card"
       style={{ backgroundColor: bgColor }}
-      whileHover={{ scale: 1.02, backgroundColor: hoverBgColor }}
+      {...(isMobile
+        ? {
+            whileInView: { scale: 1.02, backgroundColor: hoverBgColor },
+            viewport: { amount: 0.6, margin: "-10% 0px -10% 0px" },
+          }
+        : {
+            whileHover: { scale: 1.02, backgroundColor: hoverBgColor },
+          }
+      )}
       transition={{ duration: 0.3 }}
     >
       <div className="mundayn-stage-card__image-container">
