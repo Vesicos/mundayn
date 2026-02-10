@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useScrollHover } from '@/hooks/use-scroll-hover';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import MobileNav from '../components/MobileNav';
@@ -105,6 +106,7 @@ const EcosystemStage = ({
 };
 
 const Ecosystem = () => {
+  useScrollHover();
   return (
     <div className="mundayn-page">
       {/* Navigation */}

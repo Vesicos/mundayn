@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { useScrollHover } from '@/hooks/use-scroll-hover';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import MobileNav from '../components/MobileNav';
@@ -82,6 +83,7 @@ const FaqItem = ({ question, answer }: { question: string; answer: React.ReactNo
 
 const FoundationSetup = () => {
   const isMobile = useIsMobile();
+  useScrollHover();
 
   return (
     <div className="mundayn-page fs-page">
@@ -242,7 +244,7 @@ const FoundationSetup = () => {
           <h3 className="fs-implement__section-title">Your Complete System Configuration:</h3>
           
           <div className="fs-implement__grid">
-            <div className="fs-implement__card">
+            <div className="fs-implement__card" data-scroll-hover>
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
@@ -250,7 +252,7 @@ const FoundationSetup = () => {
                 <p>Everything your package includes—fully configured and tested</p>
               </div>
             </div>
-            <div className="fs-implement__card">
+            <div className="fs-implement__card" data-scroll-hover>
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
@@ -258,7 +260,7 @@ const FoundationSetup = () => {
                 <p>Complete technical setup with your branding (colors, fonts, styling)</p>
               </div>
             </div>
-            <div className="fs-implement__card">
+            <div className="fs-implement__card" data-scroll-hover>
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
@@ -266,7 +268,7 @@ const FoundationSetup = () => {
                 <p>Calendar and booking system, fully automated</p>
               </div>
             </div>
-            <div className="fs-implement__card">
+            <div className="fs-implement__card" data-scroll-hover>
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
@@ -274,7 +276,7 @@ const FoundationSetup = () => {
                 <p>Payment gateway and invoicing, ready to process</p>
               </div>
             </div>
-            <div className="fs-implement__card">
+            <div className="fs-implement__card" data-scroll-hover>
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
@@ -282,7 +284,7 @@ const FoundationSetup = () => {
                 <p>Contact import with intelligent tagging system</p>
               </div>
             </div>
-            <div className="fs-implement__card">
+            <div className="fs-implement__card" data-scroll-hover>
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
@@ -290,7 +292,7 @@ const FoundationSetup = () => {
                 <p>3-piece opt-in automation (lead magnet → welcome → nurture)</p>
               </div>
             </div>
-            <div className="fs-implement__card">
+            <div className="fs-implement__card" data-scroll-hover>
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
@@ -298,7 +300,7 @@ const FoundationSetup = () => {
                 <p>Domain connection and all integrations</p>
               </div>
             </div>
-            <div className="fs-implement__card">
+            <div className="fs-implement__card" data-scroll-hover>
               <div className="fs-implement__card-img"></div>
               <div className="fs-implement__card-overlay"></div>
               <div className="fs-implement__card-content">
@@ -423,20 +425,20 @@ const FoundationSetup = () => {
           <p className="fs-guarantee__subtitle">We stand behind our work completely.</p>
           
           <div className="fs-guarantee__grid">
-            <div className="fs-guarantee__card">
+            <div className="fs-guarantee__card" data-scroll-hover>
               <p className="fs-guarantee__card-title">Your system works<br />perfectly from day one,<br />or we keep fixing it until it<br />does. Free. No time limit.</p>
               <img src={guaranteeSquiggle} alt="" className="fs-guarantee__icon" />
             </div>
-            <div className="fs-guarantee__card">
+            <div className="fs-guarantee__card" data-scroll-hover>
               <p className="fs-guarantee__card-title">If we don't deliver what<br />we promised, 100%<br />money back. No<br />questions asked.</p>
               <img src={guaranteeArrow} alt="" className="fs-guarantee__icon" />
             </div>
-            <div className="fs-guarantee__card">
+            <div className="fs-guarantee__card" data-scroll-hover>
               <p className="fs-guarantee__card-label">Why we can promise this:</p>
               <p className="fs-guarantee__card-text">We're Mundayn experts. We've built<br />this hundreds of times. We know<br />exactly how to make it work for your<br />specific business needs.</p>
               <img src={guaranteeEye} alt="" className="fs-guarantee__icon" />
             </div>
-            <div className="fs-guarantee__card fs-guarantee__card--highlight">
+            <div className="fs-guarantee__card fs-guarantee__card--highlight" data-scroll-hover>
               <p className="fs-guarantee__card-title"><strong>Plus: 45 days of free<br />adjustments.</strong> If something<br />needs tweaking in your first 45<br />days, we handle it. No charge.</p>
               <img src={guaranteeSmiley} alt="" className="fs-guarantee__icon" />
             </div>
