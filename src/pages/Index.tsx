@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { useScrollHover } from '@/hooks/use-scroll-hover';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import StageCard from '../components/StageCard';
@@ -120,6 +121,7 @@ const FaqItem = ({
 const Index = () => {
   const [quizOpen, setQuizOpen] = useState(false);
   const isMobile = useIsMobile();
+  useScrollHover();
 
   // Handle scroll to packages section when navigating from other pages
   React.useEffect(() => {
@@ -314,7 +316,7 @@ const Index = () => {
           </h2>
           
           <div className="mundayn-feels__grid">
-            <article className="mundayn-feels__card">
+            <article className="mundayn-feels__card" data-scroll-hover>
               <div className="mundayn-feels__card-icon"><img src={sunIcon} alt="Sun icon" /></div>
               <h3 className="mundayn-feels__card-title">Wake up to confirmation emails you never sent.</h3>
               <p className="mundayn-feels__card-text">
@@ -322,7 +324,7 @@ const Index = () => {
               </p>
             </article>
             
-            <article className="mundayn-feels__card">
+            <article className="mundayn-feels__card" data-scroll-hover>
               <div className="mundayn-feels__card-icon"><img src={playIcon} alt="Play icon" /></div>
               <h3 className="mundayn-feels__card-title">Your assistant manages operations while you create.</h3>
               <p className="mundayn-feels__card-text">
@@ -330,7 +332,7 @@ const Index = () => {
               </p>
             </article>
             
-            <article className="mundayn-feels__card">
+            <article className="mundayn-feels__card" data-scroll-hover>
               <div className="mundayn-feels__card-icon"><img src={envelopeIcon} alt="Envelope icon" /></div>
               <h3 className="mundayn-feels__card-title">Your Instagram followers become email subscribers.</h3>
               <p className="mundayn-feels__card-text">
@@ -338,7 +340,7 @@ const Index = () => {
               </p>
             </article>
             
-            <article className="mundayn-feels__card">
+            <article className="mundayn-feels__card" data-scroll-hover>
               <div className="mundayn-feels__card-icon"><img src={gridIcon} alt="Grid icon" /></div>
               <h3 className="mundayn-feels__card-title">Courses sell themselves through systematic flow.</h3>
               <p className="mundayn-feels__card-text">
@@ -346,7 +348,7 @@ const Index = () => {
               </p>
             </article>
             
-            <article className="mundayn-feels__card">
+            <article className="mundayn-feels__card" data-scroll-hover>
               <div className="mundayn-feels__card-icon"><img src={starIcon} alt="Star icon" /></div>
               <h3 className="mundayn-feels__card-title">Your community thrives without you micromanaging.</h3>
               <p className="mundayn-feels__card-text">
@@ -354,7 +356,7 @@ const Index = () => {
               </p>
             </article>
             
-            <article className="mundayn-feels__card">
+            <article className="mundayn-feels__card" data-scroll-hover>
               <div className="mundayn-feels__card-icon"><img src={heartIcon} alt="Heart icon" /></div>
               <h3 className="mundayn-feels__card-title">Evenings belong to your family again.</h3>
               <p className="mundayn-feels__card-text">
@@ -418,7 +420,7 @@ const Index = () => {
           </h2>
           
           <div className="mundayn-mundane__grid">
-            <article className="mundayn-mundane__card mundayn-mundane__card--with-icon">
+            <article className="mundayn-mundane__card mundayn-mundane__card--with-icon" data-scroll-hover>
               <div className="mundayn-mundane__card-icon">
                 <img src={squiggleIcon} alt="" />
               </div>
@@ -436,7 +438,7 @@ const Index = () => {
               <p className="mundayn-mundane__card-highlight">These tasks are necessary. But they're mundane.</p>
             </article>
             
-            <article className="mundayn-mundane__card mundayn-mundane__card--with-icon">
+            <article className="mundayn-mundane__card mundayn-mundane__card--with-icon" data-scroll-hover>
               <div className="mundayn-mundane__card-icon">
                 <img src={curvedArrowIcon} alt="" />
               </div>
@@ -570,7 +572,7 @@ const Index = () => {
             <h2 className="mundayn-rightforyou__title">Is Mundayn Right For You?</h2>
             
             <div className="mundayn-rightforyou__grid">
-              <div className="mundayn-rightforyou__column mundayn-rightforyou__column--yes">
+              <div className="mundayn-rightforyou__column mundayn-rightforyou__column--yes" data-scroll-hover>
                 <div className="mundayn-rightforyou__image">
                   <img src={elephantHappy} alt="Happy elephant sitting on pillows" />
                 </div>
@@ -599,7 +601,7 @@ const Index = () => {
                 </ul>
               </div>
               
-              <div className="mundayn-rightforyou__column mundayn-rightforyou__column--no">
+              <div className="mundayn-rightforyou__column mundayn-rightforyou__column--no" data-scroll-hover>
                 <div className="mundayn-rightforyou__image">
                   <img src={pillowsOnly} alt="Empty pillows" />
                 </div>
@@ -643,14 +645,14 @@ const Index = () => {
       <section className="mundayn-section mundayn-cta-cards">
         <div className="mundayn-container">
           <div className="mundayn-cta-cards__grid">
-            <a href="/done-for-you" className="mundayn-cta-cards__card">
+            <a href="/done-for-you" className="mundayn-cta-cards__card" data-scroll-hover>
               <span className="mundayn-cta-cards__text">
                 You Create.<br />
                 <span className="mundayn-cta-cards__italic">We Implement.</span><br />
                 You Launch.
               </span>
             </a>
-            <a href="/ecosystem" className="mundayn-cta-cards__card">
+            <a href="/ecosystem" className="mundayn-cta-cards__card" data-scroll-hover>
               <span className="mundayn-cta-cards__text">
                 Your Business<br />
                 Grows. Mundayn<br />

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { useScrollHover } from '@/hooks/use-scroll-hover';
 import '../styles/globals.css';
 import '../styles/mundayn.css';
 import MobileNav from '../components/MobileNav';
@@ -20,6 +21,7 @@ const ArrowIcon = () => (
 
 const DoneForYou = () => {
   const isMobile = useIsMobile();
+  useScrollHover();
 
   return (
     <div className="mundayn-page">
@@ -278,7 +280,7 @@ const DoneForYou = () => {
           </div>
           
           <div className="dfy-guarantee__grid">
-            <article className="dfy-guarantee__card">
+            <article className="dfy-guarantee__card" data-scroll-hover>
               <h3 className="dfy-guarantee__card-title">
                 Money-Back<br /><span className="dfy-guarantee__card-title-italic">Promise:</span>
               </h3>
@@ -287,7 +289,7 @@ const DoneForYou = () => {
               </p>
             </article>
             
-            <article className="dfy-guarantee__card">
+            <article className="dfy-guarantee__card" data-scroll-hover>
               <h3 className="dfy-guarantee__card-title">
                 45-Day<br /><span className="dfy-guarantee__card-title-italic">Support:</span>
               </h3>
@@ -296,7 +298,7 @@ const DoneForYou = () => {
               </p>
             </article>
             
-            <article className="dfy-guarantee__card">
+            <article className="dfy-guarantee__card" data-scroll-hover>
               <h3 className="dfy-guarantee__card-title">
                 Why we <span className="dfy-guarantee__card-title-italic">can</span><br /><span className="dfy-guarantee__card-title-italic">promise</span> this:
               </h3>
