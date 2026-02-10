@@ -7180,6 +7180,8 @@
   .fs-time__card {
     padding: 32px 20px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
   }
   
   .fs-time__title {
@@ -7200,8 +7202,25 @@
   }
   
   .fs-time__pillars {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    display: contents;
+  }
+  
+  .fs-time__pillar:first-child {
+    order: 1;
+  }
+  
+  .fs-time__value {
+    order: 2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .fs-time__pillar:last-child {
+    order: 3;
+  }
+  
+  .fs-time__cta {
+    order: 4;
   }
   
   .fs-time__img-wrap {
