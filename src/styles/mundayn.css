@@ -7210,6 +7210,10 @@
   }
   
   .fs-time__value {
+    display: contents;
+  }
+  
+  .fs-time__value-card--cost {
     order: 2;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -7219,8 +7223,14 @@
     order: 3;
   }
   
-  .fs-time__cta {
+  .fs-time__value-card--highlight {
     order: 4;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  
+  .fs-time__cta {
+    order: 5;
   }
   
   .fs-time__img-wrap {

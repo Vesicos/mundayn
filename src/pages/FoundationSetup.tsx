@@ -398,7 +398,7 @@ const FoundationSetup = () => {
             </div>
             
             <div className="fs-time__value">
-              <div className="fs-time__value-card">
+              <div className="fs-time__value-card fs-time__value-card--cost">
                 <p>At $100/hour (conservative estimate):</p>
                 <p className="fs-time__value-calc">30 hours × $100 = $3,000</p>
                 <p>in time value</p>
