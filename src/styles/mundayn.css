@@ -2275,14 +2275,14 @@
     color: var(--mundayn-purple-dark);
     text-align: left !important;
     width: auto !important;
-    font-size: var(--text-title-size);
-    line-height: var(--text-title-line-height);
-    letter-spacing: var(--text-title-letter-spacing);
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -2.56px;
     font-weight: 500;
   }
   
   .mundayn-hero__subtitle {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     color: var(--mundayn-purple-dark);
     text-align: left !important;
@@ -2595,6 +2595,10 @@
     padding: 60px 0 80px;
   }
   
+  .two-paths .mundayn-container {
+    padding: 0 20px;
+  }
+  
   .two-paths__wrap {
     flex-direction: column;
     border-radius: 20px;
@@ -2724,28 +2728,36 @@
      gap: 24px;
   }
   
-  .dfy-solution__divider {
-     height: 100%;
-     min-height: 80px;
-     max-height: 120px;
-  }
+  
   
   .dfy-solution__content {
      padding-bottom: 16px;
      padding-left: 16px;
   }
   
+  .dfy-solution__step {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
   .dfy-solution__number {
      font-size: 48px;
      line-height: 52px;
     letter-spacing: -2px;
-     margin-bottom: 8px;
+     margin-bottom: 4px;
   }
   
   .dfy-solution__label {
      font-size: 20px;
      line-height: 24px;
-     margin-bottom: 12px;
+     margin-bottom: 8px;
+  }
+  
+  .dfy-solution__divider {
+    height: auto;
+    min-height: unset;
+    max-height: unset;
+    align-self: stretch;
   }
   
   .dfy-solution__list li {
@@ -3314,7 +3326,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right center;
+  object-position: 60% center;
   mix-blend-mode: multiply;
   opacity: 0.5;
 }
@@ -4725,7 +4737,7 @@
     font-size: 12px;
     white-space: normal;
     text-align: center;
-    border-radius: 8px;
+    border-radius: var(--radius-full);
   }
   
   .eco-belief__text {

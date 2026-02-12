@@ -81,7 +81,7 @@ const QuizModal = ({ open, onOpenChange }: QuizModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-quiz-bg border-0 max-w-2xl p-8 md:p-12 rounded-3xl overflow-hidden">
+      <DialogContent className="bg-quiz-bg border-0 max-w-2xl p-8 md:p-12 rounded-3xl overflow-hidden z-[1100]">
         <AnimatePresence mode="wait" custom={direction}>
           {!showResult ? (
             <motion.div

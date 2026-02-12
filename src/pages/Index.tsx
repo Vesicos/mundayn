@@ -785,14 +785,16 @@ const Index = () => {
                   fontSize: '16px',
                   backgroundColor: '#F5F0E8'
                 }} />
-                <span style={{
+                <button type="button" style={{
                   position: 'absolute',
-                  right: '20px',
+                  right: '16px',
                   top: '50%',
                   transform: 'translateY(-50%)',
-                  color: '#ED5D59',
-                  fontSize: '20px'
-                }}>💬</span>
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: '4px'
+                }}><ArrowIcon /></button>
               </div>
             </article>
           </div>
