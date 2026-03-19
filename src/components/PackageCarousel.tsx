@@ -207,7 +207,7 @@ const packages: Package[] = [
       "Membership platform (Kajabi-comparable)",
       "and more"
     ],
-    description: "Building community. Managing team. Running sophisticated sales processes. Need enterprise-level infrastructure without enterprise cost.",
+    description: "Managing team. Running sophisticated sales processes. Need enterprise-level infrastructure without enterprise cost.",
     apps: [
       "Kajabi/Teachable",
       "Clickfunnels",
