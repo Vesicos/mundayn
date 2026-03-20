@@ -261,13 +261,6 @@ export default function PackageCarousel() {
     return () => window.removeEventListener('resize', updateSize);
   }, []);
 
-  // Auto-scroll every 6 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % packages.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, []);
 
   const handlePrev = () => {
     if (isAnimating) return;
