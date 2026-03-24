@@ -407,9 +407,6 @@ const DoneForYou = () => {
             <p>You spend your morning doing the work you actually built this business to do. This isn't someday. This is one week from now. That's what DFY creates.</p>
           </div>
           
-          <a href="#start" className="mundayn-btn">
-            LEARN MORE ABOUT DFY <ArrowIcon />
-          </a>
         </div>
       </section>
 
