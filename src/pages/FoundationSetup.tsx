@@ -567,17 +567,24 @@ const FoundationSetup = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
+      {/* Final CTA Decision Block */}
       <section className="fs-final" id="setup">
         <div className="fs-final__bg">
           <img src={fsHorizontalBg} alt="Get Foundation Setup" className="fs-final__bg-img" />
         </div>
         <div className="fs-final__content mundayn-container">
-          <h2 className="fs-final__title">Get Foundation Setup Now</h2>
-          <p className="fs-final__text">$599 one-time investment. Setup starts immediately. Working system in one week.</p>
-          <a href="#" className="fs-final__cta">
-            GET FOUNDATION SETUP NOW <ArrowIcon />
-          </a>
+          <h2 className="fs-final__title">Set Up My Account For Me</h2>
+          <p className="fs-final__text">Do you already have a Mundayn account?</p>
+          <div className="fs-final__decision">
+            <a href="https://web.mundayn.com/products/packages/checkout-page-14-day-free-trial" className="fs-final__decision-card" data-scroll-hover>
+              <span className="fs-final__decision-label">Yes, I already have my Mundayn account</span>
+              <span className="fs-final__decision-desc">Go straight to the $5.99 setup/upgrade checkout.</span>
+            </a>
+            <a href="https://web.mundayn.com/products/packages/checkout-page-14-day-free-trial" className="fs-final__decision-card" data-scroll-hover>
+              <span className="fs-final__decision-label">No, I need to choose my package first</span>
+              <span className="fs-final__decision-desc">Pick your Mundayn package first, then you can add the setup service.</span>
+            </a>
+          </div>
         </div>
       </section>
 
