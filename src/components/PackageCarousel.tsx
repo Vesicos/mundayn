@@ -121,8 +121,8 @@ function PackageCard({
       {/* CTA Button - always at bottom */}
       <div className="shrink-0 pt-4">
         <a
-          href="#trial"
-           className={`inline-flex items-center justify-center gap-2 bg-[#F5AD2D] text-black font-bold rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full ${isMobile ? 'text-[12px] px-4 py-3' : 'text-sm px-6 py-3'}`}
+          href="https://web.mundayn.com/products/packages/checkout-page-14-day-free-trial"
+            className={`inline-flex items-center justify-center gap-2 bg-[#F5AD2D] text-black font-bold rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full ${isMobile ? 'text-[12px] px-4 py-3' : 'text-sm px-6 py-3'}`}
         >
           {buttonText}
            <svg width={isMobile ? 10 : 12} height={isMobile ? 10 : 12} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
