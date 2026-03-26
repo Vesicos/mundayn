@@ -27,6 +27,7 @@ const MobileNav = () => {
     { to: '/', label: 'Product' },
     { to: '/done-for-you', label: 'Done-For-You' },
     { to: '/ecosystem', label: 'Ecosystem' },
+    { to: '/foundation-setup', label: 'Foundation Setup' },
   ];
 
   return (
@@ -69,6 +70,7 @@ const MobileNav = () => {
         <li><Link to="/">Product</Link></li>
         <li><Link to="/done-for-you">Done-For-You</Link></li>
         <li><Link to="/ecosystem">Ecosystem</Link></li>
+        <li><Link to="/foundation-setup">Foundation Setup</Link></li>
       </ul>
       <a href="/#packages" className="mundayn-nav__cta">
         Start Your 14-Day Free Trial <ArrowIcon />
