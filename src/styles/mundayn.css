@@ -6183,6 +6183,95 @@
   transform: scale(1.05);
 }
 
+.fs-final__decision {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.fs-final__decision-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.fs-final__decision-card--primary {
+  background: linear-gradient(135deg, rgba(245, 173, 45, 0.15), rgba(245, 173, 45, 0.05));
+  border: 2px solid var(--mundayn-gold);
+}
+
+.fs-final__decision-card--primary:hover {
+  background: linear-gradient(135deg, rgba(245, 173, 45, 0.25), rgba(245, 173, 45, 0.1));
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(245, 173, 45, 0.2);
+}
+
+.fs-final__decision-card--secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.fs-final__decision-card--secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.fs-final__decision-label {
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.fs-final__decision-card--primary .fs-final__decision-label {
+  color: #F5AD2D;
+}
+
+.fs-final__decision-card--secondary .fs-final__decision-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.fs-final__decision-desc {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+.fs-final__decision-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.fs-final__decision-card--primary .fs-final__decision-arrow {
+  background: var(--mundayn-gold);
+  color: var(--mundayn-black);
+}
+
+.fs-final__decision-card--secondary .fs-final__decision-arrow {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.fs-final__decision-card:hover .fs-final__decision-arrow {
+  transform: translateX(4px);
+}
+
 /* FAQ Section */
 .fs-faq {
   padding: 80px 0;
@@ -7574,6 +7663,23 @@
     font-size: 13px;
   }
 
+  .fs-final__decision {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .fs-final__decision-label {
+    font-size: 16px;
+  }
+
+  .fs-final__decision-desc {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .fs-final__decision-card {
+    padding: 24px;
+  }
   /* FAQ */
   .fs-faq {
     padding: 48px 0;
