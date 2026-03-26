@@ -7663,6 +7663,23 @@
     font-size: 13px;
   }
 
+  .fs-final__decision {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .fs-final__decision-label {
+    font-size: 16px;
+  }
+
+  .fs-final__decision-desc {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .fs-final__decision-card {
+    padding: 24px;
+  }
   /* FAQ */
   .fs-faq {
     padding: 48px 0;
