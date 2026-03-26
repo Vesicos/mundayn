@@ -575,19 +575,9 @@ const FoundationSetup = () => {
         <div className="fs-final__content mundayn-container">
           <h2 className="fs-final__title">Get Foundation Setup Now</h2>
           <p className="fs-final__text">$599 one-time investment. Setup starts immediately. Working system in one week.</p>
-          
-          <div className="fs-decision">
-            <a href="#" className="fs-decision__card" target="_blank" rel="noopener noreferrer">
-              <span className="fs-decision__label">Yes, I already have my Mundane account</span>
-              <span className="fs-decision__desc">Go straight to the $599 setup/upgrade checkout.</span>
-              <span className="fs-decision__arrow"><ArrowIcon /></span>
-            </a>
-            <a href="#" className="fs-decision__card" target="_blank" rel="noopener noreferrer">
-              <span className="fs-decision__label">No, I need to choose my package first</span>
-              <span className="fs-decision__desc">Pick your Mundane package first, then you can add the setup service.</span>
-              <span className="fs-decision__arrow"><ArrowIcon /></span>
-            </a>
-          </div>
+          <a href="#" className="fs-final__cta">
+            GET FOUNDATION SETUP NOW <ArrowIcon />
+          </a>
         </div>
       </section>
 
