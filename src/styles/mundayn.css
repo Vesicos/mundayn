@@ -5552,6 +5552,99 @@
 }
 
 
+/* ==========================================
+   FS DECISION BLOCK (2-button CTA)
+   ========================================== */
+.fs-decision__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.fs-decision__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #58233f;
+  border-radius: var(--radius-md);
+  padding: 60px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 16px;
+}
+
+.fs-decision__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.fs-decision__card:hover .fs-decision__label,
+.fs-decision__card:hover .fs-decision__desc {
+  opacity: 1;
+}
+
+.fs-decision__label {
+  font-family: var(--font-inter);
+  font-size: var(--text-title-size);
+  font-weight: 500;
+  color: var(--mundayn-gold);
+  text-align: center;
+  line-height: var(--text-title-line-height);
+  letter-spacing: var(--text-title-letter-spacing);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.fs-decision__italic {
+  font-family: var(--font-playfair);
+  font-style: italic;
+}
+
+.fs-decision__desc {
+  font-family: var(--font-inter);
+  font-size: var(--text-small-size, 14px);
+  color: var(--mundayn-gold);
+  text-align: center;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .fs-decision__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .fs-decision__card {
+    padding: 32px 24px;
+  }
+  
+  .fs-decision__label {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .fs-decision__card:hover,
+  .fs-decision__card {
+    transform: none;
+  }
+
+  .fs-decision__card.scroll-active {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .fs-decision__card.scroll-active .fs-decision__label,
+  .fs-decision__card.scroll-active .fs-decision__desc {
+    opacity: 1;
+  }
+}
+
+
 .fs-time__value {
   display: grid;
   grid-template-columns: 1fr 1fr;

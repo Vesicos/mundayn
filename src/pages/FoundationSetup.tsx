@@ -575,9 +575,23 @@ const FoundationSetup = () => {
         <div className="fs-final__content mundayn-container">
           <h2 className="fs-final__title">Get Foundation Setup Now</h2>
           <p className="fs-final__text">$599 one-time investment. Setup starts immediately. Working system in one week.</p>
-          <a href="#" className="fs-final__cta">
-            GET FOUNDATION SETUP NOW <ArrowIcon />
-          </a>
+          
+          <div className="fs-decision__grid">
+            <a href="https://web.mundayn.com/packages/foundation-add-on" className="fs-decision__card" data-scroll-hover>
+              <span className="fs-decision__label">
+                Yes, I already have my<br />
+                <span className="fs-decision__italic">Mundayn account</span>
+              </span>
+              <span className="fs-decision__desc">Go straight to the $599 setup/upgrade checkout.</span>
+            </a>
+            <a href="https://web.mundayn.com/products/packages/checkout-page-14-day-free-trial" className="fs-decision__card" data-scroll-hover>
+              <span className="fs-decision__label">
+                No, I need to choose my<br />
+                <span className="fs-decision__italic">package first</span>
+              </span>
+              <span className="fs-decision__desc">Pick your Mundayn package first, then you can add the setup service.</span>
+            </a>
+          </div>
         </div>
       </section>
 
