@@ -26,6 +26,7 @@ const MobileNav = () => {
   const navLinks = [
     { to: '/', label: 'Product' },
     { to: '/done-for-you', label: 'Done-For-You' },
+    { to: '/foundation-setup', label: 'Foundation Setup' },
     { to: '/ecosystem', label: 'Ecosystem' },
   ];
 
