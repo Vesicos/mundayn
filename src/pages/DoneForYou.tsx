@@ -77,7 +77,7 @@ const DoneForYou = () => {
                   </ul>
                 </div>
               </div>
-              <a href="#trial" className="two-paths__btn">
+              <a href="https://mundayn.com/#packages" className="two-paths__btn">
                 Start Free Trial (DIY) <ArrowIcon />
               </a>
             </div>
