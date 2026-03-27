@@ -172,9 +172,6 @@ const DoneForYou = () => {
                 </div>
               </div>
               
-              <a href="#packages" className="split-card__btn">
-                LEARN MORE ABOUT DFY <ArrowIcon />
-              </a>
             </div>
           </div>
         </div>
