@@ -16,7 +16,6 @@ const Footer = () => {
             
             <nav className="site-footer__nav">
               <Link to="/#packages">Find YOUR Package</Link>
-              <Link to="/ecosystem">Ecosystem</Link>
               <Link to="/done-for-you">Done For You</Link>
             </nav>
             
