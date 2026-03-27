@@ -16,7 +16,6 @@ const Footer = () => {
             
             <nav className="site-footer__nav">
               <Link to="/#packages">Find YOUR Package</Link>
-              <Link to="/ecosystem">Ecosystem</Link>
               <Link to="/done-for-you">Done For You</Link>
             </nav>
             
@@ -27,7 +26,7 @@ const Footer = () => {
             
             <div className="site-footer__contact">
               <p className="site-footer__contact-label">Contact Us:</p>
-              <a href="mailto:care@mundayn.com" className="site-footer__email">care@mundayn.com</a>
+              <a href="mailto:support@mundayn.com" className="site-footer__email">support@mundayn.com</a>
             </div>
           </div>
         </div>
