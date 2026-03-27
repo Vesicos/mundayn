@@ -725,7 +725,7 @@ const Index = () => {
               </p>
               <div className="mundayn-final-cta__card-cta">
                 <Link to="/done-for-you" className="mundayn-btn" style={{ fontWeight: 700, textTransform: 'uppercase', padding: '14px 24px', textAlign: 'left', lineHeight: 1.2 }}>
-                  EXPLORE THE DONE-FOR-YOU OPTIONS <ArrowIconBold />
+                  EXPLORE THE DFY OPTIONS <ArrowIconBold />
                 </Link>
               </div>
             </article>
