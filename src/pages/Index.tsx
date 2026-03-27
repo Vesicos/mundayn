@@ -652,13 +652,6 @@ const Index = () => {
                 You Launch.
               </span>
             </a>
-            <a href="/ecosystem" className="mundayn-cta-cards__card" data-scroll-hover>
-              <span className="mundayn-cta-cards__text">
-                Your Business<br />
-                Grows. Mundayn<br />
-                <span className="mundayn-cta-cards__italic">Grows With You</span>
-              </span>
-            </a>
           </div>
         </div>
       </section>

@@ -584,7 +584,7 @@ const FoundationSetup = () => {
               </span>
               <span className="fs-decision__desc">Go straight to the $599 setup/upgrade checkout.</span>
             </a>
-            <a href="https://web.mundayn.com/products/packages/checkout-page-14-day-free-trial" className="fs-decision__card" data-scroll-hover>
+            <a href="https://mundayn.com/#packages" className="fs-decision__card" data-scroll-hover>
               <span className="fs-decision__label">
                 No, I need to choose my<br />
                 <span className="fs-decision__italic">package first</span>
