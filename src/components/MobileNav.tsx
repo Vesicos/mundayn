@@ -26,7 +26,6 @@ const MobileNav = () => {
   const navLinks = [
     { to: '/', label: 'Product' },
     { to: '/done-for-you', label: 'Done-For-You' },
-    { to: '/ecosystem', label: 'Ecosystem' },
     { to: '/foundation-setup', label: 'Foundation Setup' },
   ];
 
@@ -69,7 +68,6 @@ const MobileNav = () => {
       <ul className="mundayn-nav__links">
         <li><Link to="/">Product</Link></li>
         <li><Link to="/done-for-you">Done-For-You</Link></li>
-        <li><Link to="/ecosystem">Ecosystem</Link></li>
         <li><Link to="/foundation-setup">Foundation Setup</Link></li>
       </ul>
       <a href="/#packages" className="mundayn-nav__cta">
