@@ -77,7 +77,7 @@ const DoneForYou = () => {
                   </ul>
                 </div>
               </div>
-              <a href="#trial" className="two-paths__btn">
+              <a href="https://mundayn.com/#packages" className="two-paths__btn">
                 Start Free Trial (DIY) <ArrowIcon />
               </a>
             </div>
@@ -122,7 +122,7 @@ const DoneForYou = () => {
             <p className="dfy-truth__text dfy-truth__text--bold">That's not your fault.</p>
             <p className="dfy-truth__text">That's human nature meeting complexity.</p>
             <p className="dfy-truth__text dfy-truth__text--bold">That's why DFY exists.</p>
-            <a href="#trial" className="dfy-truth__btn">
+            <a href="https://mundayn.com/#packages" className="dfy-truth__btn">
               Start Free Trial (DIY) <ArrowIcon />
             </a>
           </div>
@@ -172,9 +172,6 @@ const DoneForYou = () => {
                 </div>
               </div>
               
-              <a href="#packages" className="split-card__btn">
-                LEARN MORE ABOUT DFY <ArrowIcon />
-              </a>
             </div>
           </div>
         </div>
@@ -260,7 +257,7 @@ const DoneForYou = () => {
                 <span className="dfy-solution__number">4</span>
                 <h3 className="dfy-solution__label">Investment</h3>
                 <p className="dfy-solution__price">Starting at $499 <span className="dfy-solution__price-strike">One-Time Fee</span></p>
-                <a href="#packages" className="dfy-solution__btn">
+                <a href="/foundation-setup#setup" className="dfy-solution__btn">
                   Save My Costs <ArrowIcon />
                 </a>
               </div>
@@ -407,9 +404,6 @@ const DoneForYou = () => {
             <p>You spend your morning doing the work you actually built this business to do. This isn't someday. This is one week from now. That's what DFY creates.</p>
           </div>
           
-          <a href="#start" className="mundayn-btn">
-            LEARN MORE ABOUT DFY <ArrowIcon />
-          </a>
         </div>
       </section>
 
