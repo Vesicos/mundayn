@@ -108,6 +108,40 @@ const FoundationSetup = () => {
         </div>
       </header>
 
+      {/* Stage 1 Foundation Section */}
+      <section className="fs-stage1">
+        <div className="mundayn-container">
+          <div className="fs-stage1__layout">
+            <div className="fs-stage1__content">
+              <div className="fs-stage1__header">
+                <span className="fs-stage1__dot"></span>
+                <span className="fs-stage1__label">STAGE 1</span>
+              </div>
+              <div className="fs-stage1__title-row">
+                <h2 className="fs-stage1__title">Foundation</h2>
+                <span className="fs-stage1__price">$599</span>
+              </div>
+              <p className="fs-stage1__subtitle">Your Account, fully set up and running in one week.</p>
+              
+              <h3 className="fs-stage1__what">What you get:</h3>
+              <p className="fs-stage1__text">
+                One week from now, you log in to a Mundayn account that works. Everything configured. Your branding implemented. Automations tested. Payments processing. Calendar synced. Email sending.
+              </p>
+              <p className="fs-stage1__bold">
+                You don't learn how to <u>build it</u>. You learn how to <u>use it</u>.
+              </p>
+              
+              <a href="#setup" className="fs-stage1__cta">
+                LEARN ALL DETAILS <ArrowIcon />
+              </a>
+            </div>
+            <div className="fs-stage1__image">
+              <img src={fsSetupElephant} alt="Foundation Setup Elephant" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Video Message Section */}
       <section className="fs-video">
         <h2 className="fs-video__title">
