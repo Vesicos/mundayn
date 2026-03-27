@@ -260,7 +260,7 @@ const DoneForYou = () => {
                 <span className="dfy-solution__number">4</span>
                 <h3 className="dfy-solution__label">Investment</h3>
                 <p className="dfy-solution__price">Starting at $499 <span className="dfy-solution__price-strike">One-Time Fee</span></p>
-                <a href="#packages" className="dfy-solution__btn">
+                <a href="/foundation-setup#setup" className="dfy-solution__btn">
                   Save My Costs <ArrowIcon />
                 </a>
               </div>
