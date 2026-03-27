@@ -142,23 +142,6 @@ const FoundationSetup = () => {
         </div>
       </section>
 
-      {/* Video Message Section */}
-      <section className="fs-video">
-        <h2 className="fs-video__title">
-          A message about the fastest way to get<br />
-          your Mundayn account fully operational.
-        </h2>
-        <div className="fs-video__player">
-          <div className="fs-video__placeholder">
-            {/* Video/Elephant image placeholder */}
-            <div className="fs-video__elephant-placeholder"></div>
-            <div className="fs-video__play-btn">
-              <PlayIcon />
-            </div>
-            <div className="fs-video__play-ring"></div>
-          </div>
-        </div>
-      </section>
 
       {/* We Know How This Goes Section */}
       <section className="fs-know">
