@@ -122,7 +122,7 @@ const DoneForYou = () => {
             <p className="dfy-truth__text dfy-truth__text--bold">That's not your fault.</p>
             <p className="dfy-truth__text">That's human nature meeting complexity.</p>
             <p className="dfy-truth__text dfy-truth__text--bold">That's why DFY exists.</p>
-            <a href="#trial" className="dfy-truth__btn">
+            <a href="https://mundayn.com/#packages" className="dfy-truth__btn">
               Start Free Trial (DIY) <ArrowIcon />
             </a>
           </div>
