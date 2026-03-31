@@ -205,7 +205,7 @@ const FoundationSetup = () => {
       </section>
 
       {/* Here's What We Do Section */}
-      <section className="fs-whatwedo">
+      <section id="whatwedo" className="fs-whatwedo">
         <div className="mundayn-container">
           <h2 className="fs-whatwedo__title">Here's What We Do</h2>
           
