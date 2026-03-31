@@ -26,7 +26,7 @@ const Footer = () => {
             
             <div className="site-footer__contact">
               <p className="site-footer__contact-label">Contact Us:</p>
-              <a href="mailto:support@mundayn.com" className="site-footer__email">support@mundayn.com</a>
+              <a href="mailto:support@care.mundayn.com" className="site-footer__email">support@care.mundayn.com</a>
             </div>
           </div>
         </div>
