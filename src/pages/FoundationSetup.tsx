@@ -131,7 +131,7 @@ const FoundationSetup = () => {
                 You don't learn how to <u>build it</u>. You learn how to <u>use it</u>.
               </p>
               
-              <a href="#setup" className="fs-stage1__cta">
+              <a href="#whatwedo" className="fs-stage1__cta">
                 LEARN ALL DETAILS <ArrowIcon />
               </a>
             </div>
