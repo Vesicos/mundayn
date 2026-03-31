@@ -131,7 +131,7 @@ const FoundationSetup = () => {
                 You don't learn how to <u>build it</u>. You learn how to <u>use it</u>.
               </p>
               
-              <a href="#setup" className="fs-stage1__cta">
+              <a href="#whatwedo" className="fs-stage1__cta">
                 LEARN ALL DETAILS <ArrowIcon />
               </a>
             </div>
@@ -205,7 +205,7 @@ const FoundationSetup = () => {
       </section>
 
       {/* Here's What We Do Section */}
-      <section className="fs-whatwedo">
+      <section id="whatwedo" className="fs-whatwedo">
         <div className="mundayn-container">
           <h2 className="fs-whatwedo__title">Here's What We Do</h2>
           
