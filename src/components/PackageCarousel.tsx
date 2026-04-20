@@ -237,7 +237,8 @@ const packages: Package[] = [
       "Mighty Networks",
       "Asana/ClickUp"
     ],
-    buttonText: "Start With Leader"
+    buttonText: "Start With Leader",
+    buttonUrl: "https://web.mundayn.com/agreement-da-leader"
   }
 ];
 
