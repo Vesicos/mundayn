@@ -216,7 +216,8 @@ const packages: Package[] = [
       "Clickfunnels",
       "Tapfiliate"
     ],
-    buttonText: "Start With Teacher"
+    buttonText: "Start With Teacher",
+    buttonUrl: "https://web.mundayn.com/agreement-da-teacher"
   },
   {
     title: "Leader Package",
