@@ -11,6 +11,7 @@ interface Package {
   description: string;
   apps: string[];
   buttonText: string;
+  buttonUrl?: string;
 }
 
 interface PackageCardProps extends Package {
@@ -36,6 +37,7 @@ function PackageCard({
   description,
   apps,
   buttonText,
+  buttonUrl,
   isCenter,
   zIndex,
   x,
@@ -121,7 +123,7 @@ function PackageCard({
       {/* CTA Button - always at bottom */}
       <div className="shrink-0 pt-4">
         <a
-          href="https://web.mundayn.com/products/packages/checkout-page-14-day-free-trial"
+          href={buttonUrl ?? "https://web.mundayn.com/products/packages/checkout-page-14-day-free-trial"}
             className={`inline-flex items-center justify-center gap-2 bg-[#F5AD2D] text-black font-bold rounded-full shadow-lg hover:bg-[#e6a02a] transition-colors w-full ${isMobile ? 'text-[12px] px-4 py-3' : 'text-sm px-6 py-3'}`}
         >
           {buttonText}
