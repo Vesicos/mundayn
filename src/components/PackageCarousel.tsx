@@ -194,7 +194,8 @@ const packages: Package[] = [
       "Manychat/Buffer",
       "WordPress Hosting"
     ],
-    buttonText: "Start With Creator"
+    buttonText: "Start With Creator",
+    buttonUrl: "https://web.mundayn.com/agreement-da-creator"
   },
   {
     title: "Teacher Package",
