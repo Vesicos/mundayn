@@ -177,7 +177,8 @@ const packages: Package[] = [
       "Calendly/Acuity",
       "Typeform/JotForm"
     ],
-    buttonText: "Start With Entrepreneur"
+    buttonText: "Start With Entrepreneur",
+    buttonUrl: "https://web.mundayn.com/agreement-da-entrepreneur"
   },
   {
     title: "Creator Package",
