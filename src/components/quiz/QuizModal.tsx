@@ -5,7 +5,7 @@ import QuizOption from "./QuizOption";
 import QuizProgress from "./QuizProgress";
 import QuizResult from "./QuizResult";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import elephantYellow from '@/assets/icons/elephant-yellow.png';
 
 interface QuizModalProps {
