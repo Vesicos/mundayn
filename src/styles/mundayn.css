@@ -7867,6 +7867,23 @@
   }
 }
 
+.site-footer__links {
+  margin-top: 6px;
+  font-size: 14px;
+  color: white;
+  opacity: 0.85;
+}
+
+.site-footer__links a {
+  color: white;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.site-footer__links a:hover {
+  opacity: 0.7;
+}
+
 
 /* ===========================
    NEW SITE FOOTER
