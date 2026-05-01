@@ -22,6 +22,11 @@ const Footer = () => {
             <div className="site-footer__legal">
               <p className="site-footer__tagline">You Create. We Implement. You Launch.</p>
               <p className="site-footer__copyright">© 2025 Mundayn. All rights reserved.</p>
+              <p className="site-footer__links">
+                <a href="https://web.mundayn.com/tos" target="_blank" rel="noopener noreferrer">Terms</a>
+                <span aria-hidden="true"> · </span>
+                <a href="https://web.mundayn.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
+              </p>
             </div>
             
             <div className="site-footer__contact">
