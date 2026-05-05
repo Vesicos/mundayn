@@ -373,7 +373,7 @@ const Index = () => {
           </p>
           <div className="mundayn-feels__cta">
             <a href="#packages" className="mundayn-btn">
-              Start Your Free Trial <ArrowIcon />
+              Start Your Trial <ArrowIcon />
             </a>
           </div>
         </div>
@@ -634,7 +634,7 @@ const Index = () => {
             
             <div className="mundayn-rightforyou__cta">
               <a href="#packages" className="mundayn-btn">
-                Start Your Free Trial <ArrowIcon />
+                Start Your Trial <ArrowIcon />
               </a>
             </div>
           </div>
@@ -714,7 +714,7 @@ const Index = () => {
               </p>
               <div className="mundayn-final-cta__card-cta">
                 <a href="#packages" className="mundayn-btn" style={{ fontWeight: 700, textTransform: 'uppercase', padding: '14px 24px' }}>
-                  START YOUR FREE TRIAL <ArrowIconBold />
+                  START YOUR TRIAL <ArrowIconBold />
                 </a>
               </div>
             </article>
