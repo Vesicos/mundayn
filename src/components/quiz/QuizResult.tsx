@@ -76,7 +76,7 @@ const QuizResult = ({ packageType, onStart }: QuizResultProps) => {
             </div>
             <div>
               <p className="text-quiz-option-text font-medium text-sm">Clear next step</p>
-              <p className="text-quiz-option-text/70 text-xs">Start your trial</p>
+              <p className="text-quiz-option-text/70 text-xs">Start here</p>
             </div>
           </div>
         </div>

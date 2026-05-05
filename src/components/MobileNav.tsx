@@ -55,7 +55,7 @@ const MobileNav = () => {
             ))}
           </nav>
           <a href="/#packages" className="mobile-menu__cta" onClick={() => setOpen(false)}>
-            Start Your Trial <ArrowIcon />
+            Start Here <ArrowIcon />
           </a>
         </SheetContent>
       </Sheet>
@@ -71,7 +71,7 @@ const MobileNav = () => {
         <li><Link to="/foundation-setup">Foundation Setup</Link></li>
       </ul>
       <a href="/#packages" className="mundayn-nav__cta">
-        Start Your Trial <ArrowIcon />
+        Start Here <ArrowIcon />
       </a>
     </nav>
   );
