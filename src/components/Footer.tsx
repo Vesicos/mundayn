@@ -32,6 +32,7 @@ const Footer = () => {
             <div className="site-footer__contact">
               <p className="site-footer__contact-label">Contact Us:</p>
               <a href="mailto:support@care.mundayn.com" className="site-footer__email">support@care.mundayn.com</a>
+              <a href="https://vesicos.com" target="_blank" rel="noopener" className="site-footer__vesicos">Brand strategy and operations by Vesicos</a>
             </div>
           </div>
         </div>
