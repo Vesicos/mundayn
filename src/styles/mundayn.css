@@ -8007,6 +8007,20 @@
   text-decoration: underline;
 }
 
+.site-footer__vesicos {
+  display: block;
+  margin-top: 2px;
+  font-size: 14px;
+  color: white;
+  opacity: 1;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.site-footer__vesicos:hover {
+  opacity: 1;
+}
+
 @media (max-width: 760px) {
   .site-footer {
     padding: 0 0 24px;
