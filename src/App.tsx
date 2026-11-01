@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import RouteMetadata from "./components/RouteMetadata";
 import Index from "./pages/Index";
 import DoneForYou from "./pages/DoneForYou";
 import Ecosystem from "./pages/Ecosystem";
@@ -20,10 +21,10 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/done-for-you" element={<DoneForYou />} />
-          <Route path="/ecosystem" element={<Ecosystem />} />
-          <Route path="/foundation-setup" element={<FoundationSetup />} />
+          <Route path="/" element={<RouteMetadata path="/"><Index /></RouteMetadata>} />
+          <Route path="/done-for-you" element={<RouteMetadata path="/done-for-you"><DoneForYou /></RouteMetadata>} />
+          <Route path="/ecosystem" element={<RouteMetadata path="/ecosystem"><Ecosystem /></RouteMetadata>} />
+          <Route path="/foundation-setup" element={<RouteMetadata path="/foundation-setup"><FoundationSetup /></RouteMetadata>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
